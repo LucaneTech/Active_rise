@@ -26,9 +26,9 @@ export default function CTASection({
   return (
     <section className={`${bg} section-padding relative overflow-hidden`}>
       {/* Decorative circles */}
-      <div className="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-1/2 w-96 h-96 rounded-full  pointer-events-none bg-gold" />
+      <div className="hidden md:flex absolute top-1/2 left-10 -translate-y-1/2 -translate-x-1/2 w-96 h-96 rounded-full  pointer-events-none bg-gold" />
       <div className="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-1/3 w-56 h-56 rounded-full border border-gold/[0.06] pointer-events-none bg-white/50" />
-      <div className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-1/2 w-80 h-80 rounded-full border border-gold/[0.07] pointer-events-none bg-white/50" />
+      <div className="hidden md:flex absolute top-1/2 right-10 -translate-y-1/2 translate-x-1/2 w-80 h-80 rounded-full border border-gold/[0.07] pointer-events-none bg-white/50" />
       <div className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-1/3 w-48 h-48 rounded-full  pointer-events-none bg-gold" />
       {/* Small accent dot — top center */}
       <div className="absolute top-8 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-gold pointer-events-none " />

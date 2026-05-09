@@ -98,10 +98,10 @@ export default function Navbar() {
 
           {/* Mobile actions */}
           <div className="lg:hidden flex items-center gap-2.5">
-            <ThemeSwitcher />
+            {/* <ThemeSwitcher /> */}
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className="w-9 h-9 flex items-center justify-center rounded-md shadow-btn-ghost"
+              className="w-9 h-9 flex items-center justify-center rounded-md shadow-btn-ghost border border-gray-700/20"
             >
               {menuOpen
                 ? <X size={16} className="text-deep dark:text-beige" />

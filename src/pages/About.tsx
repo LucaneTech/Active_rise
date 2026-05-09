@@ -39,59 +39,88 @@ export default function About() {
   ];
 
   return (
-    <div className="bg-beige dark:bg-deep overflow-hidden">
+    <div className="bg-beige overflow-hidden">
 
       {/* ─── HERO ─── */}
       <section className="relative min-h-[80vh] flex items-center bg-deep overflow-hidden pt-24">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_30%_50%,rgba(211,170,42,0.1),transparent)]" />
-          <div className="absolute right-0 top-0 bottom-0 w-px bg-gold/10" />
         </div>
-        <div className="container-xl relative z-10 py-20">
-          <div className="max-w-3xl">
+        <div className="container-xl relative z-10 py-10 md:py-20">
+          <div className="grid lg:grid-cols-2 gap-12 xl:gap-20 items-center">
+
+            {/* Left: Text */}
+            <div>
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: 0.2 }}
+              >
+                <span className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-gold shadow-badge px-4 py-1.5 rounded-md mb-6">
+                  <span className="w-1.5 h-1.5 rounded-md bg-gold" />
+                  {t('about.hero.badge')}
+                </span>
+              </motion.div>
+              <motion.h1
+                initial={{ opacity: 0, y: 40 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
+                className="text-3xl md:text-4xl lg:text-6xl font-black tracking-tight leading-[1.05] text-beige mb-8"
+              >
+                {t('about.hero.title')}
+                <br />
+                <span className="text-gold">{t('about.hero.title2')}</span>
+              </motion.h1>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: 0.55 }}
+                className="text-beige/75 text-xl leading-relaxed"
+              >
+                {t('about.hero.text')}
+              </motion.p>
+            </div>
+
+            {/* Right: Image */}
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.2 }}
+              initial={{ opacity: 0, x: 40 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
+              className="relative rounded-md overflow-hidden"
             >
-              <span className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-gold shadow-badge px-4 py-1.5 rounded-full mb-6">
-                <span className="w-1.5 h-1.5 rounded-full bg-gold" />
-                {t('about.hero.badge')}
-              </span>
+              <img
+                src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=800&q=80"
+                alt="L'équipe ActiveRise"
+                className="w-full h-115 object-cover"
+              />
+              <div className="absolute inset-0 bg-linear-to-t from-deep/75 via-deep/10 to-transparent pointer-events-none" />
+              <div className="absolute bottom-6 left-6 right-6 flex items-center gap-4">
+                <div className="w-10 h-10 rounded-full bg-gold flex items-center justify-center shrink-0">
+                  <img src="images/white_icon.png" alt="icon active rise" className="w-6 h-6"  />
+                </div>
+                <div>
+                  <p className="text-beige font-bold text-sm leading-none mb-1">Active Rise</p>
+                  <p className="text-beige/65 text-[12px]">Agence stratégique — Depuis 2024</p>
+                </div>
+              </div>
             </motion.div>
-            <motion.h1
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
-              className="text-3xl md:text-4xl lg:text-6xl font-black tracking-tight leading-[1.05] text-beige mb-8"
-            >
-              {t('about.hero.title')}
-              <br />
-              <span className="text-gold">{t('about.hero.title2')}</span>
-            </motion.h1>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.55 }}
-              className="text-beige/75 text-xl leading-relaxed max-w-xl"
-            >
-              {t('about.hero.text')}
-            </motion.p>
+
           </div>
         </div>
       </section>
 
       {/* ─── VISION ─── */}
-      <section className="section-padding bg-beige dark:bg-deep">
-        <div className="container-xl">
+      <section className="section-padding bg-beige relative overflow-hidden">
+        <img src="images/icon.png" alt="icon active rise" className='absolute object-cover top-0 right-0 w-32 h-32 md:72 md:h-72 opacity-90 z-0 ' />
+        <div className="container-xl z-10 relative  ">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <RevealOnScroll direction="left">
               <div className="relative">
-                <div className="text-[120px] md:text-[160px] font-black leading-none tracking-tight">
-                  <div className="text-gold/20">
+                <div className="text-[3.5rem] md:text-[100px] font-black leading-none tracking-tight">
+                  <div className="text-gold mb-2 md:mb-4">
                     {t('about.vision.title')}
                   </div>
-                  <div className="text-gold/40">
+                  <div className="text-deep mb-2 md:mb-4">
                     {t('about.vision.title2')}
                   </div>
                   <div className="text-gold">
@@ -102,13 +131,13 @@ export default function About() {
             </RevealOnScroll>
             <div>
               <RevealOnScroll delay={0}>
-                <span className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-gold shadow-badge px-4 py-1.5 rounded-full mb-6">
-                  <span className="w-1 h-1 rounded-full bg-gold" />
+                <span className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-gold shadow-badge px-4 py-1.5 rounded-md mb-6">
+                  <span className="w-1 h-1 rounded-md bg-gold" />
                   {t('about.vision.badge')}
                 </span>
               </RevealOnScroll>
               <RevealOnScroll delay={0.15}>
-                <p className="text-deep/70 dark:text-beige/70 text-xl leading-relaxed">
+                <p className="text-deep text-xl leading-relaxed">
                   {t('about.vision.text')}
                 </p>
               </RevealOnScroll>
@@ -123,8 +152,8 @@ export default function About() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <RevealOnScroll delay={0}>
-                <span className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-gold shadow-badge px-4 py-1.5 rounded-full mb-6">
-                  <span className="w-1 h-1 rounded-full bg-gold" />
+                <span className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-gold shadow-badge px-4 py-1.5 rounded-md mb-6">
+                  <span className="w-1 h-1 rounded-md bg-gold" />
                   {t('about.mission.badge')}
                 </span>
               </RevealOnScroll>
@@ -142,13 +171,13 @@ export default function About() {
               </RevealOnScroll>
             </div>
             <RevealOnScroll delay={0.2} direction="right">
-              <div className="relative rounded-2xl overflow-hidden">
+              <div className="relative rounded-md overflow-hidden">
                 <img
                   src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80"
                   alt="Équipe ActiveRise en session stratégique"
                   className="w-full h-80 object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-deep/90 via-deep/30 to-transparent pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-deep/30 to-transparent pointer-events-none" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <div className="grid grid-cols-3 gap-3">
                     {[
@@ -170,7 +199,7 @@ export default function About() {
       </section>
 
       {/* ─── VALUES ─── */}
-      <section className="section-padding bg-beige dark:bg-deep">
+      <section className="section-padding bg-beige">
         <div className="container-xl">
           <div className="text-center mb-16">
             <SectionTitle
@@ -184,13 +213,13 @@ export default function About() {
               <RevealOnScroll key={i} delay={i * 0.08} direction="up">
                 <motion.div
                   whileHover={{ y: -5 }}
-                  className="group bg-beige dark:bg-deep shadow-card rounded-[40px] p-8 h-full hover:shadow-card-hover transition-shadow duration-300"
+                  className="group bg-beige shadow-card rounded-md p-8 h-full hover:shadow-card-hover transition-shadow duration-300"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center mb-6 group-hover:bg-gold/20 transition-colors duration-300">
-                    <v.icon size={22} className="text-gold" strokeWidth={1.5} />
+                  <div className="w-12 h-12 rounded-md bg-gold flex items-center justify-center mb-6 group-hover:bg-gold transition-colors duration-300">
+                    <v.icon size={22} className="text-white" strokeWidth={1.5} />
                   </div>
-                  <h3 className="text-lg font-bold text-deep dark:text-beige mb-3">{t(v.titleKey)}</h3>
-                  <p className="text-deep/70 dark:text-beige/75 text-sm leading-relaxed">{t(v.descKey)}</p>
+                  <h3 className="text-lg font-bold text-deep mb-3">{t(v.titleKey)}</h3>
+                  <p className="text-slate-700 text-sm leading-relaxed">{t(v.descKey)}</p>
                 </motion.div>
               </RevealOnScroll>
             ))}
@@ -222,8 +251,8 @@ export default function About() {
         <div className="container-xl">
           <div className="text-center mb-16">
             <RevealOnScroll>
-              <span className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-gold shadow-badge px-4 py-1.5 rounded-full mb-5">
-                <span className="w-1 h-1 rounded-full bg-gold" />
+              <span className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-gold shadow-badge px-4 py-1.5 rounded-md mb-5">
+                <span className="w-1 h-1 rounded-md bg-gold" />
                 {t('about.differentiation.badge')}
               </span>
             </RevealOnScroll>
@@ -239,7 +268,7 @@ export default function About() {
               <RevealOnScroll key={i} delay={i * 0.1} direction={i % 2 === 0 ? 'left' : 'right'}>
                 <motion.div
                   whileHover={{ y: -5 }}
-                  className="group glass-card rounded-[40px] p-8 hover:shadow-card-hover transition-shadow duration-300"
+                  className="group glass-card rounded-md  p-8 hover:shadow-card-hover transition-shadow duration-300"
                 >
                   <div className="flex items-start gap-5">
                     <div className="w-14 h-14 rounded-xl bg-gold/10 flex items-center justify-center shrink-0">
@@ -258,7 +287,7 @@ export default function About() {
       </section>
 
       {/* ─── EXPERTISE TAGS ─── */}
-      <section className="section-padding bg-beige dark:bg-deep">
+      <section className="section-padding bg-beige">
         <div className="container-xl">
           <div className="text-center mb-16">
             <SectionTitle
@@ -272,7 +301,7 @@ export default function About() {
               <RevealOnScroll key={i} delay={i * 0.07} direction="up">
                 <motion.div
                   whileHover={{ scale: 1.05, y: -3 }}
-                  className="border-2 border-deep/15 dark:border-beige/15 hover:border-gold px-6 py-3 rounded-full text-sm font-semibold text-deep dark:text-beige hover:text-gold transition-all duration-300 cursor-default"
+                  className="border border-gray-300 hover:border-gold px-6 py-3 rounded-md shadow-lg text-sm font-semibold text-deep hover:text-gold transition-all duration-300 cursor-default"
                 >
                   {t(e)}
                 </motion.div>
@@ -296,8 +325,8 @@ export default function About() {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
               <RevealOnScroll>
-                <span className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-gold shadow-badge px-4 py-1.5 rounded-full mb-5">
-                  <span className="w-1 h-1 rounded-full bg-gold" />
+                <span className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-gold shadow-badge px-4 py-1.5 rounded-md mb-5">
+                  <span className="w-1 h-1 rounded-md bg-gold" />
                   {t('about.approach.badge')}
                 </span>
               </RevealOnScroll>
@@ -318,8 +347,8 @@ export default function About() {
                 { label: 'Partenaire d\'exécution', desc: 'Nous accompagnons la mise en œuvre jusqu\'aux résultats.' },
               ].map((r, i) => (
                 <RevealOnScroll key={i} delay={i * 0.1} direction="up">
-                  <div className="text-center p-8 glass-card rounded-[40px] hover:shadow-card-hover transition-shadow duration-300">
-                    <div className="w-3 h-3 rounded-full bg-gold mx-auto mb-6" />
+                  <div className="text-center p-8 glass-card rounded-md hover:shadow-card-hover transition-shadow duration-300">
+                    <div className="w-3 h-3 rounded-md bg-gold mx-auto mb-6" />
                     <h3 className="font-bold text-beige mb-3">{r.label}</h3>
                     <p className="text-beige/68 text-sm leading-relaxed">{r.desc}</p>
                   </div>

@@ -148,7 +148,7 @@ export default function Home() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.9, duration: 0.6 }}
-                className="flex gap-8 pt-8 border-t border-gray-200/30"
+                className="flex gap-8 pt-5"
               >
                 {[
                   { value: '150+', label: 'Clients' },
