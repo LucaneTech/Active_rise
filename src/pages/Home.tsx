@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import {
   ArrowRight, TrendingUp, Megaphone, Palette, Globe, BarChart3,
-  Lightbulb, Star, Zap, Target, Shield, Users, Play
+  Lightbulb, Star, Zap, Target, Shield, Users
 } from 'lucide-react';
 
 import SectionTitle from '../components/ui/SectionTitle';

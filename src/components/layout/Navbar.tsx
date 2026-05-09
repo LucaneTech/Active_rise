@@ -3,7 +3,6 @@ import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ArrowRight, Globe } from 'lucide-react';
-import ThemeSwitcher from '../ui/ThemeSwitcher';
 
 export default function Navbar() {
   const { t, i18n } = useTranslation();

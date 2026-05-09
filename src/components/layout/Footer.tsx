@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Mail, Phone, MapPin, ArrowRight, ExternalLink, MessageSquare, MessageCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, ArrowRight, ExternalLink, MessageCircle } from 'lucide-react';
 
 export default function Footer() {
   const { t } = useTranslation();
