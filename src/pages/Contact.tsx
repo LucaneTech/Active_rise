@@ -40,7 +40,7 @@ export default function Contact() {
     setSubmitted(true);
   };
 
-  const inputClass = `w-full bg-transparent border border-deep/15 dark:border-beige/15 rounded-2xl px-5 py-4 text-deep dark:text-beige text-sm placeholder:text-deep/30 dark:placeholder:text-beige/30 focus:outline-none focus:border-gold transition-colors duration-300`;
+  const inputClass = `w-full bg-transparent border border-gray-300  rounded-md px-5 py-4 text-deep  text-sm placeholder:text-deep/3 dark:placeholder:text-beige/30 focus:outline-none focus:border-gold transition-colors duration-300`;
   const labelClass = `block text-xs font-semibold tracking-wider uppercase text-deep/65 dark:text-beige/65 mb-2`;
 
   return (
@@ -48,11 +48,20 @@ export default function Contact() {
 
       {/* ─── HERO ─── */}
       <section className="relative min-h-[60vh] flex items-center bg-deep overflow-hidden pt-24">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_70%_at_50%_0%,rgba(211,170,42,0.1),transparent)]" />
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_60%_at_65%_40%,rgba(211,170,42,0.15),transparent)]" />
+          <div className="absolute top-0 right-0 w-1/2 h-full bg-[radial-gradient(ellipse_50%_70%_at_100%_50%,rgba(211,170,42,0.08),transparent)]" />
+          <div
+            className="absolute inset-0 opacity-[0.08]"
+            style={{
+              backgroundImage: `repeating-linear-gradient(0deg, transparent, transparent 80px, #d3aa2a 80px, #d3aa2a 81px), repeating-linear-gradient(90deg, transparent, transparent 80px, #d3aa2a 80px, #d3aa2a 81px)`,
+            }}
+          />
+        </div>
         <div className="container-xl relative z-10 py-20 text-center">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.2 }}>
-            <span className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-gold shadow-badge px-4 py-1.5 rounded-full mb-6">
-              <span className="w-1.5 h-1.5 rounded-full bg-gold" />
+            <span className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-gold shadow-badge px-4 py-1.5 rounded-md mb-6">
+              <span className="w-1.5 h-1.5 rounded-md bg-gold" />
               {t('contact.hero.badge')}
             </span>
           </motion.div>
@@ -82,8 +91,8 @@ export default function Contact() {
             {/* FORM */}
             <div className="lg:col-span-3">
               <RevealOnScroll delay={0} direction="left">
-                <div className="bg-beige dark:bg-deep shadow-card rounded-[40px] p-10">
-                  <h2 className="text-2xl font-black text-deep dark:text-beige mb-8">{t('contact.form.title')}</h2>
+                <div className="bg-beige shadow-card rounded-md p-10">
+                  <h2 className="text-2xl font-black text-deep  mb-8">{t('contact.form.title')}</h2>
 
                   <AnimatePresence mode="wait">
                     {submitted ? (
@@ -97,7 +106,7 @@ export default function Contact() {
                           initial={{ scale: 0 }}
                           animate={{ scale: 1 }}
                           transition={{ type: 'spring', stiffness: 200, damping: 15 }}
-                          className="w-20 h-20 rounded-full bg-gold/15 flex items-center justify-center mx-auto mb-6"
+                          className="w-20 h-20 rounded-md bg-gold/15 flex items-center justify-center mx-auto mb-6"
                         >
                           <CheckCircle2 size={36} className="text-gold" strokeWidth={1.5} />
                         </motion.div>
@@ -176,11 +185,11 @@ export default function Contact() {
                           disabled={submitting}
                           whileHover={{ scale: 1.02 }}
                           whileTap={{ scale: 0.98 }}
-                          className="w-full bg-gold text-deep font-bold py-4 px-8 rounded-full flex items-center justify-center gap-3 hover:bg-gold/90 transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed"
+                          className="w-full bg-gold text-deep font-bold py-3 px-8 rounded-md flex items-center justify-center gap-3 hover:bg-gold/90 transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed"
                         >
                           {submitting ? (
                             <>
-                              <div className="w-4 h-4 border-2 border-deep/30 border-t-deep rounded-full animate-spin" />
+                              <div className="w-4 h-4 border-2 border-deep/30 border-t-deep rounded-md animate-spin" />
                               Envoi en cours...
                             </>
                           ) : (
@@ -200,7 +209,7 @@ export default function Contact() {
             {/* INFO */}
             <div className="lg:col-span-2 space-y-6">
               <RevealOnScroll delay={0.2} direction="right">
-                <div className="bg-deep rounded-[40px] p-8">
+                <div className="bg-deep rounded-md p-8">
                   <h3 className="text-lg font-bold text-beige mb-6">{t('contact.info.title')}</h3>
                   <div className="space-y-5">
                     {[
@@ -228,14 +237,14 @@ export default function Contact() {
               </RevealOnScroll>
 
               <RevealOnScroll delay={0.3} direction="right">
-                <div className="bg-gold/10 shadow-[0_0_0_1px_rgba(211,170,42,0.2)] rounded-[40px_14px_40px_14px] p-8">
+                <div className="bg-gold/10 shadow-xl border border-gold rounded-[40px_14px_40px_14px] p-8">
                   <div className="text-4xl font-black text-gold mb-3">30 min</div>
                   <h3 className="font-bold text-deep dark:text-beige mb-2">Diagnostic gratuit</h3>
-                  <p className="text-deep/70 dark:text-beige/70 text-sm leading-relaxed mb-6">
+                  <p className="text-deep  text-sm leading-relaxed mb-6">
                     Un premier échange sans engagement pour analyser votre situation et vous proposer des pistes concrètes.
                   </p>
                   <div className="flex items-center gap-2 text-gold text-sm font-semibold">
-                    <span className="w-2 h-2 rounded-full bg-gold animate-pulse" />
+                    <span className="w-2 h-2 rounded-md bg-gold animate-pulse" />
                     Disponible dès aujourd'hui
                   </div>
                 </div>
@@ -258,7 +267,7 @@ export default function Contact() {
       <section className="bg-beige dark:bg-deep">
         <div className="container-xl py-16">
           <RevealOnScroll>
-            <div className="w-full h-64 bg-deep/5 dark:bg-beige/5 rounded-[40px] shadow-card flex items-center justify-center overflow-hidden relative">
+            <div className="w-full h-64 bg-deep/5 dark:bg-beige/5 rounded-md shadow-card flex items-center justify-center overflow-hidden relative">
               <div
                 className="absolute inset-0 opacity-20"
                 style={{
@@ -267,7 +276,7 @@ export default function Contact() {
               />
               <div className="relative z-10 text-center">
                 <MapPin size={40} className="text-gold mx-auto mb-3" strokeWidth={1.5} />
-                <p className="font-bold text-deep dark:text-beige">Paris, France</p>
+                <p className="font-bold text-deep dark:text-beige">Pointe-Noire, Congo-Brazzaville</p>
                 <p className="text-deep/65 dark:text-beige/65 text-sm mt-1">Active Rise — Agence stratégique</p>
               </div>
             </div>
@@ -280,8 +289,8 @@ export default function Contact() {
         <div className="container-xl">
           <div className="text-center mb-16">
             <RevealOnScroll>
-              <span className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-gold shadow-badge px-4 py-1.5 rounded-full mb-5">
-                <span className="w-1 h-1 rounded-full bg-gold" />
+              <span className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-gold shadow-badge px-4 py-1.5 rounded-md mb-5">
+                <span className="w-1 h-1 rounded-md bg-gold" />
                 {t('contact.faq.badge')}
               </span>
             </RevealOnScroll>
@@ -296,7 +305,7 @@ export default function Contact() {
             {faqs.map((faq, i) => (
               <RevealOnScroll key={i} delay={i * 0.08} direction="up">
                 <div
-                  className="border border-beige/8 rounded-4xl overflow-hidden hover:shadow-card-hover transition-shadow duration-300 cursor-pointer"
+                  className="border border-gray-200/30 rounded-md overflow-hidden hover:shadow-card-hover transition-shadow duration-300 cursor-pointer"
                   onClick={() => setOpenFaq(openFaq === i ? null : i)}
                 >
                   <div className="flex items-center justify-between p-6">
@@ -317,7 +326,7 @@ export default function Contact() {
                         exit={{ height: 0, opacity: 0 }}
                         transition={{ duration: 0.3 }}
                       >
-                        <div className="px-6 pb-6 border-t border-beige/8 pt-4">
+                        <div className="px-6 pb-6 border-t border-gray-200/30 pt-4">
                           <p className="text-beige/75 leading-relaxed text-sm">{faq.a}</p>
                         </div>
                       </motion.div>

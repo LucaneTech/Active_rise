@@ -71,15 +71,15 @@ export default function Home() {
       <section className="relative min-h-screen flex flex-col justify-center bg-deep overflow-hidden">
         {/* Background decorations */}
         <div className="absolute inset-0 pointer-events-none">
-  <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_60%_at_65%_40%,rgba(211,170,42,0.15),transparent)]" />
-  <div className="absolute top-0 right-0 w-1/2 h-full bg-[radial-gradient(ellipse_50%_70%_at_100%_50%,rgba(211,170,42,0.08),transparent)]" />
-  <div
-    className="absolute inset-0 opacity-[0.08]"
-    style={{
-      backgroundImage: `repeating-linear-gradient(0deg, transparent, transparent 80px, #d3aa2a 80px, #d3aa2a 81px), repeating-linear-gradient(90deg, transparent, transparent 80px, #d3aa2a 80px, #d3aa2a 81px)`,
-    }}
-  />
-</div>
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_60%_at_65%_40%,rgba(211,170,42,0.15),transparent)]" />
+          <div className="absolute top-0 right-0 w-1/2 h-full bg-[radial-gradient(ellipse_50%_70%_at_100%_50%,rgba(211,170,42,0.08),transparent)]" />
+          <div
+            className="absolute inset-0 opacity-[0.08]"
+            style={{
+              backgroundImage: `repeating-linear-gradient(0deg, transparent, transparent 80px, #d3aa2a 80px, #d3aa2a 81px), repeating-linear-gradient(90deg, transparent, transparent 80px, #d3aa2a 80px, #d3aa2a 81px)`,
+            }}
+          />
+        </div>
 
         <div className="container-xl relative z-10 pt-32 pb-16">
           <div className="grid lg:grid-cols-2 gap-12 xl:gap-20 items-center">
@@ -216,7 +216,7 @@ export default function Home() {
 
                 {/* Decorative circles */}
                 <div className="absolute -top-6 -right-6 w-24 h-24 rounded-full border border-white bg-gold  pointer-events-none" />
-<div className="absolute -top-9 -right-9 w-16 h-16 rounded-full border border-gold pointer-events-none bg-beige" />
+                <div className="absolute -top-9 -right-9 w-16 h-16 rounded-full border border-gold pointer-events-none bg-beige" />
               </div>
             </motion.div>
           </div>
@@ -303,7 +303,7 @@ export default function Home() {
                   ))}
                 </div>
                 <div className="absolute -top-4 -right-4 w-24 h-24 rounded-full shadow-[0_0_0_1px_rgba(211,170,42,0.18)] bg-gold" />
-               
+
               </div>
             </RevealOnScroll>
           </div>
