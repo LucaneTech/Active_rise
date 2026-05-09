@@ -366,6 +366,7 @@ export default function About() {
         text={t('about.cta.text')}
         btnPrimary={t('about.cta.btn')}
         dark={true}
+        desStyle
       />
     </div>
   );

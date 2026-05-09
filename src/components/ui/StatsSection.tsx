@@ -63,8 +63,8 @@ export default function StatsSection({ badge, title, titleGold, stats, dark = fa
         <div className="text-center mb-14">
           {badge && (
             <RevealOnScroll delay={0}>
-              <span className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-gold shadow-badge px-4 py-1.5 rounded-full mb-5">
-                <span className="w-1.5 h-1.5 rounded-full bg-gold" />
+              <span className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-gold shadow-badge px-4 py-1.5 rounded-md mb-5">
+                <span className="w-1.5 h-1.5 rounded-md bg-gold" />
                 {badge}
               </span>
             </RevealOnScroll>

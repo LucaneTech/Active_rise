@@ -626,6 +626,7 @@ export default function Home() {
         btnSecondary={t('home.cta.btn_secondary')}
         btnSecondaryLink="/contact"
         dark={true}
+        desStyle
       />
     </div>
   );

@@ -21,10 +21,10 @@ export default function ProcessSection({ badge, title, titleGold, steps, dark = 
   const titleColor = dark ? 'text-beige' : 'text-deep dark:text-beige';
   const cardBg = dark
     ? 'glass-card shadow-[0_2px_20px_rgba(0,0,0,0.18)] hover:shadow-[0_4px_32px_rgba(211,170,42,0.10)] border border-beige/[0.07]'
-    : 'bg-white/70 dark:glass-card shadow-card hover:shadow-card-hover border border-deep/[0.05] dark:border-beige/[0.07]';
-  const numColor = 'text-beige' ;
+    : 'bg-white/70  shadow-card hover:shadow-card-hover border border-deep/[0.05] dark:border-beige/[0.07] bg-drop-blur-xl';
+  const numColor = 'text-gold' ;
   const stepTitleColor ='text-gold';
-  const stepDescColor = 'text-gray-200 ';
+  const stepDescColor = 'text-slate-500';
  
   return (
     <section className={`${bg} section-padding`}>
@@ -47,11 +47,11 @@ export default function ProcessSection({ badge, title, titleGold, steps, dark = 
 
         <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
           {/* Horizontal connecting line on desktop */}
-          <div className="step-connector-line hidden lg:block" />
+          {/* <div className="step-connector-line hidden lg:block" /> */}
 
           {steps.map((step, i) => (
             <RevealOnScroll key={i} delay={i * 0.09} direction="up">
-              <div className={`relative rounded-2xl p-8 h-full transition-shadow duration-300 overflow-hidden ${cardBg}`}>
+              <div className={`relative rounded-md p-8 h-full transition-shadow duration-300 overflow-hidden ${cardBg}`}>
 
                 {/* Step number badge — top left */}
                 <div className="w-9 h-9 rounded-md bg-gold/12 flex items-center justify-center mb-5 relative z-10">

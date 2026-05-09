@@ -448,6 +448,7 @@ export default function Services() {
         text={t('services.cta.text')}
         btnPrimary={t('services.cta.btn')}
         dark={true}
+        desStyle
       />
     </div>
   );

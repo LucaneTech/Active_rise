@@ -13,15 +13,16 @@ interface Props {
   btnSecondary?: string;
   btnSecondaryLink?: string;
   dark?: boolean;
+  desStyle?: boolean;
 }
 
 export default function CTASection({
   badge, title, titleGold, text, btnPrimary, btnPrimaryLink = '/contact',
-  btnSecondary, btnSecondaryLink = '/services', dark = true,
+  btnSecondary, btnSecondaryLink = '/services', dark = true, desStyle,
 }: Props) {
   const bg = dark ? 'bg-deep' : 'bg-beige dark:bg-deep';
   const titleColor = dark ? 'text-beige' : 'text-deep dark:text-beige';
-  const textColor = 'text-beige/70'
+  const textColor = desStyle ? 'text-beige/70' : 'text-deep';
 
   return (
     <section className={`${bg} section-padding relative overflow-hidden`}>
