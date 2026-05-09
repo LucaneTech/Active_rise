@@ -11,8 +11,8 @@ interface Props {
 
 export default function SectionTitle({ badge, title, titleGold, subtitle, align = 'center', light = false }: Props) {
   const centerClass = align === 'center' ? 'text-center items-center' : 'text-left items-start';
-  const textColor = light ? 'text-beige' : 'text-deep dark:text-beige';
-  const subColor = light ? 'text-beige/75' : 'text-deep/65 dark:text-beige/65';
+  const textColor = light ? 'text-beige' : 'text-deep';
+  const subColor = light ? 'text-beige' : 'text-deep/65';
 
   return (
     <div className={`flex flex-col gap-3.5 ${centerClass}`}>

@@ -17,11 +17,11 @@ interface Props {
 }
 
 export default function ProcessSection({ badge, title, titleGold, steps, dark = false }: Props) {
-  const bg = dark ? 'bg-deep' : 'bg-beige dark:bg-deep';
-  const titleColor = dark ? 'text-beige' : 'text-deep dark:text-beige';
+  const bg = dark ? 'bg-deep' : 'bg-beige';
+  const titleColor = dark ? 'text-beige' : 'text-deep';
   const cardBg = dark
     ? 'glass-card shadow-[0_2px_20px_rgba(0,0,0,0.18)] hover:shadow-[0_4px_32px_rgba(211,170,42,0.10)] border border-beige/[0.07]'
-    : 'bg-white/70  shadow-card hover:shadow-card-hover border border-deep/[0.05] dark:border-beige/[0.07] bg-drop-blur-xl';
+    : 'bg-white/70 shadow-card hover:shadow-card-hover border border-gray-300 bg-drop-blur-xl';
   const numColor = 'text-gold' ;
   const stepTitleColor ='text-gold';
   const stepDescColor = 'text-slate-500';

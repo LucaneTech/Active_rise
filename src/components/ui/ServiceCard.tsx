@@ -29,13 +29,13 @@ export default function ServiceCard({ icon: Icon, title, description, link = '/s
           <Icon size={20} className="text-white" strokeWidth={1.5} />
         </div>
 
-        <h3 className="text-[15px] font-bold text-deep dark:text-beige mb-2 leading-snug">{title}</h3>
+        <h3 className="text-[15px] font-bold text-deep mb-2 leading-snug">{title}</h3>
         <p className="text-deep text-[13px] leading-relaxed mb-5 grow">{description}</p>
 
         {items && items.length > 0 && (
           <ul className="space-y-1.5 mb-5">
             {items.map((item, i) => (
-              <li key={i} className="flex items-center gap-2 text-[12px] text-deep/65 dark:text-beige/65">
+              <li key={i} className="flex items-center gap-2 text-[12px] text-deep/65">
                 <span className="w-1 h-1 rounded-full bg-gold shrink-0" />
                 {item}
               </li>

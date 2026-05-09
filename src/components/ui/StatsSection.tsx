@@ -49,8 +49,8 @@ export default function StatsSection({ badge, title, titleGold, stats, dark = fa
     return () => observer.disconnect();
   }, []);
 
-  const bg = dark ? 'bg-deep' : 'bg-beige dark:bg-deep/50';
-  const titleColor = dark ? 'text-beige' : 'text-deep dark:text-beige';
+  const bg = dark ? 'bg-deep' : 'bg-beige';
+  const titleColor = dark ? 'text-beige' : 'text-deep';
 
   return (
     <section ref={ref} className={`${bg} section-padding relative overflow-hidden`}>

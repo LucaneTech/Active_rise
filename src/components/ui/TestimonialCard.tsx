@@ -25,7 +25,7 @@ export default function TestimonialCard({ text, name, role, delay = 0 }: Props) 
         </div>
 
         <Quote size={22} className="text-gold/30 mb-3" strokeWidth={1.5} />
-        <p className="text-beige/75 leading-relaxed grow mb-6 text-[13px]">{text}</p>
+        <p className="text-beige leading-relaxed grow mb-6 text-[13px]">{text}</p>
 
         <div className="flex items-center gap-3 pt-4 border-t border-gray-600/30">
           <div className="relative w-8 h-8 shrink-0">
@@ -36,7 +36,7 @@ export default function TestimonialCard({ text, name, role, delay = 0 }: Props) 
           </div>
           <div>
             <p className="font-bold text-beige text-[13px]">{name}</p>
-            <p className="text-beige/60 text-[11px]">{role}</p>
+            <p className="text-beige text-[11px]">{role}</p>
           </div>
         </div>
       </motion.div>

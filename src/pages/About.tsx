@@ -75,7 +75,7 @@ export default function About() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.55 }}
-                className="text-beige/75 text-xl leading-relaxed"
+                className="text-beige text-xl leading-relaxed"
               >
                 {t('about.hero.text')}
               </motion.p>
@@ -100,7 +100,7 @@ export default function About() {
                 </div>
                 <div>
                   <p className="text-beige font-bold text-sm leading-none mb-1">Active Rise</p>
-                  <p className="text-beige/65 text-[12px]">Agence stratégique — Depuis 2024</p>
+                  <p className="text-beige text-[12px]">Agence stratégique — Depuis 2024</p>
                 </div>
               </div>
             </motion.div>
@@ -164,10 +164,10 @@ export default function About() {
                 </h2>
               </RevealOnScroll>
               <RevealOnScroll delay={0.2}>
-                <p className="text-beige/75 leading-relaxed mb-6">{t('about.mission.text1')}</p>
+                <p className="text-beige leading-relaxed mb-6">{t('about.mission.text1')}</p>
               </RevealOnScroll>
               <RevealOnScroll delay={0.3}>
-                <p className="text-beige/75 leading-relaxed">{t('about.mission.text2')}</p>
+                <p className="text-beige leading-relaxed">{t('about.mission.text2')}</p>
               </RevealOnScroll>
             </div>
             <RevealOnScroll delay={0.2} direction="right">
@@ -187,7 +187,7 @@ export default function About() {
                     ].map((s, i) => (
                       <div key={i} className="text-center">
                         <div className="text-2xl font-black text-gold tabular-nums leading-none mb-1">{s.num}</div>
-                        <div className="text-beige/72 text-[11px]">{s.label}</div>
+                        <div className="text-beige text-[11px]">{s.label}</div>
                       </div>
                     ))}
                   </div>
@@ -213,7 +213,7 @@ export default function About() {
               <RevealOnScroll key={i} delay={i * 0.08} direction="up">
                 <motion.div
                   whileHover={{ y: -5 }}
-                  className="group bg-beige shadow-card rounded-md p-8 h-full hover:shadow-card-hover transition-shadow duration-300"
+                  className="group bg-beige shadow-card rounded-md p-8 h-full hover:shadow-card-hover border border-gray-300 transition-shadow duration-300"
                 >
                   <div className="w-12 h-12 rounded-md bg-gold flex items-center justify-center mb-6 group-hover:bg-gold transition-colors duration-300">
                     <v.icon size={22} className="text-white" strokeWidth={1.5} />
@@ -271,12 +271,12 @@ export default function About() {
                   className="group glass-card rounded-md  p-8 hover:shadow-card-hover transition-shadow duration-300"
                 >
                   <div className="flex items-start gap-5">
-                    <div className="w-14 h-14 rounded-xl bg-gold/10 flex items-center justify-center shrink-0">
-                      <d.icon size={24} className="text-gold" strokeWidth={1.5} />
+                    <div className="w-14 h-14 rounded-xl bg-gold flex items-center justify-center shrink-0">
+                      <d.icon size={24} className="text-white" strokeWidth={1.5} />
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-beige mb-3">{t(d.titleKey)}</h3>
-                      <p className="text-beige/75 leading-relaxed">{t(d.descKey)}</p>
+                      <p className="text-beige leading-relaxed">{t(d.descKey)}</p>
                     </div>
                   </div>
                 </motion.div>
@@ -338,7 +338,7 @@ export default function About() {
               </RevealOnScroll>
             </div>
             <RevealOnScroll delay={0.2}>
-              <p className="text-beige/75 text-xl leading-relaxed text-center">{t('about.approach.text')}</p>
+              <p className="text-beige text-xl leading-relaxed text-center">{t('about.approach.text')}</p>
             </RevealOnScroll>
             <div className="mt-16 grid md:grid-cols-3 gap-6">
               {[
@@ -350,7 +350,7 @@ export default function About() {
                   <div className="text-center p-8 glass-card rounded-md hover:shadow-card-hover transition-shadow duration-300">
                     <div className="w-3 h-3 rounded-md bg-gold mx-auto mb-6" />
                     <h3 className="font-bold text-beige mb-3">{r.label}</h3>
-                    <p className="text-beige/68 text-sm leading-relaxed">{r.desc}</p>
+                    <p className="text-beige text-sm leading-relaxed">{r.desc}</p>
                   </div>
                 </RevealOnScroll>
               ))}

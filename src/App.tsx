@@ -16,7 +16,7 @@ function ScrollToTop() {
 
 function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="min-h-screen flex flex-col bg-beige dark:bg-deep">
+    <div className="min-h-screen flex flex-col bg-beige">
       <Navbar />
       <main className="grow">{children}</main>
       <Footer />

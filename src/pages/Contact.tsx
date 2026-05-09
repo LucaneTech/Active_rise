@@ -40,11 +40,11 @@ export default function Contact() {
     setSubmitted(true);
   };
 
-  const inputClass = `w-full bg-transparent border border-gray-300  rounded-md px-5 py-4 text-deep  text-sm placeholder:text-deep/3 dark:placeholder:text-beige/30 focus:outline-none focus:border-gold transition-colors duration-300`;
-  const labelClass = `block text-xs font-semibold tracking-wider uppercase text-deep/65 dark:text-beige/65 mb-2`;
+  const inputClass = `w-full bg-transparent border border-gray-300 rounded-md px-5 py-4 text-deep text-sm placeholder:text-deep/30 focus:outline-none focus:border-gold transition-colors duration-300`;
+  const labelClass = `block text-xs font-semibold tracking-wider uppercase text-deep/65 mb-2`;
 
   return (
-    <div className="bg-beige dark:bg-deep overflow-hidden">
+    <div className="bg-beige overflow-hidden">
 
       {/* ─── HERO ─── */}
       <section className="relative min-h-[60vh] flex items-center bg-deep overflow-hidden pt-24">
@@ -76,7 +76,7 @@ export default function Contact() {
             <span className="text-gold">{t('contact.hero.title2')}</span>
           </motion.h1>
           <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.55 }}
-            className="text-beige/60 text-xl leading-relaxed max-w-xl mx-auto"
+            className="text-beige text-xl leading-relaxed max-w-xl mx-auto"
           >
             {t('contact.hero.text')}
           </motion.p>
@@ -84,7 +84,7 @@ export default function Contact() {
       </section>
 
       {/* ─── FORM + INFO ─── */}
-      <section className="section-padding bg-beige dark:bg-deep">
+      <section className="section-padding bg-beige">
         <div className="container-xl">
           <div className="grid lg:grid-cols-5 gap-16">
 
@@ -110,8 +110,8 @@ export default function Contact() {
                         >
                           <CheckCircle2 size={36} className="text-gold" strokeWidth={1.5} />
                         </motion.div>
-                        <h3 className="text-2xl font-black text-deep dark:text-beige mb-3">{t('contact.form.success')}</h3>
-                        <p className="text-deep/70 dark:text-beige/70">Nous vous répondrons dans les plus brefs délais.</p>
+                        <h3 className="text-2xl font-black text-deep mb-3">{t('contact.form.success')}</h3>
+                        <p className="text-deep/70">Nous vous répondrons dans les plus brefs délais.</p>
                       </motion.div>
                     ) : (
                       <motion.form key="form" onSubmit={handleSubmit} className="space-y-6">
@@ -164,7 +164,7 @@ export default function Contact() {
                                 <option key={i} value={s}>{s}</option>
                               ))}
                             </select>
-                            <ChevronDown size={16} className="absolute right-4 top-1/2 -translate-y-1/2 text-deep/60 dark:text-beige/60 pointer-events-none" />
+                            <ChevronDown size={16} className="absolute right-4 top-1/2 -translate-y-1/2 text-deep/60 pointer-events-none" />
                           </div>
                         </div>
 
@@ -223,11 +223,11 @@ export default function Contact() {
                           <item.icon size={16} className="text-gold" strokeWidth={1.5} />
                         </div>
                         <div>
-                          <p className="text-xs text-beige/62 font-semibold tracking-wider uppercase mb-1">{item.label}</p>
+                          <p className="text-xs text-beige font-semibold tracking-wider uppercase mb-1">{item.label}</p>
                           {item.href ? (
-                            <a href={item.href} className="text-sm text-beige/80 hover:text-gold transition-colors">{item.val}</a>
+                            <a href={item.href} className="text-sm text-beige hover:text-gold transition-colors">{item.val}</a>
                           ) : (
-                            <p className="text-sm text-beige/80">{item.val}</p>
+                            <p className="text-sm text-beige">{item.val}</p>
                           )}
                         </div>
                       </div>
@@ -239,7 +239,7 @@ export default function Contact() {
               <RevealOnScroll delay={0.3} direction="right">
                 <div className="bg-gold/10 shadow-xl border border-gold rounded-[40px_14px_40px_14px] p-8">
                   <div className="text-4xl font-black text-gold mb-3">30 min</div>
-                  <h3 className="font-bold text-deep dark:text-beige mb-2">Diagnostic gratuit</h3>
+                  <h3 className="font-bold text-deep mb-2">Diagnostic gratuit</h3>
                   <p className="text-deep  text-sm leading-relaxed mb-6">
                     Un premier échange sans engagement pour analyser votre situation et vous proposer des pistes concrètes.
                   </p>
@@ -264,10 +264,10 @@ export default function Contact() {
       />
 
       {/* ─── MAP PLACEHOLDER ─── */}
-      <section className="bg-beige dark:bg-deep">
+      <section className="bg-beige">
         <div className="container-xl py-16">
           <RevealOnScroll>
-            <div className="w-full h-64 bg-deep/5 dark:bg-beige/5 rounded-md shadow-card flex items-center justify-center overflow-hidden relative">
+            <div className="w-full h-64 bg-deep/5 rounded-md shadow-card flex items-center justify-center overflow-hidden relative">
               <div
                 className="absolute inset-0 opacity-20"
                 style={{
@@ -276,8 +276,8 @@ export default function Contact() {
               />
               <div className="relative z-10 text-center">
                 <MapPin size={40} className="text-gold mx-auto mb-3" strokeWidth={1.5} />
-                <p className="font-bold text-deep dark:text-beige">Pointe-Noire, Congo-Brazzaville</p>
-                <p className="text-deep/65 dark:text-beige/65 text-sm mt-1">Active Rise — Agence stratégique</p>
+                <p className="font-bold text-deep">Pointe-Noire, Congo-Brazzaville</p>
+                <p className="text-deep/65 text-sm mt-1">Active Rise — Agence stratégique</p>
               </div>
             </div>
           </RevealOnScroll>
@@ -327,7 +327,7 @@ export default function Contact() {
                         transition={{ duration: 0.3 }}
                       >
                         <div className="px-6 pb-6 border-t border-gray-200/30 pt-4">
-                          <p className="text-beige/75 leading-relaxed text-sm">{faq.a}</p>
+                          <p className="text-beige leading-relaxed text-sm">{faq.a}</p>
                         </div>
                       </motion.div>
                     )}

@@ -65,7 +65,7 @@ export default function Home() {
   const trustedClients = ['TechVision SAS', 'Groupe Horizon', 'Studio Créa', 'Novatel', 'Axio Partners'];
 
   return (
-    <div className="bg-beige dark:bg-deep overflow-hidden">
+    <div className="bg-beige overflow-hidden">
 
       {/* ─── HERO (split layout) ─── */}
       <section className="relative min-h-screen flex flex-col justify-center bg-deep overflow-hidden">
@@ -113,7 +113,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.5 }}
-                className="text-base md:text-lg text-beige/72 max-w-lg leading-relaxed mb-10"
+                className="text-beige md:text-lg  max-w-lg leading-relaxed mb-10"
               >
                 {t('home.hero.subtitle')}
               </motion.p>
@@ -157,7 +157,7 @@ export default function Home() {
                 ].map((s, i) => (
                   <div key={i}>
                     <div className="text-2xl font-black text-gold tabular-nums">{s.value}</div>
-                    <div className="text-[11px] text-beige/55 mt-0.5 uppercase tracking-wider">{s.label}</div>
+                    <div className="text-[11px] text-beige mt-0.5 uppercase tracking-wider">{s.label}</div>
                   </div>
                 ))}
               </motion.div>
@@ -175,7 +175,7 @@ export default function Home() {
                 <div className="bg-white/[0.05] border border-white/[0.09] rounded-2xl p-8 backdrop-blur-sm">
                   <div className="flex items-center gap-2.5 mb-7">
                     <div className="w-2 h-2 rounded-full bg-gold animate-pulse" />
-                    <span className="text-beige/55 text-[11px] uppercase tracking-[0.16em]">Performance clients</span>
+                    <span className="text-beige text-[11px] uppercase tracking-[0.16em]">Performance clients</span>
                   </div>
                   <div className="space-y-0.5">
                     {[
@@ -185,7 +185,7 @@ export default function Home() {
                       { label: 'ROI moyen sur 12 mois', value: '3×' },
                     ].map((item, i) => (
                       <div key={i} className="flex items-center justify-between py-4 border-b border-white/[0.06] last:border-0">
-                        <span className="text-beige/68 text-sm">{item.label}</span>
+                        <span className="text-beige text-sm">{item.label}</span>
                         <span className="text-gold font-black text-xl tabular-nums">{item.value}</span>
                       </div>
                     ))}
@@ -246,7 +246,7 @@ export default function Home() {
       </section>
 
       {/* ─── PHILOSOPHY ─── */}
-      <section className="section-padding bg-beige dark:bg-deep">
+      <section className="section-padding bg-beige">
         <div className="container-xl">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -257,7 +257,7 @@ export default function Home() {
                 </span>
               </RevealOnScroll>
               <RevealOnScroll delay={0.1}>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-black tracking-tight leading-[1.05] text-deep dark:text-beige mb-6">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-black tracking-tight leading-[1.05] text-deep mb-6">
                   {t('home.philosophy.title')}<br />
                   <span className="text-gold">{t('home.philosophy.title2')}</span>
                 </h2>
@@ -269,7 +269,7 @@ export default function Home() {
               </RevealOnScroll>
               <RevealOnScroll delay={0.3}>
                 <blockquote className="border-l-4 border-gold pl-6 py-1">
-                  <p className="text-deep dark:text-beige font-semibold italic text-lg">
+                  <p className="text-deep font-semibold italic text-lg">
                     "{t('home.philosophy.quote')}"
                   </p>
                 </blockquote>
@@ -278,7 +278,7 @@ export default function Home() {
 
             <RevealOnScroll delay={0.2} direction="right">
               <div className="relative">
-                <div className="relative bg-deep dark:bg-beige/5 rounded-2xl p-10 shadow-card border border-gray-200/30">
+                <div className="relative bg-deep rounded-2xl p-10 shadow-card border border-gray-200/30">
                   {[
                     { icon: Shield, label: 'Structurer', desc: 'Organiser pour mieux performer' },
                     { icon: Lightbulb, label: 'Simplifier', desc: 'Clarté avant complexité' },
@@ -296,8 +296,8 @@ export default function Home() {
                         <item.icon size={20} className="text-gold" strokeWidth={1.5} />
                       </div>
                       <div>
-                        <p className="font-bold text-gold dark:text-beige text-base">{item.label}</p>
-                        <p className="text-beige/68 text-sm">{item.desc}</p>
+                        <p className="font-bold text-gold">{item.label}</p>
+                        <p className="text-beige text-sm">{item.desc}</p>
                       </div>
                     </motion.div>
                   ))}
@@ -347,7 +347,7 @@ export default function Home() {
                   <div className="w-7 h-0.5 bg-gold mb-5" />
                   <h3 className="text-xl font-bold text-beige mb-2">{step.title}</h3>
                   <p className="text-gold text-sm font-semibold mb-4">{step.sub}</p>
-                  <p className="text-beige/70 text-sm leading-relaxed">{step.desc}</p>
+                  <p className="text-beige text-sm leading-relaxed">{step.desc}</p>
                 </motion.div>
               </RevealOnScroll>
             ))}
@@ -356,7 +356,7 @@ export default function Home() {
       </section>
 
       {/* ─── SERVICES GRID ─── */}
-      <section className="section-padding bg-beige dark:bg-deep">
+      <section className="section-padding bg-beige">
         <div className="container-xl">
           <div className="text-center mb-16">
             <SectionTitle
@@ -380,7 +380,7 @@ export default function Home() {
             <div className="text-center mt-12">
               <Link
                 to="/services"
-                className="inline-flex items-center gap-3 border border-gray-500/30 dark:border-beige/20 text-deep dark:text-beige font-bold px-8 py-4 rounded-md hover:border-gold hover:text-gold transition-all text-sm"
+                className="inline-flex items-center gap-3 border border-gray-500/30 text-deep font-bold px-8 py-4 rounded-md hover:border-gold hover:text-gold transition-all text-sm"
               >
                 {t('home.services.view_all')}
                 <ArrowRight size={14} />
@@ -419,7 +419,7 @@ export default function Home() {
                       </div>
                       <div>
                         <h3 className="font-bold text-gold mb-1 text-sm">{t(r.titleKey)}</h3>
-                        <p className="text-beige/68 text-sm leading-relaxed">{t(r.descKey)}</p>
+                        <p className="text-beige text-sm leading-relaxed">{t(r.descKey)}</p>
                       </div>
                     </div>
                   </RevealOnScroll>
@@ -430,7 +430,7 @@ export default function Home() {
             <RevealOnScroll delay={0.3} direction="right">
               <div className="relative glass-card rounded-2xl p-10 text-center border border-beige/[0.07]">
                 <div className="text-7xl font-black text-gold mb-3 tabular-nums">150+</div>
-                <p className="text-beige/68 text-base mb-8">entreprises accompagnées</p>
+                <p className="text-beige  mb-8">entreprises accompagnées</p>
                 <div className="grid grid-cols-2 gap-3">
                   {[
                     { v: '94%', l: 'Satisfaction' },
@@ -440,7 +440,7 @@ export default function Home() {
                   ].map((s, i) => (
                     <div key={i} className="bg-beige/5 rounded-md p-4 border border-gray-700/50">
                       <div className="text-xl font-black text-gold tabular-nums">{s.v}</div>
-                      <div className="text-[11px] text-beige/62 mt-1">{s.l}</div>
+                      <div className="text-[11px] text-beige mt-1">{s.l}</div>
                     </div>
                   ))}
                 </div>
@@ -542,7 +542,7 @@ export default function Home() {
       </section>
 
       {/* ─── CASE STUDIES PREVIEW ─── */}
-      <section className="section-padding bg-beige dark:bg-deep">
+      <section className="section-padding bg-beige">
         <div className="container-xl">
           <div className="flex flex-col md:flex-row items-start md:items-end justify-between gap-6 mb-14">
             <SectionTitle
@@ -554,7 +554,7 @@ export default function Home() {
             <RevealOnScroll delay={0.3}>
               <Link
                 to="/cases"
-                className="inline-flex items-center gap-2 text-sm font-semibold text-deep/70 dark:text-beige/70 hover:text-gold transition-colors whitespace-nowrap"
+                className="inline-flex items-center gap-2 text-sm font-semibold text-deep/70 hover:text-gold transition-colors whitespace-nowrap"
               >
                 {t('home.cases_preview.view_all')}
                 <ArrowRight size={13} />
@@ -598,7 +598,7 @@ export default function Home() {
               </h2>
             </RevealOnScroll>
             <RevealOnScroll delay={0.2}>
-              <h2 className="text-3xl md:text-4xl lg:text-6xl font-black tracking-tight leading-[1.05] text-beige/25 mb-4">
+              <h2 className="text-3xl md:text-4xl lg:text-6xl font-black tracking-tight leading-[1.05] text-beige mb-4">
                 {t('home.vision.title2')}
               </h2>
             </RevealOnScroll>
@@ -608,7 +608,7 @@ export default function Home() {
               </h2>
             </RevealOnScroll>
             <RevealOnScroll delay={0.4}>
-              <p className="text-beige/70 text-lg max-w-2xl mx-auto leading-relaxed">
+              <p className="text-beige text-lg max-w-2xl mx-auto leading-relaxed">
                 {t('home.vision.text')}
               </p>
             </RevealOnScroll>

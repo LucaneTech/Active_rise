@@ -103,8 +103,8 @@ export default function Navbar() {
               className="w-9 h-9 flex items-center justify-center rounded-md shadow-btn-ghost border border-gray-700/20"
             >
               {menuOpen
-                ? <X size={16} className="text-deep dark:text-beige" />
-                : <Menu size={16} className="text-deep dark:text-beige" />}
+                ? <X size={16} className="text-deep" />
+                : <Menu size={16} className="text-deep" />}
             </button>
           </div>
         </div>
@@ -118,7 +118,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -16 }}
             transition={{ duration: 0.28 }}
-            className="fixed inset-0 z-40 bg-beige dark:bg-deep pt-24 px-6 lg:hidden overflow-y-auto"
+            className="fixed inset-0 z-40 bg-beige pt-24 px-6 lg:hidden overflow-y-auto"
           >
             {/* Decorative circle top-right */}
             <div className="absolute top-16 right-8 w-32 h-32 rounded-md border border-gold/10 pointer-events-none" />
@@ -134,8 +134,8 @@ export default function Navbar() {
                 >
                   <Link
                     to={link.to}
-                    className={`flex items-center justify-between text-xl font-bold py-4 border-b border-deep/6 dark:border-beige/6 transition-colors ${
-                      isActive(link.to) ? 'text-gold' : 'text-deep dark:text-beige'
+                    className={`flex items-center justify-between text-xl font-bold py-4 border-b border-deep/6 transition-colors ${
+                      isActive(link.to) ? 'text-gold' : 'text-deep'
                     }`}
                   >
                     {link.label}
@@ -149,7 +149,7 @@ export default function Navbar() {
             <div className="mt-8 flex flex-col gap-3">
               <button
                 onClick={toggleLang}
-                className="flex items-center gap-2 text-xs font-semibold text-deep/65 dark:text-beige/65"
+                className="flex items-center gap-2 text-xs font-semibold text-deep/65"
               >
                 <Globe size={14} />
                 {i18n.language === 'fr' ? 'Switch to English' : 'Passer en Français'}

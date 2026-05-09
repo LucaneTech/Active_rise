@@ -83,7 +83,7 @@ export default function CaseStudies() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.55 }}
-                className="text-beige/72 text-xl leading-relaxed"
+                className="text-beige text-xl leading-relaxed"
               >
                 {t('cases.hero.text')}
               </motion.p>
@@ -111,7 +111,7 @@ export default function CaseStudies() {
                   ].map((s, i) => (
                     <div key={i} className="text-center bg-white/5 backdrop-blur-sm border border-gray-200/10  rounded-md px-3 py-3">
                       <div className="text-gold font-black text-lg tabular-nums leading-none mb-1">{s.value}</div>
-                      <div className="text-beige/68 text-[11px]">{s.label}</div>
+                      <div className="text-beige text-[11px]">{s.label}</div>
                     </div>
                   ))}
                 </div>
@@ -174,7 +174,7 @@ export default function CaseStudies() {
                     <div className="text-xl sm:text-3xl md:text-4xl font-black text-gold mb-1 sm:mb-2 tabular-nums">
                       {t(`cases.${c.numKey}.${kpi}_val`)}
                     </div>
-                    <p className={`text-[11px] sm:text-sm leading-tight ${caseIdx % 2 === 0 ? 'text-beige/80' : 'text-deep'}`}>
+                    <p className={`text-[11px] sm:text-sm leading-tight ${caseIdx % 2 === 0 ? 'text-beige' : 'text-deep'}`}>
                       {t(`cases.${c.numKey}.${kpi}_label`)}
                     </p>
                   </div>
@@ -198,7 +198,7 @@ export default function CaseStudies() {
                     <p className={`font-bold text-sm ${caseIdx % 2 === 0 ? 'text-beige' : 'text-deep'}`}>
                       {t(`cases.${c.numKey}.client_name`)}
                     </p>
-                    <p className={`text-xs ${caseIdx % 2 === 0 ? 'text-beige/65' : 'text-deep/65'}`}>
+                    <p className={`text-xs ${caseIdx % 2 === 0 ? 'text-beige' : 'text-deep/65'}`}>
                       {t(`cases.${c.numKey}.client_role`)}
                     </p>
                   </div>
@@ -253,7 +253,7 @@ export default function CaseStudies() {
                     <item.icon size={24} className="text-white" strokeWidth={1.5} />
                   </div>
                   <h3 className="font-bold text-beige mb-3">{item.title}</h3>
-                  <p className="text-beige/72 text-sm leading-relaxed">{item.desc}</p>
+                  <p className="text-beige text-sm leading-relaxed">{item.desc}</p>
                 </motion.div>
               </RevealOnScroll>
             ))}

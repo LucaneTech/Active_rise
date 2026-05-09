@@ -26,13 +26,13 @@ export default function Footer() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="font-black text-lg text-beige mb-1">Restez informé</h3>
-              <p className="text-beige/65 text-sm">Stratégies, tendances et insights de croissance — en exclusivité.</p>
+              <p className="text-beige text-sm">Stratégies, tendances et insights de croissance — en exclusivité.</p>
             </div>
             <div className="flex gap-2">
               <input
                 type="email"
                 placeholder="votre@email.com"
-                className="flex-1 min-w-0 bg-beige/5 border border-beige/12 rounded-md px-5 py-3 text-sm text-beige placeholder:text-beige/45 focus:outline-none focus:border-gold/40 transition-colors"
+                className="flex-1 min-w-0 bg-beige/5 border border-beige/12 rounded-md px-5 py-3 text-sm text-beige placeholder:text-beige focus:outline-none focus:border-gold/40 transition-colors"
               />
               <button className="bg-gold text-deep font-bold text-sm px-6 py-3 rounded-md hover:bg-gold/90 transition-colors whitespace-nowrap shrink-0">
                 S'abonner
@@ -49,7 +49,7 @@ export default function Footer() {
               <img src="images/white-logo.png" alt="logo active_rise" className='w-24 sm:w-28 md:w-48 h-auto object-contain' />
             </Link>
             <p className="text-gold font-semibold text-sm mb-3">{t('footer.tagline')}</p>
-            <p className="text-beige/65 text-sm leading-relaxed mb-7">{t('footer.desc')}</p>
+            <p className="text-beige text-sm leading-relaxed mb-7">{t('footer.desc')}</p>
             <div className="flex gap-2.5">
               {[
                 { icon: ExternalLink, href: '#' },
@@ -68,13 +68,13 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-bold text-xs tracking-widest uppercase text-beige/72 mb-5">{t('footer.nav_title')}</h4>
+            <h4 className="font-bold text-xs tracking-widest uppercase text-beige mb-5">{t('footer.nav_title')}</h4>
             <ul className="space-y-2.5">
               {navLinks.map((link) => (
                 <li key={link.to}>
                   <Link
                     to={link.to}
-                    className="text-sm text-beige/72 hover:text-gold transition-colors duration-200 flex items-center gap-2 group"
+                    className="text-sm text-beige hover:text-gold transition-colors duration-200 flex items-center gap-2 group"
                   >
                     <ArrowRight size={11} className="opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-200" />
                     {link.label}
@@ -85,13 +85,13 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-bold text-xs tracking-widest uppercase text-beige/72 mb-5">{t('footer.services_title')}</h4>
+            <h4 className="font-bold text-xs tracking-widest uppercase text-beige mb-5">{t('footer.services_title')}</h4>
             <ul className="space-y-2.5">
               {services.map((s, i) => (
                 <li key={i}>
                   <Link
                     to="/services"
-                    className="text-sm text-beige/72 hover:text-gold transition-colors duration-200 flex items-center gap-2 group"
+                    className="text-sm text-beige hover:text-gold transition-colors duration-200 flex items-center gap-2 group"
                   >
                     <ArrowRight size={11} className="opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-200" />
                     {s}
@@ -102,23 +102,23 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-bold text-xs tracking-widest uppercase text-beige/72 mb-5">{t('footer.contact_title')}</h4>
+            <h4 className="font-bold text-xs tracking-widest uppercase text-beige mb-5">{t('footer.contact_title')}</h4>
             <ul className="space-y-4 mb-8">
               <li className="flex items-start gap-3">
                 <Mail size={14} className="text-gold mt-0.5 shrink-0" />
-                <a href="mailto:contact@activerise.com" className="text-sm text-beige/72 hover:text-gold transition-colors">
+                <a href="mailto:contact@activerise.com" className="text-sm text-beige hover:text-gold transition-colors">
                   {t('contact.info.email_val')}
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <Phone size={14} className="text-gold mt-0.5 shrink-0" />
-                <a href="tel:+0000000" className="text-sm text-beige/72 hover:text-gold transition-colors">
+                <a href="tel:+0000000" className="text-sm text-beige hover:text-gold transition-colors">
                   {t('contact.info.phone_val')}
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin size={14} className="text-gold mt-0.5 shrink-0" />
-                <span className="text-sm text-beige/72">{t('contact.info.address_val')}</span>
+                <span className="text-sm text-beige">{t('contact.info.address_val')}</span>
               </li>
             </ul>
             <Link
@@ -131,13 +131,13 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-beige/[0.08] pt-7 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-beige/72">
+        <div className="border-t border-gray-400 pt-7 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-xs text-beige">
             © {new Date().getFullYear()} ActiveRise. {t('footer.rights')}
           </p>
           <div className="flex gap-6">
-            <a href="#" className="text-xs text-beige/72 hover:text-gold transition-colors">{t('footer.legal')}</a>
-            <a href="#" className="text-xs text-beige/72 hover:text-gold transition-colors">{t('footer.privacy')}</a>
+            <a href="#" className="text-xs text-beige hover:text-gold transition-colors">{t('footer.legal')}</a>
+            <a href="#" className="text-xs text-beige hover:text-gold transition-colors">{t('footer.privacy')}</a>
           </div>
         </div>
       </div>

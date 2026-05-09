@@ -57,7 +57,7 @@ export default function Services() {
   ];
 
   return (
-    <div className="bg-beige dark:bg-deep overflow-hidden">
+    <div className="bg-beige overflow-hidden">
 
       {/* ─── HERO ─── */}
       <section className="relative min-h-[75vh] flex items-center bg-deep overflow-hidden pt-12 md:pt-24">
@@ -85,7 +85,7 @@ export default function Services() {
                 <span className="text-gold">{t('services.hero.title2')}</span>
               </motion.h1>
               <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.55 }}
-                className="text-beige/72 text-xl leading-relaxed"
+                className="text-beige text-xl leading-relaxed"
               >
                 {t('services.hero.text')}
               </motion.p>
@@ -119,7 +119,7 @@ export default function Services() {
       </section>
 
       {/* ─── INTRO ─── */}
-      <section className="section-padding bg-beige dark:bg-deep">
+      <section className="section-padding bg-beige">
         <div className="container-xl">
           <div className="grid lg:grid-cols-2  md:gap-16 items-center">
             <div>
@@ -155,7 +155,7 @@ export default function Services() {
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.1 + i * 0.08 }}
-                    className="aspect-square bg-beige shadow-card border border-gold/50 rounded-md flex flex-col items-center justify-center gap-2 mt-4 hover:shadow-card-hover transition-shadow duration-300"
+                    className="aspect-square bg-beige shadow-card border border-gray-300 rounded-md flex flex-col items-center justify-center gap-2 mt-4 hover:shadow-card-hover transition-shadow duration-300"
                   >
                    <span className="w-10 h-10 rounded-full bg-gold flex items-center justify-center mb-1">
                      <item.icon size={22} className="text-white" strokeWidth={1.5} />
@@ -209,7 +209,7 @@ export default function Services() {
       </section>
 
       {/* ─── BRANDING ─── */}
-      <section className="section-padding bg-beige dark:bg-deep" id="branding">
+      <section className="section-padding bg-beige" id="branding">
         <div className="container-xl">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div className="grid gap-4 order-2 lg:order-1">
@@ -234,7 +234,7 @@ export default function Services() {
                 </span>
               </RevealOnScroll>
               <RevealOnScroll delay={0.1}>
-                <h2 className="text-3xl md:text-4xl font-black tracking-tight text-deep dark:text-beige leading-[1.05] mb-6">
+                <h2 className="text-3xl md:text-4xl font-black tracking-tight text-deep leading-[1.05] mb-6">
                   {t('services.branding.title')}{' '}
                   <span className="text-gold">{t('services.branding.title2')}</span>
                 </h2>
@@ -287,7 +287,7 @@ export default function Services() {
       </section>
 
       {/* ─── CREATION ─── */}
-      <section className="section-padding bg-beige dark:bg-deep" id="creation">
+      <section className="section-padding bg-beige" id="creation">
         <div className="container-xl">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div className="grid gap-4 order-2 lg:order-1">
@@ -312,7 +312,7 @@ export default function Services() {
                 </span>
               </RevealOnScroll>
               <RevealOnScroll delay={0.1}>
-                <h2 className="text-3xl md:text-4xl font-black tracking-tight text-deep dark:text-beige leading-[1.05] mb-6">
+                <h2 className="text-3xl md:text-4xl font-black tracking-tight text-deep leading-[1.05] mb-6">
                   {t('services.creation.title')}{' '}
                   <span className="text-gold">{t('services.creation.title2')}</span>
                 </h2>
@@ -365,7 +365,7 @@ export default function Services() {
       </section>
 
       {/* ─── CONSULTING ─── */}
-      <section className="section-padding bg-beige dark:bg-deep" id="consulting">
+      <section className="section-padding bg-beige" id="consulting">
         <div className="container-xl">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div className="grid gap-4 order-2 lg:order-1">
@@ -390,7 +390,7 @@ export default function Services() {
                 </span>
               </RevealOnScroll>
               <RevealOnScroll delay={0.1}>
-                <h2 className="text-3xl md:text-4xl font-black tracking-tight text-deep dark:text-beige leading-[1.05] mb-6">
+                <h2 className="text-3xl md:text-4xl font-black tracking-tight text-deep leading-[1.05] mb-6">
                   {t('services.consulting.title')}{' '}
                   <span className="text-gold">{t('services.consulting.title2')}</span>
                 </h2>
@@ -413,7 +413,7 @@ export default function Services() {
       />
 
       {/* ─── RESULTS ─── */}
-      <section className="section-padding bg-beige dark:bg-deep">
+      <section className="section-padding bg-beige">
         <div className="container-xl">
           <div className="text-center mb-16">
             <SectionTitle

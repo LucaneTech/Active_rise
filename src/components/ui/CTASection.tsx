@@ -20,16 +20,16 @@ export default function CTASection({
   badge, title, titleGold, text, btnPrimary, btnPrimaryLink = '/contact',
   btnSecondary, btnSecondaryLink = '/services', dark = true, desStyle,
 }: Props) {
-  const bg = dark ? 'bg-deep' : 'bg-beige dark:bg-deep';
-  const titleColor = dark ? 'text-beige' : 'text-deep dark:text-beige';
-  const textColor = desStyle ? 'text-beige/70' : 'text-deep';
+  const bg = dark ? 'bg-deep' : 'bg-beige';
+  const titleColor = dark ? 'text-beige' : 'text-deep';
+  const textColor = desStyle ? 'text-beige' : 'text-deep';
 
   return (
     <section className={`${bg} section-padding relative overflow-hidden`}>
       {/* Decorative circles */}
       <div className="hidden md:flex absolute top-1/2 left-10 -translate-y-1/2 -translate-x-1/2 w-96 h-96 rounded-full  pointer-events-none bg-gold" />
-      <div className="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-1/3 w-56 h-56 rounded-full border border-gold/[0.06] pointer-events-none bg-white/50" />
-      <div className="hidden md:flex absolute top-1/2 right-10 -translate-y-1/2 translate-x-1/2 w-80 h-80 rounded-full border border-gold/[0.07] pointer-events-none bg-white/50" />
+      <div className="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-1/3 w-56 h-56 rounded-full pointer-events-none bg-white/50" />
+      <div className="hidden md:flex absolute top-1/2 right-10 -translate-y-1/2 translate-x-1/2 w-80 h-80 rounded-full border border-gold pointer-events-none bg-white/50" />
       <div className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-1/3 w-48 h-48 rounded-full  pointer-events-none bg-gold" />
       {/* Small accent dot — top center */}
       <div className="absolute top-8 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-gold pointer-events-none " />
@@ -72,8 +72,8 @@ export default function CTASection({
                     to={btnSecondaryLink}
                     className={`inline-flex items-center gap-2.5 font-bold px-9 py-3 rounded-md transition-all duration-300 text-[13px] tracking-wide hover:text-gold ${
                       dark
-                        ? 'text-beige/70 shadow-[0_0_0_1px_rgba(252,248,238,0.15)] hover:shadow-[0_0_0_1px_rgba(211,170,42,0.5)]'
-                        : 'text-deep/70 dark:text-beige/70 shadow-btn-ghost hover:shadow-[0_0_0_1px_rgba(211,170,42,0.5)]'
+                        ? 'text-beige shadow-[0_0_0_1px_rgba(252,248,238,0.15)] hover:shadow-[0_0_0_1px_rgba(211,170,42,0.5)]'
+                        : 'text-deep/70 shadow-btn-ghost hover:shadow-[0_0_0_1px_rgba(211,170,42,0.5)]'
                     }`}
                   >
                     {btnSecondary}

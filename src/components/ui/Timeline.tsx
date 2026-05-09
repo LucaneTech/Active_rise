@@ -14,7 +14,7 @@ interface Props {
 
 export default function Timeline({ badge, title, titleGold, items }: Props) {
   return (
-    <section className="section-padding bg-beige dark:bg-deep">
+    <section className="section-padding bg-beige">
       <div className="container-xl">
         <div className="text-center mb-16">
           {badge && (
@@ -41,7 +41,7 @@ export default function Timeline({ badge, title, titleGold, items }: Props) {
                   <div className={`flex-1 ${i % 2 === 0 ? 'text-right' : 'text-left'}`}>
                     <span className="text-3xl font-black text-gold">{item.year}</span>
                   </div>
-                  <div className="relative z-10 w-4 h-4 rounded-full bg-gold border-4 border-beige dark:border-deep shrink-0" />
+                  <div className="relative z-10 w-4 h-4 rounded-full bg-gold border-4 border-beige shrink-0" />
                   <div className="flex-1">
                     <p className="text-deep  text-sm leading-relaxed">{item.event}</p>
                   </div>
