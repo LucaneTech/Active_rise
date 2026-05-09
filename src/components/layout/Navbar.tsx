@@ -121,8 +121,8 @@ export default function Navbar() {
             className="fixed inset-0 z-40 bg-beige pt-24 px-6 lg:hidden overflow-y-auto"
           >
             {/* Decorative circle top-right */}
-            <div className="absolute top-16 right-8 w-32 h-32 rounded-md border border-gold/10 pointer-events-none" />
-            <div className="absolute top-24 right-16 w-16 h-16 rounded-md border border-gold/15 pointer-events-none" />
+          
+            <div className="absolute top-18 -right-5 w-12 h-12 rounded-full  bg-gold pointer-events-none" />
 
             <nav className="flex flex-col gap-1">
               {links.map((link, i) => (
