@@ -22,9 +22,9 @@ export default function ProcessSection({ badge, title, titleGold, steps, dark = 
   const cardBg = dark
     ? 'glass-card shadow-[0_2px_20px_rgba(0,0,0,0.18)] hover:shadow-[0_4px_32px_rgba(211,170,42,0.10)] border border-beige/[0.07]'
     : 'bg-white/70 dark:glass-card shadow-card hover:shadow-card-hover border border-deep/[0.05] dark:border-beige/[0.07]';
-  const numColor = 'text-deep' ;
-  const stepTitleColor ='text-deep';
-  const stepDescColor = 'text-slate-600 ';
+  const numColor = 'text-beige' ;
+  const stepTitleColor ='text-gold';
+  const stepDescColor = 'text-gray-200 ';
  
   return (
     <section className={`${bg} section-padding`}>
@@ -32,8 +32,8 @@ export default function ProcessSection({ badge, title, titleGold, steps, dark = 
         <div className="text-center mb-14">
           {badge && (
             <RevealOnScroll delay={0}>
-              <span className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-gold shadow-badge px-4 py-1.5 rounded-full mb-5">
-                <span className="w-1.5 h-1.5 rounded-full bg-gold" />
+              <span className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-gold shadow-badge px-4 py-1.5 rounded-md mb-5">
+                <span className="w-1.5 h-1.5 rounded-md bg-gold" />
                 {badge}
               </span>
             </RevealOnScroll>
@@ -54,7 +54,7 @@ export default function ProcessSection({ badge, title, titleGold, steps, dark = 
               <div className={`relative rounded-2xl p-8 h-full transition-shadow duration-300 overflow-hidden ${cardBg}`}>
 
                 {/* Step number badge — top left */}
-                <div className="w-9 h-9 rounded-full bg-gold/12 flex items-center justify-center mb-5 relative z-10">
+                <div className="w-9 h-9 rounded-md bg-gold/12 flex items-center justify-center mb-5 relative z-10">
                   <span className="text-gold font-black text-xs">
                     {step.number || String(i + 1).padStart(2, '0')}
                   </span>
@@ -66,7 +66,7 @@ export default function ProcessSection({ badge, title, titleGold, steps, dark = 
                 </div>
 
                 {step.icon && (
-                  <div className="w-10 h-10 rounded-xl bg-gold/10 flex items-center justify-center mb-4">
+                  <div className="w-10 h-10 rounded-md bg-gold/10 flex items-center justify-center mb-4">
                     <step.icon size={18} className="text-gold" strokeWidth={1.5} />
                   </div>
                 )}

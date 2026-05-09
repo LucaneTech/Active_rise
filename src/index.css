@@ -64,14 +64,14 @@ html.dark {
   .border-deep { border-color: #110f09; }
 
   .section-padding {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   @media (min-width: 1024px) {
     .section-padding {
-      padding-top: 8rem;
-      padding-bottom: 8rem;
+      padding-top: 7rem;
+      padding-bottom: 7rem;
     }
   }
 
@@ -194,7 +194,7 @@ html.dark {
     top: 3.25rem;
     left: calc(12.5% + 1.5rem);
     right: calc(12.5% + 1.5rem);
-    height: 1px;
+    height: 3px;
     background: linear-gradient(to right, rgba(211, 170, 42, 0) 0%, rgba(211, 170, 42, 0.25) 20%, rgba(211, 170, 42, 0.25) 80%, rgba(211, 170, 42, 0) 100%);
     pointer-events: none;
     z-index: 0;

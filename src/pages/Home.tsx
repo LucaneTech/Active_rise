@@ -168,7 +168,7 @@ export default function Home() {
               initial={{ opacity: 0, x: 40, y: 16 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ duration: 1, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
-              className="hidden lg:block relative"
+              className="relative"
             >
               <div className="relative">
                 {/* Main dashboard card */}

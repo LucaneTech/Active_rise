@@ -23,14 +23,14 @@ function ServiceItem({ icon: Icon, title, description, delay = 0 }: ServiceItemP
     <RevealOnScroll delay={delay} direction="up">
       <motion.div
         whileHover={{ y: -5 }}
-        className="group flex items-start gap-5 p-6 rounded-4xl shadow-card bg-beige dark:bg-deep hover:shadow-card-hover transition-shadow duration-300"
+        className="group flex items-start gap-5 p-6 rounded-md shadow-card bg-transparent  border border-gray-200/30 hover:shadow-card-hover transition-shadow duration-300"
       >
-        <div className="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center shrink-0 group-hover:bg-gold/20 transition-colors duration-300">
+        <div className="w-12 h-12 rounded-md bg-gray-200/20 border border-gray-500/30 flex items-center justify-center shrink-0 transition-colors duration-300">
           <Icon size={20} className="text-gold" strokeWidth={1.5} />
         </div>
         <div>
-          <h4 className="font-bold text-deep dark:text-beige mb-1">{title}</h4>
-          <p className="text-deep/70 dark:text-beige/70 text-sm leading-relaxed">{description}</p>
+          <h4 className="font-bold text-gold mb-1">{title}</h4>
+          <p className="text-slate-400 text-sm leading-relaxed">{description}</p>
         </div>
       </motion.div>
     </RevealOnScroll>
@@ -60,7 +60,7 @@ export default function Services() {
     <div className="bg-beige dark:bg-deep overflow-hidden">
 
       {/* ─── HERO ─── */}
-      <section className="relative min-h-[75vh] flex items-center bg-deep overflow-hidden pt-24">
+      <section className="relative min-h-[75vh] flex items-center bg-deep overflow-hidden pt-12 md:pt-24">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_100%_50%,rgba(211,170,42,0.1),transparent)]" />
         </div>
@@ -96,14 +96,14 @@ export default function Services() {
               initial={{ opacity: 0, x: 40 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
-              className="hidden lg:block relative rounded-2xl overflow-hidden"
+              className="relative block relative rounded-md overflow-hidden"
             >
               <img
                 src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80"
                 alt="Espace de travail stratégique ActiveRise"
                 className="w-full h-80 object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-deep/70 via-deep/10 to-transparent pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-deep/10 to-transparent pointer-events-none" />
               <div className="absolute bottom-5 left-5 right-5">
                 <div className="flex flex-wrap gap-2">
                   {['Marketing', 'Branding', 'Web', 'Conseil', 'SEO'].map((tag) => (
@@ -121,22 +121,22 @@ export default function Services() {
       {/* ─── INTRO ─── */}
       <section className="section-padding bg-beige dark:bg-deep">
         <div className="container-xl">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2  md:gap-16 items-center">
             <div>
               <RevealOnScroll delay={0}>
-                <span className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-gold shadow-badge px-4 py-1.5 rounded-full mb-6">
-                  <span className="w-1 h-1 rounded-full bg-gold" />
+                <span className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-gold shadow-badge px-4 py-1.5 rounded-md mb-6">
+                  <span className="w-1 h-1 rounded-md bg-gold" />
                   {t('services.intro.badge')}
                 </span>
               </RevealOnScroll>
               <RevealOnScroll delay={0.1}>
-                <h2 className="text-3xl md:text-4xl font-black tracking-tight text-deep dark:text-beige mb-6">
+                <h2 className="text-3xl md:text-4xl font-black tracking-tight text-deep  mb-6">
                   {t('services.intro.title')}{' '}
                   <span className="text-gold">{t('services.intro.title2')}</span>
                 </h2>
               </RevealOnScroll>
               <RevealOnScroll delay={0.2}>
-                <p className="text-deep/70 dark:text-beige/70 text-lg leading-relaxed">{t('services.intro.text')}</p>
+                <p className="text-deep text-lg leading-relaxed">{t('services.intro.text')}</p>
               </RevealOnScroll>
             </div>
             <RevealOnScroll delay={0.2} direction="right">
@@ -155,10 +155,12 @@ export default function Services() {
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.1 + i * 0.08 }}
-                    className="aspect-square bg-deep/5 dark:bg-beige/5 shadow-card rounded-[40px] flex flex-col items-center justify-center gap-2 hover:shadow-card-hover transition-shadow duration-300"
+                    className="aspect-square bg-beige shadow-card border border-gold/50 rounded-md flex flex-col items-center justify-center gap-2 mt-4 hover:shadow-card-hover transition-shadow duration-300"
                   >
-                    <item.icon size={22} className="text-gold" strokeWidth={1.5} />
-                    <span className="text-xs font-semibold text-deep dark:text-beige">{item.label}</span>
+                   <span className="w-10 h-10 rounded-full bg-gold flex items-center justify-center mb-1">
+                     <item.icon size={22} className="text-white" strokeWidth={1.5} />
+                   </span>
+                    <span className="text-xs font-semibold text-deep ">{item.label}</span>
                   </motion.div>
                 ))}
               </div>
@@ -173,8 +175,8 @@ export default function Services() {
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div>
               <RevealOnScroll delay={0}>
-                <span className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-gold shadow-badge px-4 py-1.5 rounded-full mb-5">
-                  <span className="w-1 h-1 rounded-full bg-gold" />
+                <span className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-gold shadow-badge px-4 py-1.5 rounded-md mb-5">
+                  <span className="w-1 h-1 rounded-md bg-gold" />
                   {t('services.marketing.badge')}
                 </span>
               </RevealOnScroll>
@@ -425,13 +427,13 @@ export default function Services() {
               <RevealOnScroll key={i} delay={i * 0.1} direction="up">
                 <motion.div
                   whileHover={{ y: -6 }}
-                  className="group text-center p-8 bg-beige dark:bg-deep shadow-card rounded-[40px] hover:shadow-card-hover transition-shadow duration-300"
+                  className="group text-center p-8 bg-beige shadow-card rounded-md hover:shadow-card-hover transition-shadow duration-300 border border-gray-600/30"
                 >
-                  <div className="w-14 h-14 rounded-xl bg-gold/10 flex items-center justify-center mx-auto mb-6 group-hover:bg-gold/20 transition-colors duration-300">
-                    <r.icon size={24} className="text-gold" strokeWidth={1.5} />
+                  <div className="w-14 h-14 rounded-full bg-gold flex items-center justify-center mx-auto mb-6 group-hover:bg-gold/20 transition-colors duration-300">
+                    <r.icon size={24} className="text-white" strokeWidth={1.5} />
                   </div>
-                  <h3 className="font-bold text-deep dark:text-beige mb-3">{t(r.titleKey)}</h3>
-                  <p className="text-deep/70 dark:text-beige/70 text-sm leading-relaxed">{t(r.descKey)}</p>
+                  <h3 className="font-bold text-deep  mb-3">{t(r.titleKey)}</h3>
+                  <p className="text-deep text-sm leading-relaxed">{t(r.descKey)}</p>
                 </motion.div>
               </RevealOnScroll>
             ))}
