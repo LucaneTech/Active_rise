@@ -3,25 +3,27 @@
     "home": "Home",
     "about": "About",
     "services": "Services",
-    "cases": "Case Studies",
+    "marketing": "Marketing",
+    "communication": "Communication",
+    "performance": "Commercial Performance",
     "contact": "Contact",
-    "cta": "Start a project"
+    "cta": "Contact"
   },
   "home": {
     "hero": {
-      "badge": "Premium strategic agency",
+      "badge": "",
       "title1": "From strategy",
       "title2": "to action.",
-      "subtitle": "Active Rise structures, guides and activates business growth. Less friction. More action.",
-      "cta_primary": "Start a project",
-      "cta_secondary": "Discover our services",
+      "subtitle": "ActiveRise supports companies in their growth through marketing, communication, commercial performance and digital development - from thinking to execution.",
+      "cta_primary": "Request a free diagnosis",
+      "cta_secondary": "",
       "scroll": "Scroll"
     },
     "philosophy": {
-      "badge": "Our philosophy",
-      "title": "We don't just produce.",
-      "title2": "We activate.",
-      "text": "Active Rise goes beyond simple communication. We structure, guide and activate your company's growth with an integrated, results-oriented approach.",
+      "badge": "Who we are",
+      "title": "ActiveRise is a marketing, communication and commercial performance agency.",
+      "title2": "",
+      "text": "We do not just advise - we structure, guide and activate your company's growth.",
       "quote": "Because a strategy only has value when it is executed."
     },
     "methodology": {
@@ -43,60 +45,55 @@
     },
     "services": {
       "badge": "Our domains",
-      "title": "Expertise",
-      "title2": "at the service of your growth",
-      "marketing_title": "Digital Marketing",
-      "marketing_desc": "Campaigns, emailing, content, acquisition and customer loyalty.",
-      "branding_title": "Branding & Identity",
-      "branding_desc": "Logo, brand guidelines, visual identity and brand consistency.",
-      "communication_title": "Communication",
-      "communication_desc": "Digital, institutional communication and message structuring.",
-      "creation_title": "Visual Creation",
-      "creation_desc": "Visuals, advertising materials, videos, spots and podcasts.",
-      "web_title": "Web & SEO",
-      "web_desc": "High-performance website development with SEO optimization.",
-      "consulting_title": "Strategic Consulting",
-      "consulting_desc": "Audit, growth consulting and execution support.",
+      "title": "4 structured blocks",
+      "title2": "for your growth",
+      "marketing_title": "01 Marketing",
+      "marketing_desc": "Global marketing strategy, digital marketing, acquisition campaigns, customer loyalty and project management.",
+      "communication_title": "02 Communication",
+      "communication_desc": "Corporate communication, digital communication, message structuring and brand consistency.",
+      "creation_title": "03 Creation & Branding",
+      "creation_desc": "Visual identity, brand guidelines, content creation, video, podcast, advertising assets and website development with SEO.",
+      "performance_title": "04 Commercial Performance",
+      "performance_desc": "Strategic consulting, sales optimization, commercial team support and performance management.",
       "view_all": "View all services"
     },
     "why": {
-      "badge": "Why choose us",
-      "title": "What sets us",
-      "title2": "apart",
-      "r1_title": "Global strategic vision",
-      "r1_desc": "An integrated approach that connects marketing, communication and commercial performance.",
+      "badge": "What sets us apart",
+      "title": "Beyond advice:",
+      "title2": "an execution partner",
+      "r1_title": "Integrated vision",
+      "r1_desc": "We connect marketing, communication, branding and commercial performance in a coherent, unified logic.",
       "r2_title": "Results-oriented",
-      "r2_desc": "Every action is measured, optimized and aligned with your growth objectives.",
-      "r3_title": "Tailored support",
-      "r3_desc": "We adapt our approach to your sector, your challenges and your vision.",
-      "r4_title": "Execution partner",
-      "r4_desc": "We don't just advise — we act with you to transform plans into results."
+      "r2_desc": "Every recommendation is concrete, every action measurable. We lead with indicators, not intentions.",
+      "r3_title": "Execution commitment",
+      "r3_desc": "We do not deliver a report and leave. We stay with our clients until results are achieved.",
+      "summary": "An execution partner present at every stage, focused on measurable growth and continuous delivery."
     },
     "stats": {
       "badge": "By the numbers",
       "title": "Results",
       "title2": "that speak",
-      "s1_value": "150+",
+      "s1_value": "",
       "s1_label": "Companies supported",
-      "s2_value": "94%",
+      "s2_value": "",
       "s2_label": "Client satisfaction rate",
-      "s3_value": "3×",
+      "s3_value": "",
       "s3_label": "Average growth generated",
-      "s4_value": "8+",
+      "s4_value": "",
       "s4_label": "Years of expertise"
     },
     "process": {
       "badge": "How we work",
-      "title": "A simple and",
-      "title2": "effective process",
+      "title": "A structured approach,",
+      "title2": "from analysis to action",
       "p1_title": "First contact",
       "p1_desc": "Initial exchange to understand your situation, objectives and challenges.",
-      "p2_title": "Audit & Analysis",
-      "p2_desc": "In-depth diagnosis of your company to identify growth levers.",
+      "p2_title": "Diagnosis & Audit",
+      "p2_desc": "In-depth analysis of your company to identify blockages and growth levers.",
       "p3_title": "Strategic proposal",
-      "p3_desc": "Presentation of a tailored action plan adapted to your objectives.",
+      "p3_desc": "Development of a tailor-made action plan aligned with your objectives.",
       "p4_title": "Execution & Monitoring",
-      "p4_desc": "Deployment of actions with regular monitoring and continuous adjustments."
+      "p4_desc": "Implementation of actions with regular monitoring and continuous adjustments."
     },
     "testimonials": {
       "badge": "Testimonials",
@@ -138,10 +135,10 @@
       "text": "With consistency and efficiency. Active Rise supports you in this transformation so that every action counts and every decision is performance-oriented."
     },
     "cta": {
-      "title": "Ready to",
-      "title2": "activate your growth?",
-      "text": "Let's discuss your project. A free diagnosis to identify your performance levers.",
-      "btn_primary": "Start now",
+      "title": "Your growth begins with",
+      "title2": "a conversation.",
+      "text": "A free diagnosis to identify your performance levers and define the first concrete actions.",
+      "btn_primary": "Request a free diagnosis",
       "btn_secondary": "Contact us"
     }
   },
@@ -150,7 +147,7 @@
       "badge": "Our story",
       "title": "A strategic partner",
       "title2": "for your growth",
-      "text": "Active Rise was born from a conviction: that companies deserve a partner who goes beyond advice to truly transform their results."
+      "text": "ActiveRise was born from a conviction: that companies deserve a partner who goes beyond advice to truly transform their results."
     },
     "vision": {
       "badge": "Vision",
@@ -163,38 +160,30 @@
       "badge": "Mission & History",
       "title": "Born from a deep",
       "title2": "conviction",
-      "text1": "Active Rise was founded on a simple observation: too many companies have a clear vision but struggle to transform it into concrete, measurable actions.",
+      "text1": "ActiveRise was founded on a simple observation: too many companies have a clear vision but struggle to transform it into concrete, measurable actions.",
       "text2": "Our mission is to bridge this gap between strategy and execution, bringing each client an integrated approach that connects marketing, communication and commercial performance."
     },
     "values": {
       "badge": "Our values",
       "title": "What guides",
       "title2": "each of our actions",
-      "v1_title": "Excellence",
-      "v1_desc": "We aim for excellence in every deliverable, every strategy and every interaction.",
-      "v2_title": "Integrity",
-      "v2_desc": "Honesty and transparency are at the heart of every client relationship.",
-      "v3_title": "Innovation",
-      "v3_desc": "We constantly challenge our methods to stay at the cutting edge.",
-      "v4_title": "Impact",
-      "v4_desc": "Every action must produce measurable and significant results.",
-      "v5_title": "Consistency",
-      "v5_desc": "Perfect alignment between vision, messages and actions at all levels.",
-      "v6_title": "Partnership",
-      "v6_desc": "We commit as if it were our own company."
+      "v1_title": "Rigor",
+      "v1_desc": "Every recommendation is grounded in precise analysis and demanding follow-through.",
+      "v2_title": "Total commitment",
+      "v2_desc": "We invest our resources and energy as if it were your own business.",
+      "v3_title": "Clarity above all",
+      "v3_desc": "Our plans, messages and deliverables are designed to be clear, useful and actionable."
     },
     "differentiation": {
       "badge": "What sets us apart",
       "title": "A truly",
       "title2": "integrated approach",
-      "d1_title": "360° Vision",
-      "d1_desc": "Marketing, communication and commercial performance connected in one coherent strategy.",
-      "d2_title": "Multidisciplinary expertise",
-      "d2_desc": "A team with complementary skills to cover all angles of your growth.",
-      "d3_title": "Data-driven approach",
-      "d3_desc": "Every decision is based on data, measurements and concrete results.",
-      "d4_title": "Agility and responsiveness",
-      "d4_desc": "We adapt quickly to market changes and new opportunities."
+      "d1_title": "Strategic advisor",
+      "d1_desc": "We clarify your growth path with an actionable roadmap.",
+      "d2_title": "Growth organizer",
+      "d2_desc": "We structure your levers for coherent and durable deployment.",
+      "d3_title": "Execution partner",
+      "d3_desc": "We support implementation all the way to results, together."
     },
     "expertise": {
       "badge": "Expertise",
@@ -233,8 +222,8 @@
     "cta": {
       "title": "Let's build",
       "title2": "your success together",
-      "text": "Join the companies that have chosen Active Rise as their strategic growth partner.",
-      "btn": "Get in touch"
+      "text": "Join the companies that have chosen ActiveRise as their strategic growth partner.",
+      "btn": "Request a free audit"
     }
   },
   "services": {
@@ -249,6 +238,45 @@
       "title": "Every service,",
       "title2": "a strategy",
       "text": "Our services are not isolated offerings. They integrate into a coherent and global approach, orchestrated to maximize your growth at every level."
+    },
+    "hub": {
+      "badge": "Our pillars",
+      "title": "A 360° expertise",
+      "title2": "serving your growth",
+      "marketing": {
+        "title": "01 Marketing",
+        "desc": "Global marketing strategy, acquisition, loyalty and project management.",
+        "label": "Marketing"
+      },
+      "communication": {
+        "title": "02 Communication",
+        "desc": "Positioning, messaging and visibility to amplify your image.",
+        "label": "Communication"
+      },
+      "creation": {
+        "title": "03 Creation & Web Development",
+        "desc": "Identity, content and digital presence for a modern brand experience.",
+        "label": "Creation & Web"
+      },
+      "performance": {
+        "title": "04 Commercial Performance",
+        "desc": "Commercial management, KPIs and optimization to turn ambition into growth.",
+        "label": "Commercial Performance"
+      }
+    },
+    "page": {
+      "marketing": {
+        "text": "We support your commercial growth with conversion-driven marketing tailored to your market."
+      },
+      "communication": {
+        "text": "We strengthen your presence and image to build credibility, visibility and audience engagement."
+      },
+      "creation": {
+        "text": "We craft your identity, content and website to deliver a seamless, memorable and high-performing brand experience."
+      },
+      "performance": {
+        "text": "We structure your commercial processes, KPIs and performance management to convert ambition into sustainable growth."
+      }
     },
     "marketing": {
       "badge": "Marketing",
@@ -515,7 +543,7 @@
     "info": {
       "title": "Our contact details",
       "email_label": "Email",
-      "email_val": "contact@activerise.com",
+      "email_val": "contact@activerise.pro",
       "phone_label": "Phone",
       "phone_val": "+33 1 23 45 67 89",
       "address_label": "Address",
@@ -562,10 +590,10 @@
     "nav_title": "Navigation",
     "services_title": "Services",
     "contact_title": "Contact",
-    "s1": "Digital Marketing",
-    "s2": "Branding & Identity",
-    "s3": "Communication",
-    "s4": "Web & SEO",
+    "s1": "Marketing",
+    "s2": "Communication & Branding",
+    "s3": "Creation & Web Development",
+    "s4": "Commercial Performance",
     "s5": "Consulting",
     "rights": "All rights reserved.",
     "legal": "Legal notice",

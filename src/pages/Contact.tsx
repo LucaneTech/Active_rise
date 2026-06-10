@@ -47,21 +47,38 @@ export default function Contact() {
     <div className="bg-beige overflow-hidden">
 
       {/* ─── HERO ─── */}
-      <section className="relative min-h-[60vh] flex items-center bg-deep overflow-hidden pt-24">
+      <section className="relative min-h-[65vh] flex items-center bg-deep overflow-hidden pt-24">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_60%_at_65%_40%,rgba(211,170,42,0.15),transparent)]" />
-          <div className="absolute top-0 right-0 w-1/2 h-full bg-[radial-gradient(ellipse_50%_70%_at_100%_50%,rgba(211,170,42,0.08),transparent)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_60%_40%,rgba(211,170,42,0.18),transparent)]" />
+          {/* Grille fine */}
           <div
-            className="absolute inset-0 opacity-[0.08]"
+            className="absolute inset-0"
             style={{
-              backgroundImage: `repeating-linear-gradient(0deg, transparent, transparent 80px, #d3aa2a 80px, #d3aa2a 81px), repeating-linear-gradient(90deg, transparent, transparent 80px, #d3aa2a 80px, #d3aa2a 81px)`,
+              backgroundImage: `
+        repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 79px,
+          rgba(211, 170, 42, 0.12) 79px,
+          rgba(211, 170, 42, 0.25) 80px
+        ),
+        repeating-linear-gradient(
+          90deg,
+          transparent,
+          transparent 79px,
+          rgba(211, 170, 42, 0.12) 79px,
+          rgba(211, 170, 42, 0.25) 80px
+        )
+      `,
+              backgroundSize: '80px 80px',
             }}
           />
+          <div className="absolute inset-0 bg-linear-to-t from-black/30 via-transparent to-transparent" />
         </div>
-        <div className="container-xl relative z-10 py-20 text-center">
+        <div className="container-xl relative z-10 py-16 md:py-24 text-center">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.2 }}>
-            <span className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-gold shadow-badge px-4 py-1.5 rounded-md mb-6">
-              <span className="w-1.5 h-1.5 rounded-md bg-gold" />
+            <span className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-gold shadow-badge px-4 py-1.5 rounded-full mb-6">
+              <span className="w-1.5 h-1.5 rounded-full bg-gold" />
               {t('contact.hero.badge')}
             </span>
           </motion.div>
@@ -76,23 +93,25 @@ export default function Contact() {
             <span className="text-gold">{t('contact.hero.title2')}</span>
           </motion.h1>
           <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.55 }}
-            className="text-beige text-xl leading-relaxed max-w-xl mx-auto"
+            className="text-beige text-lg leading-relaxed max-w-2xl mx-auto"
           >
             {t('contact.hero.text')}
           </motion.p>
         </div>
       </section>
 
+      <div className="section-separator" />
+
       {/* ─── FORM + INFO ─── */}
-      <section className="section-padding bg-beige">
+      <section className="section-padding bg-gray-50/50">
         <div className="container-xl">
           <div className="grid lg:grid-cols-5 gap-16">
 
             {/* FORM */}
             <div className="lg:col-span-3">
               <RevealOnScroll delay={0} direction="left">
-                <div className="bg-beige shadow-card rounded-md p-10">
-                  <h2 className="text-2xl font-black text-deep  mb-8">{t('contact.form.title')}</h2>
+                <div className="bg-white rounded-md p-10 shadow-card border border-gray-200/50">
+                  <h2 className="text-2xl font-black text-deep mb-8">{t('contact.form.title')}</h2>
 
                   <AnimatePresence mode="wait">
                     {submitted ? (

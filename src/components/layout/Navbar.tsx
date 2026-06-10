@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, ArrowRight, Globe } from 'lucide-react';
+import { Menu, X, ArrowRight } from 'lucide-react';
 
 export default function Navbar() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const location = useLocation();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,15 +22,13 @@ export default function Navbar() {
     { to: '/', label: t('nav.home') },
     { to: '/about', label: t('nav.about') },
     { to: '/services', label: t('nav.services') },
-    { to: '/cases', label: t('nav.cases') },
     { to: '/contact', label: t('nav.contact') },
   ];
 
-  const isActive = (to: string) =>
-    to === '/' ? location.pathname === '/' : location.pathname.startsWith(to);
-
-  const toggleLang = () => {
-    i18n.changeLanguage(i18n.language === 'fr' ? 'en' : 'fr');
+  const normalize = (to: string) => (to.includes('#') ? to.split('#')[0] : to);
+  const isActive = (to: string) => {
+    const normalized = normalize(to);
+    return normalized === '/' ? location.pathname === '/' : location.pathname.startsWith(normalized);
   };
 
   return (
@@ -76,14 +74,6 @@ export default function Navbar() {
 
           {/* Desktop actions */}
           <div className="hidden lg:flex items-center gap-2.5">
-            <button
-              onClick={toggleLang}
-              className="flex items-center gap-1.5 text-[11px] font-semibold text-deep transition-colors px-3 py-1.5 rounded-md shadow-btn-ghost"
-            >
-              <Globe size={12} />
-              {i18n.language === 'fr' ? 'EN' : 'FR'}
-            </button>
-            {/* <ThemeSwitcher /> */}
             <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
               <Link
                 to="/contact"
@@ -147,14 +137,7 @@ export default function Navbar() {
               ))}
             </nav>
             <div className="mt-8 flex flex-col gap-3">
-              <button
-                onClick={toggleLang}
-                className="flex items-center gap-2 text-xs font-semibold text-deep/65"
-              >
-                <Globe size={14} />
-                {i18n.language === 'fr' ? 'Switch to English' : 'Passer en Français'}
-              </button>
-              <Link
+                <Link
                 to="/contact"
                 className="inline-flex items-center justify-center gap-2 bg-gold text-deep font-bold text-sm px-6 py-3.5 rounded-md"
               >

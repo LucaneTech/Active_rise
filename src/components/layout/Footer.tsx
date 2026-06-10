@@ -9,12 +9,14 @@ export default function Footer() {
     { to: '/', label: t('nav.home') },
     { to: '/about', label: t('nav.about') },
     { to: '/services', label: t('nav.services') },
-    { to: '/cases', label: t('nav.cases') },
     { to: '/contact', label: t('nav.contact') },
   ];
 
   const services = [
-    t('footer.s1'), t('footer.s2'), t('footer.s3'), t('footer.s4'), t('footer.s5'),
+    t('footer.s1'),
+    t('footer.s2'),
+    t('footer.s3'),
+    t('footer.s4'),
   ];
 
   return (
@@ -106,13 +108,13 @@ export default function Footer() {
             <ul className="space-y-4 mb-8">
               <li className="flex items-start gap-3">
                 <Mail size={14} className="text-gold mt-0.5 shrink-0" />
-                <a href="mailto:contact@activerise.com" className="text-sm text-beige hover:text-gold transition-colors">
+                <a href="mailto:contact@activerise.pro" className="text-sm text-beige hover:text-gold transition-colors">
                   {t('contact.info.email_val')}
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <Phone size={14} className="text-gold mt-0.5 shrink-0" />
-                <a href="tel:+0000000" className="text-sm text-beige hover:text-gold transition-colors">
+                <a href={`tel:${t('contact.info.phone_val')}`} className="text-sm text-beige hover:text-gold transition-colors">
                   {t('contact.info.phone_val')}
                 </a>
               </li>

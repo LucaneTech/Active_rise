@@ -49,14 +49,31 @@ export default function CaseStudies() {
       {/* ─── HERO ─── */}
       <section className="relative min-h-[75vh] flex items-center bg-deep overflow-hidden pt-12 md:pt-24">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_80%_at_80%_20%,rgba(211,170,42,0.25),transparent)]" />
-          <div className="absolute inset-0 opacity-[0.06]" style={{ backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 30px, #d3aa2a 30px, #d3aa2a 31px)` }} />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_60%_40%,rgba(211,170,42,0.2),transparent)]" />
+          {/* Grille fine */}
           <div
-            className="absolute inset-0 opacity-[0.022]"
+            className="absolute inset-0"
             style={{
-              backgroundImage: `repeating-linear-gradient(0deg, transparent, transparent 80px, #d3aa2a 80px, #d3aa2a 81px), repeating-linear-gradient(90deg, transparent, transparent 80px, #d3aa2a 80px, #d3aa2a 81px)`,
+              backgroundImage: `
+        repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 79px,
+          rgba(211, 170, 42, 0.12) 79px,
+          rgba(211, 170, 42, 0.25) 80px
+        ),
+        repeating-linear-gradient(
+          90deg,
+          transparent,
+          transparent 79px,
+          rgba(211, 170, 42, 0.12) 79px,
+          rgba(211, 170, 42, 0.25) 80px
+        )
+      `,
+              backgroundSize: '80px 80px',
             }}
           />
+          <div className="absolute inset-0 bg-linear-to-t from-black/30 via-transparent to-transparent" />
         </div>
         <div className="container-xl relative z-10 py-12 md:py-20">
           <div className="grid lg:grid-cols-2 gap-12 xl:gap-20 items-center">
@@ -64,8 +81,8 @@ export default function CaseStudies() {
             {/* Left: Text */}
             <div>
               <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.2 }}>
-                <span className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-gold shadow-badge px-4 py-1.5 rounded-md mb-6">
-                  <span className="w-1.5 h-1.5 rounded-md bg-gold animate-pulse" />
+                <span className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-gold shadow-badge px-4 py-1.5 rounded-full mb-6">
+                  <span className="w-1.5 h-1.5 rounded-full bg-gold animate-pulse" />
                   {t('cases.hero.badge')}
                 </span>
               </motion.div>
@@ -83,7 +100,7 @@ export default function CaseStudies() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.55 }}
-                className="text-beige text-xl leading-relaxed"
+                className="text-beige text-lg leading-relaxed max-w-2xl"
               >
                 {t('cases.hero.text')}
               </motion.p>
@@ -94,14 +111,14 @@ export default function CaseStudies() {
               initial={{ opacity: 0, x: 40 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
-              className="hidden lg:block relative rounded-md overflow-hidden"
+              className="hidden lg:block relative group rounded-2xl overflow-hidden shadow-2xl"
             >
               <img
-                src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=800&q=80"
+                src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=900&q=80"
                 alt="Résultats clients ActiveRise"
-                className="w-full h-96 object-cover"
+                className="w-full h-96 object-cover transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-linear-to-t from-deep/80 via-deep/15 to-transparent pointer-events-none" />
+              <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent pointer-events-none" />
               <div className="absolute bottom-6 left-6 right-6">
                 <div className="grid grid-cols-3 gap-3">
                   {[
@@ -109,7 +126,7 @@ export default function CaseStudies() {
                     { value: '150+', label: 'Clients' },
                     { value: '3×', label: 'ROI moyen' },
                   ].map((s, i) => (
-                    <div key={i} className="text-center bg-white/5 backdrop-blur-sm border border-gray-200/10  rounded-md px-3 py-3">
+                    <div key={i} className="text-center bg-white/5 backdrop-blur-sm border border-gray-200/10 rounded-md px-3 py-3">
                       <div className="text-gold font-black text-lg tabular-nums leading-none mb-1">{s.value}</div>
                       <div className="text-beige text-[11px]">{s.label}</div>
                     </div>
@@ -122,23 +139,25 @@ export default function CaseStudies() {
         </div>
       </section>
 
+      <div className="section-separator" />
+
       {/* ─── CASE STUDIES ─── */}
       {cases.map((c, caseIdx) => (
-        <section key={caseIdx} className={`section-padding ${caseIdx % 2 === 0 ? 'bg-deep' : 'bg-beige'}`}>
+        <section key={caseIdx} className={`section-padding ${caseIdx % 2 === 0 ? 'bg-gray-50/50' : 'bg-deep'}`}>
           <div className="container-xl">
             <div className="mb-8 md:mb-12">
               <RevealOnScroll delay={0}>
-                <span className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-gold shadow-badge px-4 py-1.5 rounded-md mb-4">
+                <span className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-gold shadow-badge px-4 py-1.5 rounded-full mb-4">
                   {t(`cases.${c.numKey}.tag`)}
                 </span>
               </RevealOnScroll>
               <RevealOnScroll delay={0.1}>
-                <h2 className={`text-2xl sm:text-3xl md:text-4xl font-black tracking-tight leading-[1.05] mb-2 ${caseIdx % 2 === 0 ? 'text-beige' : 'text-deep'}`}>
+                <h2 className={`text-2xl sm:text-3xl md:text-4xl font-black tracking-tight leading-[1.05] mb-2 ${caseIdx % 2 === 0 ? 'text-deep' : 'text-beige'}`}>
                   {t(`cases.${c.numKey}.title`)}
                 </h2>
               </RevealOnScroll>
               <RevealOnScroll delay={0.15}>
-                <p className={`text-lg font-semibold ${caseIdx % 2 === 0 ? 'text-gold' : 'text-gold'}`}>
+                <p className={`text-lg font-semibold text-gold`}>
                   {t(`cases.${c.numKey}.company`)}
                 </p>
               </RevealOnScroll>
@@ -146,21 +165,21 @@ export default function CaseStudies() {
 
             <div className="grid lg:grid-cols-2 gap-4 md:gap-12 mb-8 md:mb-12">
               <RevealOnScroll delay={0.1} direction="left">
-                <div className={`rounded-md p-5 sm:p-8 border border-gray-600/10 shadow-lg ${caseIdx % 2 === 0 ? 'bg-deep' : 'bg-beige'}`}>
+                <div className={`rounded-md p-5 sm:p-8 border shadow-card ${caseIdx % 2 === 0 ? 'bg-white border-gray-200/50' : 'bg-deep/80 border-gray-600/20'}`}>
                   <h3 className="text-sm font-bold tracking-widest uppercase mb-3 text-gold">
                     {t(`cases.${c.numKey}.challenge_label`)}
                   </h3>
-                  <p className={`leading-relaxed text-sm sm:text-base ${caseIdx % 2 === 0 ? 'text-beige' : 'text-deep'}`}>
+                  <p className={`leading-relaxed text-sm sm:text-base ${caseIdx % 2 === 0 ? 'text-deep' : 'text-beige'}`}>
                     {t(`cases.${c.numKey}.challenge`)}
                   </p>
                 </div>
               </RevealOnScroll>
               <RevealOnScroll delay={0.2} direction="right">
-                <div className={`rounded-md p-5 sm:p-8 border border-gray-600/10 shadow-lg ${caseIdx % 2 === 0 ? 'bg-deep' : 'bg-beige'}`}>
+                <div className={`rounded-md p-5 sm:p-8 border shadow-card ${caseIdx % 2 === 0 ? 'bg-white border-gray-200/50' : 'bg-deep/80 border-gray-600/20'}`}>
                   <h3 className="text-sm font-bold tracking-widest uppercase mb-3 text-gold">
                     {t(`cases.${c.numKey}.solution_label`)}
                   </h3>
-                  <p className={`leading-relaxed text-sm sm:text-base ${caseIdx % 2 === 0 ? 'text-beige' : 'text-deep'}`}>
+                  <p className={`leading-relaxed text-sm sm:text-base ${caseIdx % 2 === 0 ? 'text-deep' : 'text-beige'}`}>
                     {t(`cases.${c.numKey}.solution`)}
                   </p>
                 </div>
@@ -170,11 +189,11 @@ export default function CaseStudies() {
             <div className="grid grid-cols-3 gap-2 sm:gap-4 mb-8 md:mb-12">
               {['kpi1', 'kpi2', 'kpi3'].map((kpi, i) => (
                 <RevealOnScroll key={i} delay={i * 0.1} direction="up">
-                  <div className="text-center p-3 sm:p-6 rounded-md border border-gray-600/10 shadow-lg">
+                  <div className={`text-center p-3 sm:p-6 rounded-md border shadow-card ${caseIdx % 2 === 0 ? 'bg-white border-gray-200/50' : 'bg-deep/80 border-gray-600/20'}`}>
                     <div className="text-xl sm:text-3xl md:text-4xl font-black text-gold mb-1 sm:mb-2 tabular-nums">
                       {t(`cases.${c.numKey}.${kpi}_val`)}
                     </div>
-                    <p className={`text-[11px] sm:text-sm leading-tight ${caseIdx % 2 === 0 ? 'text-beige' : 'text-deep'}`}>
+                    <p className={`text-[11px] sm:text-sm leading-tight ${caseIdx % 2 === 0 ? 'text-deep' : 'text-beige'}`}>
                       {t(`cases.${c.numKey}.${kpi}_label`)}
                     </p>
                   </div>
@@ -183,9 +202,9 @@ export default function CaseStudies() {
             </div>
 
             <RevealOnScroll delay={0.3}>
-              <div className={`rounded-2xl p-5 sm:p-8 border-l-4 border-gold pl-6 sm:pl-10 ${caseIdx % 2 === 0 ? 'bg-deep border' : 'bg-beige'}`}>
+              <div className={`rounded-2xl p-5 sm:p-8 border-l-4 border-gold pl-6 sm:pl-10 shadow-card ${caseIdx % 2 === 0 ? 'bg-white' : 'bg-deep/80 border border-gray-600/20'}`}>
                 <Quote size={24} className="text-gold mb-3 sm:mb-4" strokeWidth={1.5} />
-                <p className={`text-base sm:text-xl italic leading-relaxed mb-4 sm:mb-6 ${caseIdx % 2 === 0 ? 'text-beige' : 'text-deep'}`}>
+                <p className={`text-base sm:text-xl italic leading-relaxed mb-4 sm:mb-6 ${caseIdx % 2 === 0 ? 'text-deep' : 'text-beige'}`}>
                   "{t(`cases.${c.numKey}.testimonial`)}"
                 </p>
                 <div className="flex items-center gap-3 sm:gap-4">
@@ -195,10 +214,10 @@ export default function CaseStudies() {
                     </span>
                   </div>
                   <div>
-                    <p className={`font-bold text-sm ${caseIdx % 2 === 0 ? 'text-beige' : 'text-deep'}`}>
+                    <p className={`font-bold text-sm ${caseIdx % 2 === 0 ? 'text-deep' : 'text-beige'}`}>
                       {t(`cases.${c.numKey}.client_name`)}
                     </p>
-                    <p className={`text-xs ${caseIdx % 2 === 0 ? 'text-beige' : 'text-deep/65'}`}>
+                    <p className={`text-xs ${caseIdx % 2 === 0 ? 'text-deep/65' : 'text-beige/65'}`}>
                       {t(`cases.${c.numKey}.client_role`)}
                     </p>
                   </div>
@@ -208,6 +227,8 @@ export default function CaseStudies() {
           </div>
         </section>
       ))}
+
+      <div className="section-separator" />
 
       {/* ─── PROCESS ─── */}
       <ProcessSection

@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(pkill -f \"vite --host\")",
-      "Bash(grep -o '--e-global-color-[^:]*:[^;]*')"
-    ]
-  }
-}

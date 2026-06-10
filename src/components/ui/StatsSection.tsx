@@ -16,6 +16,9 @@ interface Props {
 
 function AnimatedNumber({ value, isVisible }: { value: string; isVisible: boolean }) {
   const [display, setDisplay] = useState('0');
+  if (!value.trim()) {
+    return <span className="text-transparent">0</span>;
+  }
   const numMatch = value.match(/[\d.]+/);
   const num = numMatch ? parseFloat(numMatch[0]) : 0;
   const prefix = value.replace(/[\d.]+.*/, '');
@@ -36,7 +39,7 @@ function AnimatedNumber({ value, isVisible }: { value: string; isVisible: boolea
     requestAnimationFrame(step);
   }, [isVisible, num]);
 
-  return <span>{prefix}{display}{suffix}</span>;
+  return <span>+{display}</span>;
 }
 
 export default function StatsSection({ badge, title, titleGold, stats, dark = false }: Props) {
@@ -56,8 +59,8 @@ export default function StatsSection({ badge, title, titleGold, stats, dark = fa
     <section ref={ref} className={`${bg} section-padding relative overflow-hidden`}>
       {/* Background decorative circles */}
       
-      <img src="images/icon.png" alt="icon active rise" className='absolute top-0 -left-20 opacity-40 w-72 h-72'/>
-      <img src="images/black_icon.png" alt="icon active rise" className='absolute bottom-0 -right-20 w-64 h-64 z-0 opacity-50'/>
+      <img src="images/icon.png" alt="icon active rise" className='absolute top-0 -left-20  w-72 h-72'/>
+      <img src="images/black_icon.png" alt="icon active rise" className='absolute bottom-0 -right-18 w-64 h-64 z-0 '/>
 
       <div className="container-xl relative z-10">
         <div className="text-center mb-14">
@@ -82,7 +85,7 @@ export default function StatsSection({ badge, title, titleGold, stats, dark = fa
                 <div className="text-5xl md:text-6xl font-black text-gold mb-2.5 tabular-nums">
                   <AnimatedNumber value={s.value} isVisible={isVisible} />
                 </div>
-                <p className="text-[13px] font-medium text-deep">{s.label}</p>
+                <p className="text-[15px] font-medium text-deep">{s.label}</p>
               </div>
             </RevealOnScroll>
           ))}
