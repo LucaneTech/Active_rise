@@ -298,28 +298,88 @@
       "badge": "Nos domaines d'intervention",
       "title": "4 blocs structurés pour",
       "title2": "activer votre croissance",
-
       "marketing_title": "01 Marketing",
       "marketing_subtitle": "Stratégie, acquisition, fidélisation",
       "marketing_desc": "Campagnes digitales, marketing de proximité, emailing, acquisition et pilotage de projets marketing.",
       "marketing_link": "/services/marketing",
-
       "communication_title": "02 Communication & Branding",
       "communication_subtitle": "Image, messages, identité de marque",
       "communication_desc": "Communication d’entreprise, branding, identité visuelle, charte graphique et cohérence de marque.",
       "communication_link": "/services/communication",
-
       "creation_title": "03 Création & Développement Web",
       "creation_subtitle": "Design, web, multimédia",
       "creation_desc": "Conception graphique, développement de sites web, SEO, vidéo, podcast et supports publicitaires.",
       "creation_link": "/services/creation-web",
-
       "performance_title": "04 Performance Commerciale",
       "performance_subtitle": "Consulting, ventes, résultats",
       "performance_desc": "Audit stratégique, conseil en croissance, optimisation des ventes et accompagnement à l’exécution.",
       "performance_link": "/services/performance-commerciale",
-      
       "view_all": "En savoir plus"
+    },
+    "page": {
+      "marketing": {
+        "text": "Nous accompagnons votre croissance commerciale avec un marketing orienté conversion, adapté à votre marché."
+      },
+      "communication": {
+        "text": "Nous renforçons votre présence et votre image pour construire crédibilité, visibilité et engagement de l'audience."
+      },
+      "creation": {
+        "text": "Nous façonnons votre identité, vos contenus et votre site web pour offrir une expérience de marque fluide, mémorable et performante."
+      },
+      "performance": {
+        "text": "Nous structurons vos processus commerciaux, vos KPI et votre gestion de la performance pour transformer l'ambition en croissance durable."
+      }
+    },
+    "marketing": {
+      "badge": "Marketing",
+      "title": "Marketing Digital",
+      "title2": "& Marketing Local",
+      "s1": "Campagnes digitales",
+      "s1_desc": "Conception et gestion de campagnes multi-canaux à haute performance.",
+      "s2": "Email Marketing",
+      "s2_desc": "Stratégies d'emailing automatisées et personnalisées pour convertir.",
+      "s3": "Contenu Marketing",
+      "s3_desc": "Création de contenu qui attire, engage et convertit.",
+      "s4": "Marketing local",
+      "s4_desc": "Actions locales et conventionnelles pour ancrer votre présence.",
+      "s5": "Acquisition client",
+      "s5_desc": "Stratégies d'acquisition multi-canaux pour générer des leads qualifiés.",
+      "s6": "Fidélisation",
+      "s6_desc": "Programmes de fidélisation pour transformer vos clients en ambassadeurs."
+    },
+    "communication_branding": {
+      "badge": "Communication & Branding",
+      "title": "Communication",
+      "title2": "& Branding",
+      "s1": "Identité Visuelle & Charte",
+      "s1_desc": "Création ou refonte de votre logo, charte graphique et univers visuel complet pour asseoir une image premium.",
+      "s2": "Positionnement & Stratégie",
+      "s2_desc": "Définition d'une stratégie de marque claire, cohérente et différenciante pour dominer votre marché cible.",
+      "s3": "Communication Digitale & Médias",
+      "s3_desc": "Déploiement d'une présence en ligne percutante et pilotage des relations presse pour démultiplier votre visibilité.",
+      "s4": "Réseaux Sociaux & Communautés",
+      "s4_desc": "Gestion stratégique, animation et croissance de vos communautés sur les plateformes sociales clés.",
+      "s5": "Storytelling & Voix de Marque",
+      "s5_desc": "Définition de votre ton éditorial et construction d'un récit de marque puissant, mémorable et engageant.",
+      "s6": "Audit & Cohérence d'Image",
+      "s6_desc": "Analyse globale, alignement de vos supports et accompagnement critique pour garantir la crédibilité de votre image."
+    },
+    "creation": {
+      "badge": "Création",
+      "title": "Création visuelle",
+      "title2": "& Multimédia",
+      "s1": "Design graphique",
+      "s1_desc": "Création de visuels premium pour tous vos supports.",
+      "s2": "Supports publicitaires",
+      "s2_desc": "Affiches, flyers, bannières et supports print/digitaux.",
+      "s3": "Vidéo & Motion",
+      "s3_desc": "Production de vidéos, publicités et animations.",
+      "s4": "Podcast",
+      "s4_desc": "Production et accompagnement éditorial pour podcasts.",
+      "s5": "Photographie",
+      "s5_desc": "Direction artistique et production photographique.",
+      "s6": "Design UX/UI",
+      "s6_desc": "Conception d'interfaces utilisateur modernes et efficaces."
     },
     "web": {
       "badge": "Web & SEO",
@@ -356,9 +416,9 @@
       "s6_desc": "Mise en place de tableaux de bord et indicateurs de performance."
     },
     "process": {
-      "badge": "Notre process",
+      "badge": "Notre processus",
       "title": "Comment nous",
-      "title2": "déployons vos services",
+      "title2": "travaillons avec vous",
       "p1": "Briefing & Cadrage",
       "p1_desc": "Définition des objectifs, contraintes et livrables attendus.",
       "p2": "Audit & Recherche",
@@ -372,18 +432,25 @@
       "p6": "Mesure & Optimisation",
       "p6_desc": "Suivi des KPIs et optimisation continue pour maximiser les résultats."
     },
-    "results": {
-      "badge": "Résultats attendus",
-      "title": "Ce que vous",
-      "title2": "obtiendrez",
-      "r1_title": "Visibilité accrue",
-      "r1_desc": "Une présence renforcée sur tous les canaux pertinents pour votre cible.",
-      "r2_title": "Leads qualifiés",
-      "r2_desc": "Un flux régulier de prospects qualifiés et convertibles.",
-      "r3_title": "Image premium",
-      "r3_desc": "Une identité de marque forte, cohérente et mémorable.",
-      "r4_title": "Croissance mesurable",
-      "r4_desc": "Des indicateurs clairs et une progression mesurable de vos résultats."
+    "deliverables": {
+      "badge": "Impact & Résultats",
+      "section_title": "Ce que vous obtiendrez",
+      "item1": {
+        "title": "La visibilité s’accroît",
+        "desc": "Une présence renforcée sur tous les canaux pertinents pour votre cible."
+      },
+      "item2": {
+        "title": "Les prospects qualifiés",
+        "desc": "Un flux régulier de perspectives qualifiées et convertibles."
+      },
+      "item3": {
+        "title": "Image premium",
+        "desc": "Une identité de marque forte, cohérente et mémorable."
+      },
+      "item4": {
+        "title": "Croissance mesurable",
+        "desc": "Des indicateurs clairs et une progression mesurable de vos résultats."
+      }
     },
     "cta": {
       "title": "Un service qui vous",
@@ -454,17 +521,21 @@
       "client_role": "Fondatrice, Studio Créa"
     },
     "process": {
-      "badge": "Notre process",
+      "badge": "Notre processus",
       "title": "Comment nous",
-      "title2": "créons ces résultats",
-      "p1": "Compréhension profonde",
-      "p1_desc": "Immersion totale dans votre business pour comprendre vos enjeux réels.",
-      "p2": "Stratégie sur mesure",
-      "p2_desc": "Construction d'une approche unique adaptée à votre situation spécifique.",
-      "p3": "Exécution rigoureuse",
-      "p3_desc": "Déploiement méthodique avec un suivi rigoureux de chaque action.",
-      "p4": "Mesure & Optimisation",
-      "p4_desc": "Analyse continue des résultats pour maximiser le retour sur investissement."
+      "title2": "travaillons avec vous",
+      "p1": "Briefing & Cadrage",
+      "p1_desc": "Définition des objectifs, contraintes et livrables attendus.",
+      "p2": "Audit & Recherche",
+      "p2_desc": "Analyse approfondie de votre marché, concurrence et cible.",
+      "p3": "Stratégie & Plan",
+      "p3_desc": "Construction d'une stratégie sur mesure et d'un plan d'action.",
+      "p4": "Production",
+      "p4_desc": "Création et développement de tous les livrables définis.",
+      "p5": "Déploiement",
+      "p5_desc": "Mise en ligne et activation des actions selon le plan.",
+      "p6": "Mesure & Optimisation",
+      "p6_desc": "Suivi des KPIs et optimisation continue pour maximiser les résultats."
     },
     "metrics": {
       "badge": "Impact global",
@@ -527,30 +598,50 @@
       "hours_val": "Lun-Ven, 9h-18h"
     },
     "process": {
-      "badge": "Notre process",
-      "title": "Comment nous traitons",
-      "title2": "votre demande",
-      "p1_title": "Réception",
-      "p1_desc": "Nous accusons réception de votre message sous 2 heures.",
-      "p2_title": "Analyse",
-      "p2_desc": "Notre équipe analyse votre demande et prépare un diagnostic initial.",
-      "p3_title": "Rendez-vous",
-      "p3_desc": "Nous planifions un appel de découverte pour approfondir vos besoins.",
-      "p4_title": "Proposition",
-      "p4_desc": "Nous vous soumettons une proposition stratégique personnalisée."
+      "badge": "Notre processus",
+      "title": "Comment nous",
+      "title2": "travaillons avec vous",
+      "p1": "Briefing & Cadrage",
+      "p1_desc": "Définition des objectifs, contraintes et livrables attendus.",
+      "p2": "Audit & Recherche",
+      "p2_desc": "Analyse approfondie de votre marché, concurrence et cible.",
+      "p3": "Stratégie & Plan",
+      "p3_desc": "Construction d'une stratégie sur mesure et d'un plan d'action.",
+      "p4": "Production",
+      "p4_desc": "Création et développement de tous les livrables définis.",
+      "p5": "Déploiement",
+      "p5_desc": "Mise en ligne et activation des actions selon le plan.",
+      "p6": "Mesure & Optimisation",
+      "p6_desc": "Suivi des KPIs et optimisation continue pour maximiser les résultats."
+    },
+    "intake": {
+      "badge": "Réactivité",
+      "section_title": "Comment nous traitons votre demande",
+      "step1_title": "01 Réception",
+      "step1_desc": "Nous accusons réception de votre message sous 24 heures ouvrables.",
+      "step2_title": "02 Analyser",
+      "step2_desc": "Notre équipe analyse votre demande et prépare un diagnostic initial.",
+      "step3_title": "03 Rendez-vous",
+      "step3_desc": "Nous planifions un appel de découverte pour approfondir vos besoins.",
+      "step4_title": "04 Proposition",
+      "step4_desc": "Nous vous soumettons une proposition stratégique personnalisée."
     },
     "faq": {
-      "badge": "FAQ",
-      "title": "Questions",
-      "title2": "fréquentes",
-      "q1": "Quel est votre délai de réponse ?",
-      "a1": "Nous répondons à toutes les demandes sous 24 heures ouvrées. Pour les urgences, contactez-nous par téléphone.",
-      "q2": "Proposez-vous un diagnostic gratuit ?",
-      "a2": "Oui, nous proposons un premier échange de 30 minutes gratuit pour évaluer votre situation et vous donner des pistes concrètes.",
-      "q3": "Travaillez-vous avec des entreprises de toutes tailles ?",
-      "a3": "Nous accompagnons aussi bien les startups que les PME et grandes entreprises. Chaque solution est adaptée à votre taille et vos objectifs.",
-      "q4": "Comment se déroule la facturation ?",
-      "a4": "Nous proposons différentes formules : projets ponctuels, retainers mensuels ou accompagnements sur mesure selon vos besoins."
+      "badge": "Clarté",
+      "section_title": "Questions fréquentes",
+      "q1_title": "Quel est votre délai de réponse ?",
+      "q1_desc": "Nous répondons à toutes les demandes sous 24 heures ouvrables. Pour les urgences, contactez-nous directement sur WhatsApp.",
+      "q2_title": "Proposez-vous un diagnostic gratuit ?",
+      "q2_desc": "Oui, nous proposons un premier échange de 30 minutes gratuit pour évaluer votre situation et vous donner des pistes concrètes.",
+      "q3_title": "Travaillez-vous avec des entreprises de toutes tailles ?",
+      "q3_desc": "Nous accompagnons aussi bien les startups que les PME et grandes entreprises. Chaque solution est adaptée à votre taille et vos objectifs.",
+      "q4_title": "Comment se déroule la facturation ?",
+      "q4_desc": "Nous proposons différentes formules : projets ponctuels, retenues mensuelles ou accompagnements sur mesure selon vos besoins."
+    },
+    "retention": {
+      "title": "Pas encore prêt à prendre contact ?",
+      "subtitle": "Découvrez nos études de cas et voyez comment nous avons transformé d’autres entreprises.",
+      "action": "Explorer les études de cas"
     },
     "cta": {
       "title": "Pas encore prêt",

@@ -21,8 +21,7 @@ function AnimatedNumber({ value, isVisible }: { value: string; isVisible: boolea
   }
   const numMatch = value.match(/[\d.]+/);
   const num = numMatch ? parseFloat(numMatch[0]) : 0;
-  const prefix = value.replace(/[\d.]+.*/, '');
-  const suffix = value.replace(/^[^0-9]*[\d.]+/, '');
+  
 
   useEffect(() => {
     if (!isVisible) return;

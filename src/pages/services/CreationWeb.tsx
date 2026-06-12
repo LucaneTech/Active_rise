@@ -44,20 +44,15 @@ export default function CreationWeb() {
           />
           <div className="absolute inset-0 bg-linear-to-t from-black/30 via-transparent to-transparent" />
         </div>
-        <div className="container-xl relative z-10">
-          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.2 }}>
-            <span className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-gold shadow-badge px-4 py-1.5 rounded-full mb-6">
-              <span className="w-1.5 h-1.5 rounded-full bg-gold" />
-              {t('services.web.badge')} / {t('services.creation.badge')}
-            </span>
-          </motion.div>
+        <div className="text-center flex flex-col justify-center items-center pt-12 container-xl relative z-10">
+         
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
-            className="text-3xl md:text-4xl lg:text-6xl font-black leading-tight text-beige mb-6"
+            className="text-center text-3xl md:text-4xl lg:text-6xl font-black leading-tight text-beige mb-6"
           >
-            {t('services.creation.title')} <span className="text-gold">& {t('services.web.title2')}</span>
+            {t('services.creation.title')} <span className="text-gold"> {t('services.web.title2')}</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}

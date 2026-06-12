@@ -1,35 +1,201 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Mail, Phone, MapPin, Clock, ChevronDown, CheckCircle2, ArrowRight } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, ChevronDown, CheckCircle2, ArrowRight, Minus, Plus } from 'lucide-react';
 import RevealOnScroll from '../components/ui/RevealOnScroll';
 import ProcessSection from '../components/ui/ProcessSection';
-import CTASection from '../components/ui/CTASection';
+import { Link } from 'react-router-dom';
+
+
+function IntakeSection() {
+  const { t } = useTranslation();
+
+  const steps = [
+    { title: t('contact.intake.step1_title'), desc: t('contact.intake.step1_desc') },
+    { title: t('contact.intake.step2_title'), desc: t('contact.intake.step2_desc') },
+    { title: t('contact.intake.step3_title'), desc: t('contact.intake.step3_desc') },
+    { title: t('contact.intake.step4_title'), desc: t('contact.intake.step4_desc') },
+  ];
+
+  return (
+    <section className="py-24 lg:py-36 text-white overflow-hidden border-t border-white/5">
+      <div className="container-xl max-w-[1400px] mx-auto px-4 sm:px-8">
+        
+        <div className="mb-20">
+          <RevealOnScroll direction="left">
+            <span className="text-xs font-bold tracking-[0.4em] text-gold uppercase block mb-4">
+              {t('contact.intake.badge')}
+            </span>
+            <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight text-black">
+              {t('contact.intake.section_title')}
+            </h2>
+          </RevealOnScroll>
+        </div>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 relative">
+          {steps.map((step, index) => (
+            <RevealOnScroll key={index} delay={index * 0.1} direction="up">
+              <div className="group relative border-t border-white/10 pt-6 h-full flex flex-col justify-between cursor-default">
+                {/* Ligne d'accentuation dorée cinétique */}
+                <div className="absolute top-0 left-0 h-[1px] bg-gradient-to-r from-gold to-transparent w-0 group-hover:w-full transition-all duration-500" />
+                
+                <div>
+                  <h3 className="text-xl font-black uppercase tracking-tight text-gold group-hover:text-gold transition-colors duration-300 mb-4">
+                    {step.title}
+                  </h3>
+                  <p className="text-deep text-sm sm:text-base leading-relaxed group-hover:text-gray-500 transition-colors duration-300">
+                    {step.desc}
+                  </p>
+                </div>
+              </div>
+            </RevealOnScroll>
+          ))}
+        </div>
+
+      </div>
+    </section>
+  );
+}
+
+
+function FAQSection() {
+  const { t } = useTranslation();
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const faqs = [
+    { q: t('contact.faq.q1_title'), a: t('contact.faq.q1_desc') },
+    { q: t('contact.faq.q2_title'), a: t('contact.faq.q2_desc') },
+    { q: t('contact.faq.q3_title'), a: t('contact.faq.q3_desc') },
+    { q: t('contact.faq.q4_title'), a: t('contact.faq.q4_desc') },
+  ];
+
+  return (
+    <section className="py-24 lg:py-36 bg-deep text-white border-t border-white/5">
+      <div className="container-xl max-w-[1200px] mx-auto px-4 sm:px-8">
+        
+        <div className="mb-16 text-center lg:text-left">
+          <RevealOnScroll direction="left">
+            <span className="text-xs font-bold tracking-[0.4em] text-gold uppercase block mb-4">
+              {t('contact.faq.badge')}
+            </span>
+            <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight">
+              {t('contact.faq.section_title')}
+            </h2>
+          </RevealOnScroll>
+        </div>
+
+        <div className="border-t border-white/10">
+          {faqs.map((faq, index) => {
+            const isOpen = openIndex === index;
+            return (
+              <div key={index} className="border-b border-white/10">
+                <button
+                  onClick={() => setOpenIndex(isOpen ? null : index)}
+                  className="w-full py-6 sm:py-8 flex items-center justify-between gap-6 text-left focus:outline-none group"
+                >
+                  <span className={`text-lg sm:text-xl font-bold uppercase tracking-tight transition-colors duration-300 ${isOpen ? 'text-gold' : 'text-white/80 group-hover:text-white'}`}>
+                    {faq.q}
+                  </span>
+                  <div className={`flex-shrink-0 text-white/30 group-hover:text-gold transition-colors ${isOpen ? 'text-gold' : ''}`}>
+                    {isOpen ? <Minus size={20} strokeWidth={1.5} /> : <Plus size={20} strokeWidth={1.5} />}
+                  </div>
+                </button>
+
+                <AnimatePresence initial={false}>
+                  {isOpen && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0, filter: 'blur(4px)' }}
+                      animate={{ height: 'auto', opacity: 1, filter: 'blur(0px)' }}
+                      exit={{ height: 0, opacity: 0, filter: 'blur(4px)' }}
+                      transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
+                      className="overflow-hidden"
+                    >
+                      <p className="pb-8 text-white/60 text-sm sm:text-base leading-relaxed max-w-4xl font-medium">
+                        {faq.a}
+                      </p>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+            );
+          })}
+        </div>
+
+      </div>
+    </section>
+  );
+}
+
+
+function RetentionSection() {
+  const { t } = useTranslation();
+
+  return (
+    <section className="py-28 lg:py-40 bg-deep text-white relative overflow-hidden border-t border-white/5">
+      {/* Lueur d'ambiance centrale diffuse */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-gold/5 rounded-full blur-[140px] pointer-events-none" />
+
+      <div className="container-xl max-w-[1000px] mx-auto px-4 sm:px-8 text-center relative z-10">
+        
+        <motion.h2 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-tight mb-6 max-w-2xl mx-auto leading-tight"
+        >
+          {t('contact.retention.title')}
+        </motion.h2>
+
+        <motion.p 
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="text-white/50 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto leading-relaxed font-medium mb-12"
+        >
+          {t('contact.retention.subtitle')}
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
+          <Link
+            to="/portfolio"
+            className="inline-flex items-center gap-4 text-xs font-bold uppercase tracking-[0.3em] text-gold border border-gold/30 hover:border-gold bg-gold/5 hover:bg-gold/10 px-8 py-5 rounded-md transition-all duration-300 group"
+          >
+            {t('contact.retention.action')}
+            <ArrowRight size={14} className="transform group-hover:translate-x-1 transition-transform" />
+          </Link>
+        </motion.div>
+
+      </div>
+    </section>
+  );
+}
 
 export default function Contact() {
   const { t } = useTranslation();
   const [form, setForm] = useState({ name: '', email: '', company: '', service: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
 
   const services = [
     t('contact.form.opt_marketing'), t('contact.form.opt_branding'), t('contact.form.opt_communication'),
     t('contact.form.opt_creation'), t('contact.form.opt_web'), t('contact.form.opt_consulting'), t('contact.form.opt_other'),
   ];
 
-  const faqs = [
-    { q: t('contact.faq.q1'), a: t('contact.faq.a1') },
-    { q: t('contact.faq.q2'), a: t('contact.faq.a2') },
-    { q: t('contact.faq.q3'), a: t('contact.faq.a3') },
-    { q: t('contact.faq.q4'), a: t('contact.faq.a4') },
-  ];
+
 
   const processSteps = [
-    { number: '01', title: t('contact.process.p1_title'), description: t('contact.process.p1_desc') },
-    { number: '02', title: t('contact.process.p2_title'), description: t('contact.process.p2_desc') },
-    { number: '03', title: t('contact.process.p3_title'), description: t('contact.process.p3_desc') },
-    { number: '04', title: t('contact.process.p4_title'), description: t('contact.process.p4_desc') },
+    { number: '01', title: t('contact.process.p1'), description: t('contact.process.p1_desc') },
+    { number: '02', title: t('contact.process.p2'), description: t('contact.process.p2_desc') },
+    { number: '03', title: t('contact.process.p3'), description: t('contact.process.p3_desc') },
+    { number: '04', title: t('contact.process.p4'), description: t('contact.process.p4_desc') },
   ];
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -76,12 +242,7 @@ export default function Contact() {
           <div className="absolute inset-0 bg-linear-to-t from-black/30 via-transparent to-transparent" />
         </div>
         <div className="container-xl relative z-10 py-16 md:py-24 text-center">
-          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.2 }}>
-            <span className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-gold shadow-badge px-4 py-1.5 rounded-full mb-6">
-              <span className="w-1.5 h-1.5 rounded-full bg-gold" />
-              {t('contact.hero.badge')}
-            </span>
-          </motion.div>
+          
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -282,7 +443,7 @@ export default function Contact() {
         dark={true}
       />
 
-      {/* ─── MAP PLACEHOLDER ─── */}
+      {/* ─── MAP PLACEHOLDER ───
       <section className="bg-beige">
         <div className="container-xl py-16">
           <RevealOnScroll>
@@ -301,72 +462,13 @@ export default function Contact() {
             </div>
           </RevealOnScroll>
         </div>
-      </section>
-
+      </section> */}
+      <IntakeSection/>
       {/* ─── FAQ ─── */}
-      <section className="section-padding bg-deep">
-        <div className="container-xl">
-          <div className="text-center mb-16">
-            <RevealOnScroll>
-              <span className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-gold shadow-badge px-4 py-1.5 rounded-md mb-5">
-                <span className="w-1 h-1 rounded-md bg-gold" />
-                {t('contact.faq.badge')}
-              </span>
-            </RevealOnScroll>
-            <RevealOnScroll delay={0.1}>
-              <h2 className="text-3xl md:text-4xl font-black tracking-tight text-beige">
-                {t('contact.faq.title')}{' '}
-                <span className="text-gold">{t('contact.faq.title2')}</span>
-              </h2>
-            </RevealOnScroll>
-          </div>
-          <div className="max-w-3xl mx-auto space-y-4">
-            {faqs.map((faq, i) => (
-              <RevealOnScroll key={i} delay={i * 0.08} direction="up">
-                <div
-                  className="border border-gray-200/30 rounded-md overflow-hidden hover:shadow-card-hover transition-shadow duration-300 cursor-pointer"
-                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                >
-                  <div className="flex items-center justify-between p-6">
-                    <h3 className="font-bold text-beige pr-4">{faq.q}</h3>
-                    <motion.div
-                      animate={{ rotate: openFaq === i ? 180 : 0 }}
-                      transition={{ duration: 0.2 }}
-                      className="shrink-0"
-                    >
-                      <ChevronDown size={18} className="text-gold" />
-                    </motion.div>
-                  </div>
-                  <AnimatePresence>
-                    {openFaq === i && (
-                      <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: 'auto', opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.3 }}
-                      >
-                        <div className="px-6 pb-6 border-t border-gray-200/30 pt-4">
-                          <p className="text-beige leading-relaxed text-sm">{faq.a}</p>
-                        </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </div>
-              </RevealOnScroll>
-            ))}
-          </div>
-        </div>
-      </section>
-
+      <FAQSection/>
+        <RetentionSection/>
       {/* ─── CTA ─── */}
-      <CTASection
-        title={t('contact.cta.title')}
-        titleGold={t('contact.cta.title2')}
-        text={t('contact.cta.text')}
-        btnPrimary={t('contact.cta.btn')}
-        btnPrimaryLink="/cases"
-        dark={false}
-      />
+    
     </div>
   );
 }

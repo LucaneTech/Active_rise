@@ -281,20 +281,18 @@
     }
   },
   "services": {
-  
-      "hero": {
-        "badge": "With Active'rise",
-        "title": "Every service,",
-        "title2": "a strategy",
-        "text": "Our services are not isolated offerings. They are integrated into a coherent and global approach, orchestrated to maximize your growth at every level.",
-        "tags": [
-          "Marketing",
-          "Communication & Branding",
-          "Web & Creation",
-          "Sales Performance"
-        ],
-         "infer":"Integrated intervention pillars"
-      
+    "hero": {
+      "badge": "With Active'rise",
+      "title": "Every service,",
+      "title2": "a strategy",
+      "text": "Our services are not isolated offerings. They are integrated into a coherent and global approach, orchestrated to maximize your growth at every level.",
+      "tags": [
+        "Marketing",
+        "Communication & Branding",
+        "Web & Creation",
+        "Sales Performance"
+      ],
+      "infer": "Integrated intervention pillars"
     },
     "intro": {
       "badge": "Introduction",
@@ -358,39 +356,22 @@
       "s6": "Loyalty",
       "s6_desc": "Loyalty programs to transform your clients into ambassadors."
     },
-    "branding": {
-      "badge": "Branding",
-      "title": "Brand identity",
-      "title2": "& Branding",
-      "s1": "Visual identity",
-      "s1_desc": "Creation of a logo, brand guidelines and a strong identity.",
-      "s2": "Positioning",
-      "s2_desc": "Definition of a clear and differentiating positioning in your market.",
-      "s3": "Brand Strategy",
-      "s3_desc": "Development of a coherent and impactful brand strategy.",
-      "s4": "Brand Voice",
-      "s4_desc": "Definition of your brand tone, style and editorial universe.",
-      "s5": "Brand redesign",
-      "s5_desc": "Modernization and repositioning of existing brands.",
-      "s6": "Brand consistency",
-      "s6_desc": "Audit and alignment of all your communication materials."
-    },
-    "communication": {
-      "badge": "Communication",
+    "communication_branding": {
+      "badge": " ",
       "title": "Communication",
-      "title2": "& Image",
-      "s1": "Digital communication",
-      "s1_desc": "Consistent and impactful digital presence across all channels.",
-      "s2": "Institutional communication",
-      "s2_desc": "Strong corporate messages to establish your credibility.",
-      "s3": "Press relations",
-      "s3_desc": "Media relations strategies to amplify your visibility.",
-      "s4": "Social media",
-      "s4_desc": "Management and animation of your social communities.",
-      "s5": "Crisis communication",
-      "s5_desc": "Support in managing sensitive situations.",
-      "s6": "Storytelling",
-      "s6_desc": "Building a powerful and memorable brand narrative."
+      "title2": "& Branding",
+      "s1": "Visual Identity & Guidelines",
+      "s1_desc": "Creation or redesign of your logo, brand guidelines, and full visual ecosystem to establish a premium image.",
+      "s2": "Positioning & Strategy",
+      "s2_desc": "Definition of a clear, consistent, and highly differentiating brand strategy to lead your target market.",
+      "s3": "Digital Communication & Media",
+      "s3_desc": "Deployment of an impactful online presence and media relations management to amplify your visibility.",
+      "s4": "Social Media & Communities",
+      "s4_desc": "Strategic management, content creation, and growth of your communities across key social networks.",
+      "s5": "Storytelling & Brand Voice",
+      "s5_desc": "Definition of your editorial tone and construction of a powerful, memorable, and engaging brand narrative.",
+      "s6": "Audit & Image Consistency",
+      "s6_desc": "Comprehensive analysis, alignment of your communication assets, and guidance to ensure image credibility."
     },
     "creation": {
       "badge": "Creation",
@@ -446,7 +427,7 @@
     "process": {
       "badge": "Our process",
       "title": "How we",
-      "title2": "deploy your services",
+      "title2": "work with you",
       "p1": "Briefing & Scoping",
       "p1_desc": "Definition of objectives, constraints and expected deliverables.",
       "p2": "Audit & Research",
@@ -460,23 +441,30 @@
       "p6": "Measurement & Optimization",
       "p6_desc": "KPI monitoring and continuous optimization to maximize results."
     },
-    "results": {
-      "badge": "Expected results",
-      "title": "What you",
-      "title2": "will get",
-      "r1_title": "Increased visibility",
-      "r1_desc": "A strengthened presence on all channels relevant to your target.",
-      "r2_title": "Qualified leads",
-      "r2_desc": "A regular flow of qualified and convertible prospects.",
-      "r3_title": "Premium image",
-      "r3_desc": "A strong, consistent and memorable brand identity.",
-      "r4_title": "Measurable growth",
-      "r4_desc": "Clear indicators and measurable progression of your results."
+    "deliverables": {
+      "badge": "// Impact & Results",
+      "section_title": "What you will get",
+      "item1": {
+        "title": "Visibility increases",
+        "desc": "A reinforced presence across all channels relevant to your target audience."
+      },
+      "item2": {
+        "title": "Qualified leads",
+        "desc": "A steady flow of qualified and highly convertible prospects."
+      },
+      "item3": {
+        "title": "Premium image",
+        "desc": "A strong, consistent, and memorable brand identity."
+      },
+      "item4": {
+        "title": "Measurable growth",
+        "desc": "Clear performance indicators and a measurable progression of your results."
+      }
     },
     "cta": {
-      "title": "Let’s build",
-      "title2": "your growth together.",
-      "text": "Join the companies that have chosen ActiveRise as their strategic development partner.",
+      "title": "A service that",
+      "title2": "suits you?.",
+      "text": "Let's discuss your needs and build your customized strategy together.",
       "btn": "Request a free diagnostic"
     }
   },
@@ -608,43 +596,57 @@
       "email_label": "Email",
       "email_val": "contact@activerise.pro",
       "phone_label": "Phone",
-      "phone_val": "+33 1 23 45 67 89",
+      "phone_val": "+242 06 12 34 56 78",
       "address_label": "Address",
-      "address_val": "Paris, France",
+      "address_val": "Pointe-Noire, Congo-Brazzaville",
       "hours_label": "Hours",
       "hours_val": "Mon-Fri, 9am-6pm"
     },
     "process": {
       "badge": "Our process",
-      "title": "How we handle",
-      "title2": "your request",
-      "p1_title": "Reception",
-      "p1_desc": "We acknowledge receipt of your message within 2 hours.",
-      "p2_title": "Analysis",
-      "p2_desc": "Our team analyzes your request and prepares an initial diagnosis.",
-      "p3_title": "Meeting",
-      "p3_desc": "We schedule a discovery call to deepen your needs.",
-      "p4_title": "Proposal",
-      "p4_desc": "We submit a personalized strategic proposal."
+      "title": "How we",
+      "title2": "work with you",
+      "p1": "Briefing & Scoping",
+      "p1_desc": "Definition of objectives, constraints and expected deliverables.",
+      "p2": "Audit & Research",
+      "p2_desc": "In-depth analysis of your market, competition and target.",
+      "p3": "Strategy & Plan",
+      "p3_desc": "Building a tailored strategy and an action plan.",
+      "p4": "Production",
+      "p4_desc": "Creation and development of all defined deliverables.",
+      "p5": "Deployment",
+      "p5_desc": "Go-live and activation of actions according to the plan.",
+      "p6": "Measurement & Optimization",
+      "p6_desc": "KPI monitoring and continuous optimization to maximize results."
+    },
+    "intake": {
+      "badge": "// Responsiveness",
+      "section_title": "How we process your request",
+      "step1_title": "01 Receipt",
+      "step1_desc": "We acknowledge receipt of your message within 24 business hours.",
+      "step2_title": "02 Analyze",
+      "step2_desc": "Our team analyzes your request and prepares an initial diagnosis.",
+      "step3_title": "03 Meeting",
+      "step3_desc": "We schedule a discovery call to take a deeper look into your needs.",
+      "step4_title": "04 Proposal",
+      "step4_desc": "We submit a tailored strategic proposal to you."
     },
     "faq": {
-      "badge": "FAQ",
-      "title": "Frequently asked",
-      "title2": "questions",
-      "q1": "What is your response time?",
-      "a1": "We respond to all requests within 24 business hours. For urgent matters, contact us by phone.",
-      "q2": "Do you offer a free diagnosis?",
-      "a2": "Yes, we offer a free 30-minute initial exchange to evaluate your situation and give you concrete leads.",
-      "q3": "Do you work with companies of all sizes?",
-      "a3": "We support startups, SMEs and large companies alike. Each solution is adapted to your size and objectives.",
-      "q4": "How does billing work?",
-      "a4": "We offer different formulas: one-off projects, monthly retainers or tailored support according to your needs."
+      "badge": "// Clarity",
+      "section_title": "Frequently Asked Questions",
+      "q1_title": "What is your response time?",
+      "q1_desc": "We respond to all inquiries within 24 business hours. For urgent matters, please contact us directly on WhatsApp.",
+      "q2_title": "Do you offer a free diagnosis?",
+      "q2_desc": "Yes, we offer a free initial 30-minute consultation to assess your situation and provide you with actionable insights.",
+      "q3_title": "Do you work with businesses of all sizes?",
+      "q3_desc": "We support startups as well as SMEs and large enterprises. Every solution is tailored to your size and specific goals.",
+      "q4_title": "How does billing work?",
+      "q4_desc": "We offer different packages: one-off projects, monthly retainers, or tailored ongoing support depending on your needs."
     },
-    "cta": {
-      "title": "Not ready yet",
-      "title2": "to get in touch?",
-      "text": "Discover our case studies and see how we have transformed other companies.",
-      "btn": "View our successes"
+    "retention": {
+      "title": "Not quite ready to reach out?",
+      "subtitle": "Explore our case studies and discover how we have transformed other businesses.",
+      "action": "Explore case studies"
     }
   },
   "footer": {
