@@ -281,11 +281,20 @@
     }
   },
   "services": {
-    "hero": {
-      "badge": "Our services",
-      "title": "Complete expertise",
-      "title2": "for your growth",
-      "text": "A complete range of integrated services to structure, develop and optimize your growth."
+  
+      "hero": {
+        "badge": "With Active'rise",
+        "title": "Every service,",
+        "title2": "a strategy",
+        "text": "Our services are not isolated offerings. They are integrated into a coherent and global approach, orchestrated to maximize your growth at every level.",
+        "tags": [
+          "Marketing",
+          "Communication & Branding",
+          "Web & Creation",
+          "Sales Performance"
+        ],
+         "infer":"Integrated intervention pillars"
+      
     },
     "intro": {
       "badge": "Introduction",

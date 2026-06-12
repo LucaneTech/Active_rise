@@ -282,123 +282,44 @@
   },
   "services": {
     "hero": {
-      "badge": "Nos services",
-      "title": "Des expertises complètes",
-      "title2": "pour votre croissance",
-      "text": "Une gamme complète de services intégrés pour structurer, développer et optimiser votre croissance."
-    },
-    "intro": {
-      "badge": "Introduction",
+      "badge": "Avec Active'rise",
       "title": "Chaque service,",
       "title2": "une stratégie",
-      "text": "Nos services ne sont pas des prestations isolées. Ils s'intègrent dans une approche cohérente et globale, orchestrée pour maximiser votre croissance à chaque niveau."
+      "text": "Nos services ne sont pas des prestations isolées. Ils s’intègrent dans une approche cohérente et globale, orchestrée pour maximiser votre croissance à chaque niveau.",
+      "tags": [
+        "Marketing",
+        "Communication & Branding",
+        "Création & Web",
+        "Performance Commerciale"
+      ],
+      "infer": " Piliers d'intervention intégrés"
     },
-    "hub": {
-      "badge": "Nos piliers",
-      "title": "Une expertise",
-      "title2": "à 360° au service de votre croissance",
-      "marketing": {
-        "title": "01 Marketing",
-        "desc": "Stratégie marketing globale, acquisition, fidélisation et pilotage de projets.",
-        "label": "Marketing"
-      },
-      "communication": {
-        "title": "02 Communication",
-        "desc": "Positionnement, messages et visibilité pour amplifier votre image.",
-        "label": "Communication"
-      },
-      "creation": {
-        "title": "03 Création & Développement Web",
-        "desc": "Identité, contenus et présence digitale pour une expérience de marque moderne.",
-        "label": "Création & Web"
-      },
-      "performance": {
-        "title": "04 Performance Commerciale",
-        "desc": "Pilotage commercial, KPI et optimisation pour transformer vos ambitions en croissance.",
-        "label": "Performance Commerciale"
-      }
-    },
-    "page": {
-      "marketing": {
-        "text": "Nous accompagnons votre développement commercial avec une approche marketing orientée conversion, ancrée dans votre marché."
-      },
-      "communication": {
-        "text": "Nous développons votre présence et votre image pour renforcer votre crédibilité, votre visibilité et l'adhésion de vos audiences."
-      },
-      "creation": {
-        "text": "Nous concevons votre identité, vos contenus et votre site pour créer une expérience de marque fluide, mémorable et performante."
-      },
-      "performance": {
-        "text": "Nous structurons vos process commerciaux, vos KPI et votre pilotage pour transformer vos ambitions en croissance durable."
-      }
-    },
-    "marketing": {
-      "badge": "Marketing",
-      "title": "Marketing Digital",
-      "title2": "& de proximité",
-      "s1": "Campagnes digitales",
-      "s1_desc": "Conception et pilotage de campagnes multi-canales performantes.",
-      "s2": "Email Marketing",
-      "s2_desc": "Stratégies d'emailing automatisées et personnalisées pour convertir.",
-      "s3": "Content Marketing",
-      "s3_desc": "Création de contenus qui attirent, engagent et convertissent.",
-      "s4": "Marketing de proximité",
-      "s4_desc": "Actions locales et conventionnelles pour ancrer votre présence.",
-      "s5": "Acquisition client",
-      "s5_desc": "Stratégies d'acquisition multicanales pour générer des leads qualifiés.",
-      "s6": "Fidélisation",
-      "s6_desc": "Programmes de fidélisation pour transformer vos clients en ambassadeurs."
-    },
-    "branding": {
-      "badge": "Branding",
-      "title": "Identité de marque",
-      "title2": "& Branding",
-      "s1": "Identité visuelle",
-      "s1_desc": "Création d'un logo, d'une charte graphique et d'une identité forte.",
-      "s2": "Positionnement",
-      "s2_desc": "Définition d'un positionnement clair et différenciant sur votre marché.",
-      "s3": "Brand Strategy",
-      "s3_desc": "Élaboration d'une stratégie de marque cohérente et impactante.",
-      "s4": "Brand Voice",
-      "s4_desc": "Définition de votre ton, style et univers éditorial de marque.",
-      "s5": "Refonte de marque",
-      "s5_desc": "Modernisation et repositionnement de marques existantes.",
-      "s6": "Cohérence de marque",
-      "s6_desc": "Audit et alignement de tous vos supports de communication."
-    },
-    "communication": {
-      "badge": "Communication",
-      "title": "Communication",
-      "title2": "& Image",
-      "s1": "Communication digitale",
-      "s1_desc": "Présence digitale cohérente et impactante sur tous les canaux.",
-      "s2": "Communication institutionnelle",
-      "s2_desc": "Messages corporate forts pour asseoir votre crédibilité.",
-      "s3": "Relations presse",
-      "s3_desc": "Stratégies de relations médias pour amplifier votre visibilité.",
-      "s4": "Réseaux sociaux",
-      "s4_desc": "Gestion et animation de vos communautés sociales.",
-      "s5": "Communication de crise",
-      "s5_desc": "Accompagnement dans la gestion des situations sensibles.",
-      "s6": "Storytelling",
-      "s6_desc": "Construction d'un récit de marque puissant et mémorable."
-    },
-    "creation": {
-      "badge": "Création",
-      "title": "Création visuelle",
-      "title2": "& Multimédia",
-      "s1": "Design graphique",
-      "s1_desc": "Création de visuels premium pour tous vos supports.",
-      "s2": "Supports publicitaires",
-      "s2_desc": "Affiches, flyers, bannières et supports print/digital.",
-      "s3": "Vidéo & Motion",
-      "s3_desc": "Réalisation de vidéos, spots publicitaires et animations.",
-      "s4": "Podcast",
-      "s4_desc": "Production et accompagnement éditorial de podcasts.",
-      "s5": "Photographie",
-      "s5_desc": "Direction artistique et production photographique.",
-      "s6": "UX/UI Design",
-      "s6_desc": "Conception d'interfaces utilisateur modernes et efficaces."
+    "services": {
+      "badge": "Nos domaines d'intervention",
+      "title": "4 blocs structurés pour",
+      "title2": "activer votre croissance",
+
+      "marketing_title": "01 Marketing",
+      "marketing_subtitle": "Stratégie, acquisition, fidélisation",
+      "marketing_desc": "Campagnes digitales, marketing de proximité, emailing, acquisition et pilotage de projets marketing.",
+      "marketing_link": "/services/marketing",
+
+      "communication_title": "02 Communication & Branding",
+      "communication_subtitle": "Image, messages, identité de marque",
+      "communication_desc": "Communication d’entreprise, branding, identité visuelle, charte graphique et cohérence de marque.",
+      "communication_link": "/services/communication",
+
+      "creation_title": "03 Création & Développement Web",
+      "creation_subtitle": "Design, web, multimédia",
+      "creation_desc": "Conception graphique, développement de sites web, SEO, vidéo, podcast et supports publicitaires.",
+      "creation_link": "/services/creation-web",
+
+      "performance_title": "04 Performance Commerciale",
+      "performance_subtitle": "Consulting, ventes, résultats",
+      "performance_desc": "Audit stratégique, conseil en croissance, optimisation des ventes et accompagnement à l’exécution.",
+      "performance_link": "/services/performance-commerciale",
+      
+      "view_all": "En savoir plus"
     },
     "web": {
       "badge": "Web & SEO",
