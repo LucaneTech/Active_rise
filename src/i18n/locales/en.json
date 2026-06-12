@@ -73,6 +73,24 @@
       "r3_desc": "We do not deliver a report and leave. We stay with our clients until results are achieved.",
       "summary": "An execution partner present at every stage, focused on measurable growth and continuous delivery."
     },
+    "process": {
+      "badge": "A structured approach,",
+      "title": "from insight to impact",
+      "title2": "activate your growth",
+      "step1_title": "01 Initial contact",
+      "step1_subtitle": "Free consultation",
+      "step1_desc": "Free consultation to understand your situation, objectives and challenges.",
+      "step2_title": "02 Diagnosis & Audit",
+      "step2_subtitle": "Understand before acting",
+      "step2_desc": "In-depth analysis of your company, identification of bottlenecks and detection of growth levers.",
+      "step3_title": "03 Strategic proposal",
+      "step3_subtitle": "Provide clear direction",
+      "step3_desc": "Development of a tailor-made action plan, adapted to your reality and ambitions.",
+      "step4_title": "04 Execution & Follow-up",
+      "step4_subtitle": "Take action",
+      "step4_desc": "Deployment of actions, measurement of results and continuous adjustments to maximize performance.",
+      "cta": "Start my diagnosis"
+    },
     "stats": {
       "badge": "By the numbers",
       "title": "Results",
@@ -85,19 +103,6 @@
       "s3_label": "Average growth generated",
       "s4_value": "",
       "s4_label": "Years of expertise"
-    },
-    "process": {
-      "badge": "How we work",
-      "title": "A structured approach,",
-      "title2": "from analysis to action",
-      "p1_title": "First contact",
-      "p1_desc": "Initial exchange to understand your situation, objectives and challenges.",
-      "p2_title": "Diagnosis & Audit",
-      "p2_desc": "In-depth analysis of your company to identify blockages and growth levers.",
-      "p3_title": "Strategic proposal",
-      "p3_desc": "Development of a tailor-made action plan aligned with your objectives.",
-      "p4_title": "Execution & Monitoring",
-      "p4_desc": "Implementation of actions with regular monitoring and continuous adjustments."
     },
     "testimonials": {
       "badge": "Testimonials",
@@ -217,7 +222,7 @@
       "y5": "2024",
       "e5": "150+ companies supported. International recognition."
     },
-      "approach": {
+    "approach": {
       "badge": "Our domains",
       "title": "More than an agency,",
       "title2": "an execution partner",
@@ -603,6 +608,12 @@
     "legal": "Legal notice",
     "privacy": "Privacy policy"
   },
-  "theme": { "light": "Light theme", "dark": "Dark theme" },
-  "lang": { "fr": "Français", "en": "English" }
+  "theme": {
+    "light": "Light theme",
+    "dark": "Dark theme"
+  },
+  "lang": {
+    "fr": "Français",
+    "en": "English"
+  }
 }

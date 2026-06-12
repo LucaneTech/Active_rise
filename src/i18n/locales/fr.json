@@ -73,6 +73,24 @@
       "r3_desc": "Nous ne remettons pas un rapport et nous retirons. Nous restons aux côtés de nos clients jusqu'à ce que les résultats soient au rendez-vous.",
       "summary": "Un partenaire d'exécution engageant, présent et orienté résultats à chaque étape du projet."
     },
+    "process": {
+      "badge": "Une approche structurée,",
+      "title": "de l’analyse à l’action",
+      "title2": "activer votre croissance",
+      "step1_title": "01 Premier contact",
+      "step1_subtitle": "Échange gratuit",
+      "step1_desc": "Échange gratuit pour comprendre votre situation, vos objectifs et vos enjeux.",
+      "step2_title": "02 Diagnostic & Audit",
+      "step2_subtitle": "Comprendre avant d’agir",
+      "step2_desc": "Analyse approfondie de votre entreprise, identification des blocages et détection des leviers de croissance.",
+      "step3_title": "03 Proposition stratégique",
+      "step3_subtitle": "Donner une direction claire",
+      "step3_desc": "Élaboration d'un plan d'action sur mesure, adapté à votre réalité et à vos ambitions.",
+      "step4_title": "04 Exécution & Suivi",
+      "step4_subtitle": "Passer à l’action",
+      "step4_desc": "Déploiement des actions, mesure des résultats et ajustements continus pour maximiser la performance.",
+      "cta": "Démarrer mon diagnostic"
+    },
     "stats": {
       "badge": "En chiffres",
       "title": "Des résultats",
@@ -85,19 +103,6 @@
       "s3_label": "Croissance moyenne générée",
       "s4_value": "",
       "s4_label": "Années d'expertise"
-    },
-    "process": {
-      "badge": "Notre process",
-      "title": "Une approche structurée,",
-      "title2": "de l'analyse à l'action",
-      "p1_title": "Premier contact",
-      "p1_desc": "Échange initial pour comprendre votre situation, vos objectifs et vos enjeux.",
-      "p2_title": "Diagnostic & Audit",
-      "p2_desc": "Diagnostic approfondi de votre entreprise pour identifier les leviers de croissance.",
-      "p3_title": "Proposition stratégique",
-      "p3_desc": "Présentation d'un plan d'action sur mesure adapté à vos objectifs.",
-      "p4_title": "Exécution & Suivi",
-      "p4_desc": "Déploiement des actions avec un suivi régulier et des ajustements continus."
     },
     "testimonials": {
       "badge": "Témoignages",
@@ -602,6 +607,12 @@
     "legal": "Mentions légales",
     "privacy": "Politique de confidentialité"
   },
-  "theme": { "light": "Thème clair", "dark": "Thème sombre" },
-  "lang": { "fr": "Français", "en": "English" }
+  "theme": {
+    "light": "Thème clair",
+    "dark": "Thème sombre"
+  },
+  "lang": {
+    "fr": "Français",
+    "en": "English"
+  }
 }

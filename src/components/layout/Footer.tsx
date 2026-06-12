@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Mail, Phone, MapPin, ArrowRight, ExternalLink, MessageCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, ArrowRight, ExternalLink, MessageCircle} from 'lucide-react';
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -125,10 +125,9 @@ export default function Footer() {
             </ul>
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 bg-gold text-deep font-bold text-sm px-5 py-2.5 rounded-md hover:bg-gold/90 transition-colors"
+              className="inline-flex items-center bg-gold text-deep font-bold text-sm px-5 py-2 rounded-md hover:bg-gold/90 transition-colors"
             >
-              {t('nav.cta')}
-              <ArrowRight size={12} />
+              {t('nav.cta')}            
             </Link>
           </div>
         </div>

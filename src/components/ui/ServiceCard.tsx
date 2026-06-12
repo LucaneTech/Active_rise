@@ -45,7 +45,8 @@ export default function ServiceCard({ icon: Icon, title, subtitle, description, 
             ))}
           </ul>
         )}
-
+      {
+        linkLabel &&
         <Link
           to={link}
           className="inline-flex items-center gap-2 text-[12px] font-semibold text-gold group-hover:gap-3 transition-all duration-300"
@@ -53,6 +54,8 @@ export default function ServiceCard({ icon: Icon, title, subtitle, description, 
           {linkLabel || 'Learn more'}
           <ArrowRight size={13} />
         </Link>
+      }
+        
       </motion.div>
     </RevealOnScroll>
   );

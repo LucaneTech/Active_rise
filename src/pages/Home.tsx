@@ -9,98 +9,24 @@ import {
   Target,
   Zap,
   Quote,
-  Subtitles,
+  FileText,
+  Phone,
+  Rocket,
+  Search,
 } from 'lucide-react';
 
 import SectionTitle from '../components/ui/SectionTitle';
 import RevealOnScroll from '../components/ui/RevealOnScroll';
 import ServiceCard from '../components/ui/ServiceCard';
 import StatsSection from '../components/ui/StatsSection';
-import ProcessSection from '../components/ui/ProcessSection';
+
 import CTASection from '../components/ui/CTASection';
+import type React from 'react';
+import TestimonialCard from '../components/ui/TestimonialCard';
 
-export default function Home() {
-  const { t } = useTranslation();
-
-  const services = [
-    {
-      icon: TrendingUp,
-      titleKey: 'home.services.marketing_title',
-      subtitle: 'home.services.marketing_subtitle',
-      descKey: 'home.services.marketing_desc',
-    },
-    {
-      icon: Megaphone,
-      titleKey: 'home.services.communication_title',
-      subtitle: 'home.services.communication_subtitle',
-      descKey: 'home.services.communication_desc',
-    },
-    {
-      icon: Palette,
-      titleKey: 'home.services.creation_title',
-      subtitle: 'home.services.creation_subtitle',
-      descKey: 'home.services.creation_desc',
-    },
-    {
-      icon: BarChart3,
-      titleKey: 'home.services.performance_title',
-      subtitle: 'home.services.performance_subtitle',
-      descKey: 'home.services.performance_desc',
-    },
-  ];
-
-  const whyReasons = [
-    {
-      icon: Target,
-      titleKey: 'home.why.r1_title',
-      descKey: 'home.why.r1_desc',
-    },
-    {
-      icon: BarChart3,
-      titleKey: 'home.why.r2_title',
-      descKey: 'home.why.r2_desc',
-    },
-    {
-      icon: Zap,
-      titleKey: 'home.why.r3_title',
-      descKey: 'home.why.r3_desc',
-    },
-  ];
-
-  const stats = [
-    { value: '50',  label: t('home.stats.s1_label') },
-    { value: '100', label: t('home.stats.s2_label') },
-    { value: '200', label: t('home.stats.s3_label') },
-    { value: '500', label: t('home.stats.s4_label') },
-  ];
-
-  const processSteps = [
-    {
-      number: '01',
-      title: t('home.process.p1_title'),
-      description: t('home.process.p1_desc'),
-    },
-    {
-      number: '02',
-      title: t('home.process.p2_title'),
-      description: t('home.process.p2_desc'),
-    },
-    {
-      number: '03',
-      title: t('home.process.p3_title'),
-      description: t('home.process.p3_desc'),
-    },
-    {
-      number: '04',
-      title: t('home.process.p4_title'),
-      description: t('home.process.p4_desc'),
-    },
-  ];
-
-  const trustedClients = ['TechVision SAS', 'Groupe Horizon', 'Studio Créa', 'Novatel', 'Axio Partners'];
-
+const HeroSection: React.FC = () => {
   return (
-    <div className="bg-beige overflow-hidden">
+    <>
       <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden px-6 md:px-24"
         style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=80)', backgroundSize: 'cover', backgroundPosition: 'center' }}
       >
@@ -196,18 +122,18 @@ export default function Home() {
                 </div>
               </div>
 
-               <motion.div
-                  animate={{ y: [0, -6, 0] }}
-                  transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut' }}
-                  className="absolute -bottom-12 -left-8 bg-gold px-4 py-3 z-40 rounded-xl shadow-lg"
-                >
-                  <div className="flex items-center gap-2.5">
-                    <div className="w-8 h-8 flex items-center justify-center shrink-0">
-                      <img src="images/black_icon.png" alt="icone active rise" />
-                    </div>
-                    
+              <motion.div
+                animate={{ y: [0, -6, 0] }}
+                transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut' }}
+                className="absolute -bottom-12 -left-8 bg-gold px-4 py-3 z-40 rounded-xl shadow-lg"
+              >
+                <div className="flex items-center gap-2.5">
+                  <div className="w-8 h-8 flex items-center justify-center shrink-0">
+                    <img src="images/black_icon.png" alt="icone active rise" />
                   </div>
-                </motion.div>
+
+                </div>
+              </motion.div>
             </motion.div>
           </div>
         </div>
@@ -233,7 +159,16 @@ export default function Home() {
           </div>
         </motion.div> */}
       </section>
+    </>
+  )
+}
 
+
+
+const WhoAreWe: React.FC = () => {
+  const { t } = useTranslation();
+  return (
+    <>
       <section className="section-padding bg-gray-50/50">
         <div className="container-xl">
           <div className="grid lg:grid-cols-2 gap-16 md:gap-20 items-center">
@@ -290,6 +225,111 @@ export default function Home() {
           </div>
         </div>
       </section>
+    </>
+  )
+}
+
+
+export default function Home() {
+  const { t } = useTranslation();
+
+  const services = [
+    {
+      icon: TrendingUp,
+      titleKey: 'home.services.marketing_title',
+      subtitle: 'home.services.marketing_subtitle',
+      descKey: 'home.services.marketing_desc',
+    },
+    {
+      icon: Megaphone,
+      titleKey: 'home.services.communication_title',
+      subtitle: 'home.services.communication_subtitle',
+      descKey: 'home.services.communication_desc',
+    },
+    {
+      icon: Palette,
+      titleKey: 'home.services.creation_title',
+      subtitle: 'home.services.creation_subtitle',
+      descKey: 'home.services.creation_desc',
+    },
+    {
+      icon: BarChart3,
+      titleKey: 'home.services.performance_title',
+      subtitle: 'home.services.performance_subtitle',
+      descKey: 'home.services.performance_desc',
+    },
+  ];
+
+const process = [
+  {
+    icon: Phone, 
+    number: "01",
+    titleKey: 'home.process.step1_title',
+    subtitle: 'home.process.step1_subtitle',
+    descKey: 'home.process.step1_desc',
+  },
+  {
+    icon: Search,      
+    number: "02",
+    titleKey: 'home.process.step2_title',
+    subtitle: 'home.process.step2_subtitle',
+    descKey: 'home.process.step2_desc',
+  },
+  {
+    icon: FileText,  
+    number: "03",
+    titleKey: 'home.process.step3_title',
+    subtitle: 'home.process.step3_subtitle',
+    descKey: 'home.process.step3_desc',
+  },
+  {
+    icon: Rocket,    
+    number: "04",
+    titleKey: 'home.process.step4_title',
+    subtitle: 'home.process.step4_subtitle',
+    descKey: 'home.process.step4_desc',
+  },
+];
+
+ const testimonials = [
+    { textKey: 'home.testimonials.t1_text', nameKey: 'home.testimonials.t1_name', roleKey: 'home.testimonials.t1_role' },
+    { textKey: 'home.testimonials.t2_text', nameKey: 'home.testimonials.t2_name', roleKey: 'home.testimonials.t2_role' },
+    { textKey: 'home.testimonials.t3_text', nameKey: 'home.testimonials.t3_name', roleKey: 'home.testimonials.t3_role' },
+    { textKey: 'home.testimonials.t4_text', nameKey: 'home.testimonials.t4_name', roleKey: 'home.testimonials.t4_role' },
+  ];
+
+const whyReasons = [
+  {
+    icon: Target,       // Stratégie/objectif
+    titleKey: 'home.why.r1_title',
+    descKey: 'home.why.r1_desc',
+  },
+  {
+    icon: TrendingUp,   // Croissance/performance
+    titleKey: 'home.why.r2_title',
+    descKey: 'home.why.r2_desc',
+  },
+  {
+    icon: Zap,          // Réactivité/impact
+    titleKey: 'home.why.r3_title',
+    descKey: 'home.why.r3_desc',
+  },
+];
+  const stats = [
+    { value: '50', label: t('home.stats.s1_label') },
+    { value: '100', label: t('home.stats.s2_label') },
+    { value: '200', label: t('home.stats.s3_label') },
+    { value: '500', label: t('home.stats.s4_label') },
+  ];
+
+
+
+
+  return (
+    <div className="bg-beige overflow-hidden">
+
+      <HeroSection />
+      <WhoAreWe />
 
       <div className="section-separator" />
 
@@ -318,7 +358,7 @@ export default function Home() {
 
       <div className="section-separator" />
 
-      <section className="section-padding bg-gray-50/50">
+      <section className="section-padding bg-deep">
         <div className="container-xl">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -329,7 +369,7 @@ export default function Home() {
                 </span>
               </RevealOnScroll>
               <RevealOnScroll delay={0.1}>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-black tracking-tight text-deep leading-[1.05] mb-8">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-black tracking-tight text-white leading-[1.05] mb-8">
                   {t('home.why.title')} <span className="text-gold">{t('home.why.title2')}</span>
                 </h2>
               </RevealOnScroll>
@@ -358,7 +398,7 @@ export default function Home() {
                               {/* Ligne décorative */}
                               <div className="h-px flex-1 bg-gradient-to-r from-gold/30 to-transparent" />
                             </div>
-                            <p className="text-deep/80 text-sm leading-relaxed">
+                            <p className="text-white text-sm leading-relaxed">
                               {t(reason.descKey)}
                             </p>
                           </div>
@@ -375,19 +415,19 @@ export default function Home() {
                 alt="Collaboration ActiveRise"
                 width={900}
                 height={384}
-                className="relative w-full h-auto object-cover transition-all duration-700 ease-out group-hover:scale-105"
+                className="relative w-full h-auto object-cover transition-all duration-700 ease-out group-hover:scale-105 border-1 border-yellow-400/40"
                 loading="lazy"
                 decoding="async"
               />
 
               {/* Double overlay pour profondeur */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-yellow-500/50 via-black/20 to-transparent" />
               <div className="absolute inset-0 bg-gradient-to-r from-gold/10 via-transparent to-transparent" />
 
               {/* Texte flottant stylisé */}
               <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6 lg:p-8">
                 <div className="flex items-start gap-3 md:gap-4 max-w-3xl">
-                 <Quote className='text-gold w-10 h-10' />
+                  <Quote className='text-gold w-10 h-10' />
 
                   <div>
                     <p className="text-white/95 text-sm md:text-base lg:text-md leading-relaxed font-medium">
@@ -403,6 +443,32 @@ export default function Home() {
         </div>
       </section>
 
+
+
+      <section className="section-padding bg-gray-50">
+        <div className="container-xl">
+          <SectionTitle
+            badge={t('home.process.badge')}
+            title={t('home.process.title')}
+            titleGold={t('home.services.title2')}
+          />
+          <div className="grid md:grid-cols-2 gap-5 mt-10">
+            {process.map((s, i) => (
+              <ServiceCard
+                key={i}
+                icon={s.icon}
+                title={t(s.titleKey)}
+                subtitle={t(s.subtitle)} 
+                description={t(s.descKey)}
+              
+                delay={i * 0.08}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+
       <StatsSection
         badge={t('home.stats.badge')}
         title={t('home.stats.title')}
@@ -411,13 +477,44 @@ export default function Home() {
         dark={false}
       />
 
-      <ProcessSection
+      {/* <ProcessSection
         badge={t('home.process.badge')}
         title={t('home.process.title')}
         titleGold={t('home.process.title2')}
         steps={processSteps}
         dark={false}
-      />
+      /> */}
+      {/* ─── TESTIMONIALS ─── */}
+      <section className="section-padding bg-deep">
+        <div className="container-xl">
+          <div className="text-center mb-14">
+            <RevealOnScroll>
+              <span className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-gold shadow-badge px-4 py-1.5 rounded-md mb-5">
+                <span className="w-1 h-1 rounded-full bg-gold" />
+                {t('home.testimonials.badge')}
+              </span>
+            </RevealOnScroll>
+            <RevealOnScroll delay={0.1}>
+              <h2 className="text-3xl md:text-4xl font-black tracking-tight text-beige">
+                {t('home.testimonials.title')}{' '}
+                <span className="text-gold">{t('home.testimonials.title2')}</span>
+              </h2>
+            </RevealOnScroll>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+            {testimonials.map((t2, i) => (
+              <TestimonialCard
+                key={i}
+                text={t(t2.textKey)}
+                name={t(t2.nameKey)}
+                role={t(t2.roleKey)}
+                delay={i * 0.1}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
 
       <CTASection
         badge="Passez à l'action"
