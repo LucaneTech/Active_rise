@@ -4,6 +4,111 @@ import { Target, Lightbulb, Shield, Star, Globe, BarChart3 } from 'lucide-react'
 import SectionTitle from '../components/ui/SectionTitle';
 import RevealOnScroll from '../components/ui/RevealOnScroll';
 import CTASection from '../components/ui/CTASection';
+import type React from 'react';
+
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 30 },
+  visible: (delay: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.8, delay, ease: [0.16, 1, 0.3, 1] }
+  })
+}
+
+const HeroSection: React.FC = () => {
+  const { t } = useTranslation()
+
+  return (
+    <section className="relative min-h-screen flex items-center justify-center bg-[#0B0F19] overflow-hidden px-4 sm:px-6 lg:px-8">
+      
+      {/* ─── BACKGROUND & HERO IMAGE ─── */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1920&q=80"
+          alt="ActiveRise Team Background"
+          className="w-full h-full object-cover object-center transform scale-105 select-none pointer-events-none"
+        />
+        {/* Overlay Gradient orienté du bas vers le haut + assombrissement pour le contraste textuel */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F19] via-[#0B0F19]/70 to-[#0B0F19]/10" />
+      </div>
+
+      {/* ─── FORMES GEOMETRIQUES CIRCULAIRES & GLOWS (MODERNE / PRO) ─── */}
+      <div className="absolute inset-0 z-10 overflow-hidden pointer-events-none">
+        {/* Cercle Lumineux Top Gauche */}
+        <div className="absolute -top-40 -left-40 w-96 h-96 rounded-full bg-yellow-500/60 blur-[120px]" />
+        
+        {/* Orbite Vectorielle Moderne Centre-Droit */}
+        <motion.div 
+          animate={{ rotate: 360 }}
+          transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+          className="absolute top-1/4 right-[10%] w-[450px] h-[450px] rounded-full border border-yellow-500/30 border-dashed flex items-center justify-center hidden md:flex"
+        >
+          {/* Cercle plein interne avec effet de flou */}
+          <div className="w-48 h-48 rounded-full bg-gradient-to-tr from-yellow-500/20 to-transparent backdrop-blur-[2px] border border-yellow-500/10" />
+        </motion.div>
+
+        {/* Deuxième cercle décoratif discret */}
+        <div className="absolute bottom-10 left-[15%] w-72 h-72 rounded-full border border-yellow-500/5 bg-gradient-to-tr from-yellow-500/10 to-transparent backdrop-blur-[2px]  hidden lg:block" />
+      </div>
+
+      {/* ─── CONTENU CENTRÉ ET TYPOGRAPHIE ─── */}
+      <div className="relative z-20 w-full max-w-4xl mx-auto text-center flex flex-col items-center">
+       
+
+        {/* Titre Principal H1 */}
+        <motion.h1
+          custom={0.4}
+          initial="hidden"
+          animate="visible"
+          variants={fadeInUp}
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight text-white leading-[1.1] mb-6"
+        >
+          {t('about.hero.title')}{' '}
+          <span className="block mt-2 text-gold text-transparent drop-shadow-sm">
+            {t('about.hero.title2')}
+          </span>
+        </motion.h1>
+
+        {/* Description / Paragraphe */}
+        <motion.p
+          custom={0.6}
+          initial="hidden"
+          animate="visible"
+          variants={fadeInUp}
+          className="text-base sm:text-lg md:text-xl text-white/70 max-w-2xl font-medium leading-relaxed mb-10"
+        >
+          {t('about.hero.text')}
+        </motion.p>
+
+        {/* Tags / Vision Spans */}
+        <motion.div
+          custom={0.8}
+          initial="hidden"
+          animate="visible"
+          variants={fadeInUp}
+          className="flex flex-wrap items-center justify-center gap-3"
+        >
+          {[
+            t('about.vision.title'),
+            t('about.vision.title2'),
+            t('about.vision.title3'),
+          ].map((item, index) => (
+            <span
+              key={index}
+              className="px-5 py-2.5 text-xs sm:text-sm font-semibold tracking-wide text-gold bg-white/5 hover:bg-white/10 border border-yellow-500/10 rounded-xl backdrop-blur-md transition-all duration-300 cursor-default hover:border-gold/30 hover:shadow-[0_0_15px_rgba(211,170,42,0.1)]"
+            >
+              {item}
+            </span>
+          ))}
+        </motion.div>
+
+      </div>
+    </section>
+  )
+}
+
+
 
 export default function About() {
   const { t } = useTranslation();
@@ -23,101 +128,7 @@ export default function About() {
   return (
     <div className="bg-beige overflow-hidden">
 
-      {/* ─── HERO ─── */}
-      <section className="relative min-h-[80vh] flex items-center bg-deep overflow-hidden pt-24">
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_40%_50%,rgba(211,170,42,0.18),transparent)]" />
-          {/* Grille fine mais claire */}
-          <div
-            className="absolute inset-0"
-            style={{
-              backgroundImage: `
-        repeating-linear-gradient(
-          0deg,
-          transparent,
-          transparent 79px,
-          rgba(211, 170, 42, 0.12) 79px,
-          rgba(211, 170, 42, 0.25) 80px
-        ),
-        repeating-linear-gradient(
-          90deg,
-          transparent,
-          transparent 79px,
-          rgba(211, 170, 42, 0.12) 79px,
-          rgba(211, 170, 42, 0.25) 80px
-        )
-      `,
-              backgroundSize: '80px 80px',
-            }}
-          />
-          {/* Gradients supplémentaires */}
-          <div className="absolute inset-0 bg-linear-to-t from-black/30 via-transparent to-transparent" />
-        </div>
-        <div className="container-xl relative z-10 py-10 md:py-20">
-          <div className="grid lg:grid-cols-2 gap-12 xl:gap-20 items-center">
-            <div>
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: 0.2 }}
-              >
-                <span className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-gold shadow-badge px-4 py-1.5 rounded-full mb-6">
-                  <span className="w-1.5 h-1.5 rounded-full bg-gold" />
-                  {t('about.hero.badge')}
-                </span>
-              </motion.div>
-              <motion.h1
-                initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
-                className="text-3xl md:text-4xl lg:text-6xl font-black tracking-tight leading-[1.05] text-beige mb-8"
-              >
-                {t('about.hero.title')}
-                <br />
-                <span className="text-gold">{t('about.hero.title2')}</span>
-              </motion.h1>
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: 0.55 }}
-                className="text-beige text-lg leading-relaxed max-w-2xl mb-8"
-              >
-                {t('about.hero.text')}
-              </motion.p>
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: 0.7 }}
-                className="flex flex-wrap gap-3"
-              >
-                {[
-                  t('about.vision.title'),
-                  t('about.vision.title2'),
-                  t('about.vision.title3'),
-                ].map((item, index) => (
-                  <span key={index} className="inline-flex items-center rounded-full border border-gold/20 bg-gold/10 px-4 py-2 text-[12px] font-semibold text-gold">
-                    {item}
-                  </span>
-                ))}
-              </motion.div>
-            </div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 40 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
-              className="relative group rounded-2xl overflow-hidden shadow-2xl"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=80"
-                alt="L'équipe ActiveRise"
-                className="w-full h-96 object-cover transition-transform duration-700 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent pointer-events-none" />
-            </motion.div>
-          </div>
-        </div>
-      </section>
+      <HeroSection/>
 
       <div className="section-separator" />
 

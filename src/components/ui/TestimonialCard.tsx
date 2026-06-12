@@ -4,8 +4,8 @@ import RevealOnScroll from './RevealOnScroll';
 
 interface Props {
   text: string;
-  name: string;
-  role: string;
+  name?: string;
+  role?: string;
   delay?: number;
 }
 
@@ -27,7 +27,9 @@ export default function TestimonialCard({ text, name, role, delay = 0 }: Props) 
         <Quote size={22} className="text-gold mb-3" strokeWidth={1.5} />
         <p className="text-beige leading-relaxed grow mb-6 text-[13px]">{text}</p>
 
-        <div className="flex items-center gap-3 pt-4 border-t border-gray-600/30">
+       {
+        name &&
+         <div className="flex items-center gap-3 pt-4 border-t border-gray-600/30">
           <div className="relative w-8 h-8 shrink-0">
             <div className="absolute inset-0 rounded-full border border-gold scale-110" />
             <div className="w-8 h-8 rounded-full bg-gold/20 flex items-center justify-center">
@@ -39,6 +41,7 @@ export default function TestimonialCard({ text, name, role, delay = 0 }: Props) 
             <p className="text-beige text-[11px]">{role}</p>
           </div>
         </div>
+       }
       </motion.div>
     </RevealOnScroll>
   );

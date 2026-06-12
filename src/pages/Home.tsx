@@ -506,7 +506,7 @@ const whyReasons = [
               <TestimonialCard
                 key={i}
                 text={t(t2.textKey)}
-                name={t(t2.nameKey)}
+                // name={t(t2.nameKey)}
                 role={t(t2.roleKey)}
                 delay={i * 0.1}
               />
