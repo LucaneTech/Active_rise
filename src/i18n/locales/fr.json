@@ -7,7 +7,7 @@
     "communication": "Communication",
     "performance": "Performance Commerciale",
     "contact": "Contact",
-    "cta": "Contact"
+    "cta": "Demander un diagnostic gratuit"
   },
   "home": {
     "hero": {
@@ -48,14 +48,18 @@
       "title": "4 blocs structurés pour",
       "title2": "activer votre croissance",
       "marketing_title": "01 Marketing",
+      "marketing_subtitle": "Stratégie, acquisition, fidélisation",
       "marketing_desc": "Stratégie marketing globale, marketing digital, campagnes d'acquisition, fidélisation client et pilotage de projets.",
       "communication_title": "02 Communication",
+      "communication_subtitle": "Image, messages, visibilité",
       "communication_desc": "Communication d'entreprise, communication digitale, structuration des messages et cohérence de l'image de marque.",
       "creation_title": "03 Création & Branding",
+      "creation_subtitle": "Design, web, contenu",
       "creation_desc": "Identité visuelle, charte graphique, création de contenus, vidéo, podcast, supports publicitaires et développement de sites web avec SEO.",
       "performance_title": "04 Performance Commerciale",
+      "performance_subtitle": "Consulting, ventes, résultats",
       "performance_desc": "Consulting stratégique, optimisation des ventes, suivi des équipes commerciales et pilotage de la performance.",
-      "view_all": "Voir tous les services"
+      "view_all": "En savoir plus"
     },
     "why": {
       "badge": "Ce qui nous différencie",

@@ -9,6 +9,7 @@ import {
   Target,
   Zap,
   Quote,
+  Subtitles,
 } from 'lucide-react';
 
 import SectionTitle from '../components/ui/SectionTitle';
@@ -25,21 +26,25 @@ export default function Home() {
     {
       icon: TrendingUp,
       titleKey: 'home.services.marketing_title',
+      subtitle: 'home.services.marketing_subtitle',
       descKey: 'home.services.marketing_desc',
     },
     {
       icon: Megaphone,
       titleKey: 'home.services.communication_title',
+      subtitle: 'home.services.communication_subtitle',
       descKey: 'home.services.communication_desc',
     },
     {
       icon: Palette,
       titleKey: 'home.services.creation_title',
+      subtitle: 'home.services.creation_subtitle',
       descKey: 'home.services.creation_desc',
     },
     {
       icon: BarChart3,
       titleKey: 'home.services.performance_title',
+      subtitle: 'home.services.performance_subtitle',
       descKey: 'home.services.performance_desc',
     },
   ];
@@ -92,9 +97,11 @@ export default function Home() {
     },
   ];
 
+  const trustedClients = ['TechVision SAS', 'Groupe Horizon', 'Studio Créa', 'Novatel', 'Axio Partners'];
+
   return (
     <div className="bg-beige overflow-hidden">
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 md:px-24"
+      <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden px-6 md:px-24"
         style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=80)', backgroundSize: 'cover', backgroundPosition: 'center' }}
       >
         <div className="absolute inset-0 pointer-events-none">
@@ -170,11 +177,11 @@ export default function Home() {
               initial={{ opacity: 0, x: 40, y: 16 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ duration: 1, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
-              className="relative max-w-md lg:max-w-xl rounded-lg overflow-hidden shadow-2xl"
+              className="relative max-w-md lg:max-w-xl rounded-lg  shadow-2xl"
             >
               <div className="absolute bg-black/70 top-0 left-0  w-30 h-30 rounded-full blur-xl" />
 
-              <div className="bg-white/6 border border-white/8 rounded-lg p-10 min-h-105 backdrop-blur-sm">
+              <div className="bg-white/6 border border-white/8 rounded-lg p-10 min-h-105 backdrop-blur-sm z-20">
                 <div className="text-gold text-[11px] uppercase tracking-[0.28em] mb-4">ActiveRise</div>
                 <h2 className="text-3xl md:text-4xl font-black text-beige mb-5">Stratégie. Création. Performance.</h2>
                 <p className="text-gold leading-relaxed">
@@ -188,9 +195,43 @@ export default function Home() {
                   ))}
                 </div>
               </div>
+
+               <motion.div
+                  animate={{ y: [0, -6, 0] }}
+                  transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut' }}
+                  className="absolute -bottom-12 -left-8 bg-gold px-4 py-3 z-40 rounded-xl shadow-lg"
+                >
+                  <div className="flex items-center gap-2.5">
+                    <div className="w-8 h-8 flex items-center justify-center shrink-0">
+                      <img src="images/black_icon.png" alt="icone active rise" />
+                    </div>
+                    
+                  </div>
+                </motion.div>
             </motion.div>
           </div>
         </div>
+
+        {/* <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.1, duration: 0.8 }}
+          className="absolute bottom-0  z-10  py-8 md:py-12 lg:py-16"
+        >
+          <div className="container-xl">
+            <div className="flex flex-col sm:flex-row items-center gap-5 sm:gap-10">
+              <span className="text-gold text-[15px] font-[300] uppercase tracking-[0.22em] whitespace-nowrap shrink-0">
+                Ils nous font confiance
+              </span>
+              <div className="hidden sm:block w-px h-5 bg-beige/10 shrink-0" />
+              <div className="flex flex-wrap justify-center sm:justify-start items-center gap-6 sm:gap-10">
+                {trustedClients.map((name) => (
+                  <span key={name} className="logo-strip-item">{name}</span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </motion.div> */}
       </section>
 
       <section className="section-padding bg-gray-50/50">
@@ -265,7 +306,9 @@ export default function Home() {
                 key={i}
                 icon={s.icon}
                 title={t(s.titleKey)}
+                subtitle={t(s.subtitle)}
                 description={t(s.descKey)}
+                linkLabel={t('home.services.view_all')}
                 delay={i * 0.08}
               />
             ))}

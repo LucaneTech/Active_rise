@@ -7,7 +7,7 @@
     "communication": "Communication",
     "performance": "Commercial Performance",
     "contact": "Contact",
-    "cta": "Contact"
+    "cta": "Request a free diagnosis"
   },
   "home": {
     "hero": {
@@ -48,14 +48,18 @@
       "title": "4 structured blocks",
       "title2": "for your growth",
       "marketing_title": "01 Marketing",
+      "marketing_subtitle": "Strategy, acquisition, loyalty",
       "marketing_desc": "Global marketing strategy, digital marketing, acquisition campaigns, customer loyalty and project management.",
       "communication_title": "02 Communication",
+      "communication_subtitle": "Image, messages, visibility",
       "communication_desc": "Corporate communication, digital communication, message structuring and brand consistency.",
       "creation_title": "03 Creation & Branding",
+      "creation_subtitle": "Design, web, content",
       "creation_desc": "Visual identity, brand guidelines, content creation, video, podcast, advertising assets and website development with SEO.",
       "performance_title": "04 Commercial Performance",
+      "performance_subtitle": "Consulting, sales, results",
       "performance_desc": "Strategic consulting, sales optimization, commercial team support and performance management.",
-      "view_all": "View all services"
+      "view_all": "Learn more"
     },
     "why": {
       "badge": "What sets us apart",

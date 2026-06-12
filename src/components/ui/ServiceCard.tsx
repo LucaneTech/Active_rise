@@ -7,13 +7,15 @@ import RevealOnScroll from './RevealOnScroll';
 interface Props {
   icon: LucideIcon;
   title: string;
+  subtitle?: string;
   description: string;
   link?: string;
+  linkLabel?: string;
   delay?: number;
   items?: string[];
 }
 
-export default function ServiceCard({ icon: Icon, title, description, link = '/services', delay = 0, items }: Props) {
+export default function ServiceCard({ icon: Icon, title, subtitle, description, link = '/services', linkLabel, delay = 0, items }: Props) {
   return (
     <RevealOnScroll delay={delay} direction="up">
       <motion.div
@@ -30,6 +32,7 @@ export default function ServiceCard({ icon: Icon, title, description, link = '/s
         </div>
 
         <h3 className="text-[15px] font-bold tex t-deep mb-2 leading-snug">{title}</h3>
+          {subtitle && <p className="text-[13px] text-gold mb-3">{subtitle}</p>}
         <p className="text-deep text-[13px] leading-relaxed mb-5 grow">{description}</p>
 
         {items && items.length > 0 && (
@@ -47,7 +50,7 @@ export default function ServiceCard({ icon: Icon, title, description, link = '/s
           to={link}
           className="inline-flex items-center gap-2 text-[12px] font-semibold text-gold group-hover:gap-3 transition-all duration-300"
         >
-          En savoir plus
+          {linkLabel || 'Learn more'}
           <ArrowRight size={13} />
         </Link>
       </motion.div>
