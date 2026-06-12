@@ -11,13 +11,22 @@
   },
   "home": {
     "hero": {
-      "badge": "",
       "title1": "De la stratégie",
       "title2": "à l'action.",
       "subtitle": "ActiveRise accompagne les entreprises dans leur croissance à travers le marketing, la communication, la performance commerciale et le développement digital - de la réflexion jusqu'à l'exécution.",
       "cta_primary": "Demander un diagnostic gratuit",
       "cta_secondary": "",
-      "scroll": "Défiler"
+      "scroll": "Défiler",
+      "card_title": "Stratégie. Création. Performance.",
+      "card_text": "Un accompagnement opérationnel pour transformer vos ambitions en actions mesurables et cohérentes.",
+      "card_tags": {
+        "tag1": "Marketing",
+        "tag2": "Communication",
+        "tag3": "Création & Branding",
+        "tag4": "Performance Commerciale"
+      },
+      "badge_text": "Depuis 2016",
+      "badge_subtext": "8+ ans d'expertise"
     },
     "philosophy": {
       "badge": "Qui sommes-nous",
@@ -166,33 +175,69 @@
       "text": "Notre vision est de devenir le partenaire stratégique de référence pour les entreprises ambitieuses qui cherchent à accélérer leur croissance de manière cohérente et durable."
     },
     "mission": {
-      "badge": "Mission & Histoire",
+      "badge": "Mission",
+      "title": "Orienter.",
+      "title2": "Exécuter.",
+      "title3": "Impulser.",
+      "text": "Notre mission est de structurer, orienter et activer la croissance des entreprises — en reliant stratégie, communication et exécution dans une logique intégrée orientée résultats.",
+      "philoTitle": "Manifeste philosophique",
+      "philosophie": "Une stratégie sans exécution n’a aucune valeur.",
+      "signature": "— La philosophie ActiveRise"
+    },
+    "story": {
+      "badge": "Notre Histoire",
       "title": "Née d'une conviction",
       "title2": "profonde",
       "text1": "ActiveRise a été fondée sur un constat simple : trop d'entreprises ont une vision claire mais peinent à la transformer en actions concrètes et mesurables.",
-      "text2": "Notre mission est de combler ce fossé entre la stratégie et l'exécution, en apportant à chaque client une approche intégrée qui connecte marketing, communication et performance commerciale."
-    },
-    "values": {
-      "badge": "Nos valeurs",
-      "title": "Ce qui guide",
-      "title2": "chacune de nos actions",
-      "v1_title": "Rigueur",
-      "v1_desc": "Chaque recommandation s'appuie sur une analyse précise et un suivi exigeant.",
-      "v2_title": "Engagement total",
-      "v2_desc": "Nous investissons nos ressources et notre énergie comme si c'était votre entreprise.",
-      "v3_title": "Clarté avant tout",
-      "v3_desc": "Nos plans, messages et livrables sont pensés pour être clairs, utiles et actionnables."
+      "text2": "Notre mission est de combler ce fossé entre la stratégie et l'exécution, en apportant à chaque client une approche intégrée qui connecte marketing, communication et performance commerciale.",
+      "strategy": "Stratégie",
+      "para1": "Nous aidons les équipes à transformer leur vision en actions structurées, claires et mesurables.",
+      "para2": "Notre valeur ajoutée se mesure dans la qualité de mise en œuvre et la cohérence de chaque étape."
     },
     "differentiation": {
       "badge": "Ce qui nous différencie",
-      "title": "Une approche",
-      "title2": "véritablement intégrée",
-      "d1_title": "Conseiller stratégique",
-      "d1_desc": "Nous clarifions votre trajectoire avec une feuille de route actionnable.",
-      "d2_title": "Structurant de croissance",
-      "d2_desc": "Nous organisons vos leviers pour un déploiement cohérent et durable.",
-      "d3_title": "Partenaire d'exécution",
-      "d3_desc": "Nous accompagnons la mise en œuvre jusqu'aux résultats, ensemble."
+      "title": "Plus qu’une agence :",
+      "title2": "un partenaire d’exécution",
+      "intro": "Nous ne nous contentons pas de conseiller. Nous agissons avec vous pour transformer les plans en résultats concrets et mesurables.",
+      "items": [
+        {
+          "id": "01",
+          "title": "Conseiller stratégique",
+          "subtitle": "Analyser avant d’agir",
+          "description": "Nous étudions votre situation, identifions les blocages et vous donnons une direction claire fondée sur l’analyse."
+        },
+        {
+          "id": "02",
+          "title": "Structurant de croissance",
+          "subtitle": "Organiser pour performer",
+          "description": "Nous organisons les leviers de votre croissance — marketing, communication, commercial — en une stratégie unifiée et cohérente."
+        },
+        {
+          "id": "03",
+          "title": "Partenaire d’exécution",
+          "subtitle": "Agir jusqu’aux résultats",
+          "description": "Nous accompagnons la mise en œuvre jusqu’à ce que les objectifs soient atteints. Pas de rapport sans suivi."
+        }
+      ]
+    },
+    "values": {
+      "badge": "Nos valeurs",
+      "title": "Ce qui guide chacune",
+      "title2": "de nos actions",
+      "items": [
+        {
+          "title": "Rigueur d’exécution",
+          "description": "Nous ne validons pas une action sans en mesurer l’impact. Chaque décision est ancrée dans l’analyse, chaque livrable est tenu à un standard élevé."
+        },
+        {
+          "title": "Engagement total",
+          "description": "Nous nous impliquons dans la réussite de nos clients comme si c’était notre propre entreprise. Pas de demi-mesure."
+        },
+        {
+          "title": "Clarté avant tout",
+          "description": "Nous simplifions ce qui est complexe. Un client doit toujours comprendre où il en est, où il va et pourquoi."
+        }
+      ]
     },
     "expertise": {
       "badge": "Expertise",
@@ -230,8 +275,8 @@
     },
     "cta": {
       "title": "Construisons ensemble",
-      "title2": "votre succès",
-      "text": "Rejoignez les entreprises qui ont choisi ActiveRise comme partenaire stratégique de leur croissance.",
+      "title2": "votre croissance.",
+      "text": "Rejoignez les entreprises qui ont choisi ActiveRise comme partenaire stratégique de leur développement.",
       "btn": "Demander un diagnostic gratuit"
     }
   },

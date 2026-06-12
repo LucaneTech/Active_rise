@@ -25,10 +25,17 @@ import type React from 'react';
 import TestimonialCard from '../components/ui/TestimonialCard';
 
 const HeroSection: React.FC = () => {
+  const { t } = useTranslation()
+
   return (
     <>
-      <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden px-6 md:px-24"
-        style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=80)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+      <section
+        className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden px-6 md:px-24"
+        style={{
+          backgroundImage: 'url(https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=80)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}
       >
         <div className="absolute inset-0 pointer-events-none">
           {/* Grille fine mais claire */}
@@ -36,32 +43,34 @@ const HeroSection: React.FC = () => {
             className="absolute inset-0"
             style={{
               backgroundImage: `
-        repeating-linear-gradient(
-          0deg,
-          transparent,
-          transparent 79px,
-          rgba(211, 170, 42, 0.15) 79px,
-          rgba(211, 170, 42, 0.35) 80px
-        ),
-        repeating-linear-gradient(
-          90deg,
-          transparent,
-          transparent 79px,
-          rgba(211, 170, 42, 0.15) 79px,
-          rgba(211, 170, 42, 0.35) 80px
-        )
-      `,
+          repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 79px,
+            rgba(211, 170, 42, 0.15) 79px,
+            rgba(211, 170, 42, 0.35) 80px
+          ),
+          repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 79px,
+            rgba(211, 170, 42, 0.15) 79px,
+            rgba(211, 170, 42, 0.35) 80px
+          )
+        `,
               backgroundSize: '80px 80px',
             }}
           />
 
-          {/* Dégradé qui vient du bas sans écraser */}
+          {/* Dégradés */}
           <div className="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent" />
           <div className="absolute inset-0 bg-linear-to-b from-black/40 via-transparent to-transparent" />
         </div>
 
         <div className="flex justify-center items-baseline relative z-10 py-28">
           <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-32">
+
+            {/* Colonne gauche - Texte */}
             <div>
               <motion.h1
                 initial={{ opacity: 0, y: 40 }}
@@ -69,9 +78,9 @@ const HeroSection: React.FC = () => {
                 transition={{ duration: 0.8, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
                 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black tracking-tight leading-[1.04] text-beige mb-6"
               >
-                De la stratégie
+                {t('home.hero.title1')}
                 <br />
-                <span className="text-gold">à l'action.</span>
+                <span className="text-gold">{t('home.hero.title2')}</span>
               </motion.h1>
 
               <motion.p
@@ -80,7 +89,7 @@ const HeroSection: React.FC = () => {
                 transition={{ duration: 0.7, delay: 0.4 }}
                 className="text-beige md:text-lg max-w-xl leading-relaxed mb-10"
               >
-                ActiveRise accompagne les entreprises dans leur croissance à travers le marketing, la communication, la performance commerciale et le développement digital - de la réflexion jusqu'à l'exécution.
+                {t('home.hero.subtitle')}
               </motion.p>
 
               <motion.div
@@ -93,29 +102,41 @@ const HeroSection: React.FC = () => {
                   to="/contact"
                   className="inline-flex items-center gap-3 bg-gold text-deep font-bold px-8 py-3 rounded-md hover:bg-gold/90 transition-colors text-sm tracking-wide"
                 >
-                  Demander un diagnostic gratuit
-
+                  {t('home.hero.cta_primary')}
                 </Link>
               </motion.div>
             </div>
 
+            {/* Colonne droite - Card */}
             <motion.div
               initial={{ opacity: 0, x: 40, y: 16 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ duration: 1, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
-              className="relative max-w-md lg:max-w-xl rounded-lg  shadow-2xl"
+              className="relative max-w-md lg:max-w-xl rounded-lg shadow-2xl"
             >
-              <div className="absolute bg-black/70 top-0 left-0  w-30 h-30 rounded-full blur-xl" />
+              <div className="absolute bg-black/70 top-0 left-0 w-30 h-30 rounded-full blur-xl" />
 
               <div className="bg-white/6 border border-white/8 rounded-lg p-10 min-h-105 backdrop-blur-sm z-20">
-                <div className="text-gold text-[11px] uppercase tracking-[0.28em] mb-4">ActiveRise</div>
-                <h2 className="text-3xl md:text-4xl font-black text-beige mb-5">Stratégie. Création. Performance.</h2>
+                <div className="text-gold text-[11px] uppercase tracking-[0.28em] mb-4">
+                  ActiveRise
+                </div>
+                <h2 className="text-3xl md:text-4xl font-black text-beige mb-5">
+                  {t('home.hero.card_title')}
+                </h2>
                 <p className="text-gold leading-relaxed">
-                  Un accompagnement opérationnel pour transformer vos ambitions en actions mesurables et cohérentes.
+                  {t('home.hero.card_text')}
                 </p>
                 <div className="mt-10 grid gap-3">
-                  {['Marketing', 'Communication', 'Création & Branding', 'Performance Commerciale'].map((tag) => (
-                    <span key={tag} className="inline-flex items-center rounded-lg border border-white/20 bg-white/5 px-4 py-3 text-[13px] text-white/80 font-medium tracking-wide  ">
+                  {[
+                    t('home.hero.card_tags.tag1'),
+                    t('home.hero.card_tags.tag2'),
+                    t('home.hero.card_tags.tag3'),
+                    t('home.hero.card_tags.tag4'),
+                  ].map((tag: string, index: number) => (
+                    <span
+                      key={index}
+                      className="inline-flex items-center rounded-lg border border-white/20 bg-white/5 px-4 py-3 text-[13px] text-white/80 font-medium tracking-wide"
+                    >
                       {tag}
                     </span>
                   ))}
@@ -131,33 +152,19 @@ const HeroSection: React.FC = () => {
                   <div className="w-8 h-8 flex items-center justify-center shrink-0">
                     <img src="images/black_icon.png" alt="icone active rise" />
                   </div>
-
+                  {/* <div>
+                    <div className="text-deep text-xs font-black leading-none mb-0.5">
+                      {t('home.hero.badge_text')}
+                    </div>
+                    <div className="text-deep/60 text-[10px]">
+                      {t('home.hero.badge_subtext')}
+                    </div>
+                  </div> */}
                 </div>
               </motion.div>
             </motion.div>
           </div>
         </div>
-
-        {/* <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.1, duration: 0.8 }}
-          className="absolute bottom-0  z-10  py-8 md:py-12 lg:py-16"
-        >
-          <div className="container-xl">
-            <div className="flex flex-col sm:flex-row items-center gap-5 sm:gap-10">
-              <span className="text-gold text-[15px] font-[300] uppercase tracking-[0.22em] whitespace-nowrap shrink-0">
-                Ils nous font confiance
-              </span>
-              <div className="hidden sm:block w-px h-5 bg-beige/10 shrink-0" />
-              <div className="flex flex-wrap justify-center sm:justify-start items-center gap-6 sm:gap-10">
-                {trustedClients.map((name) => (
-                  <span key={name} className="logo-strip-item">{name}</span>
-                ))}
-              </div>
-            </div>
-          </div>
-        </motion.div> */}
       </section>
     </>
   )
@@ -260,61 +267,61 @@ export default function Home() {
     },
   ];
 
-const process = [
-  {
-    icon: Phone, 
-    number: "01",
-    titleKey: 'home.process.step1_title',
-    subtitle: 'home.process.step1_subtitle',
-    descKey: 'home.process.step1_desc',
-  },
-  {
-    icon: Search,      
-    number: "02",
-    titleKey: 'home.process.step2_title',
-    subtitle: 'home.process.step2_subtitle',
-    descKey: 'home.process.step2_desc',
-  },
-  {
-    icon: FileText,  
-    number: "03",
-    titleKey: 'home.process.step3_title',
-    subtitle: 'home.process.step3_subtitle',
-    descKey: 'home.process.step3_desc',
-  },
-  {
-    icon: Rocket,    
-    number: "04",
-    titleKey: 'home.process.step4_title',
-    subtitle: 'home.process.step4_subtitle',
-    descKey: 'home.process.step4_desc',
-  },
-];
+  const process = [
+    {
+      icon: Phone,
+      number: "01",
+      titleKey: 'home.process.step1_title',
+      subtitle: 'home.process.step1_subtitle',
+      descKey: 'home.process.step1_desc',
+    },
+    {
+      icon: Search,
+      number: "02",
+      titleKey: 'home.process.step2_title',
+      subtitle: 'home.process.step2_subtitle',
+      descKey: 'home.process.step2_desc',
+    },
+    {
+      icon: FileText,
+      number: "03",
+      titleKey: 'home.process.step3_title',
+      subtitle: 'home.process.step3_subtitle',
+      descKey: 'home.process.step3_desc',
+    },
+    {
+      icon: Rocket,
+      number: "04",
+      titleKey: 'home.process.step4_title',
+      subtitle: 'home.process.step4_subtitle',
+      descKey: 'home.process.step4_desc',
+    },
+  ];
 
- const testimonials = [
+  const testimonials = [
     { textKey: 'home.testimonials.t1_text', nameKey: 'home.testimonials.t1_name', roleKey: 'home.testimonials.t1_role' },
     { textKey: 'home.testimonials.t2_text', nameKey: 'home.testimonials.t2_name', roleKey: 'home.testimonials.t2_role' },
     { textKey: 'home.testimonials.t3_text', nameKey: 'home.testimonials.t3_name', roleKey: 'home.testimonials.t3_role' },
     { textKey: 'home.testimonials.t4_text', nameKey: 'home.testimonials.t4_name', roleKey: 'home.testimonials.t4_role' },
   ];
 
-const whyReasons = [
-  {
-    icon: Target,       // Stratégie/objectif
-    titleKey: 'home.why.r1_title',
-    descKey: 'home.why.r1_desc',
-  },
-  {
-    icon: TrendingUp,   // Croissance/performance
-    titleKey: 'home.why.r2_title',
-    descKey: 'home.why.r2_desc',
-  },
-  {
-    icon: Zap,          // Réactivité/impact
-    titleKey: 'home.why.r3_title',
-    descKey: 'home.why.r3_desc',
-  },
-];
+  const whyReasons = [
+    {
+      icon: Target,       // Stratégie/objectif
+      titleKey: 'home.why.r1_title',
+      descKey: 'home.why.r1_desc',
+    },
+    {
+      icon: TrendingUp,   // Croissance/performance
+      titleKey: 'home.why.r2_title',
+      descKey: 'home.why.r2_desc',
+    },
+    {
+      icon: Zap,          // Réactivité/impact
+      titleKey: 'home.why.r3_title',
+      descKey: 'home.why.r3_desc',
+    },
+  ];
   const stats = [
     { value: '50', label: t('home.stats.s1_label') },
     { value: '100', label: t('home.stats.s2_label') },
@@ -458,9 +465,9 @@ const whyReasons = [
                 key={i}
                 icon={s.icon}
                 title={t(s.titleKey)}
-                subtitle={t(s.subtitle)} 
+                subtitle={t(s.subtitle)}
                 description={t(s.descKey)}
-              
+
                 delay={i * 0.08}
               />
             ))}

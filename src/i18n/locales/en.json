@@ -11,13 +11,22 @@
   },
   "home": {
     "hero": {
-      "badge": "",
       "title1": "From strategy",
       "title2": "to action.",
-      "subtitle": "ActiveRise supports companies in their growth through marketing, communication, commercial performance and digital development - from thinking to execution.",
+      "subtitle": "ActiveRise supports businesses in their growth through marketing, communication, commercial performance, and digital development - from strategic thinking to execution.",
       "cta_primary": "Request a free diagnosis",
       "cta_secondary": "",
-      "scroll": "Scroll"
+      "scroll": "Scroll",
+      "card_title": "Strategy. Creation. Performance.",
+      "card_text": "Operational support to transform your ambitions into measurable and coherent actions.",
+      "card_tags": {
+        "tag1": "Marketing",
+        "tag2": "Communication",
+        "tag3": "Creation & Branding",
+        "tag4": "Commercial Performance"
+      },
+      "badge_text": "Since 2016",
+      "badge_subtext": "8+ years of expertise"
     },
     "philosophy": {
       "badge": "Who we are",
@@ -166,33 +175,69 @@
       "text": "Our vision is to become the go-to strategic partner for ambitious companies seeking to accelerate their growth in a coherent and sustainable way."
     },
     "mission": {
-      "badge": "Mission & History",
-      "title": "Born from a deep",
-      "title2": "conviction",
-      "text1": "ActiveRise was founded on a simple observation: too many companies have a clear vision but struggle to transform it into concrete, measurable actions.",
-      "text2": "Our mission is to bridge this gap between strategy and execution, bringing each client an integrated approach that connects marketing, communication and commercial performance."
+      "badge": "Mission",
+      "title": "Orient.",
+      "title2": "Execute.",
+      "title3": "Drive.",
+      "text": "Our mission is to structure, guide, and activate business growth — bridging strategy, communication, and execution within an integrated, results-oriented approach.",
+      "philoTitle": "Philosophical manifesto",
+      "philosophie": "Strategy without execution is worthless.",
+      "signature": "— The ActiveRise philosophy"
     },
-    "values": {
-      "badge": "Our values",
-      "title": "What guides",
-      "title2": "each of our actions",
-      "v1_title": "Rigor",
-      "v1_desc": "Every recommendation is grounded in precise analysis and demanding follow-through.",
-      "v2_title": "Total commitment",
-      "v2_desc": "We invest our resources and energy as if it were your own business.",
-      "v3_title": "Clarity above all",
-      "v3_desc": "Our plans, messages and deliverables are designed to be clear, useful and actionable."
+    "story": {
+      "badge": "Our Story",
+      "title": "Born from a",
+      "title2": "deep conviction",
+      "text1": "ActiveRise was built on a simple insight: many businesses have a clear vision but struggle to turn it into concrete, measurable actions.",
+      "text2": "Our mission is to close the gap between strategy and execution, delivering an integrated approach that connects marketing, communication, and sales performance.",
+      "strategy": "Strategy",
+      "para1": "We help teams turn their vision into structured, clear, and measurable action plans.",
+      "para2": "Our value lies in the quality of execution and the consistency of every step along the way."
     },
     "differentiation": {
       "badge": "What sets us apart",
-      "title": "A truly",
-      "title2": "integrated approach",
-      "d1_title": "Strategic advisor",
-      "d1_desc": "We clarify your growth path with an actionable roadmap.",
-      "d2_title": "Growth organizer",
-      "d2_desc": "We structure your levers for coherent and durable deployment.",
-      "d3_title": "Execution partner",
-      "d3_desc": "We support implementation all the way to results, together."
+      "title": "More than an agency:",
+      "title2": "an execution partner",
+      "intro": "We don't just advise. We work alongside you to turn plans into concrete, measurable results.",
+      "items": [
+        {
+          "id": "01",
+          "title": "Strategic Advisor",
+          "subtitle": "Analyze before acting",
+          "description": "We analyze your situation, identify bottlenecks, and provide a clear direction built on solid insights."
+        },
+        {
+          "id": "02",
+          "title": "Growth Structurer",
+          "subtitle": "Organize to perform",
+          "description": "We organize your growth drivers — marketing, communication, sales — into a unified and coherent strategy."
+        },
+        {
+          "id": "03",
+          "title": "Execution Partner",
+          "subtitle": "Act until results are met",
+          "description": "We support your implementation until your goals are fully achieved. No reports without execution."
+        }
+      ]
+    },
+    "values": {
+      "badge": "Our Values",
+      "title": "What guides every single",
+      "title2": "one of our actions",
+      "items": [
+        {
+          "title": "Execution Rigor",
+          "description": "We do not validate an action without measuring its impact. Every decision is rooted in analysis, every deliverable is held to a premium standard."
+        },
+        {
+          "title": "Total Commitment",
+          "description": "We invest ourselves in our clients' success as if it were our own business. No half-measures."
+        },
+        {
+          "title": "Clarity Above All",
+          "description": "We simplify the complex. A client must always know where they stand, where they are going, and why."
+        }
+      ]
     },
     "expertise": {
       "badge": "Expertise",
@@ -420,10 +465,10 @@
       "r4_desc": "Clear indicators and measurable progression of your results."
     },
     "cta": {
-      "title": "A service that suits",
-      "title2": "you?",
-      "text": "Let's discuss your needs and build your tailored strategy together.",
-      "btn": "Request a quote"
+      "title": "Let’s build",
+      "title2": "your growth together.",
+      "text": "Join the companies that have chosen ActiveRise as their strategic development partner.",
+      "btn": "Request a free diagnostic"
     }
   },
   "cases": {
