@@ -3,9 +3,7 @@
     "home": "Home",
     "about": "About",
     "services": "Services",
-    "marketing": "Marketing",
-    "communication": "Communication",
-    "performance": "Commercial Performance",
+    "cases": "Cases studies",
     "contact": "Contact",
     "cta": "Request a free diagnosis"
   },
@@ -442,7 +440,7 @@
       "p6_desc": "KPI monitoring and continuous optimization to maximize results."
     },
     "deliverables": {
-      "badge": "// Impact & Results",
+      "badge": " Impact & Results",
       "section_title": "What you will get",
       "item1": {
         "title": "Visibility increases",
@@ -468,98 +466,68 @@
       "btn": "Request a free diagnostic"
     }
   },
-  "cases": {
+  "portfolio": {
     "hero": {
-      "badge": "Case studies",
-      "title": "Concrete and",
-      "title2": "measurable results",
-      "text": "Discover how we have supported companies in their transformation and growth."
+      "badge": "Performance",
+      "title": "Tangible and measurable",
+      "titleGold": "results",
+      "description": "Discover how we have accompanied businesses through their transformation and expansion — using a structured, results-driven approach."
+    },
+    "case": "Case Studies",
+    "infos": {
+      "mission": "Mission",
+      "responsable": "Manager",
+      "sector": "Sector",
+      "adress": "Location",
+      "contexte": "The Context",
+      "challenge": "The Challenge",
+      "intervention": "Our Intervention",
+      "management": "Ongoing Management",
+      "result": "Measurable Results"
     },
     "case1": {
-      "company": "TechVision SAS",
-      "tag": "Digital Marketing & Branding",
-      "title": "Complete strategic overhaul",
-      "challenge_label": "The challenge",
-      "challenge": "TechVision struggled to differentiate itself in a saturated market. Blurred image, inconsistent messages and declining customer acquisition.",
-      "solution_label": "Our solution",
-      "solution": "Complete brand identity overhaul, new content strategy and deployment of targeted digital campaigns.",
-      "kpi1_val": "+127%",
-      "kpi1_label": "Lead generation",
-      "kpi2_val": "×4",
-      "kpi2_label": "Conversion rate",
-      "kpi3_val": "6 months",
-      "kpi3_label": "Time to results",
-      "testimonial": "Active Rise completely transformed our approach. Their results speak for themselves.",
-      "client_name": "Marie Dubois",
-      "client_role": "CEO, TechVision SAS"
+      "tag": "Marketing & Communication",
+      "title": "Eureka & Co",
+      "manager": "Mr. Harnode Bayonnard, Managing Director",
+      "sector": "Hygiene, maintenance, green spaces, air conditioning",
+      "location": "Pointe-Noire, Republic of the Congo",
+      "context": "Eureka & Co specializes in hygiene, pest control, maintenance, landscaping, and air conditioning. The business had an existing website but suffered from an insufficient, unaligned digital presence to fuel its scale.",
+      "challenge": "Identify digital growth levers, restructure online presence, and deploy cohesive messaging — all while satisfying a meticulous executive strict on fine details and deadlines.",
+      "int1": "Comprehensive audit and strategic identification of major growth channels.",
+      "int2": "Full custom web redesign, engineered to match the client's high standards of precision.",
+      "int3": "Setup, optimization, and deployment across social platforms (Facebook, Instagram, TikTok, LinkedIn).",
+      "int4": "Production of a high-end commercial video covering the company's full service suite.",
+      "int5": "Global execution of an aligned branding and digital communication roadmap.",
+      "management": "ActiveRise handles continuous management of Eureka & Co's ecosystem: maintenance, web updates, social media curation, content production, and monthly performance audits.",
+      "res1": "Fully operational custom website actively managed round-the-clock.",
+      "res2": "Active, highly corporate presence established across 4 major digital channels.",
+      "res3": "Thousands of targeted, organic views generated on published assets.",
+      "res4": "Overall conversion rates steadily progressing month-over-month.",
+      "note": "The Eureka & Co website is live online and serves as direct, verifiable proof of ActiveRise's execution quality."
     },
     "case2": {
-      "company": "Groupe Horizon",
-      "tag": "Communication & Strategy",
-      "title": "Premium brand launch",
-      "challenge_label": "The challenge",
-      "challenge": "Launch of a new high-end service line without a clear identity or defined communication strategy.",
-      "solution_label": "Our solution",
-      "solution": "Creation of a premium identity, development of a multi-channel launch strategy and execution support.",
-      "kpi1_val": "×3",
-      "kpi1_label": "Awareness gained",
-      "kpi2_val": "89%",
-      "kpi2_label": "Client satisfaction",
-      "kpi3_val": "+210%",
-      "kpi3_label": "Campaign ROI",
-      "testimonial": "The launch exceeded all our expectations. Active Rise created an identity that truly represents us.",
-      "client_name": "Jean-Pierre Martin",
-      "client_role": "Director, Groupe Horizon"
-    },
-    "case3": {
-      "company": "Studio Créa",
-      "tag": "Commercial Performance",
-      "title": "Performance optimization",
-      "challenge_label": "The challenge",
-      "challenge": "Despite an excellent product, Studio Créa couldn't structure its growth and scale its customer acquisition.",
-      "solution_label": "Our solution",
-      "solution": "Complete audit, commercial process redesign, CRM deployment and team training.",
-      "kpi1_val": "+85%",
-      "kpi1_label": "Revenue",
-      "kpi2_val": "×2.5",
-      "kpi2_label": "Commercial efficiency",
-      "kpi3_val": "12 months",
-      "kpi3_label": "Transformation timeline",
-      "testimonial": "They structured what we struggled to organize. Growth we no longer hoped for.",
-      "client_name": "Sophie Laurent",
-      "client_role": "Founder, Studio Créa"
-    },
-    "process": {
-      "badge": "Our process",
-      "title": "How we",
-      "title2": "create these results",
-      "p1": "Deep understanding",
-      "p1_desc": "Total immersion in your business to understand your real challenges.",
-      "p2": "Tailored strategy",
-      "p2_desc": "Building a unique approach adapted to your specific situation.",
-      "p3": "Rigorous execution",
-      "p3_desc": "Methodical deployment with rigorous monitoring of every action.",
-      "p4": "Measurement & Optimization",
-      "p4_desc": "Continuous analysis of results to maximize return on investment."
-    },
-    "metrics": {
-      "badge": "Global impact",
-      "title": "The Active Rise",
-      "title2": "impact",
-      "m1_val": "150+",
-      "m1_label": "Projects completed",
-      "m2_val": "€2.4M",
-      "m2_label": "Revenue generated for clients",
-      "m3_val": "94%",
-      "m3_label": "Satisfied clients",
-      "m4_val": "3.2×",
-      "m4_label": "Average ROI"
+      "tag": "Digital Acquisition Strategy",
+      "title": "Green World Congo",
+      "manager": "Mr. Milandou Léandre, Top Leader Green World Congo",
+      "sector": "Network Marketing (MLM) — natural health products",
+      "location": "Republic of the Congo",
+      "context": "Green World is an international group founded in 1994, operating in over 40 countries, specializing in natural health products sold via network marketing. For their expansion in the Republic of the Congo, the local leader sought to modernize network growth, which previously relied entirely on field contacts and flyers.",
+      "challenge": "Transition a 100% field-based commercial approach into a structured digital pipeline capable of massively expanding the distributor network and driving revenue in record time.",
+      "int1": "Analytical audit of current performance and precise mapping of growth opportunities.",
+      "int2": "Development of a dedicated digital acquisition workflow engineered for the MLM model.",
+      "int3": "Deployment of structured, professional digital communication channels.",
+      "int4": "Creation and rolling deployment of strategic product-focused corporate assets.",
+      "int5": "Production of tactical video commercials to promote the sales network.",
+      "int6": "Uninterrupted strategic support maintained during the leader's regional travel across Central Africa.",
+      "res1": "Substantial distributor network expansion: +45% within the first year.",
+      "res2": "Successful migration to a structured, active, and fully digital business presence.",
+      "res3": "Cross-border operational support continuity verified and proven.",
+      "note": "The +45% network expansion metric is undergoing final operational consolidation by Mr. Milandou Léandre."
     },
     "cta": {
-      "title": "Your company,",
-      "title2": "the next success story",
-      "text": "Join the companies that have trusted Active Rise to transform their growth.",
-      "btn": "Start your project"
+      "title": "Want to see our creative productions?",
+      "subtitle": "Websites, visual identities, video ads, digital campaigns — discover our complete production house on our portfolio space.",
+      "action": "Explore our portfolio"
     }
   },
   "contact": {
@@ -620,7 +588,7 @@
       "p6_desc": "KPI monitoring and continuous optimization to maximize results."
     },
     "intake": {
-      "badge": "// Responsiveness",
+      "badge": " Responsiveness",
       "section_title": "How we process your request",
       "step1_title": "01 Receipt",
       "step1_desc": "We acknowledge receipt of your message within 24 business hours.",
@@ -632,7 +600,7 @@
       "step4_desc": "We submit a tailored strategic proposal to you."
     },
     "faq": {
-      "badge": "// Clarity",
+      "badge": " Clarity",
       "section_title": "Frequently Asked Questions",
       "q1_title": "What is your response time?",
       "q1_desc": "We respond to all inquiries within 24 business hours. For urgent matters, please contact us directly on WhatsApp.",

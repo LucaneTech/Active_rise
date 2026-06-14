@@ -375,7 +375,6 @@ export default function Contact() {
                           ) : (
                             <>
                               {t('contact.form.send')}
-                              <ArrowRight size={16} />
                             </>
                           )}
                         </motion.button>

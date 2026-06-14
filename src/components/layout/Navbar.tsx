@@ -22,7 +22,7 @@ export default function Navbar() {
     { to: '/', label: t('nav.home') },
     { to: '/about', label: t('nav.about') },
     { to: '/services', label: t('nav.services') },
-    // { to: '/cases', label: t('nav.cases') },
+    { to: '/cases', label: t('nav.cases') },
     { to: '/contact', label: t('nav.contact') },
   ];
 
