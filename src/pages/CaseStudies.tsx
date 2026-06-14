@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { ArrowRight, CheckCircle2, MapPin, User, Tag, Briefcase } from 'lucide-react';
@@ -119,7 +119,7 @@ export default function CaseStudiesPage() {
       <section className="py-24 lg:py-40 relative z-10">
         <div className="container-xl max-w-[1400px] mx-auto px-4 sm:px-8 space-y-32 lg:space-y-48">
           {cases.map((item, index) => (
-            <div key={item.id} className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start border-t border-white/5 pt-12 relative">
+            <div key={`${item.id} - ${index}`} className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start border-t border-white/5 pt-12 relative">
 
               {/* Infos Clés Ancrées Latéralement à gauche */}
               <div className="lg:col-span-4 lg:sticky lg:top-28 space-y-6">
