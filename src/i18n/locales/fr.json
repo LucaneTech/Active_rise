@@ -150,6 +150,36 @@
       "title3": "Mais de faire mieux.",
       "text": "Avec cohérence et efficacité. Active Rise vous accompagne dans cette transformation pour que chaque action compte et chaque décision soit orientée performance."
     },
+    "history": {
+      "badge": "Trajectoire",
+      "title": "Notre Évolution",
+      "steps": {
+        "2019": {
+          "title": "Les origines",
+          "p1": "Développement commercial",
+          "p2": "Accompagnement de proximité",
+          "p3": "Compréhension des besoins du marché"
+        },
+        "2022": {
+          "title": "Transition digitale",
+          "p1": "Intégration de la communication",
+          "p2": "Services numériques",
+          "p3": "Structuration progressive"
+        },
+        "2025": {
+          "title": "Naissance d'ActiveRise",
+          "p1": "Recentrage stratégique",
+          "p2": "Marketing • Communication",
+          "p3": "Performance commerciale"
+        },
+        "2026": {
+          "title": "2026 + L'avenir",
+          "p1": "Accompagnement des entreprises",
+          "p2": "Stratégies de croissance",
+          "p3": "Solutions orientées résultats"
+        }
+      }
+    },
     "cta": {
       "title": "Votre croissance commence par",
       "title2": "une conversation.",
@@ -457,8 +487,6 @@
       "btn": "Demander un devis"
     }
   },
-
-
   "portfolio": {
     "hero": {
       "badge": "Performances",
@@ -467,16 +495,16 @@
       "description": "Découvrez comment nous avons accompagné des entreprises dans leur transformation et leur croissance — avec une approche structurée et orientée résultats."
     },
     "case": "Études de cas",
-    "infos":{
-       "mission": "Mission",
-       "responsable": "Responsable",
-       "sector": "Secteur",
-       "adress": "Lieu",
-       "contexte": "Le Contexte",
-       "challenge": "Le Défi",
-       "intervention": "Notre intervention",
-       "management": "Gestion continue",
-       "result": "Résultats mésurables"
+    "infos": {
+      "mission": "Mission",
+      "responsable": "Responsable",
+      "sector": "Secteur",
+      "adress": "Lieu",
+      "contexte": "Le Contexte",
+      "challenge": "Le Défi",
+      "intervention": "Notre intervention",
+      "management": "Gestion continue",
+      "result": "Résultats mésurables"
     },
     "case1": {
       "tag": "Marketing & Communication",
@@ -523,7 +551,6 @@
       "action": "Découvrir notre portfolio"
     }
   },
-  
   "contact": {
     "hero": {
       "badge": "Contactez-nous",

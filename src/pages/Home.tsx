@@ -23,6 +23,7 @@ import StatsSection from '../components/ui/StatsSection';
 import CTASection from '../components/ui/CTASection';
 import type React from 'react';
 import TestimonialCard from '../components/ui/TestimonialCard';
+import HistoryTimeline from '../components/sections/HistoryTimeline';
 
 const HeroSection: React.FC = () => {
   const { t } = useTranslation()
@@ -143,7 +144,7 @@ const HeroSection: React.FC = () => {
                 </div>
               </div>
 
-              <motion.div
+              {/* <motion.div
                 animate={{ y: [0, -6, 0] }}
                 transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut' }}
                 className="absolute -bottom-12 -left-8 bg-gold px-4 py-3 z-40 rounded-xl shadow-lg"
@@ -152,16 +153,16 @@ const HeroSection: React.FC = () => {
                   <div className="w-8 h-8 flex items-center justify-center shrink-0">
                     <img src="images/black_icon.png" alt="icone active rise" />
                   </div>
-                  {/* <div>
+                  <div>
                     <div className="text-deep text-xs font-black leading-none mb-0.5">
                       {t('home.hero.badge_text')}
                     </div>
                     <div className="text-deep/60 text-[10px]">
                       {t('home.hero.badge_subtext')}
                     </div>
-                  </div> */}
+                  </div>
                 </div>
-              </motion.div>
+              </motion.div> */}
             </motion.div>
           </div>
         </div>
@@ -475,7 +476,8 @@ export default function Home() {
         </div>
       </section>
 
-
+       <HistoryTimeline/>
+       
       <StatsSection
         badge={t('home.stats.badge')}
         title={t('home.stats.title')}

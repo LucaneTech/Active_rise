@@ -150,6 +150,36 @@
       "title3": "But to do better.",
       "text": "With consistency and efficiency. Active Rise supports you in this transformation so that every action counts and every decision is performance-oriented."
     },
+    "history": {
+      "badge": "Trajectory",
+      "title": "Our Evolution",
+      "steps": {
+        "2019": {
+          "title": "The Origins",
+          "p1": "Business development",
+          "p2": "Local client support",
+          "p3": "Market needs understanding"
+        },
+        "2022": {
+          "title": "Digital Transition",
+          "p1": "Communication integration",
+          "p2": "Digital services",
+          "p3": "Progressive structuring"
+        },
+        "2025": {
+          "title": "Birth of ActiveRise",
+          "p1": "Strategic refocusing",
+          "p2": "Marketing • Communication",
+          "p3": "Commercial performance"
+        },
+        "2026": {
+          "title": "2026 + The Future",
+          "p1": "Corporate support & scaling",
+          "p2": "Growth strategies",
+          "p3": "Results-oriented solutions"
+        }
+      }
+    },
     "cta": {
       "title": "Your growth begins with",
       "title2": "a conversation.",

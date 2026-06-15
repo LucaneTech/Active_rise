@@ -58,8 +58,8 @@ export default function StatsSection({ badge, title, titleGold, stats, dark = fa
     <section ref={ref} className={`${bg} section-padding relative overflow-hidden`}>
       {/* Background decorative circles */}
       
-      <img src="images/icon.png" alt="icon active rise" className='absolute top-0 -left-20  w-72 h-72 opacity-50'/>
-      <img src="images/black_icon.png" alt="icon active rise" className='absolute bottom-0 -right-18 w-64 h-64 z-0 opacity-50'/>
+      <img src="images/icon.png" alt="icon active rise" className='absolute top-0 -left-20  w-72 h-72 opacity-80'/>
+      <img src="images/black_icon.png" alt="icon active rise" className='hidden lg:block absolute bottom-0 -right-18 w-64 h-64 z-0 '/>
 
       <div className="container-xl relative z-10">
         <div className="text-center mb-14">

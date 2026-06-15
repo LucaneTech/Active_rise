@@ -10,7 +10,7 @@ const HeroSection: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="relative min-h-130 md:min-h-150 lg:min-h-screen flex items-center justify-center bg-[#0B0F19] overflow-hidden px-4 sm:px-6 lg:px-8">
+    <section className="relative min-h-130 md:min-h-150 lg:min-h-screen flex items-center justify-center bg-[#0B0F19] overflow-hidden px-4 pt-12 md:pt-4 sm:px-6 lg:px-8">
       {/* BACKGROUND & HERO IMAGE */}
       <div className="absolute inset-0 z-0">
         <img
@@ -40,7 +40,7 @@ const HeroSection: React.FC = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight text-white leading-[1.1] mb-6"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight text-white leading-[1.1] py-8"
         >
           {t('about.hero.title')}{' '}
           <span className="block mt-2 text-gold text-transparent drop-shadow-sm">
@@ -185,7 +185,7 @@ const VisionMissionSection: React.FC = () => {
                 {t('about.vision.title2')}
               </span>
               <span className="text-xs block font-light tracking-widest text-white/40 mt-2 normal-case">
-                // {t('about.vision.title3')}
+                {t('about.vision.title3')}
               </span>
             </h2>
           </div>
@@ -281,7 +281,7 @@ export const ValuesTimelineSection: React.FC = () => {
         {/* En-tête de section minimaliste */}
         <div className="mb-24 lg:mb-32 max-w-2xl">
           <span className="text-xs font-bold tracking-[0.3em] uppercase text-gold block mb-4">
-            // {t('about.values.badge')}
+            {t('about.values.badge')}
           </span>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight uppercase leading-[1.1]">
             {t('about.values.title')}{' '}
