@@ -58,7 +58,7 @@ export default function Navbar() {
 
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2.5 group">
-           <img src="images/logo.png" alt="logo active_rise" className='w-24 sm:w-28 md:w-48 h-auto object-contain' />
+           <img src="images/logo.png" alt="logo active_rise" className='w-32 sm:w-48 md:w-52 h-auto object-contain' />
           </Link>
 
           {/* Desktop nav */}
