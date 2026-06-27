@@ -11,7 +11,7 @@
     "hero": {
       "title1": "De la stratégie",
       "title2": "à l'action.",
-      "subtitle": "Active'Rise accompagne les entreprises dans leur croissance à travers le marketing, la communication, la performance commerciale et le développement digital - de la réflexion jusqu'à l'exécution.",
+      "subtitle": "Active Rise accompagne les entreprises dans leur croissance à travers le marketing, la communication, la performance commerciale et le développement digital - de la réflexion jusqu'à l'exécution.",
       "cta_primary": "Demander un diagnostic gratuit",
       "cta_secondary": "",
       "scroll": "Défiler",
@@ -28,9 +28,9 @@
     },
     "philosophy": {
       "badge": "Qui sommes-nous",
-      "title": "Active'Rise est une agence de marketing, communication et performance commerciale.",
+      "title": "Active Rise est une agence de marketing, communication et performance commerciale.",
       "title2": "",
-      "text": "Nous aidons les entreprises à structurer leur développement, renforcer leur visibilité et transformer leurs ambitions en résultats concrets.",
+      "text": "Nous aidons les entreprises à renforcer leur image, développer leur visibilité et accélérer leur croissance grâce à des stratégies concrètes et des solutions adaptées à leurs objectifs.",
       "quote": "Parce qu'une stratégie n'a de valeur que lorsqu'elle est exécutée."
     },
     "methodology": {
@@ -73,11 +73,11 @@
       "title": "Au-delà du conseil :",
       "title2": "un partenaire d'exécution",
       "r1_title": "Vision intégrée",
-      "r1_desc": "Nous connectons marketing, communication, branding et performance commerciale dans une logique cohérente et unifiée.",
+      "r1_desc": "Nous connectons le marketing, la communication, le branding et la performance commerciale dans une stratégie cohérente et alignée sur les objectifs de croissance.",
       "r2_title": "Orienté résultats",
-      "r2_desc": "Chaque recommandation est concrète, chaque action est mesurable. Nous pilotons par les indicateurs, pas par les intentions.",
+      "r2_desc": "Chaque recommandation est pensée pour produire un impact concret. Nous pilotons nos actions à l’aide d’indicateurs de performance afin de mesurer, ajuster et optimiser les résultats.",
       "r3_title": "Engagement d'exécution",
-      "r3_desc": "Nous ne remettons pas un rapport et nous retirons. Nous restons aux côtés de nos clients jusqu'à ce que les résultats soient au rendez-vous.  Nous restons impliqués à chaque étape du processus, de la conception jusqu'à l'exécution, afin de garantir une mise en oeuvre cohérente et orientée performance.",
+      "r3_desc": "Nous accompagnons les entreprises et organisations de la stratégie à l’action, en assurant un suivi continu pour transformer les décisions en résultats concrets. Nous restons impliqués à chaque étape du processus, de la conception jusqu’à l’exécution, afin de garantir une mise en œuvre cohérente et orientée performance.",
       "summary": "Un partenaire d'exécution engageant, présent et orienté résultats à chaque étape du projet."
     },
     "process": {
@@ -85,17 +85,21 @@
       "title": "de l’analyse à l’action",
       "title2": "activer votre croissance",
       "step1_title": "01 Premier contact",
-      "step1_subtitle": "Échange gratuit",
-      "step1_desc": "Échange gratuit pour comprendre votre situation, vos objectifs et vos enjeux.",
+      "step1_subtitle": "Échangeons sur vos enjeux",
+      "step1_desc": "Un premier échange gratuit pour comprendre votre activité, vos objectifs et les défis que vous souhaitez relever.",
+
       "step2_title": "02 Diagnostic & Audit",
-      "step2_subtitle": "Comprendre avant d’agir",
-      "step2_desc": "Analyse approfondie de votre entreprise, identification des blocages et détection des leviers de croissance.",
+      "step2_subtitle": "Comprendre avant d'agir",
+      "step2_desc": "Nous analysons votre entreprise, identifions les blocages et révélons les opportunités de croissance afin de bâtir une stratégie pertinente.",
+
       "step3_title": "03 Proposition stratégique",
-      "step3_subtitle": "Donner une direction claire",
-      "step3_desc": "Élaboration d'un plan d'action sur mesure, adapté à votre réalité et à vos ambitions.",
+      "step3_subtitle": "Une stratégie adaptée à votre réalité",
+      "step3_desc": "Nous élaborons un plan d'action clair, personnalisé et orienté résultats, en cohérence avec vos objectifs et vos ressources.",
+
       "step4_title": "04 Exécution & Suivi",
-      "step4_subtitle": "Passer à l’action",
-      "step4_desc": "Déploiement des actions, mesure des résultats et ajustements continus pour maximiser la performance.",
+      "step4_subtitle": "De la stratégie à l'action",
+      "step4_desc": "Nous mettons en œuvre les actions définies, suivons les performances et optimisons chaque étape pour générer des résultats durables.",
+
       "cta": "Démarrer mon diagnostic"
     },
     "stats": {
@@ -115,7 +119,7 @@
       "badge": "Témoignages",
       "title": "Ce que disent",
       "title2": "nos clients",
-      "t1_text": "Active'Rise a transformé notre approche marketing. En 6 mois, notre chiffre d'affaires a augmenté de 40%. Une équipe exceptionnelle.",
+      "t1_text": "Active Rise a transformé notre approche marketing. En 6 mois, notre chiffre d'affaires a augmenté de 40%. Une équipe exceptionnelle.",
       "t1_name": "Marie Dubois",
       "t1_role": "PDG, TechVision SAS",
       "t2_text": "Leur approche stratégique est unique. Ils ont restructuré toute notre communication et nos résultats sont au rendez-vous.",
@@ -148,7 +152,7 @@
       "title": "Le vrai enjeu n'est plus",
       "title2": "de faire plus.",
       "title3": "Mais de faire mieux.",
-      "text": "Avec cohérence et efficacité. Active'Rise vous accompagne dans cette transformation pour que chaque action compte et chaque décision soit orientée performance."
+      "text": "Avec cohérence et efficacité. Active Rise vous accompagne dans cette transformation pour que chaque action compte et chaque décision soit orientée performance."
     },
     "history": {
       "badge": "Notre parcours",
@@ -167,7 +171,7 @@
           "p3": "Structuration progressive"
         },
         "2025": {
-          "title": "Naissance d'Active'Rise",
+          "title": "Naissance de Active Rise",
           "p1": "Recentrage stratégique",
           "p2": "Marketing • Communication",
           "p3": "Performance commerciale"
@@ -193,7 +197,7 @@
       "badge": "Notre histoire",
       "title": "Un partenaire stratégique",
       "title2": "pour votre croissance",
-      "text": "Active'Rise est née d'une conviction : que les entreprises méritent un partenaire qui va au-delà du conseil pour transformer réellement leurs résultats."
+      "text": "Active Rise est née d'une conviction : que les entreprises méritent un partenaire qui va au-delà du conseil pour transformer réellement leurs résultats."
     },
     "vision": {
       "badge": "Vision",
@@ -210,13 +214,13 @@
       "text": "Notre mission est de structurer, orienter et activer la croissance des entreprises — en reliant stratégie, communication et exécution dans une logique intégrée orientée résultats.",
       "philoTitle": "Manifeste philosophique",
       "philosophie": "Une stratégie sans exécution n’a aucune valeur.",
-      "signature": "— La philosophie Active'Rise"
+      "signature": "— La philosophie Active Rise"
     },
     "story": {
       "badge": "Notre Histoire",
       "title": "Née d'une conviction",
       "title2": "profonde",
-      "text1": "Active'Rise a été fondée sur un constat simple : trop d'entreprises ont une vision claire mais peinent à la transformer en actions concrètes et mesurables.",
+      "text1": "Active Rise a été fondée sur un constat simple : trop d'entreprises ont une vision claire mais peinent à la transformer en actions concrètes et mesurables.",
       "text2": "Notre mission est de combler ce fossé entre la stratégie et l'exécution, en apportant à chaque client une approche intégrée qui connecte marketing, communication et performance commerciale.",
       "strategy": "Stratégie",
       "para1": "Nous aidons les équipes à transformer leur vision en actions structurées, claires et mesurables.",
@@ -285,7 +289,7 @@
       "title": "Une évolution",
       "title2": "continue",
       "y1": "2016",
-      "e1": "Fondation d'Active Rise avec une vision claire : connecter stratégie et exécution.",
+      "e1": "Fondation de Active Rise avec une vision claire : connecter stratégie et exécution.",
       "y2": "2018",
       "e2": "Développement de la méthodologie Diagnostic-Stratégie-Déploiement.",
       "y3": "2020",
@@ -304,13 +308,13 @@
     "cta": {
       "title": "Construisons ensemble",
       "title2": "votre croissance.",
-      "text": "Rejoignez les entreprises qui ont choisi Active'Rise comme partenaire stratégique de leur développement.",
+      "text": "Rejoignez les entreprises qui ont choisi Active Rise comme partenaire stratégique de leur développement.",
       "btn": "Demander un diagnostic gratuit"
     }
   },
   "services": {
     "hero": {
-      "badge": "Avec Active'rise",
+      "badge": "Avec Active Rise",
       "title": "Chaque service,",
       "title2": "une stratégie",
       "text": "Nos services ne sont pas des prestations isolées. Ils s’intègrent dans une approche cohérente et globale, orchestrée pour maximiser votre croissance à chaque niveau.",
@@ -519,12 +523,12 @@
       "int3": "Création, optimisation et déploiement des réseaux sociaux (Facebook, Instagram, TikTok, LinkedIn).",
       "int4": "Réalisation d’un spot publicitaire d'envergure couvrant l’ensemble des services de l'entreprise.",
       "int5": "Mise en place globale d’une stratégie de branding et de communication digitale synchronisée.",
-      "management": "Active'Rise assure la gestion continue de l’ensemble du dispositif digital d’Eureka & Co : maintenance et mise à jour du site, animation éditoriale des réseaux sociaux, production de contenus et suivi de la performance.",
+      "management": "Active Rise assure la gestion continue de l’ensemble du dispositif digital d’Eureka & Co : maintenance et mise à jour du site, animation éditoriale des réseaux sociaux, production de contenus et suivi de la performance.",
       "res1": "Site internet sur mesure parfaitement opérationnel et géré en continu.",
       "res2": "Présence active et hautement professionnelle installée sur 4 plateformes digitales.",
       "res3": "Des milliers de vues organiques et qualifiées générées sur les contenus publiés.",
       "res4": "Taux de conversion global en progression constante.",
-      "note": "Le site d’Eureka & Co est consultable en ligne et constitue une preuve directe et vérifiable de la qualité d’exécution d’Active'Rise."
+      "note": "Le site d’Eureka & Co est consultable en ligne et constitue une preuve directe et vérifiable de la qualité d’exécution d’Active Rise."
     },
     "case2": {
       "tag": "Stratégie digitale d'acquisition",
@@ -585,7 +589,7 @@
       "email_label": "Email",
       "email_val": "contact@activerise.pro",
       "phone_label": "Téléphone",
-      "phone_val": "+242 06 12 34 56 78",
+      "phone_val": "+242 06 999 5815",
       "address_label": "Adresse",
       "address_val": "Pointe-Noire, Congo-Brazzaville",
       "hours_label": "Horaires",
@@ -646,7 +650,7 @@
   },
   "footer": {
     "tagline": "De la stratégie à l'action.",
-    "desc": "Active'Rise structure, oriente et active la croissance des entreprises avec une approche intégrée et orientée résultats.",
+    "desc": "Active Rise structure, oriente et active la croissance des entreprises avec une approche intégrée et orientée résultats.",
     "nav_title": "Navigation",
     "services_title": "Services",
     "contact_title": "Contact",

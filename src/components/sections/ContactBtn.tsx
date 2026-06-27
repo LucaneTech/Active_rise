@@ -13,7 +13,7 @@ export default function ContactPopover({
   mainLabel,
   whatsappNumber,
   phoneNumber,
-  whatsappMessage = "Bonjour, je souhaite obtenir des informations."
+  whatsappMessage = "Bonjour, pourrais en savoir plus?."
 }: ContactPopoverProps) {
   const [isOpen, setIsOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);

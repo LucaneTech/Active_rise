@@ -11,7 +11,7 @@
     "hero": {
       "title1": "From strategy",
       "title2": "to action.",
-      "subtitle": "Active'Rise supports businesses in their growth through marketing, communication, commercial performance, and digital development - from strategic thinking to execution.",
+      "subtitle": "Active Rise supports businesses in their growth through marketing, communication, commercial performance, and digital development - from strategic thinking to execution.",
       "cta_primary": "Request a free diagnosis",
       "cta_secondary": "",
       "scroll": "Scroll",
@@ -28,9 +28,9 @@
     },
     "philosophy": {
       "badge": "Who we are",
-      "title": "Active'Rise is a marketing, communication and commercial performance agency.",
+      "title": "Active Rise is a marketing, communication and commercial performance agency.",
       "title2": "",
-      "text": "We help companies structure their development, strengthen their visibility, and transform their ambitions into concrete results.",
+      "text": "We help companies strengthen their image, develop their visibility and accelerate their growth through concrete strategies and solutions tailored to their objectives.",
       "quote": "Because a strategy only has value when it is executed."
     },
     "methodology": {
@@ -73,11 +73,11 @@
       "title": "Beyond advice:",
       "title2": "an execution partner",
       "r1_title": "Integrated vision",
-      "r1_desc": "We connect marketing, communication, branding and commercial performance in a coherent, unified logic.",
+      "r1_desc": "We connect marketing, communication, branding, and sales performance in a coherent strategy aligned with growth objectives.",
       "r2_title": "Results-oriented",
-      "r2_desc": "Every recommendation is concrete, every action measurable. We lead with indicators, not intentions.",
+      "r2_desc": "Every recommendation is designed to produce a tangible impact. We manage our actions using performance indicators to measure, adjust, and optimize results.",
       "r3_title": "Execution commitment",
-      "r3_desc": "We do not deliver a report and leave. We stay with our clients until results are achieved. We remain involved at every stage of the process, from design to execution, to ensure consistent and performance-oriented implementation.",
+      "r3_desc": "We support companies and organizations from strategy to action, ensuring continuous monitoring to transform decisions into concrete results. We remain involved at every stage of the process, from conception to execution, to guarantee consistent and performance-driven implementation.",
       "summary": "An execution partner present at every stage, focused on measurable growth and continuous delivery."
     },
     "process": {
@@ -85,17 +85,20 @@
       "title": "from insight to impact",
       "title2": "activate your growth",
       "step1_title": "01 Initial contact",
-      "step1_subtitle": "Free consultation",
-      "step1_desc": "Free consultation to understand your situation, objectives and challenges.",
+      "step1_subtitle": "Let's Discuss Your Challenges",
+      "step1_desc": "A free initial consultation to understand your business, your objectives, and the challenges you want to overcome.",
+
       "step2_title": "02 Diagnosis & Audit",
-      "step2_subtitle": "Understand before acting",
-      "step2_desc": "In-depth analysis of your company, identification of bottlenecks and detection of growth levers.",
+      "step2_subtitle": "Understand Before Acting",
+      "step2_desc": "We analyze your business, identify obstacles, and uncover growth opportunities to build a relevant strategy.",
+
       "step3_title": "03 Strategic proposal",
-      "step3_subtitle": "Provide clear direction",
-      "step3_desc": "Development of a tailor-made action plan, adapted to your reality and ambitions.",
+      "step3_subtitle": "A Strategy Tailored to Your Reality",
+      "step3_desc": "We develop a clear, personalized, and results-oriented action plan, aligned with your objectives and resources.",
+
       "step4_title": "04 Execution & Follow-up",
-      "step4_subtitle": "Take action",
-      "step4_desc": "Deployment of actions, measurement of results and continuous adjustments to maximize performance.",
+      "step4_subtitle": "From Strategy to Action",
+      "step4_desc": "We implement the defined actions, monitor performance, and optimize each step to generate sustainable results.",
       "cta": "Start my diagnosis"
     },
     "stats": {
@@ -115,7 +118,7 @@
       "badge": "Testimonials",
       "title": "What our",
       "title2": "clients say",
-      "t1_text": "Active'Rise transformed our marketing approach. In 6 months, our revenue increased by 40%. An exceptional team.",
+      "t1_text": "Active Rise transformed our marketing approach. In 6 months, our revenue increased by 40%. An exceptional team.",
       "t1_name": "Marie Dubois",
       "t1_role": "CEO, TechVision SAS",
       "t2_text": "Their strategic approach is unique. They restructured all our communication and our results are there.",
@@ -124,7 +127,7 @@
       "t3_text": "A trusted partner. They truly understand our challenges and offer concrete, effective solutions.",
       "t3_name": "Sophie Laurent",
       "t3_role": "Founder, Studio Créa",
-      "t4_text": "Active'Rise redefined our brand identity. Our positioning is now clear and our image shines.",
+      "t4_text": "Active Rise redefined our brand identity. Our positioning is now clear and our image shines.",
       "t4_name": "Alexandre Petit",
       "t4_role": "CEO, Innov'360"
     },
@@ -167,7 +170,7 @@
           "p3": "Progressive structuring"
         },
         "2025": {
-          "title": "Birth of Active'Rise",
+          "title": "Birth of Active Rise",
           "p1": "Strategic refocusing",
           "p2": "Marketing • Communication",
           "p3": "Commercial performance"
@@ -193,7 +196,7 @@
       "badge": "Our story",
       "title": "A strategic partner",
       "title2": "for your growth",
-      "text": "Active'Rise was born from a conviction: that companies deserve a partner who goes beyond advice to truly transform their results."
+      "text": "Active Rise was born from a conviction: that companies deserve a partner who goes beyond advice to truly transform their results."
     },
     "vision": {
       "badge": "Vision",
@@ -210,13 +213,13 @@
       "text": "Our mission is to structure, guide, and activate business growth — bridging strategy, communication, and execution within an integrated, results-oriented approach.",
       "philoTitle": "Philosophical manifesto",
       "philosophie": "Strategy without execution is worthless.",
-      "signature": "— The Active'Rise philosophy"
+      "signature": "— The Active Rise philosophy"
     },
     "story": {
       "badge": "Our Story",
       "title": "Born from a",
       "title2": "deep conviction",
-      "text1": "Active'Rise was built on a simple insight: many businesses have a clear vision but struggle to turn it into concrete, measurable actions.",
+      "text1": "Active Rise was built on a simple insight: many businesses have a clear vision but struggle to turn it into concrete, measurable actions.",
       "text2": "Our mission is to close the gap between strategy and execution, delivering an integrated approach that connects marketing, communication, and sales performance.",
       "strategy": "Strategy",
       "para1": "We help teams turn their vision into structured, clear, and measurable action plans.",
@@ -285,7 +288,7 @@
       "title": "A continuous",
       "title2": "evolution",
       "y1": "2016",
-      "e1": "Founding of Active'Rise with a clear vision: connecting strategy and execution.",
+      "e1": "Founding of Active Rise with a clear vision: connecting strategy and execution.",
       "y2": "2018",
       "e2": "Development of the Diagnosis-Strategy-Deployment methodology.",
       "y3": "2020",
@@ -304,13 +307,13 @@
     "cta": {
       "title": "Let's build",
       "title2": "your success together",
-      "text": "Join the companies that have chosen Active'Rise as their strategic growth partner.",
+      "text": "Join the companies that have chosen Active Rise as their strategic growth partner.",
       "btn": "Request a free audit"
     }
   },
   "services": {
     "hero": {
-      "badge": "With Active'rise",
+      "badge": "With Active Rise",
       "title": "Every service,",
       "title2": "a strategy",
       "text": "Our services are not isolated offerings. They are integrated into a coherent and global approach, orchestrated to maximize your growth at every level.",
@@ -528,7 +531,7 @@
       "int3": "Setup, optimization, and deployment across social platforms (Facebook, Instagram, TikTok, LinkedIn).",
       "int4": "Production of a high-end commercial video covering the company's full service suite.",
       "int5": "Global execution of an aligned branding and digital communication roadmap.",
-      "management": "Active'Rise handles continuous management of Eureka & Co's ecosystem: maintenance, web updates, social media curation, content production, and monthly performance audits.",
+      "management": "Active Rise handles continuous management of Eureka & Co's ecosystem: maintenance, web updates, social media curation, content production, and monthly performance audits.",
       "res1": "Fully operational custom website actively managed round-the-clock.",
       "res2": "Active, highly corporate presence established across 4 major digital channels.",
       "res3": "Thousands of targeted, organic views generated on published assets.",
@@ -649,7 +652,7 @@
   },
   "footer": {
     "tagline": "From strategy to action.",
-    "desc": "Active'Rise structures, guides and activates business growth with an integrated, results-oriented approach.",
+    "desc": "Active Rise structures, guides and activates business growth with an integrated, results-oriented approach.",
     "nav_title": "Navigation",
     "services_title": "Services",
     "contact_title": "Contact",

@@ -27,12 +27,15 @@ export default function ServiceCard({
   items, 
   image 
 }: Props) {
+
+  const bgColorOverlay = image ? 'bg-gradient-to-br from-black/60 to-black': 'bg-transparent'
+  const textColor = image? 'text-white': 'text-deep'
   return (
     <RevealOnScroll delay={delay} direction="up">
       <motion.div
         whileHover={{ y: -4 }}
         transition={{ duration: 0.28, ease: 'easeOut' }}
-        className="group relative p-7 h-full flex flex-col overflow-hidden shadow-lg border border-gray-500/20 rounded-md transition-shadow duration-300 bg-gradient-to-br from-black/60 to-black"
+        className={`group relative p-7 h-full flex flex-col overflow-hidden shadow-lg border border-gray-500/20 rounded-md transition-shadow duration-300 ${bgColorOverlay}`}
       >
         {/* Image de fond optimisée */}
         {image && (
@@ -57,7 +60,7 @@ export default function ServiceCard({
         </div>
 
         {/* Contenu avec z-index pour être au-dessus de l'image */}
-        <h3 className="relative z-10 text-[15px] font-bold text-white mb-2 leading-snug">
+        <h3 className={`relative z-10 text-[15px] font-bold  mb-2 leading-snug ${textColor}`}>
           {title}
         </h3>
         
@@ -67,7 +70,7 @@ export default function ServiceCard({
           </p>
         )}
         
-        <p className="relative z-10 text-white text-[13px] leading-relaxed mb-5 grow">
+        <p className={`relative z-10 text-[13px] leading-relaxed mb-5 grow ${textColor}`}>
           {description}
         </p>
 

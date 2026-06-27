@@ -545,7 +545,7 @@ export default function Home() {
         btnPrimary={t('home.cta.btn_primary')}
         btnSecondary={t('home.cta.btn_secondary')}
 
-        desStyle whatsappNumber={'242065294073'} phoneNumber={'2120781343642'}      />
+        desStyle whatsappNumber={'212681537167'} phoneNumber={'242069995815'}      />
     </div>
   );
 }
