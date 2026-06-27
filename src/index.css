@@ -18,6 +18,35 @@
     margin: 0;
   }
 
+
+  /* logo home page annimations */
+  @keyframes marquee-left {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-marquee-left {
+    animation: marquee-left 7s linear infinite;
+    will-change: transform;
+  }
+
+  /* Pause l'animation au survol pour meilleure UX */
+  .animate-marquee-left:hover {
+    animation-play-state: paused;
+  }
+
+  /* Optimisation des performances */
+  @media (prefers-reduced-motion: reduce) {
+    .animate-marquee-left {
+      animation: none;
+    }
+  }
+
   #root {
     width: 100%;
     min-height: 100vh;
@@ -30,14 +59,37 @@
 }
 
 @layer utilities {
-  .text-gold { color: #d3aa2a; }
-  .text-deep { color: #110f09; }
-  .text-beige { color: #fcf8ee; }
-  .bg-gold { background-color: #d3aa2a; }
-  .bg-deep { background-color: #110f09; }
-  .bg-beige { background-color: #fcf8ee; }
-  .border-gold { border-color: #d3aa2a; }
-  .border-deep { border-color: #110f09; }
+  .text-gold {
+    color: #d3aa2a;
+  }
+
+  .text-deep {
+    color: #110f09;
+  }
+
+  .text-beige {
+    color: #fcf8ee;
+  }
+
+  .bg-gold {
+    background-color: #d3aa2a;
+  }
+
+  .bg-deep {
+    background-color: #110f09;
+  }
+
+  .bg-beige {
+    background-color: #fcf8ee;
+  }
+
+  .border-gold {
+    border-color: #d3aa2a;
+  }
+
+  .border-deep {
+    border-color: #110f09;
+  }
 
   .section-padding {
     padding-top: 3rem;
@@ -112,19 +164,23 @@
       0 1px 3px rgba(17, 15, 9, 0.04),
       0 4px 20px rgba(17, 15, 9, 0.06);
   }
+
   .shadow-card-hover {
     box-shadow:
       0 2px 8px rgba(17, 15, 9, 0.06),
       0 12px 40px rgba(211, 170, 42, 0.10);
   }
+
   .shadow-nav {
     box-shadow:
       0 1px 0 rgba(17, 15, 9, 0.04),
       0 4px 24px rgba(17, 15, 9, 0.07);
   }
+
   .shadow-badge {
     box-shadow: 0 0 0 1px rgba(211, 170, 42, 0.28), 0 2px 8px rgba(211, 170, 42, 0.06);
   }
+
   .shadow-btn-ghost {
     box-shadow: 0 0 0 1px rgba(17, 15, 9, 0.10), 0 1px 4px rgba(17, 15, 9, 0.05);
   }

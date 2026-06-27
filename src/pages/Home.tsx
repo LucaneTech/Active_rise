@@ -24,6 +24,7 @@ import CTASection from '../components/ui/CTASection';
 import type React from 'react';
 import TestimonialCard from '../components/ui/TestimonialCard';
 import HistoryTimeline from '../components/sections/HistoryTimeline';
+import TrustedCompanies from '../components/sections/TrustedCompanies';
 
 const HeroSection: React.FC = () => {
   const { t } = useTranslation()
@@ -247,24 +248,32 @@ export default function Home() {
       titleKey: 'home.services.marketing_title',
       subtitle: 'home.services.marketing_subtitle',
       descKey: 'home.services.marketing_desc',
+      link: "services/marketing",
+      image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
     },
     {
       icon: Megaphone,
       titleKey: 'home.services.communication_title',
       subtitle: 'home.services.communication_subtitle',
       descKey: 'home.services.communication_desc',
+      link: "/services/communication",
+      image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
     },
     {
       icon: Palette,
       titleKey: 'home.services.creation_title',
       subtitle: 'home.services.creation_subtitle',
       descKey: 'home.services.creation_desc',
+      link: "services/creation-web",
+      image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
     },
     {
       icon: BarChart3,
       titleKey: 'home.services.performance_title',
       subtitle: 'home.services.performance_subtitle',
       descKey: 'home.services.performance_desc',
+      link: "services/performance-commerciale",
+      image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
     },
   ];
 
@@ -337,6 +346,7 @@ export default function Home() {
     <div className="bg-beige overflow-hidden">
 
       <HeroSection />
+      <TrustedCompanies />
       <WhoAreWe />
 
       <div className="section-separator" />
@@ -357,6 +367,8 @@ export default function Home() {
                 subtitle={t(s.subtitle)}
                 description={t(s.descKey)}
                 linkLabel={t('home.services.view_all')}
+                link={s.link}
+                image={s.image}
                 delay={i * 0.08}
               />
             ))}
@@ -390,12 +402,12 @@ export default function Home() {
 
                         <div className="relative flex items-start gap-5 p-5 rounded-md bg-gradient-to-tl from-black/5 to-black/0 backdrop-blur-sm transition-all duration-300 group-hover:border-gold/40 shadow-sm">
                           {/* Numéro décoratif */}
-                          <div className="absolute -top-4 -right-2 text-5xl text-gold font-black group-hover:text-gold/10 transition-all duration-500">
+                          <div className="hidden lg:block absolute -top-4 -right-2 text-5xl text-gold font-black group-hover:text-gold/10 transition-all duration-500">
                             {(i + 1).toString().padStart(2, '0')}
                           </div>
 
                           <div className="relative w-12 h-12 rounded-md flex items-center justify-center  transition-all duration-300">
-                            <reason.icon size={22} className="text-gold transition-transform duration-300 group-hover:scale-110" strokeWidth={1.5} />
+                            <reason.icon size={22} className="text-gold bg-white/40 backdrop-blur-3xl  w-10 h-10 rounded-full p-1 border border-yellow-500/50 transition-transform duration-300 group-hover:scale-110" strokeWidth={1.5} />
                           </div>
 
                           <div className="flex-1 relative z-10">
@@ -476,8 +488,8 @@ export default function Home() {
         </div>
       </section>
 
-       <HistoryTimeline/>
-       
+      <HistoryTimeline />
+
       <StatsSection
         badge={t('home.stats.badge')}
         title={t('home.stats.title')}
@@ -532,10 +544,8 @@ export default function Home() {
         text={t('home.cta.text')}
         btnPrimary={t('home.cta.btn_primary')}
         btnSecondary={t('home.cta.btn_secondary')}
-        btnSecondaryLink="/contact"
-        dark={true}
-        desStyle
-      />
+
+        desStyle whatsappNumber={'242065294073'} phoneNumber={'2120781343642'}      />
     </div>
   );
 }

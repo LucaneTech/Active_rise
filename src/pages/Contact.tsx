@@ -164,7 +164,7 @@ function RetentionSection() {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <Link
-            to="/portfolio"
+            to="/cases"
             className="inline-flex items-center gap-4 text-xs font-bold uppercase tracking-[0.3em] text-gold border border-gold/30 hover:border-gold bg-gold/5 hover:bg-gold/10 px-8 py-5 rounded-md transition-all duration-300 group"
           >
             {t('contact.retention.action')}

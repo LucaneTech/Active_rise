@@ -11,7 +11,7 @@
     "hero": {
       "title1": "De la stratégie",
       "title2": "à l'action.",
-      "subtitle": "ActiveRise accompagne les entreprises dans leur croissance à travers le marketing, la communication, la performance commerciale et le développement digital - de la réflexion jusqu'à l'exécution.",
+      "subtitle": "Active'Rise accompagne les entreprises dans leur croissance à travers le marketing, la communication, la performance commerciale et le développement digital - de la réflexion jusqu'à l'exécution.",
       "cta_primary": "Demander un diagnostic gratuit",
       "cta_secondary": "",
       "scroll": "Défiler",
@@ -28,9 +28,9 @@
     },
     "philosophy": {
       "badge": "Qui sommes-nous",
-      "title": "ActiveRise est une agence de marketing, communication et performance commerciale.",
+      "title": "Active'Rise est une agence de marketing, communication et performance commerciale.",
       "title2": "",
-      "text": "Nous ne nous contentons pas de conseiller - nous structurons, orientons et activons la croissance de votre entreprise.",
+      "text": "Nous aidons les entreprises à structurer leur développement, renforcer leur visibilité et transformer leurs ambitions en résultats concrets.",
       "quote": "Parce qu'une stratégie n'a de valeur que lorsqu'elle est exécutée."
     },
     "methodology": {
@@ -77,7 +77,7 @@
       "r2_title": "Orienté résultats",
       "r2_desc": "Chaque recommandation est concrète, chaque action est mesurable. Nous pilotons par les indicateurs, pas par les intentions.",
       "r3_title": "Engagement d'exécution",
-      "r3_desc": "Nous ne remettons pas un rapport et nous retirons. Nous restons aux côtés de nos clients jusqu'à ce que les résultats soient au rendez-vous.",
+      "r3_desc": "Nous ne remettons pas un rapport et nous retirons. Nous restons aux côtés de nos clients jusqu'à ce que les résultats soient au rendez-vous.  Nous restons impliqués à chaque étape du processus, de la conception jusqu'à l'exécution, afin de garantir une mise en oeuvre cohérente et orientée performance.",
       "summary": "Un partenaire d'exécution engageant, présent et orienté résultats à chaque étape du projet."
     },
     "process": {
@@ -115,7 +115,7 @@
       "badge": "Témoignages",
       "title": "Ce que disent",
       "title2": "nos clients",
-      "t1_text": "Active Rise a transformé notre approche marketing. En 6 mois, notre chiffre d'affaires a augmenté de 40%. Une équipe exceptionnelle.",
+      "t1_text": "Active'Rise a transformé notre approche marketing. En 6 mois, notre chiffre d'affaires a augmenté de 40%. Une équipe exceptionnelle.",
       "t1_name": "Marie Dubois",
       "t1_role": "PDG, TechVision SAS",
       "t2_text": "Leur approche stratégique est unique. Ils ont restructuré toute notre communication et nos résultats sont au rendez-vous.",
@@ -148,11 +148,11 @@
       "title": "Le vrai enjeu n'est plus",
       "title2": "de faire plus.",
       "title3": "Mais de faire mieux.",
-      "text": "Avec cohérence et efficacité. Active Rise vous accompagne dans cette transformation pour que chaque action compte et chaque décision soit orientée performance."
+      "text": "Avec cohérence et efficacité. Active'Rise vous accompagne dans cette transformation pour que chaque action compte et chaque décision soit orientée performance."
     },
     "history": {
-      "badge": "Trajectoire",
-      "title": "Notre Évolution",
+      "badge": "Notre parcours",
+      "title": "Une évolution continue",
       "steps": {
         "2019": {
           "title": "Les origines",
@@ -167,7 +167,7 @@
           "p3": "Structuration progressive"
         },
         "2025": {
-          "title": "Naissance d'ActiveRise",
+          "title": "Naissance d'Active'Rise",
           "p1": "Recentrage stratégique",
           "p2": "Marketing • Communication",
           "p3": "Performance commerciale"
@@ -193,7 +193,7 @@
       "badge": "Notre histoire",
       "title": "Un partenaire stratégique",
       "title2": "pour votre croissance",
-      "text": "ActiveRise est née d'une conviction : que les entreprises méritent un partenaire qui va au-delà du conseil pour transformer réellement leurs résultats."
+      "text": "Active'Rise est née d'une conviction : que les entreprises méritent un partenaire qui va au-delà du conseil pour transformer réellement leurs résultats."
     },
     "vision": {
       "badge": "Vision",
@@ -210,13 +210,13 @@
       "text": "Notre mission est de structurer, orienter et activer la croissance des entreprises — en reliant stratégie, communication et exécution dans une logique intégrée orientée résultats.",
       "philoTitle": "Manifeste philosophique",
       "philosophie": "Une stratégie sans exécution n’a aucune valeur.",
-      "signature": "— La philosophie ActiveRise"
+      "signature": "— La philosophie Active'Rise"
     },
     "story": {
       "badge": "Notre Histoire",
       "title": "Née d'une conviction",
       "title2": "profonde",
-      "text1": "ActiveRise a été fondée sur un constat simple : trop d'entreprises ont une vision claire mais peinent à la transformer en actions concrètes et mesurables.",
+      "text1": "Active'Rise a été fondée sur un constat simple : trop d'entreprises ont une vision claire mais peinent à la transformer en actions concrètes et mesurables.",
       "text2": "Notre mission est de combler ce fossé entre la stratégie et l'exécution, en apportant à chaque client une approche intégrée qui connecte marketing, communication et performance commerciale.",
       "strategy": "Stratégie",
       "para1": "Nous aidons les équipes à transformer leur vision en actions structurées, claires et mesurables.",
@@ -304,7 +304,7 @@
     "cta": {
       "title": "Construisons ensemble",
       "title2": "votre croissance.",
-      "text": "Rejoignez les entreprises qui ont choisi ActiveRise comme partenaire stratégique de leur développement.",
+      "text": "Rejoignez les entreprises qui ont choisi Active'Rise comme partenaire stratégique de leur développement.",
       "btn": "Demander un diagnostic gratuit"
     }
   },
@@ -519,12 +519,12 @@
       "int3": "Création, optimisation et déploiement des réseaux sociaux (Facebook, Instagram, TikTok, LinkedIn).",
       "int4": "Réalisation d’un spot publicitaire d'envergure couvrant l’ensemble des services de l'entreprise.",
       "int5": "Mise en place globale d’une stratégie de branding et de communication digitale synchronisée.",
-      "management": "ActiveRise assure la gestion continue de l’ensemble du dispositif digital d’Eureka & Co : maintenance et mise à jour du site, animation éditoriale des réseaux sociaux, production de contenus et suivi de la performance.",
+      "management": "Active'Rise assure la gestion continue de l’ensemble du dispositif digital d’Eureka & Co : maintenance et mise à jour du site, animation éditoriale des réseaux sociaux, production de contenus et suivi de la performance.",
       "res1": "Site internet sur mesure parfaitement opérationnel et géré en continu.",
       "res2": "Présence active et hautement professionnelle installée sur 4 plateformes digitales.",
       "res3": "Des milliers de vues organiques et qualifiées générées sur les contenus publiés.",
       "res4": "Taux de conversion global en progression constante.",
-      "note": "Le site d’Eureka & Co est consultable en ligne et constitue une preuve directe et vérifiable de la qualité d’exécution d’ActiveRise."
+      "note": "Le site d’Eureka & Co est consultable en ligne et constitue une preuve directe et vérifiable de la qualité d’exécution d’Active'Rise."
     },
     "case2": {
       "tag": "Stratégie digitale d'acquisition",
@@ -646,7 +646,7 @@
   },
   "footer": {
     "tagline": "De la stratégie à l'action.",
-    "desc": "Active Rise structure, oriente et active la croissance des entreprises avec une approche intégrée et orientée résultats.",
+    "desc": "Active'Rise structure, oriente et active la croissance des entreprises avec une approche intégrée et orientée résultats.",
     "nav_title": "Navigation",
     "services_title": "Services",
     "contact_title": "Contact",

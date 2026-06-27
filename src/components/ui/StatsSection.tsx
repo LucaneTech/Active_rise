@@ -58,7 +58,7 @@ export default function StatsSection({ badge, title, titleGold, stats, dark = fa
     <section ref={ref} className={`${bg} section-padding relative overflow-hidden`}>
       {/* Background decorative circles */}
       
-      <img src="images/icon.png" alt="icon active rise" className='absolute top-0 -left-20  w-72 h-72 opacity-80'/>
+      <img src="images/icon.png" alt="icon active rise" className='hidden lg:block absolute top-0 -left-20  w-72 h-72 opacity-80'/>
       <img src="images/black_icon.png" alt="icon active rise" className='hidden lg:block absolute bottom-0 -right-18 w-64 h-64 z-0 '/>
 
       <div className="container-xl relative z-10">
@@ -81,10 +81,10 @@ export default function StatsSection({ badge, title, titleGold, stats, dark = fa
           {stats.map((s, i) => (
             <RevealOnScroll key={i} delay={i * 0.1} direction="up">
               <div className="text-center">
-                <div className="text-5xl md:text-6xl font-black text-gold mb-2.5 tabular-nums">
+                <div className="text-3xl md:text-5xl lg:text-6xl font-black text-gold mb-2.5 tabular-nums">
                   <AnimatedNumber value={s.value} isVisible={isVisible} />
                 </div>
-                <p className="text-[15px] font-medium text-deep">{s.label}</p>
+                <p className="text-[12px] md:text-[15px] font-medium text-deep">{s.label}</p>
               </div>
             </RevealOnScroll>
           ))}

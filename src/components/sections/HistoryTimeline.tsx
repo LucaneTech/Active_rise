@@ -1,95 +1,127 @@
+import { useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+
+// 1. Types stricts pour la maintenance
+interface Milestone {
+  year: string;
+  title: string;
+  items: string[];
+}
+
+// 2. Animation variants isolées (évite la réévaluation en render)
+// const timelineVariants = {
+//   hidden: { opacity: 0, y: 30 },
+//   visible: (index: number) => ({
+//     opacity: 1,
+//     y: 0,
+//     transition: {
+//       duration: 0.6,
+//       delay: index * 0.12, // Légèrement accéléré pour une sensation de fluidité
+//       ease: [0.16, 1, 0.3, 1],
+//     },
+//   }),
+// };
 
 export default function HistoryTimeline() {
   const { t } = useTranslation();
 
-  const timelineData = [
-    {
-      year: "2019",
-      title: t('home.history.steps.2019.title'),
-      items: [t('home.history.steps.2019.p1'), t('home.history.steps.2019.p2'), t('home.history.steps.2019.p3')]
-    },
-    {
-      year: "2022",
-      title: t('home.history.steps.2022.title'),
-      items: [t('home.history.steps.2022.p1'), t('home.history.steps.2022.p2'), t('home.history.steps.2022.p3')]
-    },
-    {
-      year: "2025",
-      title: t('home.history.steps.2025.title'),
-      items: [t('home.history.steps.2025.p1'), t('home.history.steps.2025.p2'), t('home.history.steps.2025.p3')]
-    },
-    {
-      year: "2026 +",
-      title: t('home.history.steps.2026.title'),
-      items: [t('home.history.steps.2026.p1'), t('home.history.steps.2026.p2'), t('home.history.steps.2026.p3')]
-    }
-  ];
+  // 3. Optimisation Performance : useMemo garantit que le tableau n'est recalculé 
+  // que si la langue change, libérant le thread principal.
+  const timelineData = useMemo<Milestone[]>(() => {
+    const years = ["2019", "2022", "2025", "2026"];
+    return years.map((year) => ({
+      year: year === "2026" ? "2026 +" : year,
+      title: t(`home.history.steps.${year}.title`),
+      items: [
+        t(`home.history.steps.${year}.p1`),
+        t(`home.history.steps.${year}.p2`),
+        t(`home.history.steps.${year}.p3`),
+      ],
+    }));
+  }, [t]);
 
   return (
-    <section className="py-24 lg:py-36 bg-deep text-white overflow-hidden border-t border-white/5">
-      <div className="container-xl flex flex-col lg:flex-row max-w-[1200px] mx-auto px-4 sm:px-8">
+    <section className="py-20 md:py-28 lg:py-36 bg-deep text-white overflow-hidden" aria-label="Historique de l'entreprise">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* En-tête de section */}
-        <div className="mb-20 text-center lg:text-left">
-          <span className="text-xs font-bold tracking-[0.4em] text-gold uppercase block mb-4">
+        {/* Header Sémantique */}
+        <header className="mb-16 md:mb-24 text-center max-w-2xl mx-auto">
+          <span className="text-xs font-bold tracking-[0.3em] text-gold uppercase block mb-3">
             {t('home.history.badge')}
           </span>
-          <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-tight">
             {t('home.history.title')}
           </h2>
-        </div>
+        </header>
 
-        {/* Conteneur de l'axe vertical */}
-        <div className="relative  border-l border-white/10 ml-4 sm:ml-32 pl-8 sm:pl-16 space-y-16 lg:space-y-24">
+        {/* Conteneur Timeline principal */}
+        <div className="relative isolate">
           
-          {timelineData.map((milestone, index) => (
-            <motion.div 
-              key={index}
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.6, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
-              className="relative group"
-            >
-              {/* Le Jalon de l'axe (Point doré cinétique) */}
-              <div className="absolute -left-[37px] sm:-left-[69px] top-1.5 w-4 h-4 rounded-full bg-gold border-2 border-white/20 group-hover:border-gold flex items-center justify-center transition-colors duration-300">
-                <div className="w-1.5 h-1.5 rounded-full bg-transparent group-hover:bg-gold transition-colors duration-300" />
-              </div>
+          {/* Ligne verticale : Désormais cachée sur ultra-small screen si besoin, ou parfaitement ancrée */}
+          <div 
+            className="absolute left-4 md:left-1/2 md:-translate-x-1/2 top-2 bottom-2 w-[2px] bg-gradient-to-b from-white/5 via-white/20 to-white/5 pointer-events-none" 
+            aria-hidden="true"
+          />
 
-              {/* Positionnement Absolu de l'année sur grand écran */}
-              <div className="hidden sm:block absolute -left-48 top-0 w-28 text-right font-mono text-xl font-bold tracking-tight text-gold group-hover:text-gold transition-colors duration-300">
-                {milestone.year}
-              </div>
+          <div className="space-y-12 md:space-y-0">
+            {timelineData.map((milestone, index) => {
+              const isEven = index % 2 === 0;
+              
+              return (
+                <motion.article
+                  key={milestone.year}
+                  custom={index}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, margin: "-80px" }}
+                  // variants={timelineVariants}
+                  // will-change-transform force l'accélération matérielle (GPU) sur mobile
+                  className={`relative flex flex-col md:flex-row md:items-center will-change-transform ${
+                    isEven ? 'md:flex-row' : 'md:flex-row-reverse'
+                  } md:min-h-[200px]`}
+                >
+                  
+                  {/* Indicateur Visuel (Ronds d'ancrage) - Groupé dans un seul conteneur pour un alignement parfait */}
+                  <div className="absolute left-4 md:left-1/2 md:-translate-x-1/2 top-1 md:top-1/2 md:-translate-y-1/2 flex items-center justify-center w-4 h-4 z-10">
+                    <div className="absolute w-7 h-7 rounded-full bg-yellow-500/10 border border-white/10" />
+                    <div className="w-3 h-3 rounded-full bg-gold shadow-[0_0_10px_rgba(212,175,55,0.5)]" />
+                  </div>
 
-              {/* Bloc de contenu */}
-              <div className="space-y-4">
-                {/* Année visible uniquement sur Mobile (< sm) */}
-                <span className="sm:hidden block font-mono text-sm font-bold text-gold mb-1">
-                  {milestone.year}
-                </span>
+                  {/* Bloc Année */}
+                  <div className={`w-full md:w-1/2 pl-12 md:pl-0 ${isEven ? 'md:pr-16 md:text-right' : 'md:pl-16 md:text-left'}`}>
+                    <time className="font-mono text-3xl sm:text-4xl md:text-5xl font-black text-gold tracking-tight block">
+                      {milestone.year}
+                    </time>
+                  </div>
 
-                <h3 className="text-xl md:text-2xl font-black uppercase tracking-tight text-white  transition-all duration-300">
-                  {milestone.title}
-                </h3>
+                  {/* Bloc Contenu */}
+                  <div className={`w-full md:w-1/2 pl-12 md:pl-0 mt-2 md:mt-0 ${isEven ? 'md:pl-16 md:text-left' : 'md:pr-16 md:text-right'}`}>
+                    <h3 className="text-white text-lg sm:text-xl font-bold mb-3 tracking-wide">
+                      {milestone.title}
+                    </h3>
+                    
+                    <ul className={`space-y-2.5 flex flex-col ${!isEven ? 'md:items-end' : 'md:items-start'}`}>
+                      {milestone.items.map((item, i) => (
+                        <li 
+                          key={i} 
+                          className={`text-white/70 text-sm sm:text-base leading-relaxed flex items-start gap-2.5 max-w-md ${
+                            !isEven ? 'md:flex-row-reverse md:text-right' : 'text-left'
+                          }`}
+                        >
+                          <span className="w-1.5 h-1.5 rounded-full bg-gold/80 mt-2 shrink-0" aria-hidden="true" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
 
-                {/* Liste des descriptifs épurés */}
-                <ul className="space-y-2 max-w-xl">
-                  {milestone.items.map((item, i) => (
-                    <li key={i} className="text-white/80 text-sm sm:text-base font-medium flex items-center gap-3 group-hover:text-white/70 transition-colors duration-300">
-                      <span className="w-1 h-1 rounded-full bg-gold/50" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-            </motion.div>
-          ))}
+                </motion.article>
+              );
+            })}
+          </div>
 
         </div>
-
       </div>
     </section>
   );

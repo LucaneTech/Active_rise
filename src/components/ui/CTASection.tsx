@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import RevealOnScroll from './RevealOnScroll';
+import ContactPopover from '../sections/ContactBtn';
+
 
 interface Props {
   badge?: string;
@@ -13,24 +15,32 @@ interface Props {
   btnSecondaryLink?: string;
   dark?: boolean;
   desStyle?: boolean;
+  
+  // Nouvelles props optionnelles pour injecter la logique de contact
+  whatsappNumber?: string;
+  phoneNumber?: string;
+  whatsappMessage?: string;
 }
 
 export default function CTASection({
   badge, title, titleGold, text, btnPrimary, btnPrimaryLink = '/contact',
   btnSecondary, btnSecondaryLink = '/services', dark = true, desStyle,
+  whatsappNumber, phoneNumber, whatsappMessage
 }: Props) {
   const bg = dark ? 'bg-deep' : 'bg-beige';
   const titleColor = dark ? 'text-beige' : 'text-deep';
   const textColor = desStyle ? 'text-beige' : 'text-deep';
 
+  // Flag pour savoir si on active le mode Popover de Contact
+  const hasContactInfo = !!(whatsappNumber && phoneNumber);
+
   return (
     <section className={`${bg} section-padding relative overflow-hidden`}>
       {/* Decorative circles */}
-      <div className="hidden md:flex absolute left-0 w-96 h-96 rounded-full  pointer-events-none bg-amber-300/15
-       blur-2xl" />
+      <div className="hidden md:flex absolute left-0 w-96 h-96 rounded-full pointer-events-none bg-amber-300/15 blur-2xl" />
       <div className="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-1/3 w-56 h-56 rounded-full pointer-events-none bg-white/20 blur-2xl" />
       <div className="hidden md:flex absolute right-10 w-80 h-80 rounded-full border border-gold pointer-events-none bg-white/20 blur-2xl" />
-      <div className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-1/3 w-48 h-48 rounded-full  pointer-events-none bg-amber-300/15 blur-2xl" />
+      <div className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-1/3 w-48 h-48 rounded-full pointer-events-none bg-amber-300/15 blur-2xl" />
       {/* Small accent dot — top center */}
       <div className="absolute top-8 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-gold pointer-events-none " />
 
@@ -55,30 +65,49 @@ export default function CTASection({
               <p className={`text-base leading-relaxed mb-9 ${textColor}`}>{text}</p>
             </RevealOnScroll>
           )}
+          
           <RevealOnScroll delay={0.3}>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
+              
+              {/* Bouton Principal */}
+              <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} className="w-full sm:w-auto">
                 <Link
                   to={btnPrimaryLink}
-                  className="inline-flex items-center gap-2.5 bg-gold text-deep font-bold px-9 py-3 rounded-md hover:bg-gold/90 transition-all duration-300 text-[13px] tracking-wide"
+                  className="inline-flex items-center justify-center gap-2.5 bg-gold text-deep font-bold px-9 py-3 rounded-md hover:bg-gold/90 transition-all duration-300 text-[13px] tracking-wide w-full sm:w-auto"
                 >
                   {btnPrimary}
                 </Link>
               </motion.div>
+              
+              {/* Bouton Secondaire Conditionnel */}
               {btnSecondary && (
-                <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
-                  <Link
-                    to={btnSecondaryLink}
-                    className={`inline-flex items-center gap-2.5 font-bold px-9 py-3 rounded-md transition-all duration-300 text-[13px] tracking-wide hover:text-gold ${
-                      dark
-                        ? 'text-beige shadow-[0_0_0_1px_rgba(252,248,238,0.15)] hover:shadow-[0_0_0_1px_rgba(211,170,42,0.5)]'
-                        : 'text-deep/70 shadow-btn-ghost hover:shadow-[0_0_0_1px_rgba(211,170,42,0.5)]'
-                    }`}
-                  >
-                    {btnSecondary}
-                  </Link>
-                </motion.div>
+                <>
+                  {hasContactInfo ? (
+                    /* CAS A : Les numéros sont fournis -> On affiche notre Popover de contact */
+                    <ContactPopover
+                      mainLabel={btnSecondary}
+                      whatsappNumber={whatsappNumber!}
+                      phoneNumber={phoneNumber!}
+                      whatsappMessage={whatsappMessage}
+                    />
+                  ) : (
+                    /* CAS B : Pas de numéros -> On garde le lien classique d'origine vers une page */
+                    <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} className="w-full sm:w-auto">
+                      <Link
+                        to={btnSecondaryLink}
+                        className={`inline-flex items-center justify-center gap-2.5 font-bold px-9 py-3 rounded-md transition-all duration-300 text-[13px] tracking-wide hover:text-gold w-full sm:w-auto ${
+                          dark
+                            ? 'text-beige shadow-[0_0_0_1px_rgba(252,248,238,0.15)] hover:shadow-[0_0_0_1px_rgba(211,170,42,0.5)]'
+                            : 'text-deep/70 shadow-btn-ghost hover:shadow-[0_0_0_1px_rgba(211,170,42,0.5)]'
+                        }`}
+                      >
+                        {btnSecondary}
+                      </Link>
+                    </motion.div>
+                  )}
+                </>
               )}
+
             </div>
           </RevealOnScroll>
         </div>
