@@ -7,6 +7,10 @@
     "contact": "Contact",
     "cta": "Request a free diagnosis"
   },
+  "partners": {
+    "title": "Trusted by Innovative Companies",
+    "subtitle": "Discover the businesses accelerating their growth with our technological solutions."
+  },
   "home": {
     "hero": {
       "title1": "From strategy",
@@ -65,7 +69,7 @@
       "creation_desc": "Visual identity, brand guidelines, content creation, video, podcast, advertising assets and website development with SEO.",
       "performance_title": "04 Commercial Performance",
       "performance_subtitle": "Consulting, sales, results",
-      "performance_desc": "Strategic consulting, sales optimization, commercial team support and performance management.",
+      "performance_desc": "Strategic advice, sales optimization, commercial team support and performance management.",
       "view_all": "Learn more"
     },
     "why": {
@@ -76,13 +80,13 @@
       "r1_desc": "We connect marketing, communication, branding, and sales performance in a coherent strategy aligned with growth objectives.",
       "r2_title": "Results-oriented",
       "r2_desc": "Every recommendation is designed to produce a tangible impact. We manage our actions using performance indicators to measure, adjust, and optimize results.",
-      "r3_title": "Execution commitment",
+      "r3_title": "End-to-end support",
       "r3_desc": "We support companies and organizations from strategy to action, ensuring continuous monitoring to transform decisions into concrete results. We remain involved at every stage of the process, from conception to execution, to guarantee consistent and performance-driven implementation.",
       "summary": "An execution partner present at every stage, focused on measurable growth and continuous delivery."
     },
     "process": {
       "badge": "A structured approach,",
-      "title": "from insight to impact",
+      "title": "From insight to impact.",
       "title2": "activate your growth",
       "step1_title": "01 Initial contact",
       "step1_subtitle": "Let's Discuss Your Challenges",

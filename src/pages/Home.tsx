@@ -346,7 +346,7 @@ export default function Home() {
     <div className="bg-beige overflow-hidden">
 
       <HeroSection />
-      <TrustedCompanies />
+    
       <WhoAreWe />
 
       <div className="section-separator" />
@@ -463,7 +463,7 @@ export default function Home() {
         </div>
       </section>
 
-
+  <TrustedCompanies />
 
       <section className="section-padding bg-gray-50">
         <div className="container-xl">

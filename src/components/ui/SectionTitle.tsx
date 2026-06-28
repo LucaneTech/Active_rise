@@ -34,7 +34,7 @@ export default function SectionTitle({ badge, title, titleGold, subtitle, align 
           {titleGold && (
             <>
               {' '}
-              <span className="text-gold">{titleGold}</span>
+              <p className="text-gold normal-case first-letter:uppercase">{titleGold}</p>
             </>
           )}
         </h2>

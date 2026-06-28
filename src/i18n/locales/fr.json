@@ -7,6 +7,10 @@
     "contact": "Contact",
     "cta": "Demander un diagnostic gratuit"
   },
+  "partners": {
+    "title": "Ils nous font confiance",
+    "subtitle": "Découvrez les entreprises qui propulsent leur croissance grâce à nos solutions technologiques."
+  },
   "home": {
     "hero": {
       "title1": "De la stratégie",
@@ -28,7 +32,7 @@
     },
     "philosophy": {
       "badge": "Qui sommes-nous",
-      "title": "Active Rise est une agence de marketing, communication et performance commerciale.",
+      "title": "Active Rise est une agence de marketing, de communication et de performance commerciale.",
       "title2": "",
       "text": "Nous aidons les entreprises à renforcer leur image, développer leur visibilité et accélérer leur croissance grâce à des stratégies concrètes et des solutions adaptées à leurs objectifs.",
       "quote": "Parce qu'une stratégie n'a de valeur que lorsqu'elle est exécutée."
@@ -65,7 +69,7 @@
       "creation_desc": "Identité visuelle, charte graphique, création de contenus, vidéo, podcast, supports publicitaires et développement de sites web avec SEO.",
       "performance_title": "04 Performance Commerciale",
       "performance_subtitle": "Consulting, ventes, résultats",
-      "performance_desc": "Consulting stratégique, optimisation des ventes, suivi des équipes commerciales et pilotage de la performance.",
+      "performance_desc": "Conseil stratégique, optimisation des ventes, suivi des équipes commerciales et pilotage de la performance.",
       "view_all": "En savoir plus"
     },
     "why": {
@@ -76,14 +80,14 @@
       "r1_desc": "Nous connectons le marketing, la communication, le branding et la performance commerciale dans une stratégie cohérente et alignée sur les objectifs de croissance.",
       "r2_title": "Orienté résultats",
       "r2_desc": "Chaque recommandation est pensée pour produire un impact concret. Nous pilotons nos actions à l’aide d’indicateurs de performance afin de mesurer, ajuster et optimiser les résultats.",
-      "r3_title": "Engagement d'exécution",
+      "r3_title": "Accompagnement de bout en bout",
       "r3_desc": "Nous accompagnons les entreprises et organisations de la stratégie à l’action, en assurant un suivi continu pour transformer les décisions en résultats concrets. Nous restons impliqués à chaque étape du processus, de la conception jusqu’à l’exécution, afin de garantir une mise en œuvre cohérente et orientée performance.",
       "summary": "Un partenaire d'exécution engageant, présent et orienté résultats à chaque étape du projet."
     },
     "process": {
       "badge": "Une approche structurée,",
-      "title": "de l’analyse à l’action",
-      "title2": "activer votre croissance",
+      "title": "De l’analyse à l’action.",
+      "title2": "Activer votre croissance",
       "step1_title": "01 Premier contact",
       "step1_subtitle": "Échangeons sur vos enjeux",
       "step1_desc": "Un premier échange gratuit pour comprendre votre activité, vos objectifs et les défis que vous souhaitez relever.",

@@ -97,10 +97,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-14">
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-5">
-              <img src="images/white-logo.png" alt="logo active_rise" className='w-24 sm:w-28 md:w-48 h-auto object-contain' />
+              <img src="images/tagline_active_rise_logo.png" alt="logo active_rise" className='w-28 sm:w-32 md:w-48 h-auto object-contain' />
             </Link>
-            <p className="text-gold font-semibold text-sm mb-3">{t('footer.tagline')}</p>
-            <p className="text-beige text-sm leading-relaxed mb-7">{t('footer.desc')}</p>
+            {/* <p className="text-gold font-semibold text-sm mb-3">{t('footer.tagline')}</p>
+            <p className="text-beige text-sm leading-relaxed mb-7">{t('footer.desc')}</p> */}
             <SocialLinks/>
           </div>
 
