@@ -353,6 +353,9 @@
       "title": "Marketing",
       "title2": "& Stratégie",
       "intro": "Le marketing n'est pas une dépense. C'est un investissement — à condition d'être structuré, ciblé et mesuré. Chez ActiveRise, nous concevons et déployons des stratégies marketing adaptées à la réalité de votre marché, de votre cible et de vos objectifs — pour des actions qui produisent des résultats concrets et mesurables.",
+      "sections_label": "01 / CAPABILITÉS ARCHITECTURALES",
+      "sections_title": "Nos Prestations Stratégiques",
+      "formation_label": "02 / TRANSFERT DE COMPÉTENCES",
       "sections": [
         {
           "title": "Conseil & Stratégie",
@@ -500,10 +503,132 @@
         "title": "Formation",
         "description": "Nous proposons des formations pratiques sur les fondamentaux de la communication d'entreprise, la construction d'une stratégie de marque, la structuration des messages clés et la prise de parole institutionnelle. Des programmes opérationnels conçus pour les dirigeants, managers et équipes qui veulent maîtriser leur communication et renforcer l'image de leur organisation."
       },
+      "sections_label": "01 / CAPABILITÉS ARCHITECTURALES",
+      "sections_title": "Nos Prestations Stratégiques",
+      "formation_label": "02 / TRANSFERT DE COMPÉTENCES",
       "cta": {
         "title": "Votre marque a une histoire.",
         "title2": "Aidons-la à être entendue.",
         "text": "Discutons de votre communication et de votre positionnement de marque. Nous identifions ensemble les ajustements qui feront la différence. Premier échange gratuit — sans engagement.",
+        "btn": "Demander un diagnostic gratuit →"
+      }
+    },
+    "creation_web": {
+      "eyebrow": "Création & Développement Web",
+      "title": "Création & Développement Web",
+      "title2": "— Introduction",
+      "intro": "Une stratégie sans exécution reste une intention. Chez ActiveRise, nous donnons vie à votre marque à travers des créations concrètes et impactantes — identité visuelle, supports de communication, productions audiovisuelles et solutions digitales sur mesure. Chaque livrable est conçu avec rigueur, sens du détail et orientation résultats, pour que votre marque soit vue, reconnue et mémorable.",
+      "sections": [
+        {
+          "title": "Identité Visuelle",
+          "services": [
+            {
+              "title": "Création de logo",
+              "description": "Votre logo est le premier symbole de votre identité. Nous le concevons avec soin — design unique, sens porté par chaque détail, déclinable sur tous les supports. Un logo qui vous ressemble, vous distingue et traverse le temps."
+            },
+            {
+              "title": "Charte graphique complète",
+              "description": "La cohérence visuelle de votre marque repose sur des règles claires et partagées. Nous élaborons votre charte graphique intégrale — couleurs, typographies, iconographie, règles d'utilisation sur tous les supports — pour que chaque création produite soit immédiatement identifiable comme la vôtre."
+            },
+            {
+              "title": "Univers visuel de marque",
+              "description": "Au-delà du logo et de la charte, votre marque a une atmosphère, un style, une âme graphique. Nous construisons l'univers visuel complet de votre marque — images de référence, textures, mises en page types, ton visuel — pour une identité forte, cohérente et reconnaissable au premier coup d'œil."
+            }
+          ]
+        },
+        {
+          "title": "Design Graphique & Supports",
+          "services": [
+            {
+              "title": "Supports print",
+              "description": "Flyers, affiches, kakémonos, cartes de visite, catalogues, brochures — nous concevons vos supports imprimés avec une attention rigoureuse portée à l'esthétique, la lisibilité et l'impact visuel. Chaque support est aligné sur votre identité de marque et conçu pour atteindre son objectif de communication."
+            },
+            {
+              "title": "Supports digitaux",
+              "description": "Bannières publicitaires, visuels réseaux sociaux, templates de présentations, newsletters graphiques — nous créons vos supports digitaux avec un niveau de finition professionnel, optimisés pour chaque format et chaque plateforme de diffusion."
+            },
+            {
+              "title": "Création publicitaire",
+              "description": "Une publicité efficace ne se contente pas d'être belle — elle doit convaincre et déclencher une action. Nous créons vos visuels publicitaires print et digitaux avec une approche stratégique — message clair, hiérarchie visuelle maîtrisée et appel à l'action intégré."
+            }
+          ]
+        },
+        {
+          "title": "Production Audiovisuelle & Studio",
+          "services": [
+            {
+              "title": "Réalisation de spots publicitaires",
+              "description": "Un spot publicitaire bien conçu peut transformer la visibilité de votre entreprise en quelques secondes. Nous réalisons vos spots de A à Z — concept, script, production et montage final — pour des vidéos qui captivent, marquent les esprits et génèrent des résultats concrets."
+            },
+            {
+              "title": "Montage et post-production vidéo",
+              "description": "Vous disposez de rushs vidéo à valoriser ? Nous prenons en charge le montage, l'étalonnage, l'habillage sonore et la post-production complète de vos vidéos pour un rendu professionnel et impactant — adapté à chaque format et chaque plateforme de diffusion."
+            },
+            {
+              "title": "Motion design et animation",
+              "description": "Le mouvement amplifie le message. Nous créons des animations graphiques, des génériques, des transitions et des effets visuels qui donnent vie à votre contenu et le rendent plus engageant — pour vos vidéos, vos présentations ou vos publicités digitales."
+            },
+            {
+              "title": "Production de podcasts",
+              "description": "Le podcast est un outil puissant pour asseoir votre autorité et créer une connexion profonde avec votre audience. Nous vous accompagnons dans la production complète de votre podcast — conception éditoriale, enregistrement, montage audio, habillage sonore et distribution sur les plateformes d'écoute."
+            },
+            {
+              "title": "Photographie professionnelle",
+              "description": "Une image professionnelle vaut mille arguments commerciaux. Nous assurons la direction artistique et la production photographique de vos séances photo — produits, équipe, événements ou contenus réseaux sociaux — pour des visuels qui reflètent l'excellence de votre marque."
+            }
+          ]
+        },
+        {
+          "title": "Développement Digital",
+          "services": [
+            {
+              "title": "Conception UX/UI",
+              "description": "Avant de développer, il faut concevoir. Nous désignons l'expérience utilisateur et l'interface de votre site ou application — parcours utilisateur, maquettes, prototypes interactifs — pour garantir une navigation fluide, intuitive et orientée conversion avant même d'écrire la première ligne de code."
+            },
+            {
+              "title": "Sites vitrines et institutionnels",
+              "description": "Votre site internet travaille pour vous 24h/24. Nous développons des sites web professionnels, modernes et performants — conçus sur mesure, optimisés pour le référencement et adaptés à tous les écrans — pour convertir vos visiteurs en clients et renforcer votre crédibilité en ligne."
+            },
+            {
+              "title": "Boutiques en ligne (e-commerce)",
+              "description": "Vendez vos produits en ligne sans contrainte de lieu ni d'horaire. Nous développons votre boutique en ligne avec une expérience d'achat fluide, un système de paiement sécurisé et une interface de gestion simple — pour que vous puissiez vous concentrer sur vos ventes et votre croissance."
+            },
+            {
+              "title": "Landing pages optimisées",
+              "description": "Une landing page bien conçue peut multiplier significativement vos taux de conversion. Nous créons des pages d'atterrissage ciblées et optimisées pour transformer vos visiteurs en leads ou en clients — idéales pour vos campagnes publicitaires, lancements de produits ou offres spéciales."
+            },
+            {
+              "title": "Applications web et mobiles",
+              "description": "Vous avez un besoin spécifique qu'aucun outil standard ne couvre ? Nous développons vos applications web et mobiles sur mesure — iOS et Android — de la conception de l'expérience utilisateur au déploiement final. Des solutions performantes, intuitives et construites pour répondre aux besoins réels de vos utilisateurs."
+            }
+          ]
+        }
+      ],
+      "sections_label": "01 / CAPABILITÉS ARCHITECTURALES",
+      "sections_title": "Nos Prestations Stratégiques",
+      "formation": {
+        "title": "Formation",
+        "description": "Nous vous proposons des formations pratiques et immédiatement applicables pour maîtriser les outils essentiels de la création de contenu visuel et du développement web.",
+        "items": [
+          {
+            "title": "Formation — Création de contenus visuels",
+            "description": "Nous vous formons à la création de visuels professionnels pour les réseaux sociaux et les supports de communication. Des sessions pratiques et immédiatement applicables pour produire des contenus visuels de qualité en toute autonomie."
+          },
+          {
+            "title": "Formation — Montage vidéo",
+            "description": "Du tournage à la publication — nous vous formons aux techniques de montage vidéo essentielles pour produire des contenus vidéo professionnels adaptés aux formats des plateformes digitales. Une formation pratique orientée terrain, accessible quel que soit votre niveau de départ."
+          },
+          {
+            "title": "Formation — Initiation au développement web",
+            "description": "Comprendre comment fonctionne un site internet, savoir communiquer efficacement avec un développeur et gérer les mises à jour de base de votre site — nous proposons une initiation accessible aux fondamentaux du développement web pour les non-techniciens qui veulent prendre le contrôle de leur présence digitale."
+          }
+        ]
+      },
+      "formation_label": "02 / TRANSFERT DE COMPÉTENCES",
+      "cta": {
+        "title": "Votre projet mérite",
+        "title2": "une exécution irréprochable.",
+        "text": "Discutons de vos besoins en création et développement. Nous identifions ensemble les solutions les plus adaptées à vos objectifs. Premier échange gratuit — sans engagement.",
         "btn": "Demander un diagnostic gratuit →"
       }
     },

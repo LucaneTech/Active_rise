@@ -362,6 +362,9 @@
       "title": "Marketing",
       "title2": "& Strategy",
       "intro": "Marketing isn't an expense. It's an investment—provided it's structured, targeted, and measurable. At ActiveRise, we design and implement marketing strategies tailored to the realities of your market, your target audience, and your objectives—for actions that produce concrete and measurable results.",
+      "sections_label": "01 / ARCHITECTURAL CAPABILITIES",
+      "sections_title": "Our Strategic Services",
+      "formation_label": "02 / SKILLS TRANSFER",
       "sections": [
         {
           "title": "Strategy & Consulting",
@@ -509,11 +512,133 @@
         "title": "Training",
         "description": "We offer practical training on the fundamentals of corporate communication, building a brand strategy, structuring key messages and institutional public speaking. Operational programs designed for executives, managers and teams who want to master their communication and strengthen their organization's image."
       },
+      "sections_label": "01 / ARCHITECTURAL CAPABILITIES",
+      "sections_title": "Our Strategic Services",
+      "formation_label": "02 / SKILLS TRANSFER",
       "cta": {
         "title": "Your brand has a story.",
         "title2": "Let's help it be heard.",
         "text": "Let's discuss your communication and brand positioning. We will identify together the adjustments that will make a difference. First exchange is free — no commitment.",
         "btn": "Request a free diagnosis →"
+      }
+    },
+    "creation_web": {
+      "eyebrow": "Web Creation & Development",
+      "title": "Web Creation & Development",
+      "title2": "— Introduction",
+      "intro": "Strategy without execution remains just an intention. At ActiveRise, we bring your brand to life through concrete and impactful creations — visual identity, communication materials, audiovisual productions and custom digital solutions. Every deliverable is designed with rigor, attention to detail and results-oriented approach, so your brand is seen, recognized and memorable.",
+      "sections": [
+        {
+          "title": "Visual Identity",
+          "services": [
+            {
+              "title": "Logo Design",
+              "description": "Your logo is the first symbol of your identity. We design it with care — unique design, sense carried by every detail, adaptable to all media. A logo that resembles you, distinguishes you and stands the test of time."
+            },
+            {
+              "title": "Complete Brand Guidelines",
+              "description": "The visual consistency of your brand relies on clear and shared rules. We develop your complete graphic charter — colors, typography, iconography, usage rules across all media — so every creation produced is immediately identifiable as yours."
+            },
+            {
+              "title": "Brand Visual Universe",
+              "description": "Beyond the logo and guidelines, your brand has an atmosphere, a style, a graphic soul. We build the complete visual universe of your brand — reference images, textures, standard layouts, visual tone — for a strong, consistent and recognizable identity at first glance."
+            }
+          ]
+        },
+        {
+          "title": "Graphic Design & Print",
+          "services": [
+            {
+              "title": "Print Media",
+              "description": "Flyers, posters, banners, business cards, catalogs, brochures — we design your printed materials with rigorous attention to aesthetics, readability and visual impact. Each material is aligned with your brand identity and designed to achieve its communication objective."
+            },
+            {
+              "title": "Digital Materials",
+              "description": "Advertising banners, social media visuals, presentation templates, graphic newsletters — we create your digital materials with professional finishing level, optimized for each format and distribution platform."
+            },
+            {
+              "title": "Advertising Creation",
+              "description": "Effective advertising doesn't just need to be beautiful — it must convince and trigger action. We create your print and digital advertising visuals with a strategic approach — clear message, controlled visual hierarchy and integrated call to action."
+            }
+          ]
+        },
+        {
+          "title": "Audiovisual Production & Studio",
+          "services": [
+            {
+              "title": "Commercial Spot Production",
+              "description": "A well-designed commercial spot can transform your company's visibility in seconds. We produce your spots from A to Z — concept, script, production and final editing — for videos that captivate, leave an impression and generate concrete results."
+            },
+            {
+              "title": "Video Editing & Post-Production",
+              "description": "Do you have video footage to enhance? We handle the editing, color grading, sound design and complete post-production of your videos for a professional and impactful finish — adapted to each format and distribution platform."
+            },
+            {
+              "title": "Motion Design & Animation",
+              "description": "Movement amplifies the message. We create graphic animations, opening sequences, transitions and visual effects that bring your content to life and make it more engaging — for your videos, presentations or digital ads."
+            },
+            {
+              "title": "Podcast Production",
+              "description": "Podcast is a powerful tool to establish your authority and create a deep connection with your audience. We support you in the complete production of your podcast — editorial design, recording, audio editing, sound design and distribution on listening platforms."
+            },
+            {
+              "title": "Professional Photography",
+              "description": "A professional image is worth a thousand sales arguments. We ensure artistic direction and photography production for your photo shoots — products, team, events or social media content — for visuals that reflect the excellence of your brand."
+            }
+          ]
+        },
+        {
+          "title": "Digital Development",
+          "services": [
+            {
+              "title": "UX/UI Design",
+              "description": "Before developing, you must design. We design the user experience and interface of your site or application — user journey, mockups, interactive prototypes — to ensure smooth, intuitive navigation oriented toward conversion before writing the first line of code."
+            },
+            {
+              "title": "Showcase & Institutional Websites",
+              "description": "Your website works for you 24/7. We develop professional, modern and high-performing websites — custom designed, optimized for search engines and adapted to all screens — to convert your visitors into customers and strengthen your online credibility."
+            },
+            {
+              "title": "Online Stores (E-commerce)",
+              "description": "Sell your products online without location or time constraints. We develop your online store with smooth shopping experience, secure payment system and simple management interface — so you can focus on your sales and growth."
+            },
+            {
+              "title": "Optimized Landing Pages",
+              "description": "A well-designed landing page can significantly multiply your conversion rates. We create targeted and optimized landing pages to transform your visitors into leads or customers — ideal for your advertising campaigns, product launches or special offers."
+            },
+            {
+              "title": "Web & Mobile Applications",
+              "description": "Do you have a specific need that no standard tool covers? We develop your custom web and mobile applications — iOS and Android — from user experience design to final deployment. Powerful, intuitive solutions built to meet the real needs of your users."
+            }
+          ]
+        }
+      ],
+      "sections_label": "01 / ARCHITECTURAL CAPABILITIES",
+      "sections_title": "Our Strategic Services",
+      "formation": {
+        "title": "Training",
+        "description": "We offer practical training and immediately applicable sessions to master the essential tools for creating visual content and web development.",
+        "items": [
+          {
+            "title": "Training — Visual Content Creation",
+            "description": "We train you in creating professional visuals for social media and communication materials. Practical sessions immediately applicable to produce quality visual content independently."
+          },
+          {
+            "title": "Training — Video Editing",
+            "description": "From shooting to publishing — we train you in essential video editing techniques to produce professional video content adapted to digital platform formats. Practical field-oriented training, accessible regardless of your starting level."
+          },
+          {
+            "title": "Training — Introduction to Web Development",
+            "description": "Understand how a website works, communicate effectively with a developer and manage basic updates to your site — we offer accessible introduction to web development fundamentals for non-technical people who want to take control of their digital presence."
+          }
+        ]
+      },
+      "formation_label": "02 / SKILLS TRANSFER",
+      "cta": {
+        "title": "Your project deserves",
+        "title2": "flawless execution.",
+        "text": "Let's discuss your web creation and development needs. Together we identify the solutions best suited to your goals. First consultation free — no commitment.",
+        "btn": "Request a free assessment →"
       }
     },
     "creation": {
