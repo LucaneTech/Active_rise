@@ -23,8 +23,8 @@
       "card_text": "Operational support to transform your ambitions into measurable and coherent actions.",
       "card_tags": {
         "tag1": "Marketing",
-        "tag2": "Communication",
-        "tag3": "Creation & Branding",
+        "tag2": "Communication & Branding",
+        "tag3": "Creation & Web Development",
         "tag4": "Commercial Performance"
       },
       "badge_text": "Since 2016",
@@ -61,10 +61,10 @@
       "marketing_title": "01 Marketing",
       "marketing_subtitle": "Strategy, acquisition, loyalty",
       "marketing_desc": "Global marketing strategy, digital marketing, acquisition campaigns, customer loyalty and project management.",
-      "communication_title": "02 Communication",
+      "communication_title": "02 Communication & Branding",
       "communication_subtitle": "Image, messages, visibility",
       "communication_desc": "Corporate communication, digital communication, message structuring and brand consistency.",
-      "creation_title": "03 Creation & Branding",
+      "creation_title": "03 Creation & Web Development",
       "creation_subtitle": "Design, web, content",
       "creation_desc": "Visual identity, brand guidelines, content creation, video, podcast, advertising assets and website development with SEO.",
       "performance_title": "04 Commercial Performance",

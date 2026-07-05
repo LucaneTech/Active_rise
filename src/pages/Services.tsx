@@ -282,26 +282,26 @@ export default function Services() {
   const servicePillars = [
     {
       icon: TrendingUp,
-      title: t('services.services.marketing_title'),
-      description: t('services.services.marketing_desc'),
+      title: t('home.services.marketing_title'),
+      description: t('home.services.marketing_desc'),
       link: '/services/marketing',
     },
     {
       icon: Megaphone,
-      title: t('services.services.communication_title'),
-      description: t('services.services.communication_desc'),
+      title: t('home.services.communication_title'),
+      description: t('home.services.communication_desc'),
       link: '/services/communication',
     },
     {
       icon: Code2,
-      title: t('services.services.creation_title'),
-      description: t('services.services.creation_desc'),
+      title: t('home.services.creation_title'),
+      description: t('home.services.creation_desc'),
       link: '/services/creation-web',
     },
     {
       icon: BarChart3,
-      title: t('services.services.performance_title'),
-      description: t('services.services.performance_desc'),
+      title: t('home.services.performance_title'),
+      description: t('home.services.performance_desc'),
       link: '/services/performance-commerciale',
     },
   ];
