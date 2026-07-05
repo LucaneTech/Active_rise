@@ -38,10 +38,10 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/services/marketing" element={<Marketing />} />
-          <Route path="/services/communication" element={<Communication />} />
-          <Route path="/services/creation-web" element={<CreationWeb />} />
-          <Route path="/services/performance-commerciale" element={<PerformanceCommerciale />} />
+          <Route path="/marketing" element={<Marketing />} />
+          <Route path="/communication" element={<Communication />} />
+          <Route path="/creation-web" element={<CreationWeb />} />
+          <Route path="/performance-commerciale" element={<PerformanceCommerciale />} />
           <Route path="/cases" element={<CaseStudies />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<ErrorPage />} />

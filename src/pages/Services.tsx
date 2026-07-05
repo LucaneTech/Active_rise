@@ -1,10 +1,11 @@
 import { useTranslation } from 'react-i18next';
 import { motion, cubicBezier } from 'framer-motion';
-import { TrendingUp, Megaphone, Code2, BarChart3, ArrowUpRight } from 'lucide-react';
-import ServiceCard from '../components/ui/ServiceCard';
+import {ArrowUpRight } from 'lucide-react';
+
 import ProcessSection from '../components/ui/ProcessSection';
 import CTASection from '../components/ui/CTASection';
 import { useState } from 'react';
+import ServicesSection from '../components/sections/ServicesSection';
 
 const customEase = cubicBezier(0.22, 1, 0.36, 1);
 
@@ -279,32 +280,7 @@ const DeliverablesSection: React.FC = () => {
 export default function Services() {
   const { t } = useTranslation();
 
-  const servicePillars = [
-    {
-      icon: TrendingUp,
-      title: t('home.services.marketing_title'),
-      description: t('home.services.marketing_desc'),
-      link: '/services/marketing',
-    },
-    {
-      icon: Megaphone,
-      title: t('home.services.communication_title'),
-      description: t('home.services.communication_desc'),
-      link: '/services/communication',
-    },
-    {
-      icon: Code2,
-      title: t('home.services.creation_title'),
-      description: t('home.services.creation_desc'),
-      link: '/services/creation-web',
-    },
-    {
-      icon: BarChart3,
-      title: t('home.services.performance_title'),
-      description: t('home.services.performance_desc'),
-      link: '/services/performance-commerciale',
-    },
-  ];
+  
 
   const processSteps = [
     {
@@ -334,32 +310,7 @@ export default function Services() {
       <HeroServicesSection />
       <div className="section-separator" />
 
-      <section className="section-padding bg-gray-50/50">
-        <div className="container-xl">
-          <div className="text-center mb-14">
-            <span className="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-gold mb-4 shadow-badge px-4 py-1.5 rounded-md">
-              {t('services.services.badge')}
-            </span>
-            <h2 className="text-3xl md:text-4xl font-black tracking-tight text-deep">
-              {t('services.services.title')}{' '}
-              <span className="text-gold">{t('services.services.title2')}</span>
-            </h2>
-          </div>
-          <div className="grid md:grid-cols-2 gap-6">
-            {servicePillars.map((pillar, index) => (
-              <ServiceCard
-                key={pillar.title}
-                icon={pillar.icon}
-                title={pillar.title}
-                description={pillar.description}
-                link={pillar.link}
-                delay={index * 0.08}
-                linkLabel={t('services.services.view_all')}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
+      <ServicesSection/>
 
       <div className="section-separator" />
 

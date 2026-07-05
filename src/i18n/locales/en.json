@@ -24,7 +24,7 @@
       "card_tags": {
         "tag1": "Marketing",
         "tag2": "Communication & Branding",
-        "tag3": "Creation & Web Development",
+        "tag3": "Creation & Web   Development",
         "tag4": "Commercial Performance"
       },
       "badge_text": "Since 2016",
@@ -211,10 +211,10 @@
       "title": "Orient.",
       "title2": "Execute.",
       "title3": "Drive.",
-      "text": "Our mission is to structure, guide, and activate business growth — bridging strategy, communication, and execution within an integrated, results-oriented approach.",
+      "text": "Our mission is to structure, guide, and activate business growth  bridging strategy, communication, and execution within an integrated, results-oriented approach.",
       "philoTitle": "Philosophical manifesto",
       "philosophie": "Strategy without execution is worthless.",
-      "signature": "— The Active Rise philosophy"
+      "signature": " The Active Rise philosophy"
     },
     "story": {
       "badge": "Our Story",
@@ -242,7 +242,7 @@
           "id": "02",
           "title": "Growth Structurer",
           "subtitle": "Organize to perform",
-          "description": "We organize your growth drivers — marketing, communication, sales — into a unified and coherent strategy."
+          "description": "We organize your growth drivers  marketing, communication, sales  into a unified and coherent strategy."
         },
         {
           "id": "03",
@@ -358,10 +358,10 @@
       }
     },
     "marketing": {
-      "eyebrow": "Marketing",
+      "eyebrow": "Introduction",
       "title": "Marketing",
       "title2": "& Strategy",
-      "intro": "Marketing isn't an expense. It's an investment—provided it's structured, targeted, and measurable. At ActiveRise, we design and implement marketing strategies tailored to the realities of your market, your target audience, and your objectives—for actions that produce concrete and measurable results.",
+      "intro": "Marketing isn't an expense. It's an investmentprovided it's structured, targeted, and measurable. At ActiveRise, we design and implement marketing strategies tailored to the realities of your market, your target audience, and your objectivesfor actions that produce concrete and measurable results.",
       "sections_label": "01 / ARCHITECTURAL CAPABILITIES",
       "sections_title": "Our Strategic Services",
       "formation_label": "02 / SKILLS TRANSFER",
@@ -371,11 +371,11 @@
           "services": [
             {
               "title": "Complete marketing audit",
-              "description": "You can't improve what you don't understand yet. We conduct an in-depth marketing analysis of your positioning, channels, actions and results. In return, you receive a precise report that identifies your real bottlenecks and growth levers to activate first—no approximations."
+              "description": "You can't improve what you don't understand yet. We conduct an in-depth marketing analysis of your positioning, channels, actions and results. In return, you receive a precise report that identifies your real bottlenecks and growth levers to activate firstno approximations."
             },
             {
               "title": "Marketing strategy development",
-              "description": "Based on the diagnosis, we build a tailored marketing strategy—adapted to your sector, audience and real objectives. You get a clear and operational roadmap: what to do, in what order, with what resources and for what expected results."
+              "description": "Based on the diagnosis, we build a tailored marketing strategyadapted to your sector, audience and real objectives. You get a clear and operational roadmap: what to do, in what order, with what resources and for what expected results."
             },
             {
               "title": "Positioning and target definition",
@@ -383,7 +383,7 @@
             },
             {
               "title": "Marketing action plan construction",
-              "description": "We translate your strategy into a structured and prioritized action plan—concrete actions, execution schedule, responsibilities and performance indicators. Every decision is justified, every action is measurable."
+              "description": "We translate your strategy into a structured and prioritized action planconcrete actions, execution schedule, responsibilities and performance indicators. Every decision is justified, every action is measurable."
             }
           ]
         },
@@ -392,15 +392,15 @@
           "services": [
             {
               "title": "Paid advertising campaign management",
-              "description": "We design, launch and optimize your digital advertising campaigns on platforms suited to your target—Meta, Google, LinkedIn, TikTok. Each campaign is managed with precision, monitored in real-time and continuously adjusted to maximize your return on investment."
+              "description": "We design, launch and optimize your digital advertising campaigns on platforms suited to your targetMeta, Google, LinkedIn, TikTok. Each campaign is managed with precision, monitored in real-time and continuously adjusted to maximize your return on investment."
             },
             {
               "title": "Acquisition and loyalty strategy",
-              "description": "Attracting new customers is essential. Retaining the ones you have is just as important. We implement strategies that cover both dimensions—targeted acquisition and loyalty programs—to maximize the value of every customer relationship."
+              "description": "Attracting new customers is essential. Retaining the ones you have is just as important. We implement strategies that cover both dimensionstargeted acquisition and loyalty programsto maximize the value of every customer relationship."
             },
             {
               "title": "Content marketing",
-              "description": "We create and deploy a content strategy that attracts your audience, strengthens your credibility and generates qualified leads—articles, videos, infographics, social media posts. Each piece of content has a specific purpose and a defined place in your overall strategy."
+              "description": "We create and deploy a content strategy that attracts your audience, strengthens your credibility and generates qualified leadsarticles, videos, infographics, social media posts. Each piece of content has a specific purpose and a defined place in your overall strategy."
             }
           ]
         },
@@ -409,58 +409,58 @@
           "services": [
             {
               "title": "Account creation and management",
-              "description": "We handle the creation, configuration and complete management of your accounts on the platforms most relevant to your business—Facebook, Instagram, LinkedIn, TikTok. Each profile is optimized to reflect your brand image and maximize your visibility."
+              "description": "We handle the creation, configuration and complete management of your accounts on the platforms most relevant to your businessFacebook, Instagram, LinkedIn, TikTok. Each profile is optimized to reflect your brand image and maximize your visibility."
             },
             {
               "title": "Editorial production and planning",
-              "description": "Publishing professional and consistent content regularly takes time and expertise. We create your monthly editorial calendar, produce your visuals and write your captions—for constant, polished and strategic digital presence."
+              "description": "Publishing professional and consistent content regularly takes time and expertise. We create your monthly editorial calendar, produce your visuals and write your captionsfor constant, polished and strategic digital presence."
             },
             {
               "title": "Community animation",
-              "description": "We animate your community daily—responding to comments and messages, creating interactions, managing reviews—to build a loyal, active and engaged audience around your brand."
+              "description": "We animate your community dailyresponding to comments and messages, creating interactions, managing reviewsto build a loyal, active and engaged audience around your brand."
             },
             {
               "title": "Performance reporting and analysis",
-              "description": "Each month, you receive a detailed report of your performance—reach, engagement, leads generated, cost per result. We analyze the data, identify what works and adjust the strategy accordingly."
+              "description": "Each month, you receive a detailed report of your performancereach, engagement, leads generated, cost per result. We analyze the data, identify what works and adjust the strategy accordingly."
             }
           ]
         }
       ],
       "formation": {
         "title": "Training",
-        "description": "Want to master your own marketing tools? We offer practical and operational training on managing Meta Ads, Google Ads, LinkedIn Ads and TikTok Ads campaigns. Short, concrete and immediately applicable programs—so you can launch and manage your own campaigns with efficiency and independence."
+        "description": "Want to master your own marketing tools? We offer practical and operational training on managing Meta Ads, Google Ads, LinkedIn Ads and TikTok Ads campaigns. Short, concrete and immediately applicable programsso you can launch and manage your own campaigns with efficiency and independence."
       },
       "cta": {
         "title": "Your growth begins",
         "title2": "with strategy.",
-        "text": "Let's discuss your situation and identify the marketing levers that best fit your objectives. First exchange is free — no commitment.",
+        "text": "Let's discuss your situation and identify the marketing levers that best fit your objectives. First exchange is free  no commitment.",
         "btn": "Request a free diagnosis →"
       }
     },
     "communication_branding": {
-      "eyebrow": "Communication & Branding",
+      "eyebrow": "Introduction",
       "title": "Communication",
       "title2": "& Branding",
-      "intro": "A strong brand is not just a beautiful logo. It rests on a clear position, coherent messaging and disciplined communication across all channels. At ActiveRise, we build the strategic foundation of your brand — what you are, what you say and how you say it — so every message reinforces your credibility and creates a lasting impression in the minds of your clients. The production of your visual assets (logo, graphic charter, design) is handled by our Creation & Web Development team.",
+      "intro": "A strong brand is not just a beautiful logo. It rests on a clear position, coherent messaging and disciplined communication across all channels. At ActiveRise, we build the strategic foundation of your brand  what you are, what you say and how you say it  so every message reinforces your credibility and creates a lasting impression in the minds of your clients. The production of your visual assets (logo, graphic charter, design) is handled by our Creation & Web Development team.",
       "sections": [
         {
           "title": "Brand Strategy & Branding",
           "services": [
             {
               "title": "Brand positioning definition",
-              "description": "How do you want to be perceived by your customers? We work with you to define your brand's deeper identity — its core values, personality and customer promise — and build a clear and differentiating position that distinguishes you durably from your competitors in your market."
+              "description": "How do you want to be perceived by your customers? We work with you to define your brand's deeper identity  its core values, personality and customer promise  and build a clear and differentiating position that distinguishes you durably from your competitors in your market."
             },
             {
               "title": "Institutional discourse development",
-              "description": "Your tagline, your slogan, your key messages — every word you use to talk about your business must be chosen carefully. We build your complete institutional discourse so it is powerful, memorable and perfectly aligned with your positioning. Because a brand that speaks well is a brand that lasts."
+              "description": "Your tagline, your slogan, your key messages  every word you use to talk about your business must be chosen carefully. We build your complete institutional discourse so it is powerful, memorable and perfectly aligned with your positioning. Because a brand that speaks well is a brand that lasts."
             },
             {
               "title": "Brand strategy",
-              "description": "Beyond positioning, your brand needs a clear strategic direction — how to evolve, how to differentiate, how to build a lasting relationship of trust with your audience. We develop your global brand strategy and support you in implementing it coherently across all touchpoints."
+              "description": "Beyond positioning, your brand needs a clear strategic direction  how to evolve, how to differentiate, how to build a lasting relationship of trust with your audience. We develop your global brand strategy and support you in implementing it coherently across all touchpoints."
             },
             {
               "title": "Brand consistency audit",
-              "description": "Does your communication truly reflect who you are? We analyze all your messages, media and interactions to identify inconsistencies between your brand identity and your actual communication — and provide you with a concrete and prioritized alignment plan."
+              "description": "Does your communication truly reflect who you are? We analyze all your messages, media and interactions to identify inconsistencies between your brand identity and your actual communication  and provide you with a concrete and prioritized alignment plan."
             }
           ]
         },
@@ -469,15 +469,15 @@
           "services": [
             {
               "title": "Institutional communication",
-              "description": "The way your company presents itself to the world determines the trust you inspire. We structure your institutional communication — corporate speech, official presentations, reference documents — so every message your organization delivers is professional, coherent and worthy of your ambitions."
+              "description": "The way your company presents itself to the world determines the trust you inspire. We structure your institutional communication  corporate speech, official presentations, reference documents  so every message your organization delivers is professional, coherent and worthy of your ambitions."
             },
             {
               "title": "Key message structuring",
-              "description": "Knowing what to say isn't enough—you also need to know how to say it, to whom and on which channel. We structure your key messages by audience and context to ensure clear, relevant and effective communication—whether facing an investor, partner, client or your own teams."
+              "description": "Knowing what to say isn't enoughyou also need to know how to say it, to whom and on which channel. We structure your key messages by audience and context to ensure clear, relevant and effective communicationwhether facing an investor, partner, client or your own teams."
             },
             {
               "title": "Internal communication",
-              "description": "A company that communicates well internally performs better externally. We help you structure your internal communication — leadership messages, company culture, team alignment — to create a coherent organization where every employee understands the vision and embraces it."
+              "description": "A company that communicates well internally performs better externally. We help you structure your internal communication  leadership messages, company culture, team alignment  to create a coherent organization where every employee understands the vision and embraces it."
             }
           ]
         },
@@ -486,11 +486,11 @@
           "services": [
             {
               "title": "Digital communication strategy",
-              "description": "We develop your global digital communication plan — priority channels, messages tailored to each audience, optimal frequency and performance indicators. Every decision is based on an analysis of your target and market to guarantee coherent, visible and results-generating digital communication."
+              "description": "We develop your global digital communication plan  priority channels, messages tailored to each audience, optimal frequency and performance indicators. Every decision is based on an analysis of your target and market to guarantee coherent, visible and results-generating digital communication."
             },
             {
               "title": "Content strategy",
-              "description": "Content is your brand's voice on digital. We define your content strategy — editorial themes, formats for each platform, publication calendar and editorial line — so every piece of content produced reinforces your positioning and engages your audience sustainably."
+              "description": "Content is your brand's voice on digital. We define your content strategy  editorial themes, formats for each platform, publication calendar and editorial line  so every piece of content produced reinforces your positioning and engages your audience sustainably."
             }
           ]
         },
@@ -499,11 +499,11 @@
           "services": [
             {
               "title": "Event visibility strategy",
-              "description": "Product launch, opening, conference, trade show—every event is a strategic opportunity to strengthen your image and expand your audience. We support you in designing and deploying your event communication strategy to maximize the impact and visibility of each key moment."
+              "description": "Product launch, opening, conference, trade showevery event is a strategic opportunity to strengthen your image and expand your audience. We support you in designing and deploying your event communication strategy to maximize the impact and visibility of each key moment."
             },
             {
               "title": "Crisis communication management",
-              "description": "A sensitive situation mishandled can durably affect your company's reputation. We support you strategically in managing your communication during a crisis—adapted messages, priority channels, controlled timing—to preserve your credibility and the trust of your stakeholders."
+              "description": "A sensitive situation mishandled can durably affect your company's reputation. We support you strategically in managing your communication during a crisisadapted messages, priority channels, controlled timingto preserve your credibility and the trust of your stakeholders."
             }
           ]
         }
@@ -518,30 +518,30 @@
       "cta": {
         "title": "Your brand has a story.",
         "title2": "Let's help it be heard.",
-        "text": "Let's discuss your communication and brand positioning. We will identify together the adjustments that will make a difference. First exchange is free — no commitment.",
+        "text": "Let's discuss your communication and brand positioning. We will identify together the adjustments that will make a difference. First exchange is free  no commitment.",
         "btn": "Request a free diagnosis →"
       }
     },
     "creation_web": {
-      "eyebrow": "Web Creation & Development",
+      "eyebrow": "Digital",
       "title": "Web Creation & Development",
-      "title2": "— Introduction",
-      "intro": "Strategy without execution remains just an intention. At ActiveRise, we bring your brand to life through concrete and impactful creations — visual identity, communication materials, audiovisual productions and custom digital solutions. Every deliverable is designed with rigor, attention to detail and results-oriented approach, so your brand is seen, recognized and memorable.",
+      "title2": " Introduction",
+      "intro": "Strategy without execution remains just an intention. At ActiveRise, we bring your brand to life through concrete and impactful creations  visual identity, communication materials, audiovisual productions and custom digital solutions. Every deliverable is designed with rigor, attention to detail and results-oriented approach, so your brand is seen, recognized and memorable.",
       "sections": [
         {
           "title": "Visual Identity",
           "services": [
             {
               "title": "Logo Design",
-              "description": "Your logo is the first symbol of your identity. We design it with care — unique design, sense carried by every detail, adaptable to all media. A logo that resembles you, distinguishes you and stands the test of time."
+              "description": "Your logo is the first symbol of your identity. We design it with care  unique design, sense carried by every detail, adaptable to all media. A logo that resembles you, distinguishes you and stands the test of time."
             },
             {
               "title": "Complete Brand Guidelines",
-              "description": "The visual consistency of your brand relies on clear and shared rules. We develop your complete graphic charter — colors, typography, iconography, usage rules across all media — so every creation produced is immediately identifiable as yours."
+              "description": "The visual consistency of your brand relies on clear and shared rules. We develop your complete graphic charter  colors, typography, iconography, usage rules across all media  so every creation produced is immediately identifiable as yours."
             },
             {
               "title": "Brand Visual Universe",
-              "description": "Beyond the logo and guidelines, your brand has an atmosphere, a style, a graphic soul. We build the complete visual universe of your brand — reference images, textures, standard layouts, visual tone — for a strong, consistent and recognizable identity at first glance."
+              "description": "Beyond the logo and guidelines, your brand has an atmosphere, a style, a graphic soul. We build the complete visual universe of your brand  reference images, textures, standard layouts, visual tone  for a strong, consistent and recognizable identity at first glance."
             }
           ]
         },
@@ -550,15 +550,15 @@
           "services": [
             {
               "title": "Print Media",
-              "description": "Flyers, posters, banners, business cards, catalogs, brochures — we design your printed materials with rigorous attention to aesthetics, readability and visual impact. Each material is aligned with your brand identity and designed to achieve its communication objective."
+              "description": "Flyers, posters, banners, business cards, catalogs, brochures  we design your printed materials with rigorous attention to aesthetics, readability and visual impact. Each material is aligned with your brand identity and designed to achieve its communication objective."
             },
             {
               "title": "Digital Materials",
-              "description": "Advertising banners, social media visuals, presentation templates, graphic newsletters — we create your digital materials with professional finishing level, optimized for each format and distribution platform."
+              "description": "Advertising banners, social media visuals, presentation templates, graphic newsletters  we create your digital materials with professional finishing level, optimized for each format and distribution platform."
             },
             {
               "title": "Advertising Creation",
-              "description": "Effective advertising doesn't just need to be beautiful — it must convince and trigger action. We create your print and digital advertising visuals with a strategic approach — clear message, controlled visual hierarchy and integrated call to action."
+              "description": "Effective advertising doesn't just need to be beautiful  it must convince and trigger action. We create your print and digital advertising visuals with a strategic approach  clear message, controlled visual hierarchy and integrated call to action."
             }
           ]
         },
@@ -567,23 +567,23 @@
           "services": [
             {
               "title": "Commercial Spot Production",
-              "description": "A well-designed commercial spot can transform your company's visibility in seconds. We produce your spots from A to Z — concept, script, production and final editing — for videos that captivate, leave an impression and generate concrete results."
+              "description": "A well-designed commercial spot can transform your company's visibility in seconds. We produce your spots from A to Z  concept, script, production and final editing  for videos that captivate, leave an impression and generate concrete results."
             },
             {
               "title": "Video Editing & Post-Production",
-              "description": "Do you have video footage to enhance? We handle the editing, color grading, sound design and complete post-production of your videos for a professional and impactful finish — adapted to each format and distribution platform."
+              "description": "Do you have video footage to enhance? We handle the editing, color grading, sound design and complete post-production of your videos for a professional and impactful finish  adapted to each format and distribution platform."
             },
             {
               "title": "Motion Design & Animation",
-              "description": "Movement amplifies the message. We create graphic animations, opening sequences, transitions and visual effects that bring your content to life and make it more engaging — for your videos, presentations or digital ads."
+              "description": "Movement amplifies the message. We create graphic animations, opening sequences, transitions and visual effects that bring your content to life and make it more engaging  for your videos, presentations or digital ads."
             },
             {
               "title": "Podcast Production",
-              "description": "Podcast is a powerful tool to establish your authority and create a deep connection with your audience. We support you in the complete production of your podcast — editorial design, recording, audio editing, sound design and distribution on listening platforms."
+              "description": "Podcast is a powerful tool to establish your authority and create a deep connection with your audience. We support you in the complete production of your podcast  editorial design, recording, audio editing, sound design and distribution on listening platforms."
             },
             {
               "title": "Professional Photography",
-              "description": "A professional image is worth a thousand sales arguments. We ensure artistic direction and photography production for your photo shoots — products, team, events or social media content — for visuals that reflect the excellence of your brand."
+              "description": "A professional image is worth a thousand sales arguments. We ensure artistic direction and photography production for your photo shoots  products, team, events or social media content  for visuals that reflect the excellence of your brand."
             }
           ]
         },
@@ -592,23 +592,23 @@
           "services": [
             {
               "title": "UX/UI Design",
-              "description": "Before developing, you must design. We design the user experience and interface of your site or application — user journey, mockups, interactive prototypes — to ensure smooth, intuitive navigation oriented toward conversion before writing the first line of code."
+              "description": "Before developing, you must design. We design the user experience and interface of your site or application  user journey, mockups, interactive prototypes  to ensure smooth, intuitive navigation oriented toward conversion before writing the first line of code."
             },
             {
               "title": "Showcase & Institutional Websites",
-              "description": "Your website works for you 24/7. We develop professional, modern and high-performing websites — custom designed, optimized for search engines and adapted to all screens — to convert your visitors into customers and strengthen your online credibility."
+              "description": "Your website works for you 24/7. We develop professional, modern and high-performing websites  custom designed, optimized for search engines and adapted to all screens  to convert your visitors into customers and strengthen your online credibility."
             },
             {
               "title": "Online Stores (E-commerce)",
-              "description": "Sell your products online without location or time constraints. We develop your online store with smooth shopping experience, secure payment system and simple management interface — so you can focus on your sales and growth."
+              "description": "Sell your products online without location or time constraints. We develop your online store with smooth shopping experience, secure payment system and simple management interface  so you can focus on your sales and growth."
             },
             {
               "title": "Optimized Landing Pages",
-              "description": "A well-designed landing page can significantly multiply your conversion rates. We create targeted and optimized landing pages to transform your visitors into leads or customers — ideal for your advertising campaigns, product launches or special offers."
+              "description": "A well-designed landing page can significantly multiply your conversion rates. We create targeted and optimized landing pages to transform your visitors into leads or customers  ideal for your advertising campaigns, product launches or special offers."
             },
             {
               "title": "Web & Mobile Applications",
-              "description": "Do you have a specific need that no standard tool covers? We develop your custom web and mobile applications — iOS and Android — from user experience design to final deployment. Powerful, intuitive solutions built to meet the real needs of your users."
+              "description": "Do you have a specific need that no standard tool covers? We develop your custom web and mobile applications  iOS and Android  from user experience design to final deployment. Powerful, intuitive solutions built to meet the real needs of your users."
             }
           ]
         }
@@ -620,16 +620,16 @@
         "description": "We offer practical training and immediately applicable sessions to master the essential tools for creating visual content and web development.",
         "items": [
           {
-            "title": "Training — Visual Content Creation",
+            "title": "Training  Visual Content Creation",
             "description": "We train you in creating professional visuals for social media and communication materials. Practical sessions immediately applicable to produce quality visual content independently."
           },
           {
-            "title": "Training — Video Editing",
-            "description": "From shooting to publishing — we train you in essential video editing techniques to produce professional video content adapted to digital platform formats. Practical field-oriented training, accessible regardless of your starting level."
+            "title": "Training  Video Editing",
+            "description": "From shooting to publishing  we train you in essential video editing techniques to produce professional video content adapted to digital platform formats. Practical field-oriented training, accessible regardless of your starting level."
           },
           {
-            "title": "Training — Introduction to Web Development",
-            "description": "Understand how a website works, communicate effectively with a developer and manage basic updates to your site — we offer accessible introduction to web development fundamentals for non-technical people who want to take control of their digital presence."
+            "title": "Training  Introduction to Web Development",
+            "description": "Understand how a website works, communicate effectively with a developer and manage basic updates to your site  we offer accessible introduction to web development fundamentals for non-technical people who want to take control of their digital presence."
           }
         ]
       },
@@ -637,7 +637,7 @@
       "cta": {
         "title": "Your project deserves",
         "title2": "flawless execution.",
-        "text": "Let's discuss your web creation and development needs. Together we identify the solutions best suited to your goals. First consultation free — no commitment.",
+        "text": "Let's discuss your web creation and development needs. Together we identify the solutions best suited to your goals. First consultation free  no commitment.",
         "btn": "Request a free assessment →"
       }
     },
@@ -741,7 +741,7 @@
       "badge": "Performance",
       "title": "Tangible and measurable",
       "titleGold": "results",
-      "description": "Discover how we have accompanied businesses through their transformation and expansion — using a structured, results-driven approach."
+      "description": "Discover how we have accompanied businesses through their transformation and expansion  using a structured, results-driven approach."
     },
     "case": "Case Studies",
     "infos": {
@@ -762,7 +762,7 @@
       "sector": "Hygiene, maintenance, green spaces, air conditioning",
       "location": "Pointe-Noire, Republic of the Congo",
       "context": "Eureka & Co specializes in hygiene, pest control, maintenance, landscaping, and air conditioning. The business had an existing website but suffered from an insufficient, unaligned digital presence to fuel its scale.",
-      "challenge": "Identify digital growth levers, restructure online presence, and deploy cohesive messaging — all while satisfying a meticulous executive strict on fine details and deadlines.",
+      "challenge": "Identify digital growth levers, restructure online presence, and deploy cohesive messaging  all while satisfying a meticulous executive strict on fine details and deadlines.",
       "int1": "Comprehensive audit and strategic identification of major growth channels.",
       "int2": "Full custom web redesign, engineered to match the client's high standards of precision.",
       "int3": "Setup, optimization, and deployment across social platforms (Facebook, Instagram, TikTok, LinkedIn).",
@@ -779,7 +779,7 @@
       "tag": "Digital Acquisition Strategy",
       "title": "Green World Congo",
       "manager": "Mr. Milandou Léandre, Top Leader Green World Congo",
-      "sector": "Network Marketing (MLM) — natural health products",
+      "sector": "Network Marketing (MLM)  natural health products",
       "location": "Republic of the Congo",
       "context": "Green World is an international group founded in 1994, operating in over 40 countries, specializing in natural health products sold via network marketing. For their expansion in the Republic of the Congo, the local leader sought to modernize network growth, which previously relied entirely on field contacts and flyers.",
       "challenge": "Transition a 100% field-based commercial approach into a structured digital pipeline capable of massively expanding the distributor network and driving revenue in record time.",
@@ -796,7 +796,7 @@
     },
     "cta": {
       "title": "Want to see our creative productions?",
-      "subtitle": "Websites, visual identities, video ads, digital campaigns — discover our complete production house on our portfolio space.",
+      "subtitle": "Websites, visual identities, video ads, digital campaigns  discover our complete production house on our portfolio space.",
       "action": "Explore our portfolio"
     }
   },

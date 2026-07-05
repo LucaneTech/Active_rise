@@ -211,10 +211,10 @@
       "title": "Orienter.",
       "title2": "Exécuter.",
       "title3": "Impulser.",
-      "text": "Notre mission est de structurer, orienter et activer la croissance des entreprises — en reliant stratégie, communication et exécution dans une logique intégrée orientée résultats.",
+      "text": "Notre mission est de structurer, orienter et activer la croissance des entreprises  en reliant stratégie, communication et exécution dans une logique intégrée orientée résultats.",
       "philoTitle": "Manifeste philosophique",
       "philosophie": "Une stratégie sans exécution n'a aucune valeur.",
-      "signature": "— La philosophie Active Rise"
+      "signature": " La philosophie Active Rise"
     },
     "story": {
       "badge": "Notre Histoire",
@@ -242,7 +242,7 @@
           "id": "02",
           "title": "Structurant de croissance",
           "subtitle": "Organiser pour performer",
-          "description": "Nous organisons les leviers de votre croissance — marketing, communication, commercial — en une stratégie unifiée et cohérente."
+          "description": "Nous organisons les leviers de votre croissance  marketing, communication, commercial  en une stratégie unifiée et cohérente."
         },
         {
           "id": "03",
@@ -349,10 +349,10 @@
       "view_all": "En savoir plus"
     },
     "marketing": {
-      "eyebrow": "Marketing",
+      "eyebrow": "Introduction",
       "title": "Marketing",
       "title2": "& Stratégie",
-      "intro": "Le marketing n'est pas une dépense. C'est un investissement — à condition d'être structuré, ciblé et mesuré. Chez ActiveRise, nous concevons et déployons des stratégies marketing adaptées à la réalité de votre marché, de votre cible et de vos objectifs — pour des actions qui produisent des résultats concrets et mesurables.",
+      "intro": "Le marketing n'est pas une dépense. C'est un investissement  à condition d'être structuré, ciblé et mesuré. Chez ActiveRise, nous concevons et déployons des stratégies marketing adaptées à la réalité de votre marché, de votre cible et de vos objectifs  pour des actions qui produisent des résultats concrets et mesurables.",
       "sections_label": "01 / CAPABILITÉS ARCHITECTURALES",
       "sections_title": "Nos Prestations Stratégiques",
       "formation_label": "02 / TRANSFERT DE COMPÉTENCES",
@@ -362,11 +362,11 @@
           "services": [
             {
               "title": "Audit marketing complet",
-              "description": "Vous ne pouvez pas améliorer ce que vous ne comprenez pas encore. Notre audit marketing analyse en profondeur votre positionnement, vos canaux, vos actions et vos résultats. À l'issue, vous disposez d'un rapport précis qui identifie vos blocages réels et les leviers de croissance à activer en priorité — sans approximation."
+              "description": "Vous ne pouvez pas améliorer ce que vous ne comprenez pas encore. Notre audit marketing analyse en profondeur votre positionnement, vos canaux, vos actions et vos résultats. À l'issue, vous disposez d'un rapport précis qui identifie vos blocages réels et les leviers de croissance à activer en priorité  sans approximation."
             },
             {
               "title": "Élaboration de la stratégie marketing",
-              "description": "Sur la base du diagnostic établi, nous construisons une stratégie marketing sur mesure — adaptée à votre secteur, votre cible et vos objectifs réels. Vous obtenez une feuille de route claire et opérationnelle : ce qu'il faut faire, dans quel ordre, avec quels moyens et pour quels résultats attendus."
+              "description": "Sur la base du diagnostic établi, nous construisons une stratégie marketing sur mesure  adaptée à votre secteur, votre cible et vos objectifs réels. Vous obtenez une feuille de route claire et opérationnelle : ce qu'il faut faire, dans quel ordre, avec quels moyens et pour quels résultats attendus."
             },
             {
               "title": "Définition du positionnement et de la cible",
@@ -374,7 +374,7 @@
             },
             {
               "title": "Construction du plan d'action marketing",
-              "description": "Nous traduisons votre stratégie en plan d'action structuré et priorisé — actions concrètes, calendrier d'exécution, responsabilités et indicateurs de performance. Chaque décision est justifiée, chaque action est mesurable."
+              "description": "Nous traduisons votre stratégie en plan d'action structuré et priorisé  actions concrètes, calendrier d'exécution, responsabilités et indicateurs de performance. Chaque décision est justifiée, chaque action est mesurable."
             }
           ]
         },
@@ -383,15 +383,15 @@
           "services": [
             {
               "title": "Gestion des campagnes publicitaires payantes",
-              "description": "Nous concevons, lançons et optimisons vos campagnes publicitaires digitales sur les plateformes adaptées à votre cible — Meta, Google, LinkedIn, TikTok. Chaque campagne est pilotée avec précision, suivie en temps réel et ajustée en continu pour maximiser votre retour sur investissement."
+              "description": "Nous concevons, lançons et optimisons vos campagnes publicitaires digitales sur les plateformes adaptées à votre cible  Meta, Google, LinkedIn, TikTok. Chaque campagne est pilotée avec précision, suivie en temps réel et ajustée en continu pour maximiser votre retour sur investissement."
             },
             {
               "title": "Stratégie d'acquisition et de fidélisation",
-              "description": "Attirer de nouveaux clients est essentiel. Fidéliser ceux que vous avez l'est tout autant. Nous mettons en place des stratégies qui couvrent les deux dimensions — acquisition ciblée et programmes de fidélisation — pour maximiser la valeur de chaque relation client."
+              "description": "Attirer de nouveaux clients est essentiel. Fidéliser ceux que vous avez l'est tout autant. Nous mettons en place des stratégies qui couvrent les deux dimensions  acquisition ciblée et programmes de fidélisation  pour maximiser la valeur de chaque relation client."
             },
             {
               "title": "Marketing de contenu",
-              "description": "Nous créons et déployons une stratégie de contenu qui attire votre cible, renforce votre crédibilité et génère des leads qualifiés — articles, vidéos, infographies, posts réseaux sociaux. Chaque contenu a un objectif précis et une place définie dans votre stratégie globale."
+              "description": "Nous créons et déployons une stratégie de contenu qui attire votre cible, renforce votre crédibilité et génère des leads qualifiés  articles, vidéos, infographies, posts réseaux sociaux. Chaque contenu a un objectif précis et une place définie dans votre stratégie globale."
             }
           ]
         },
@@ -400,58 +400,58 @@
           "services": [
             {
               "title": "Création et gestion des comptes",
-              "description": "Nous prenons en charge la création, la configuration et la gestion complète de vos comptes sur les plateformes pertinentes pour votre activité — Facebook, Instagram, LinkedIn, TikTok. Chaque profil est optimisé pour refléter votre image de marque et maximiser votre visibilité."
+              "description": "Nous prenons en charge la création, la configuration et la gestion complète de vos comptes sur les plateformes pertinentes pour votre activité  Facebook, Instagram, LinkedIn, TikTok. Chaque profil est optimisé pour refléter votre image de marque et maximiser votre visibilité."
             },
             {
               "title": "Production et planification éditoriale",
-              "description": "Publier régulièrement du contenu professionnel et cohérent demande du temps et de l'expertise. Nous créons votre calendrier éditorial mensuel, produisons vos visuels et rédigeons vos légendes — pour une présence digitale constante, soignée et stratégique."
+              "description": "Publier régulièrement du contenu professionnel et cohérent demande du temps et de l'expertise. Nous créons votre calendrier éditorial mensuel, produisons vos visuels et rédigeons vos légendes  pour une présence digitale constante, soignée et stratégique."
             },
             {
               "title": "Animation de communauté",
-              "description": "Nous animons votre communauté au quotidien — réponses aux commentaires et messages, création d'interactions, gestion des avis — pour construire autour de votre marque une audience fidèle, active et impliquée."
+              "description": "Nous animons votre communauté au quotidien  réponses aux commentaires et messages, création d'interactions, gestion des avis  pour construire autour de votre marque une audience fidèle, active et impliquée."
             },
             {
               "title": "Reporting et analyse des performances",
-              "description": "Chaque mois, vous recevez un rapport détaillé de vos performances — portée, engagement, leads générés, coût par résultat. Nous analysons les données, identifions ce qui fonctionne et ajustons la stratégie en conséquence."
+              "description": "Chaque mois, vous recevez un rapport détaillé de vos performances  portée, engagement, leads générés, coût par résultat. Nous analysons les données, identifions ce qui fonctionne et ajustons la stratégie en conséquence."
             }
           ]
         }
       ],
       "formation": {
         "title": "Formation",
-        "description": "Vous souhaitez maîtriser vos propres outils marketing ? Nous proposons des formations pratiques et opérationnelles sur la gestion des campagnes Meta Ads, Google Ads, LinkedIn Ads et TikTok Ads. Des programmes courts, concrets et immédiatement applicables — pour vous permettre de lancer et piloter vos propres campagnes avec efficacité et autonomie."
+        "description": "Vous souhaitez maîtriser vos propres outils marketing ? Nous proposons des formations pratiques et opérationnelles sur la gestion des campagnes Meta Ads, Google Ads, LinkedIn Ads et TikTok Ads. Des programmes courts, concrets et immédiatement applicables  pour vous permettre de lancer et piloter vos propres campagnes avec efficacité et autonomie."
       },
       "cta": {
         "title": "Votre croissance commence",
         "title2": "par une stratégie.",
-        "text": "Discutons de votre situation et identifions ensemble les leviers marketing les plus adaptés à vos objectifs. Premier échange gratuit — sans engagement.",
+        "text": "Discutons de votre situation et identifions ensemble les leviers marketing les plus adaptés à vos objectifs. Premier échange gratuit  sans engagement.",
         "btn": "Demander un diagnostic gratuit →"
       }
     },
     "communication_branding": {
-      "eyebrow": "Communication & Branding",
+      "eyebrow": "Introduction",
       "title": "Communication",
       "title2": "& Branding",
-      "intro": "Une marque forte ne se résume pas à un beau logo. Elle repose sur un positionnement clair, un discours cohérent et une communication maîtrisée sur tous les canaux. Chez ActiveRise, nous construisons la fondation stratégique de votre marque — ce que vous êtes, ce que vous dites et comment vous le dites — pour que chaque message renforce votre crédibilité et crée une impression durable dans l'esprit de vos clients. La production de vos supports visuels (logo, charte graphique, design) est assurée par notre pôle Création & Développement Web.",
+      "intro": "Une marque forte ne se résume pas à un beau logo. Elle repose sur un positionnement clair, un discours cohérent et une communication maîtrisée sur tous les canaux. Chez ActiveRise, nous construisons la fondation stratégique de votre marque  ce que vous êtes, ce que vous dites et comment vous le dites  pour que chaque message renforce votre crédibilité et crée une impression durable dans l'esprit de vos clients. La production de vos supports visuels (logo, charte graphique, design) est assurée par notre pôle Création & Développement Web.",
       "sections": [
         {
           "title": "Stratégie de Marque & Branding",
           "services": [
             {
               "title": "Définition du positionnement de marque",
-              "description": "Comment voulez-vous être perçu par vos clients ? Nous travaillons avec vous pour définir l'identité profonde de votre marque — ses valeurs fondamentales, sa personnalité, sa promesse client — et construire un positionnement clair et différenciant qui vous distingue durablement de vos concurrents sur votre marché."
+              "description": "Comment voulez-vous être perçu par vos clients ? Nous travaillons avec vous pour définir l'identité profonde de votre marque  ses valeurs fondamentales, sa personnalité, sa promesse client  et construire un positionnement clair et différenciant qui vous distingue durablement de vos concurrents sur votre marché."
             },
             {
               "title": "Élaboration du discours institutionnel",
-              "description": "Votre tagline, votre slogan, vos messages clés — chaque mot que vous utilisez pour parler de votre entreprise doit être choisi avec rigueur. Nous construisons votre discours institutionnel complet pour qu'il soit percutant, mémorable et parfaitement cohérent avec votre positionnement. Parce qu'une marque qui parle juste est une marque qui reste."
+              "description": "Votre tagline, votre slogan, vos messages clés  chaque mot que vous utilisez pour parler de votre entreprise doit être choisi avec rigueur. Nous construisons votre discours institutionnel complet pour qu'il soit percutant, mémorable et parfaitement cohérent avec votre positionnement. Parce qu'une marque qui parle juste est une marque qui reste."
             },
             {
               "title": "Stratégie de marque",
-              "description": "Au-delà du positionnement, votre marque a besoin d'une direction stratégique claire — comment évoluer, comment se différencier, comment construire une relation de confiance durable avec votre audience. Nous élaborons votre stratégie de marque globale et vous accompagnons dans sa mise en œuvre cohérente sur tous vos points de contact."
+              "description": "Au-delà du positionnement, votre marque a besoin d'une direction stratégique claire  comment évoluer, comment se différencier, comment construire une relation de confiance durable avec votre audience. Nous élaborons votre stratégie de marque globale et vous accompagnons dans sa mise en œuvre cohérente sur tous vos points de contact."
             },
             {
               "title": "Audit de cohérence de marque",
-              "description": "Votre communication reflète-t-elle vraiment qui vous êtes ? Nous analysons l'ensemble de vos messages, supports et interactions pour identifier les incohérences entre votre identité de marque et ce que vous communiquez réellement — et vous proposons un plan d'alignement concret et priorisé."
+              "description": "Votre communication reflète-t-elle vraiment qui vous êtes ? Nous analysons l'ensemble de vos messages, supports et interactions pour identifier les incohérences entre votre identité de marque et ce que vous communiquez réellement  et vous proposons un plan d'alignement concret et priorisé."
             }
           ]
         },
@@ -460,15 +460,15 @@
           "services": [
             {
               "title": "Communication institutionnelle",
-              "description": "La façon dont votre entreprise se présente au monde détermine la confiance que vous inspirez. Nous structurons votre communication institutionnelle — discours corporate, présentations officielles, documents de référence — pour que chaque prise de parole de votre organisation soit professionnelle, cohérente et à la hauteur de vos ambitions."
+              "description": "La façon dont votre entreprise se présente au monde détermine la confiance que vous inspirez. Nous structurons votre communication institutionnelle  discours corporate, présentations officielles, documents de référence  pour que chaque prise de parole de votre organisation soit professionnelle, cohérente et à la hauteur de vos ambitions."
             },
             {
               "title": "Structuration des messages clés",
-              "description": "Savoir quoi dire ne suffit pas — encore faut-il savoir comment le dire, à qui et sur quel canal. Nous structurons vos messages clés par cible et par contexte pour garantir une communication claire, adaptée et efficace — que ce soit face à un investisseur, un partenaire, un client ou vos propres équipes."
+              "description": "Savoir quoi dire ne suffit pas  encore faut-il savoir comment le dire, à qui et sur quel canal. Nous structurons vos messages clés par cible et par contexte pour garantir une communication claire, adaptée et efficace  que ce soit face à un investisseur, un partenaire, un client ou vos propres équipes."
             },
             {
               "title": "Communication interne",
-              "description": "Une entreprise qui communique bien en interne performe mieux en externe. Nous vous aidons à structurer votre communication interne — messages de direction, culture d'entreprise, alignement des équipes — pour créer une organisation cohérente où chaque collaborateur comprend la vision et y adhère."
+              "description": "Une entreprise qui communique bien en interne performe mieux en externe. Nous vous aidons à structurer votre communication interne  messages de direction, culture d'entreprise, alignement des équipes  pour créer une organisation cohérente où chaque collaborateur comprend la vision et y adhère."
             }
           ]
         },
@@ -477,11 +477,11 @@
           "services": [
             {
               "title": "Stratégie de communication digitale",
-              "description": "Nous élaborons votre plan de communication digitale global — canaux prioritaires, messages adaptés à chaque audience, fréquence optimale et indicateurs de performance. Chaque décision est fondée sur une analyse de votre cible et de votre marché pour garantir une communication digitale cohérente, visible et génératrice de résultats."
+              "description": "Nous élaborons votre plan de communication digitale global  canaux prioritaires, messages adaptés à chaque audience, fréquence optimale et indicateurs de performance. Chaque décision est fondée sur une analyse de votre cible et de votre marché pour garantir une communication digitale cohérente, visible et génératrice de résultats."
             },
             {
               "title": "Stratégie de contenu",
-              "description": "Le contenu est la voix de votre marque sur le digital. Nous définissons votre stratégie de contenu — thèmes éditoriaux, formats adaptés à chaque plateforme, calendrier de publication et ligne éditoriale — pour que chaque contenu produit renforce votre positionnement et engage votre audience de façon durable."
+              "description": "Le contenu est la voix de votre marque sur le digital. Nous définissons votre stratégie de contenu  thèmes éditoriaux, formats adaptés à chaque plateforme, calendrier de publication et ligne éditoriale  pour que chaque contenu produit renforce votre positionnement et engage votre audience de façon durable."
             }
           ]
         },
@@ -490,11 +490,11 @@
           "services": [
             {
               "title": "Stratégie de visibilité événementielle",
-              "description": "Lancement de produit, inauguration, conférence, salon — chaque événement est une opportunité stratégique de renforcer votre image et d'élargir votre audience. Nous vous accompagnons dans la conception et le déploiement de votre stratégie de communication événementielle pour maximiser l'impact et la visibilité de chaque moment clé."
+              "description": "Lancement de produit, inauguration, conférence, salon  chaque événement est une opportunité stratégique de renforcer votre image et d'élargir votre audience. Nous vous accompagnons dans la conception et le déploiement de votre stratégie de communication événementielle pour maximiser l'impact et la visibilité de chaque moment clé."
             },
             {
               "title": "Gestion de la communication de crise",
-              "description": "Une situation sensible mal gérée peut affecter durablement la réputation d'une entreprise. Nous vous accompagnons stratégiquement dans la gestion de votre communication en période de crise — messages adaptés, canaux prioritaires, timing maîtrisé — pour préserver votre crédibilité et la confiance de vos parties prenantes."
+              "description": "Une situation sensible mal gérée peut affecter durablement la réputation d'une entreprise. Nous vous accompagnons stratégiquement dans la gestion de votre communication en période de crise  messages adaptés, canaux prioritaires, timing maîtrisé  pour préserver votre crédibilité et la confiance de vos parties prenantes."
             }
           ]
         }
@@ -509,30 +509,30 @@
       "cta": {
         "title": "Votre marque a une histoire.",
         "title2": "Aidons-la à être entendue.",
-        "text": "Discutons de votre communication et de votre positionnement de marque. Nous identifions ensemble les ajustements qui feront la différence. Premier échange gratuit — sans engagement.",
+        "text": "Discutons de votre communication et de votre positionnement de marque. Nous identifions ensemble les ajustements qui feront la différence. Premier échange gratuit  sans engagement.",
         "btn": "Demander un diagnostic gratuit →"
       }
     },
     "creation_web": {
-      "eyebrow": "Création & Développement Web",
+      "eyebrow": "Digital",
       "title": "Création & Développement Web",
-      "title2": "— Introduction",
-      "intro": "Une stratégie sans exécution reste une intention. Chez ActiveRise, nous donnons vie à votre marque à travers des créations concrètes et impactantes — identité visuelle, supports de communication, productions audiovisuelles et solutions digitales sur mesure. Chaque livrable est conçu avec rigueur, sens du détail et orientation résultats, pour que votre marque soit vue, reconnue et mémorable.",
+      "title2": " Introduction",
+      "intro": "Une stratégie sans exécution reste une intention. Chez ActiveRise, nous donnons vie à votre marque à travers des créations concrètes et impactantes  identité visuelle, supports de communication, productions audiovisuelles et solutions digitales sur mesure. Chaque livrable est conçu avec rigueur, sens du détail et orientation résultats, pour que votre marque soit vue, reconnue et mémorable.",
       "sections": [
         {
           "title": "Identité Visuelle",
           "services": [
             {
               "title": "Création de logo",
-              "description": "Votre logo est le premier symbole de votre identité. Nous le concevons avec soin — design unique, sens porté par chaque détail, déclinable sur tous les supports. Un logo qui vous ressemble, vous distingue et traverse le temps."
+              "description": "Votre logo est le premier symbole de votre identité. Nous le concevons avec soin  design unique, sens porté par chaque détail, déclinable sur tous les supports. Un logo qui vous ressemble, vous distingue et traverse le temps."
             },
             {
               "title": "Charte graphique complète",
-              "description": "La cohérence visuelle de votre marque repose sur des règles claires et partagées. Nous élaborons votre charte graphique intégrale — couleurs, typographies, iconographie, règles d'utilisation sur tous les supports — pour que chaque création produite soit immédiatement identifiable comme la vôtre."
+              "description": "La cohérence visuelle de votre marque repose sur des règles claires et partagées. Nous élaborons votre charte graphique intégrale  couleurs, typographies, iconographie, règles d'utilisation sur tous les supports  pour que chaque création produite soit immédiatement identifiable comme la vôtre."
             },
             {
               "title": "Univers visuel de marque",
-              "description": "Au-delà du logo et de la charte, votre marque a une atmosphère, un style, une âme graphique. Nous construisons l'univers visuel complet de votre marque — images de référence, textures, mises en page types, ton visuel — pour une identité forte, cohérente et reconnaissable au premier coup d'œil."
+              "description": "Au-delà du logo et de la charte, votre marque a une atmosphère, un style, une âme graphique. Nous construisons l'univers visuel complet de votre marque  images de référence, textures, mises en page types, ton visuel  pour une identité forte, cohérente et reconnaissable au premier coup d'œil."
             }
           ]
         },
@@ -541,15 +541,15 @@
           "services": [
             {
               "title": "Supports print",
-              "description": "Flyers, affiches, kakémonos, cartes de visite, catalogues, brochures — nous concevons vos supports imprimés avec une attention rigoureuse portée à l'esthétique, la lisibilité et l'impact visuel. Chaque support est aligné sur votre identité de marque et conçu pour atteindre son objectif de communication."
+              "description": "Flyers, affiches, kakémonos, cartes de visite, catalogues, brochures  nous concevons vos supports imprimés avec une attention rigoureuse portée à l'esthétique, la lisibilité et l'impact visuel. Chaque support est aligné sur votre identité de marque et conçu pour atteindre son objectif de communication."
             },
             {
               "title": "Supports digitaux",
-              "description": "Bannières publicitaires, visuels réseaux sociaux, templates de présentations, newsletters graphiques — nous créons vos supports digitaux avec un niveau de finition professionnel, optimisés pour chaque format et chaque plateforme de diffusion."
+              "description": "Bannières publicitaires, visuels réseaux sociaux, templates de présentations, newsletters graphiques  nous créons vos supports digitaux avec un niveau de finition professionnel, optimisés pour chaque format et chaque plateforme de diffusion."
             },
             {
               "title": "Création publicitaire",
-              "description": "Une publicité efficace ne se contente pas d'être belle — elle doit convaincre et déclencher une action. Nous créons vos visuels publicitaires print et digitaux avec une approche stratégique — message clair, hiérarchie visuelle maîtrisée et appel à l'action intégré."
+              "description": "Une publicité efficace ne se contente pas d'être belle  elle doit convaincre et déclencher une action. Nous créons vos visuels publicitaires print et digitaux avec une approche stratégique  message clair, hiérarchie visuelle maîtrisée et appel à l'action intégré."
             }
           ]
         },
@@ -558,23 +558,23 @@
           "services": [
             {
               "title": "Réalisation de spots publicitaires",
-              "description": "Un spot publicitaire bien conçu peut transformer la visibilité de votre entreprise en quelques secondes. Nous réalisons vos spots de A à Z — concept, script, production et montage final — pour des vidéos qui captivent, marquent les esprits et génèrent des résultats concrets."
+              "description": "Un spot publicitaire bien conçu peut transformer la visibilité de votre entreprise en quelques secondes. Nous réalisons vos spots de A à Z  concept, script, production et montage final  pour des vidéos qui captivent, marquent les esprits et génèrent des résultats concrets."
             },
             {
               "title": "Montage et post-production vidéo",
-              "description": "Vous disposez de rushs vidéo à valoriser ? Nous prenons en charge le montage, l'étalonnage, l'habillage sonore et la post-production complète de vos vidéos pour un rendu professionnel et impactant — adapté à chaque format et chaque plateforme de diffusion."
+              "description": "Vous disposez de rushs vidéo à valoriser ? Nous prenons en charge le montage, l'étalonnage, l'habillage sonore et la post-production complète de vos vidéos pour un rendu professionnel et impactant  adapté à chaque format et chaque plateforme de diffusion."
             },
             {
               "title": "Motion design et animation",
-              "description": "Le mouvement amplifie le message. Nous créons des animations graphiques, des génériques, des transitions et des effets visuels qui donnent vie à votre contenu et le rendent plus engageant — pour vos vidéos, vos présentations ou vos publicités digitales."
+              "description": "Le mouvement amplifie le message. Nous créons des animations graphiques, des génériques, des transitions et des effets visuels qui donnent vie à votre contenu et le rendent plus engageant  pour vos vidéos, vos présentations ou vos publicités digitales."
             },
             {
               "title": "Production de podcasts",
-              "description": "Le podcast est un outil puissant pour asseoir votre autorité et créer une connexion profonde avec votre audience. Nous vous accompagnons dans la production complète de votre podcast — conception éditoriale, enregistrement, montage audio, habillage sonore et distribution sur les plateformes d'écoute."
+              "description": "Le podcast est un outil puissant pour asseoir votre autorité et créer une connexion profonde avec votre audience. Nous vous accompagnons dans la production complète de votre podcast  conception éditoriale, enregistrement, montage audio, habillage sonore et distribution sur les plateformes d'écoute."
             },
             {
               "title": "Photographie professionnelle",
-              "description": "Une image professionnelle vaut mille arguments commerciaux. Nous assurons la direction artistique et la production photographique de vos séances photo — produits, équipe, événements ou contenus réseaux sociaux — pour des visuels qui reflètent l'excellence de votre marque."
+              "description": "Une image professionnelle vaut mille arguments commerciaux. Nous assurons la direction artistique et la production photographique de vos séances photo  produits, équipe, événements ou contenus réseaux sociaux  pour des visuels qui reflètent l'excellence de votre marque."
             }
           ]
         },
@@ -583,23 +583,23 @@
           "services": [
             {
               "title": "Conception UX/UI",
-              "description": "Avant de développer, il faut concevoir. Nous désignons l'expérience utilisateur et l'interface de votre site ou application — parcours utilisateur, maquettes, prototypes interactifs — pour garantir une navigation fluide, intuitive et orientée conversion avant même d'écrire la première ligne de code."
+              "description": "Avant de développer, il faut concevoir. Nous désignons l'expérience utilisateur et l'interface de votre site ou application  parcours utilisateur, maquettes, prototypes interactifs  pour garantir une navigation fluide, intuitive et orientée conversion avant même d'écrire la première ligne de code."
             },
             {
               "title": "Sites vitrines et institutionnels",
-              "description": "Votre site internet travaille pour vous 24h/24. Nous développons des sites web professionnels, modernes et performants — conçus sur mesure, optimisés pour le référencement et adaptés à tous les écrans — pour convertir vos visiteurs en clients et renforcer votre crédibilité en ligne."
+              "description": "Votre site internet travaille pour vous 24h/24. Nous développons des sites web professionnels, modernes et performants  conçus sur mesure, optimisés pour le référencement et adaptés à tous les écrans  pour convertir vos visiteurs en clients et renforcer votre crédibilité en ligne."
             },
             {
               "title": "Boutiques en ligne (e-commerce)",
-              "description": "Vendez vos produits en ligne sans contrainte de lieu ni d'horaire. Nous développons votre boutique en ligne avec une expérience d'achat fluide, un système de paiement sécurisé et une interface de gestion simple — pour que vous puissiez vous concentrer sur vos ventes et votre croissance."
+              "description": "Vendez vos produits en ligne sans contrainte de lieu ni d'horaire. Nous développons votre boutique en ligne avec une expérience d'achat fluide, un système de paiement sécurisé et une interface de gestion simple  pour que vous puissiez vous concentrer sur vos ventes et votre croissance."
             },
             {
               "title": "Landing pages optimisées",
-              "description": "Une landing page bien conçue peut multiplier significativement vos taux de conversion. Nous créons des pages d'atterrissage ciblées et optimisées pour transformer vos visiteurs en leads ou en clients — idéales pour vos campagnes publicitaires, lancements de produits ou offres spéciales."
+              "description": "Une landing page bien conçue peut multiplier significativement vos taux de conversion. Nous créons des pages d'atterrissage ciblées et optimisées pour transformer vos visiteurs en leads ou en clients  idéales pour vos campagnes publicitaires, lancements de produits ou offres spéciales."
             },
             {
               "title": "Applications web et mobiles",
-              "description": "Vous avez un besoin spécifique qu'aucun outil standard ne couvre ? Nous développons vos applications web et mobiles sur mesure — iOS et Android — de la conception de l'expérience utilisateur au déploiement final. Des solutions performantes, intuitives et construites pour répondre aux besoins réels de vos utilisateurs."
+              "description": "Vous avez un besoin spécifique qu'aucun outil standard ne couvre ? Nous développons vos applications web et mobiles sur mesure  iOS et Android  de la conception de l'expérience utilisateur au déploiement final. Des solutions performantes, intuitives et construites pour répondre aux besoins réels de vos utilisateurs."
             }
           ]
         }
@@ -611,16 +611,16 @@
         "description": "Nous vous proposons des formations pratiques et immédiatement applicables pour maîtriser les outils essentiels de la création de contenu visuel et du développement web.",
         "items": [
           {
-            "title": "Formation — Création de contenus visuels",
+            "title": "Formation  Création de contenus visuels",
             "description": "Nous vous formons à la création de visuels professionnels pour les réseaux sociaux et les supports de communication. Des sessions pratiques et immédiatement applicables pour produire des contenus visuels de qualité en toute autonomie."
           },
           {
-            "title": "Formation — Montage vidéo",
-            "description": "Du tournage à la publication — nous vous formons aux techniques de montage vidéo essentielles pour produire des contenus vidéo professionnels adaptés aux formats des plateformes digitales. Une formation pratique orientée terrain, accessible quel que soit votre niveau de départ."
+            "title": "Formation  Montage vidéo",
+            "description": "Du tournage à la publication  nous vous formons aux techniques de montage vidéo essentielles pour produire des contenus vidéo professionnels adaptés aux formats des plateformes digitales. Une formation pratique orientée terrain, accessible quel que soit votre niveau de départ."
           },
           {
-            "title": "Formation — Initiation au développement web",
-            "description": "Comprendre comment fonctionne un site internet, savoir communiquer efficacement avec un développeur et gérer les mises à jour de base de votre site — nous proposons une initiation accessible aux fondamentaux du développement web pour les non-techniciens qui veulent prendre le contrôle de leur présence digitale."
+            "title": "Formation  Initiation au développement web",
+            "description": "Comprendre comment fonctionne un site internet, savoir communiquer efficacement avec un développeur et gérer les mises à jour de base de votre site  nous proposons une initiation accessible aux fondamentaux du développement web pour les non-techniciens qui veulent prendre le contrôle de leur présence digitale."
           }
         ]
       },
@@ -628,7 +628,7 @@
       "cta": {
         "title": "Votre projet mérite",
         "title2": "une exécution irréprochable.",
-        "text": "Discutons de vos besoins en création et développement. Nous identifions ensemble les solutions les plus adaptées à vos objectifs. Premier échange gratuit — sans engagement.",
+        "text": "Discutons de vos besoins en création et développement. Nous identifions ensemble les solutions les plus adaptées à vos objectifs. Premier échange gratuit  sans engagement.",
         "btn": "Demander un diagnostic gratuit →"
       }
     },
@@ -732,7 +732,7 @@
       "badge": "Performances",
       "title": "Des résultats concrets et",
       "titleGold": "mesurables",
-      "description": "Découvrez comment nous avons accompagné des entreprises dans leur transformation et leur croissance — avec une approche structurée et orientée résultats."
+      "description": "Découvrez comment nous avons accompagné des entreprises dans leur transformation et leur croissance  avec une approche structurée et orientée résultats."
     },
     "case": "Études de cas",
     "infos": {
@@ -753,7 +753,7 @@
       "sector": "Hygiène, entretien, espaces verts, climatisation",
       "location": "Pointe-Noire, République du Congo",
       "context": "Eureka & Co est une entreprise spécialisée dans les services d'hygiène, de dératisation, d'entretien, d'espaces verts et de climatisation. L'entreprise disposait d'un site internet existant mais d'une présence digitale insuffisante et non structurée pour soutenir sa croissance.",
-      "challenge": "Identifier les leviers de croissance digitale, restructurer la présence en ligne et créer une communication cohérente — le tout en répondant aux exigences d'un dirigeant rigoureux, attentif aux moindres détails et très strict sur le respect des délais.",
+      "challenge": "Identifier les leviers de croissance digitale, restructurer la présence en ligne et créer une communication cohérente  le tout en répondant aux exigences d'un dirigeant rigoureux, attentif aux moindres détails et très strict sur le respect des délais.",
       "int1": "Audit complet et identification stratégique des leviers de croissance.",
       "int2": "Refonte intégrale du site internet sur mesure, architecturé selon les exigences de précision du client.",
       "int3": "Création, optimisation et déploiement des réseaux sociaux (Facebook, Instagram, TikTok, LinkedIn).",
@@ -770,7 +770,7 @@
       "tag": "Stratégie digitale d'acquisition",
       "title": "Green World Congo",
       "manager": "M. Milandou Léandre, Top Leader Green World Congo",
-      "sector": "Marketing relationnel (MLM) — produits de santé naturels",
+      "sector": "Marketing relationnel (MLM)  produits de santé naturels",
       "location": "République du Congo",
       "context": "Green World est un groupe international fondé en 1994, présent dans plus de 40 pays, spécialisé dans les produits de santé naturels commercialisés via un réseau de marketing relationnel. Dans le cadre de leur développement en République du Congo, leur représentant local cherchait à moderniser et accélérer la croissance du réseau, jusqu'alors basée exclusivement sur des méthodes conventionnelles (terrain et flyers).",
       "challenge": "Faire évoluer une approche commerciale 100% terrain vers une stratégie digitale structurée, capable d'élargir significativement le réseau de distributeurs et d'augmenter le chiffre d'affaires en un temps record.",
@@ -787,7 +787,7 @@
     },
     "cta": {
       "title": "Vous souhaitez voir nos réalisations concrètes ?",
-      "subtitle": "Sites web, identités visuelles, spots publicitaires, campagnes digitales — découvrez l'ensemble de nos productions sur notre espace portfolio.",
+      "subtitle": "Sites web, identités visuelles, spots publicitaires, campagnes digitales  découvrez l'ensemble de nos productions sur notre espace portfolio.",
       "action": "Découvrir notre portfolio"
     }
   },
