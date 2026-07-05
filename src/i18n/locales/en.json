@@ -91,15 +91,12 @@
       "step1_title": "01 Initial contact",
       "step1_subtitle": "Let's Discuss Your Challenges",
       "step1_desc": "A free initial consultation to understand your business, your objectives, and the challenges you want to overcome.",
-
       "step2_title": "02 Diagnosis & Audit",
       "step2_subtitle": "Understand Before Acting",
       "step2_desc": "We analyze your business, identify obstacles, and uncover growth opportunities to build a relevant strategy.",
-
       "step3_title": "03 Strategic proposal",
       "step3_subtitle": "A Strategy Tailored to Your Reality",
       "step3_desc": "We develop a clear, personalized, and results-oriented action plan, aligned with your objectives and resources.",
-
       "step4_title": "04 Execution & Follow-up",
       "step4_subtitle": "From Strategy to Action",
       "step4_desc": "We implement the defined actions, monitor performance, and optimize each step to generate sustainable results.",
@@ -360,53 +357,164 @@
         "label": "Commercial Performance"
       }
     },
-    "page": {
-      "marketing": {
-        "text": "We support your commercial growth with conversion-driven marketing tailored to your market."
+    "marketing": {
+      "eyebrow": "Marketing",
+      "title": "Marketing",
+      "title2": "& Strategy",
+      "intro": "Marketing isn't an expense. It's an investment—provided it's structured, targeted, and measurable. At ActiveRise, we design and implement marketing strategies tailored to the realities of your market, your target audience, and your objectives—for actions that produce concrete and measurable results.",
+      "sections": [
+        {
+          "title": "Strategy & Consulting",
+          "services": [
+            {
+              "title": "Complete marketing audit",
+              "description": "You can't improve what you don't understand yet. We conduct an in-depth marketing analysis of your positioning, channels, actions and results. In return, you receive a precise report that identifies your real bottlenecks and growth levers to activate first—no approximations."
+            },
+            {
+              "title": "Marketing strategy development",
+              "description": "Based on the diagnosis, we build a tailored marketing strategy—adapted to your sector, audience and real objectives. You get a clear and operational roadmap: what to do, in what order, with what resources and for what expected results."
+            },
+            {
+              "title": "Positioning and target definition",
+              "description": "Knowing who you're talking to is the foundation of any effective strategy. We help you define your ideal client precisely, understand their real challenges and position your offer in a differentiated and credible way in your market."
+            },
+            {
+              "title": "Marketing action plan construction",
+              "description": "We translate your strategy into a structured and prioritized action plan—concrete actions, execution schedule, responsibilities and performance indicators. Every decision is justified, every action is measurable."
+            }
+          ]
+        },
+        {
+          "title": "Digital Marketing",
+          "services": [
+            {
+              "title": "Paid advertising campaign management",
+              "description": "We design, launch and optimize your digital advertising campaigns on platforms suited to your target—Meta, Google, LinkedIn, TikTok. Each campaign is managed with precision, monitored in real-time and continuously adjusted to maximize your return on investment."
+            },
+            {
+              "title": "Acquisition and loyalty strategy",
+              "description": "Attracting new customers is essential. Retaining the ones you have is just as important. We implement strategies that cover both dimensions—targeted acquisition and loyalty programs—to maximize the value of every customer relationship."
+            },
+            {
+              "title": "Content marketing",
+              "description": "We create and deploy a content strategy that attracts your audience, strengthens your credibility and generates qualified leads—articles, videos, infographics, social media posts. Each piece of content has a specific purpose and a defined place in your overall strategy."
+            }
+          ]
+        },
+        {
+          "title": "Social Media Management",
+          "services": [
+            {
+              "title": "Account creation and management",
+              "description": "We handle the creation, configuration and complete management of your accounts on the platforms most relevant to your business—Facebook, Instagram, LinkedIn, TikTok. Each profile is optimized to reflect your brand image and maximize your visibility."
+            },
+            {
+              "title": "Editorial production and planning",
+              "description": "Publishing professional and consistent content regularly takes time and expertise. We create your monthly editorial calendar, produce your visuals and write your captions—for constant, polished and strategic digital presence."
+            },
+            {
+              "title": "Community animation",
+              "description": "We animate your community daily—responding to comments and messages, creating interactions, managing reviews—to build a loyal, active and engaged audience around your brand."
+            },
+            {
+              "title": "Performance reporting and analysis",
+              "description": "Each month, you receive a detailed report of your performance—reach, engagement, leads generated, cost per result. We analyze the data, identify what works and adjust the strategy accordingly."
+            }
+          ]
+        }
+      ],
+      "formation": {
+        "title": "Training",
+        "description": "Want to master your own marketing tools? We offer practical and operational training on managing Meta Ads, Google Ads, LinkedIn Ads and TikTok Ads campaigns. Short, concrete and immediately applicable programs—so you can launch and manage your own campaigns with efficiency and independence."
       },
-      "communication": {
-        "text": "We strengthen your presence and image to build credibility, visibility and audience engagement."
-      },
-      "creation": {
-        "text": "We craft your identity, content and website to deliver a seamless, memorable and high-performing brand experience."
-      },
-      "performance": {
-        "text": "We structure your commercial processes, KPIs and performance management to convert ambition into sustainable growth."
+      "cta": {
+        "title": "Your growth begins",
+        "title2": "with strategy.",
+        "text": "Let's discuss your situation and identify the marketing levers that best fit your objectives. First exchange is free — no commitment.",
+        "btn": "Request a free diagnosis →"
       }
     },
-    "marketing": {
-      "badge": "Marketing",
-      "title": "Digital Marketing",
-      "title2": "& Local Marketing",
-      "s1": "Digital campaigns",
-      "s1_desc": "Design and management of high-performance multi-channel campaigns.",
-      "s2": "Email Marketing",
-      "s2_desc": "Automated and personalized emailing strategies to convert.",
-      "s3": "Content Marketing",
-      "s3_desc": "Content creation that attracts, engages and converts.",
-      "s4": "Local marketing",
-      "s4_desc": "Local and conventional actions to anchor your presence.",
-      "s5": "Customer acquisition",
-      "s5_desc": "Multi-channel acquisition strategies to generate qualified leads.",
-      "s6": "Loyalty",
-      "s6_desc": "Loyalty programs to transform your clients into ambassadors."
-    },
     "communication_branding": {
-      "badge": " ",
+      "eyebrow": "Communication & Branding",
       "title": "Communication",
       "title2": "& Branding",
-      "s1": "Visual Identity & Guidelines",
-      "s1_desc": "Creation or redesign of your logo, brand guidelines, and full visual ecosystem to establish a premium image.",
-      "s2": "Positioning & Strategy",
-      "s2_desc": "Definition of a clear, consistent, and highly differentiating brand strategy to lead your target market.",
-      "s3": "Digital Communication & Media",
-      "s3_desc": "Deployment of an impactful online presence and media relations management to amplify your visibility.",
-      "s4": "Social Media & Communities",
-      "s4_desc": "Strategic management, content creation, and growth of your communities across key social networks.",
-      "s5": "Storytelling & Brand Voice",
-      "s5_desc": "Definition of your editorial tone and construction of a powerful, memorable, and engaging brand narrative.",
-      "s6": "Audit & Image Consistency",
-      "s6_desc": "Comprehensive analysis, alignment of your communication assets, and guidance to ensure image credibility."
+      "intro": "A strong brand is not just a beautiful logo. It rests on a clear position, coherent messaging and disciplined communication across all channels. At ActiveRise, we build the strategic foundation of your brand — what you are, what you say and how you say it — so every message reinforces your credibility and creates a lasting impression in the minds of your clients. The production of your visual assets (logo, graphic charter, design) is handled by our Creation & Web Development team.",
+      "sections": [
+        {
+          "title": "Brand Strategy & Branding",
+          "services": [
+            {
+              "title": "Brand positioning definition",
+              "description": "How do you want to be perceived by your customers? We work with you to define your brand's deeper identity — its core values, personality and customer promise — and build a clear and differentiating position that distinguishes you durably from your competitors in your market."
+            },
+            {
+              "title": "Institutional discourse development",
+              "description": "Your tagline, your slogan, your key messages — every word you use to talk about your business must be chosen carefully. We build your complete institutional discourse so it is powerful, memorable and perfectly aligned with your positioning. Because a brand that speaks well is a brand that lasts."
+            },
+            {
+              "title": "Brand strategy",
+              "description": "Beyond positioning, your brand needs a clear strategic direction — how to evolve, how to differentiate, how to build a lasting relationship of trust with your audience. We develop your global brand strategy and support you in implementing it coherently across all touchpoints."
+            },
+            {
+              "title": "Brand consistency audit",
+              "description": "Does your communication truly reflect who you are? We analyze all your messages, media and interactions to identify inconsistencies between your brand identity and your actual communication — and provide you with a concrete and prioritized alignment plan."
+            }
+          ]
+        },
+        {
+          "title": "Corporate Communication",
+          "services": [
+            {
+              "title": "Institutional communication",
+              "description": "The way your company presents itself to the world determines the trust you inspire. We structure your institutional communication — corporate speech, official presentations, reference documents — so every message your organization delivers is professional, coherent and worthy of your ambitions."
+            },
+            {
+              "title": "Key message structuring",
+              "description": "Knowing what to say isn't enough—you also need to know how to say it, to whom and on which channel. We structure your key messages by audience and context to ensure clear, relevant and effective communication—whether facing an investor, partner, client or your own teams."
+            },
+            {
+              "title": "Internal communication",
+              "description": "A company that communicates well internally performs better externally. We help you structure your internal communication — leadership messages, company culture, team alignment — to create a coherent organization where every employee understands the vision and embraces it."
+            }
+          ]
+        },
+        {
+          "title": "Digital Communication",
+          "services": [
+            {
+              "title": "Digital communication strategy",
+              "description": "We develop your global digital communication plan — priority channels, messages tailored to each audience, optimal frequency and performance indicators. Every decision is based on an analysis of your target and market to guarantee coherent, visible and results-generating digital communication."
+            },
+            {
+              "title": "Content strategy",
+              "description": "Content is your brand's voice on digital. We define your content strategy — editorial themes, formats for each platform, publication calendar and editorial line — so every piece of content produced reinforces your positioning and engages your audience sustainably."
+            }
+          ]
+        },
+        {
+          "title": "Event Communication",
+          "services": [
+            {
+              "title": "Event visibility strategy",
+              "description": "Product launch, opening, conference, trade show—every event is a strategic opportunity to strengthen your image and expand your audience. We support you in designing and deploying your event communication strategy to maximize the impact and visibility of each key moment."
+            },
+            {
+              "title": "Crisis communication management",
+              "description": "A sensitive situation mishandled can durably affect your company's reputation. We support you strategically in managing your communication during a crisis—adapted messages, priority channels, controlled timing—to preserve your credibility and the trust of your stakeholders."
+            }
+          ]
+        }
+      ],
+      "formation": {
+        "title": "Training",
+        "description": "We offer practical training on the fundamentals of corporate communication, building a brand strategy, structuring key messages and institutional public speaking. Operational programs designed for executives, managers and teams who want to master their communication and strengthen their organization's image."
+      },
+      "cta": {
+        "title": "Your brand has a story.",
+        "title2": "Let's help it be heard.",
+        "text": "Let's discuss your communication and brand positioning. We will identify together the adjustments that will make a difference. First exchange is free — no commitment.",
+        "btn": "Request a free diagnosis →"
+      }
     },
     "creation": {
       "badge": "Creation",
@@ -652,6 +760,12 @@
       "title": "Not quite ready to reach out?",
       "subtitle": "Explore our case studies and discover how we have transformed other businesses.",
       "action": "Explore case studies"
+    },
+    "cta": {
+      "title": "Not quite ready",
+      "title2": "to reach out?",
+      "text": "Explore our case studies and discover how we have transformed other businesses.",
+      "btn": "Explore case studies"
     }
   },
   "footer": {

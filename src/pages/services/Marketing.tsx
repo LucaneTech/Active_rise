@@ -1,182 +1,137 @@
-import { useState, useEffect, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { Target, Mail, FileText, Users, Layers, TrendingUp } from 'lucide-react';
+import { BookOpen, FileText, Mail, Target } from 'lucide-react';
 import CTASection from '../../components/ui/CTASection';
-import React from 'react';
-// import { Link } from 'react-router';
+
+type ServiceItem = {
+  title: string;
+  description: string;
+};
+
+type SectionGroup = {
+  title: string;
+  services: ServiceItem[];
+};
 
 export default function Marketing() {
   const { t } = useTranslation();
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [progress, setProgress] = useState(0);
-const autoplayRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const services = [
-    { icon: Target, title: t('services.marketing.s1'), description: t('services.marketing.s1_desc'), id: '01' },
-    { icon: Mail, title: t('services.marketing.s2'), description: t('services.marketing.s2_desc'), id: '02' },
-    { icon: FileText, title: t('services.marketing.s3'), description: t('services.marketing.s3_desc'), id: '03' },
-    { icon: Users, title: t('services.marketing.s4'), description: t('services.marketing.s4_desc'), id: '04' },
-    { icon: TrendingUp, title: t('services.marketing.s5'), description: t('services.marketing.s5_desc'), id: '05' },
-    { icon: Layers, title: t('services.marketing.s6'), description: t('services.marketing.s6_desc'), id: '06' },
-  ];
+  const sections = t('services.marketing.sections', { returnObjects: true }) as SectionGroup[];
 
-  // Gestion du lecteur automatique (Autoplay) et de la barre de progression
-  useEffect(() => {
-    setProgress(0);
+  const intro = t('services.marketing.intro');
 
-    const duration = 6000; // 6 secondes par service
-    const intervalTime = 100;
-    const steps = duration / intervalTime;
-
-    let currentStep = 0;
-
-    autoplayRef.current = setInterval(() => {
-      currentStep++;
-      setProgress((currentStep / steps) * 100);
-
-      if (currentStep >= steps) {
-        setActiveIndex((prev) => (prev + 1) % services.length);
-      }
-    }, intervalTime);
-
-    return () => {
-      if (autoplayRef.current) clearInterval(autoplayRef.current);
-    };
-  }, [activeIndex, services.length]);
+  const formation = t('services.marketing.formation', { returnObjects: true }) as {
+    title: string;
+    description: string;
+  };
+  
+  const cta = t('services.marketing.cta', { returnObjects: true }) as {
+    title: string;
+    title2: string;
+    text: string;
+    btn: string;
+  };
 
   return (
-    <div className="min-h-screen bg-deep text-white overflow-hidden">
-
-      {/* ─── EXPERT INTERACTIVE ROW CONTAINER ─── */}
-      <section className="relative min-h-[90vh] lg:min-h-screen w-full max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 pt-32 pb-16 flex flex-col justify-between">
-
-        {/* BOUTON RETOUR MINIMALISTE */}
-
-
-        {/* EN-TÊTE FIXE */}
-        <div className="max-w-3xl mb-12 lg:mb-0">
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="text-sm font-bold tracking-[0.4em] text-white uppercase mb-4"
-          >
-            {t('services.marketing.title')}
-          </motion.div>
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-tight leading-tight"
-          >
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold via-yellow-500 to-gold">
+    <div className="min-h-screen bg-deep text-white">
+      <section className="mx-auto flex w-full max-w-7xl flex-col px-4 pb-20 pt-28 sm:px-6 lg:px-8 lg:pt-36">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.55 }}
+          className="max-w-3xl"
+        >
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-gold/80">
+            {t('services.marketing.eyebrow')}
+          </p>
+          <h1 className="text-4xl font-black uppercase leading-[0.95] tracking-tight text-white sm:text-5xl lg:text-6xl">
+            <span className="block">{t('services.marketing.title')}</span>
+            <span className="mt-2 block bg-gradient-to-r from-gold via-yellow-500 to-gold bg-clip-text text-transparent">
               {t('services.marketing.title2')}
             </span>
-          </motion.h1>
-        </div>
+          </h1>
+          <p className="mt-8 max-w-2xl text-lg leading-8 text-white/70 sm:text-xl">
+            {intro}
+          </p>
+        </motion.div>
 
-        {/* CONTENU PRINCIPAL SCINDÉ DYNAMIQUE */}
-        <div className="grid lg:grid-cols-12 gap-8 items-center my-auto w-full">
+       
 
-          {/* ZONE DE SÉLECTION & TIMELINE (INTERACTIF & INTUITIF) */}
-          <div className="lg:col-span-4 flex flex-col gap-4">
-            {services.map((item, index) => {
-              const isCurrent = activeIndex === index;
-              return (
-                <button
-                  key={item.id}
-                  onClick={() => setActiveIndex(index)}
-                  className="w-full text-left focus:outline-none relative py-4 px-6 rounded-md transition-all duration-300 border border-white/5 bg-white/[0.01] hover:bg-white/[0.03]"
-                >
-                  {/* Fond indicateur d'activation */}
-                  {isCurrent && (
-                    <motion.div
-                      layoutId="activeTabBg"
-                      className="absolute inset-0 bg-gradient-to-r from-gold/5 to-transparent border-l-2 border-gold rounded-md pointer-events-none"
-                    />
-                  )}
-
-                  <div className="flex items-center justify-between relative z-10">
-                    <div className="flex items-center gap-4">
-                      <span className={`font-mono text-xs font-bold ${isCurrent ? 'text-gold' : 'text-white/30'}`}>
-                        {item.id}
-                      </span>
-                      <span className={`text-sm font-bold uppercase tracking-wider transition-colors ${isCurrent ? 'text-white' : 'text-white/40'}`}>
-                        {item.title}
-                      </span>
-                    </div>
-                  </div>
-
-                  {/* La mini-barre de progression active (Style Instagram Story) */}
-                  <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-white/5  overflow-hidden">
-                    {isCurrent && (
-                      <motion.div
-                        className="h-full bg-gold"
-                        style={{ width: `${progress}%` }}
-                        transition={{ ease: 'linear' }}
-                      />
-                    )}
-                  </div>
-                </button>
-              );
-            })}
-          </div>
-
-          {/* THÉÂTRE D'AFFICHAGE DU SERVICE ACTIF */}
-          <div className="lg:col-span-8 lg:pl-16 relative min-h-[320px] flex flex-col justify-center">
-
-            {/* Icône filigrane en arrière-plan */}
-            <div className="absolute right-0 text-yellow-500/5 pointer-events-none select-none hidden md:block">
-              {React.createElement(services[activeIndex].icon, { size: 280, strokeWidth: 0.5 })}
-            </div>
-
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={activeIndex}
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -20 }}
-                transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-                className="relative z-10"
-              >
-                <div className="flex items-center gap-3 text-gold mb-6">
-                  {React.createElement(services[activeIndex].icon, { size: 22, strokeWidth: 1.5 })}
-                  <span className="font-mono text-xs tracking-widest  font-bold">ACTIVE'RISE</span>
+        <div className="mt-16 space-y-12">
+          {sections.map((section, sectionIndex) => (
+            <motion.section
+              key={section.title}
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.05 * sectionIndex, duration: 0.45 }}
+              className="rounded-[2rem] border border-white/10 bg-white/[0.02] p-6 sm:p-8"
+            >
+              <div className="mb-8 flex items-center justify-between gap-4">
+                <div>
+                  <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold/80">
+                    {String(sectionIndex + 1).padStart(2, '0')}
+                  </p>
+                  <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white sm:text-3xl">
+                    {section.title}
+                  </h2>
                 </div>
+                <div className="hidden h-px flex-1 bg-gradient-to-r from-gold/40 to-transparent sm:block" />
+              </div>
 
-                <p className="text-white/80 text-xl sm:text-2xl lg:text-3xl font-medium leading-relaxed max-w-3xl mb-8">
-                  {services[activeIndex].description}
-                </p>
+              <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+                {section.services.map((service, serviceIndex) => (
+                  <motion.article
+                    key={`${section.title}-${service.title}`}
+                    whileHover={{ y: -5, scale: 1.01 }}
+                    transition={{ type: 'spring', stiffness: 240, damping: 22 }}
+                    className="group rounded-[1.4rem] border border-white/10 bg-deep/70 p-6 transition-all duration-300 hover:border-gold/40 hover:bg-white/[0.04]"
+                  >
+                    <div className="mb-5 flex items-center justify-between">
+                      <span className="text-xs font-semibold uppercase tracking-[0.3em] text-gold/80">
+                        {String(sectionIndex + 1).padStart(2, '0')}.{String(serviceIndex + 1).padStart(2, '0')}
+                      </span>
+                      <div className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-white/60 transition-colors group-hover:text-gold">
+                        {serviceIndex % 2 === 0 ? <Mail size={16} /> : <FileText size={16} />}
+                      </div>
+                    </div>
+                    <h3 className="text-lg font-semibold text-white">{service.title}</h3>
+                    <p className="mt-3 text-sm leading-7 text-white/70">{service.description}</p>
+                  </motion.article>
+                ))}
+              </div>
+            </motion.section>
+          ))}
+        </div>
 
-
-              </motion.div>
-            </AnimatePresence>
+        {/* Formation Section */}
+        <motion.section
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.05 * sections.length, duration: 0.45 }}
+          className="mt-12 rounded-[2rem] border border-white/10 bg-white/[0.02] p-6 sm:p-8"
+        >
+          <div className="mb-8 flex items-center justify-between gap-4">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold/80">
+                {String(sections.length + 1).padStart(2, '0')}
+              </p>
+              <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white sm:text-3xl">
+                {formation.title}
+              </h2>
+            </div>
+            <div className="hidden h-px flex-1 bg-gradient-to-r from-gold/40 to-transparent sm:block" />
           </div>
-
-        </div>
-
-        {/* INTRODUCTION COMPLÉMENTAIRE BASSE INFRA-TEXTE */}
-        <div className="flex pt-8 border-t border-white/5 text-white/40 text-sm max-w-2xl">
-          {t('services.page.marketing.text')}
-
-          {/* <Link 
-            to="/services" 
-            className="inline-flex items-center gap-2.5 text-xs font-bold tracking-[0.2em] text-white hover:text-gold uppercase transition-colors group"
-          >
-            <ArrowLeft size={14} className="transform group-hover:-translate-x-1 transition-transform" />
-            {t('common.back', 'Retour')}
-          </Link> */}
-
-        </div>
-
+          <p className="max-w-3xl text-base leading-8 text-white/70">
+            {formation.description}
+          </p>
+        </motion.section>
       </section>
 
-      {/* ─── ZONE DE CONVERSION ACCÉLÉRÉE ─── */}
       <CTASection
-        title={t('services.cta.title')}
-        titleGold={t('services.cta.title2')}
-        text={t('services.cta.text')}
-        btnPrimary={t('services.cta.btn')}
+        title={cta.title}
+        titleGold={cta.title2}
+        text={cta.text}
+        btnPrimary={cta.btn}
         dark={true}
         desStyle
       />

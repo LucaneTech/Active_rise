@@ -1,0 +1,71 @@
+INTRODUCTION DU PÔLE COMMUNICATION & BRANDING
+
+Cette introduction apparaît en haut de la sous-page. Elle doit impérativement clarifier la distinction entre le Branding stratégique (ici) et la production visuelle (pôle Création & Développement Web).
+
+Communication & Branding — Introduction
+Une marque forte ne se résume pas à un beau logo. Elle repose sur un positionnement clair, un discours cohérent et une communication maîtrisée sur tous les canaux. Chez ActiveRise, nous construisons la fondation stratégique de votre marque — ce que vous êtes, ce que vous dites et comment vous le dites — pour que chaque message renforce votre crédibilité et crée une impression durable dans l’esprit de vos clients. La production de vos supports visuels (logo, charte graphique, design) est assurée par notre pôle Création & Développement Web.
+
+SECTION 1 — STRATÉGIE DE MARQUE & BRANDING
+
+Ces 4 services apparaissent sous le titre « Stratégie de Marque & Branding » sur la sous-page.
+
+Définition du positionnement de marque
+Comment voulez-vous être perçu par vos clients ? Nous travaillons avec vous pour définir l’identité profonde de votre marque — ses valeurs fondamentales, sa personnalité, sa promesse client — et construire un positionnement clair et différenciant qui vous distingue durablement de vos concurrents sur votre marché.
+
+Élaboration du discours institutionnel
+Votre tagline, votre slogan, vos messages clés — chaque mot que vous utilisez pour parler de votre entreprise doit être choisi avec rigueur. Nous construisons votre discours institutionnel complet pour qu’il soit percutant, mémorable et parfaitement cohérent avec votre positionnement. Parce qu’une marque qui parle juste est une marque qui reste.
+
+Stratégie de marque
+Au-delà du positionnement, votre marque a besoin d’une direction stratégique claire — comment évoluer, comment se différencier, comment construire une relation de confiance durable avec votre audience. Nous élaborons votre stratégie de marque globale et vous accompagnons dans sa mise en œuvre cohérente sur tous vos points de contact.
+
+Audit de cohérence de marque
+Votre communication reflète-t-elle vraiment qui vous êtes ? Nous analysons l’ensemble de vos messages, supports et interactions pour identifier les incohérences entre votre identité de marque et ce que vous communiquez réellement — et vous proposons un plan d’alignement concret et priorisé.
+
+SECTION 2 — COMMUNICATION D’ENTREPRISE
+
+Ces 3 services apparaissent sous le titre « Communication d’Entreprise » sur la sous-page.
+
+Communication institutionnelle
+La façon dont votre entreprise se présente au monde détermine la confiance que vous inspirez. Nous structurons votre communication institutionnelle — discours corporate, présentations officielles, documents de référence — pour que chaque prise de parole de votre organisation soit professionnelle, cohérente et à la hauteur de vos ambitions.
+
+Structuration des messages clés
+Savoir quoi dire ne suffit pas — encore faut-il savoir comment le dire, à qui et sur quel canal. Nous structurons vos messages clés par cible et par contexte pour garantir une communication claire, adaptée et efficace — que ce soit face à un investisseur, un partenaire, un client ou vos propres équipes.
+
+Communication interne
+Une entreprise qui communique bien en interne performe mieux en externe. Nous vous aidons à structurer votre communication interne — messages de direction, culture d’entreprise, alignement des équipes — pour créer une organisation cohérente où chaque collaborateur comprend la vision et y adhère.
+
+SECTION 3 — COMMUNICATION DIGITALE
+
+Ces 2 services apparaissent sous le titre « Communication Digitale » sur la sous-page.
+
+Stratégie de communication digitale
+Nous élaborons votre plan de communication digitale global — canaux prioritaires, messages adaptés à chaque audience, fréquence optimale et indicateurs de performance. Chaque décision est fondée sur une analyse de votre cible et de votre marché pour garantir une communication digitale cohérente, visible et génératrice de résultats.
+
+Stratégie de contenu
+Le contenu est la voix de votre marque sur le digital. Nous définissons votre stratégie de contenu — thèmes éditoriaux, formats adaptés à chaque plateforme, calendrier de publication et ligne éditoriale — pour que chaque contenu produit renforce votre positionnement et engage votre audience de façon durable.
+
+SECTION 4 — COMMUNICATION ÉVÉNEMENTIELLE
+
+Ces 2 services apparaissent sous le titre « Communication Événementielle » sur la sous-page.
+
+Stratégie de visibilité événementielle
+Lancement de produit, inauguration, conférence, salon — chaque événement est une opportunité stratégique de renforcer votre image et d’élargir votre audience. Nous vous accompagnons dans la conception et le déploiement de votre stratégie de communication événementielle pour maximiser l’impact et la visibilité de chaque moment clé.
+
+Gestion de la communication de crise
+Une situation sensible mal gérée peut affecter durablement la réputation d’une entreprise. Nous vous accompagnons stratégiquement dans la gestion de votre communication en période de crise — messages adaptés, canaux prioritaires, timing maîtrisé — pour préserver votre crédibilité et la confiance de vos parties prenantes.
+
+SECTION 5 — FORMATION COMMUNICATION & BRANDING
+
+Cette section apparaît en bas de la sous-page, sous le titre « Formation ».
+
+Formation — Communication d’entreprise & Branding
+Nous proposons des formations pratiques sur les fondamentaux de la communication d’entreprise, la construction d’une stratégie de marque, la structuration des messages clés et la prise de parole institutionnelle. Des programmes opérationnels conçus pour les dirigeants, managers et équipes qui veulent maîtriser leur communication et renforcer l’image de leur organisation.
+
+CTA — APPEL À L’ACTION EN BAS DE PAGE
+
+Intégrer ce CTA en bas de la sous-page /services/communication-branding :
+
+Votre marque a une histoire. Aidons-la à être entendue.
+Discutons de votre communication et de votre positionnement de marque. Nous identifions ensemble les ajustements qui feront la différence. Premier échange gratuit — sans engagement.
+
+Bouton CTA : « Demander un diagnostic gratuit → »

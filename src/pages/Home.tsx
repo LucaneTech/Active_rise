@@ -470,7 +470,7 @@ export default function Home() {
           <SectionTitle
             badge={t('home.process.badge')}
             title={t('home.process.title')}
-            titleGold={t('home.services.title2')}
+            titleGold={t('home.process.title2')}
           />
           <div className="grid md:grid-cols-2 gap-5 mt-10">
             {process.map((s, i) => (
