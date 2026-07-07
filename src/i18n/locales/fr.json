@@ -632,6 +632,84 @@
         "btn": "Demander un diagnostic gratuit →"
       }
     },
+    "performance_commerciale": {
+      "eyebrow": "",
+      "title": "Performance Commerciale",
+      "title2": "Introduction",
+      "intro": "Avoir un bon produit ou service ne suffit pas. Encore faut-il savoir le vendre, construire une équipe commerciale efficace et piloter sa croissance avec méthode. Chez ActiveRise, nous intervenons directement sur votre capacité à vendre et à convertir  externalisation de la force de vente, développement des équipes commerciales, consulting en croissance et formation. Nous ne nous contentons pas de conseiller  nous agissons avec vous jusqu’aux résultats.",
+      "sections": [
+        {
+          "title": "Externalisation de la Force de Vente",
+          "services": [
+            {
+              "title": "Mise à disposition de commerciaux",
+              "description": "Recruter, former et gérer un commercial à temps plein représente un coût fixe important que toutes les entreprises ne peuvent pas assumer. Nous mettons à votre disposition des commerciaux formés et opérationnels, déployés selon vos besoins réels  par jour, par semaine ou sur une période définie. Vous bénéficiez d’une force de vente professionnelle sans les contraintes d’un recrutement permanent."
+            },
+            {
+              "title": "Prospection et acquisition clients",
+              "description": "Nos commerciaux prennent en charge la prospection et l’acquisition clients pour votre compte  identification des cibles, prise de contact, présentation de votre offre et suivi jusqu’à la conclusion. Vous pilotez votre activité, nous en développons le périmètre commercial."
+            }
+          ]
+        },
+        {
+          "title": "Développement des Équipes Commerciales",
+          "services": [
+            {
+              "title": "Audit de la force de vente",
+              "description": "Votre équipe commerciale performe-t-elle à son plein potentiel ? Nous analysons vos méthodes de vente, vos outils, vos résultats et vos processus pour identifier précisément ce qui freine votre performance commerciale  et définir les axes d’amélioration prioritaires à activer immédiatement."
+            },
+            {
+              "title": "Formation aux techniques commerciales",
+              "description": "Nous formons vos équipes aux techniques de vente modernes et efficaces  approche client, argumentation, gestion des objections, closing et fidélisation. Des formations pratiques, adaptées à votre secteur et à votre réalité terrain, pour des équipes qui vendent mieux et plus."
+            },
+            {
+              "title": "Accompagnement terrain et coaching",
+              "description": "La formation seule ne suffit pas  il faut pratiquer dans des situations réelles. Nos consultants accompagnent vos commerciaux sur le terrain, observent leurs interactions clients et leur fournissent un feedback personnalisé pour accélérer leur montée en compétences et améliorer leurs résultats concrets."
+            },
+            {
+              "title": "Supervision et reporting à distance",
+              "description": "Nous assurons le suivi et la supervision de votre équipe commerciale à distance  objectifs hebdomadaires, points de performance réguliers et ajustements en temps réel. Vous avez une vision claire et permanente de l’activité de votre équipe et des résultats qu’elle produit."
+            }
+          ]
+        },
+        {
+          "title": "Consulting en Croissance Commerciale",
+          "services": [
+            {
+              "title": "Élaboration de la stratégie commerciale",
+              "description": "Nous construisons votre stratégie commerciale de A à Z  définition des cibles prioritaires, choix des canaux d’acquisition, structuration de l’offre, politique tarifaire et plan de développement. Une stratégie claire et opérationnelle qui donne à votre équipe une direction précise et des objectifs atteignables."
+            },
+            {
+              "title": "Optimisation du processus de vente",
+              "description": "Nous analysons et restructurons chaque étape de votre processus de vente  de la prospection à la conclusion  pour réduire les frictions, raccourcir les cycles commerciaux et augmenter significativement votre taux de conversion. Chaque amélioration est mesurée et documentée."
+            },
+            {
+              "title": "Mise en place des outils de pilotage commercial",
+              "description": "Nous mettons en place les outils de pilotage adaptés à votre organisation  CRM, tableaux de bord commerciaux, indicateurs clés de performance  pour que vous ayez à tout moment une vision claire de votre activité commerciale, de vos résultats et des leviers à actionner pour atteindre vos objectifs."
+            }
+          ]
+        }
+      ],
+      "sections_label": "04 / PERFORMANCE COMMERCIALE",
+      "sections_title": "Nos Prestations Stratégiques",
+      "formation": {
+        "title": "Formation",
+        "description": "Nous proposons des programmes de formation sur les techniques de vente, la prospection commerciale, la négociation, la gestion de la relation client et le pilotage de la performance commerciale. Des formations orientées terrain et immédiatement applicables par vos équipes pour des résultats visibles dès les premières semaines.",
+        "items": [
+          {
+            "title": "Formation  Techniques de vente & Performance commerciale",
+            "description": "Des formations orientées terrain et immédiatement applicables par vos équipes  pour des résultats visibles dès les premières semaines."
+          }
+        ]
+      },
+      "formation_label": "02 / TRANSFERT DE COMPÉTENCES",
+      "cta": {
+        "title": "Votre croissance commerciale",
+        "title2": "commence maintenant.",
+        "text": "Discutons de votre force de vente et de vos objectifs commerciaux. Nous identifions ensemble les leviers les plus efficaces pour accélérer vos résultats. Premier échange gratuit  sans engagement.",
+        "btn": "Demander un diagnostic gratuit →"
+      }
+    },
     "creation": {
       "badge": "Création",
       "title": "Création visuelle",

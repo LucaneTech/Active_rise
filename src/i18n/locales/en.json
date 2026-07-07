@@ -641,6 +641,84 @@
         "btn": "Request a free assessment →"
       }
     },
+    "performance_commerciale": {
+      "eyebrow": "",
+      "title": "Sales Performance",
+      "title2": "Introduction",
+      "intro": "Having a good product or service is not enough. You also need to know how to sell it, build an effective sales team, and manage your growth methodically. At ActiveRise, we intervene directly on your ability to sell and convert  sales force outsourcing, sales team development, growth consulting, and training. We don't just advise  we act with you until results are achieved.",
+      "sections": [
+        {
+          "title": "Sales Force Outsourcing",
+          "services": [
+            {
+              "title": "Provision of sales representatives",
+              "description": "Recruiting, training, and managing a full-time sales representative represents a significant fixed cost that not all companies can afford. We provide you with trained and operational sales representatives, deployed according to your actual needs  by the day, week, or over a defined period. You benefit from a professional sales force without the constraints of permanent recruitment."
+            },
+            {
+              "title": "Prospecting and customer acquisition",
+              "description": "Our sales representatives handle prospecting and customer acquisition on your behalf  identifying targets, making contact, presenting your offer, and following up until the deal is closed. You manage your business, we develop its commercial scope."
+            }
+          ]
+        },
+        {
+          "title": "Sales Team Development",
+          "services": [
+            {
+              "title": "Sales force audit",
+              "description": "Is your sales team performing at its full potential? We analyze your sales methods, tools, results, and processes to identify precisely what is holding back your sales performance  and define the priority areas for improvement to be activated immediately."
+            },
+            {
+              "title": "Sales techniques training",
+              "description": "We train your teams in modern and effective sales techniques  customer approach, sales arguments, objection handling, closing, and customer loyalty. Practical training, adapted to your sector and your field reality, for teams that sell better and more."
+            },
+            {
+              "title": "Field accompaniment and coaching",
+              "description": "Training alone is not enough  you need to practice in real situations. Our consultants accompany your sales reps in the field, observe their customer interactions, and provide personalized feedback to accelerate their skill development and improve concrete results."
+            },
+            {
+              "title": "Remote supervision and reporting",
+              "description": "We ensure the tracking and supervision of your sales team remotely  weekly objectives, regular performance reviews, and real-time adjustments. You have a clear and permanent view of your team's activity and the results they produce."
+            }
+          ]
+        },
+        {
+          "title": "Business Growth Consulting",
+          "services": [
+            {
+              "title": "Sales strategy formulation",
+              "description": "We build your sales strategy from A to Z  defining priority targets, choosing acquisition channels, structuring the offer, pricing policy, and development plan. A clear and operational strategy that gives your team a precise direction and achievable goals."
+            },
+            {
+              "title": "Sales process optimization",
+              "description": "We analyze and restructure each step of your sales process  from prospecting to closing  to reduce friction, shorten sales cycles, and significantly increase your conversion rate. Each improvement is measured and documented."
+            },
+            {
+              "title": "Implementation of sales management tools",
+              "description": "We implement the management tools adapted to your organization  CRM, sales dashboards, key performance indicators  so that you have a clear vision of your sales activity, your results, and the levers to activate to achieve your goals at all times."
+            }
+          ]
+        }
+      ],
+      "sections_label": "04 / SALES PERFORMANCE",
+      "sections_title": "Our Strategic Services",
+      "formation": {
+        "title": "Training",
+        "description": "We offer training programs in sales techniques, business development, negotiation, customer relationship management, and sales performance management. These practical, hands-on courses are immediately applicable by your teams for visible results within the first few weeks.",
+        "items": [
+          {
+            "title": "Training  Sales Techniques & Sales Performance",
+            "description": "Field-oriented training that is immediately applicable by your teams  for visible results from the very first weeks."
+          }
+        ]
+      },
+      "formation_label": "02 / SKILLS TRANSFER",
+      "cta": {
+        "title": "Your commercial growth",
+        "title2": "starts now.",
+        "text": "Let's discuss your sales force and your business goals. Together, we will identify the most effective levers to accelerate your results. First exchange is free  no commitment.",
+        "btn": "Request a free diagnostic →"
+      }
+    },
     "creation": {
       "badge": "Creation",
       "title": "Visual creation",
