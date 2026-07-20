@@ -31,6 +31,7 @@ export default function CaseStudiesPage() {
         t('portfolio.case1.res4'),
       ],
       note: t('portfolio.case1.note'),
+      linkFolio: t('portfolio.case1.linkFolio'),
     },
     {
       id: '02',
@@ -56,13 +57,14 @@ export default function CaseStudiesPage() {
         t('portfolio.case2.res3'),
       ],
       note: t('portfolio.case2.note'),
+
     },
   ];
 
   return (
     <div className="min-h-screen bg-deep text-white overflow-hidden">
 
-   
+
       {/* ─── HERO SECTION IMMERSIVE CENTRÉE ─── */}
       <section className="relative pt-44 pb-32 md:pt-52 md:pb-40 border-b border-white/5 flex items-center justify-center min-h-[60vh] overflow-hidden">
 
@@ -88,7 +90,7 @@ export default function CaseStudiesPage() {
             transition={{ duration: 0.6 }}
             className="text-xs font-bold tracking-[0.4em] text-gold uppercase mb-6"
           >
-             {t('portfolio.hero.badge')}
+            {t('portfolio.hero.badge')}
           </motion.div>
 
           <motion.h1
@@ -200,8 +202,14 @@ export default function CaseStudiesPage() {
                     ))}
                   </div>
                   {item.note && (
-                    <p className="text-white/40 text-xs italic mt-6 pt-4 border-t border-white/5">
-                      * {item.note}
+                    <p className={`text-white text-xs italic mt-6 pt-4 border-t border-white/5 ${item.linkFolio ? 'underline' : ''}`}>
+                      {item.linkFolio ? (
+                        <a href={item.linkFolio} target="_blank" rel="noopener noreferrer">
+                          * {item.note}
+                        </a>
+                      ) : (
+                        `* ${item.note}`
+                      )}
                     </p>
                   )}
                 </div>
@@ -230,6 +238,7 @@ export default function CaseStudiesPage() {
             <a
               href="https://portfolio.activerise.pro"
               className="inline-flex items-center gap-4 text-xs font-bold uppercase tracking-[0.3em] text-gold border border-gold/30 hover:border-gold bg-gold/5 hover:bg-gold/10 px-8 py-5 rounded-md transition-all duration-300 group"
+              target='_blank'
             >
               {t('portfolio.cta.action')}
               <ArrowRight size={14} className="transform group-hover:translate-x-1 transition-transform" />

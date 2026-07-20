@@ -107,11 +107,11 @@
       "title": "Des résultats",
       "title2": "qui parlent",
       "s1_value": "",
-      "s1_label": "Entreprises accompagnées",
+      "s1_label": "Clients accompagnés",
       "s2_value": "",
-      "s2_label": "Taux de satisfaction client",
+      "s2_label": "Entreprises accompagnées",
       "s3_value": "",
-      "s3_label": "Croissance moyenne générée",
+      "s3_label": "Taux de satisfaction client",
       "s4_value": "",
       "s4_label": "Années d'expertise"
     },
@@ -633,9 +633,9 @@
       }
     },
     "performance_commerciale": {
-      "eyebrow": "",
-      "title": "Performance Commerciale",
-      "title2": "Introduction",
+      "eyebrow": "Introduction",
+      "title": "Performance ",
+      "title2": "Commerciale",
       "intro": "Avoir un bon produit ou service ne suffit pas. Encore faut-il savoir le vendre, construire une équipe commerciale efficace et piloter sa croissance avec méthode. Chez ActiveRise, nous intervenons directement sur votre capacité à vendre et à convertir  externalisation de la force de vente, développement des équipes commerciales, consulting en croissance et formation. Nous ne nous contentons pas de conseiller  nous agissons avec vous jusqu’aux résultats.",
       "sections": [
         {
@@ -842,7 +842,8 @@
       "res2": "Présence active et hautement professionnelle installée sur 4 plateformes digitales.",
       "res3": "Des milliers de vues organiques et qualifiées générées sur les contenus publiés.",
       "res4": "Taux de conversion global en progression constante.",
-      "note": "Le site d'Eureka & Co est consultable en ligne et constitue une preuve directe et vérifiable de la qualité d'exécution d'Active Rise."
+      "note": "Visitez le site Eureka-Co",
+      "linkFolio": "https://eureka-co.net"
     },
     "case2": {
       "tag": "Stratégie digitale d'acquisition",
@@ -908,6 +909,12 @@
       "address_val": "Pointe-Noire, Congo-Brazzaville",
       "hours_label": "Horaires",
       "hours_val": "Lun-Ven, 9h-18h"
+    },
+    "diagnostic": {
+      "duration": "30 min",
+      "title": "Diagnostic gratuit",
+      "description": "Un premier échange sans engagement pour analyser votre situation et vous proposer des pistes concrètes.",
+      "availability": "Disponible dès aujourd'hui"
     },
     "process": {
       "badge": "Notre processus",

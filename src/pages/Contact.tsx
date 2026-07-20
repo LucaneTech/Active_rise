@@ -20,7 +20,7 @@ function IntakeSection() {
   return (
     <section className="py-24 lg:py-36 text-white overflow-hidden border-t border-white/5">
       <div className="container-xl max-w-[1400px] mx-auto px-4 sm:px-8">
-        
+
         <div className="mb-20">
           <RevealOnScroll direction="left">
             <span className="text-xs font-bold tracking-[0.4em] text-gold uppercase block mb-4">
@@ -38,7 +38,7 @@ function IntakeSection() {
               <div className="group relative border-t border-white/10 pt-6 h-full flex flex-col justify-between cursor-default">
                 {/* Ligne d'accentuation dorée cinétique */}
                 <div className="absolute top-0 left-0 h-[1px] bg-gradient-to-r from-gold to-transparent w-0 group-hover:w-full transition-all duration-500" />
-                
+
                 <div>
                   <h3 className="text-xl font-black uppercase tracking-tight text-gold group-hover:text-gold transition-colors duration-300 mb-4">
                     {step.title}
@@ -72,7 +72,7 @@ function FAQSection() {
   return (
     <section className="py-24 lg:py-36 bg-deep text-white border-t border-white/5">
       <div className="container-xl max-w-[1200px] mx-auto px-4 sm:px-8">
-        
+
         <div className="mb-16 text-center lg:text-left">
           <RevealOnScroll direction="left">
             <span className="text-xs font-bold tracking-[0.4em] text-gold uppercase block mb-4">
@@ -136,8 +136,8 @@ function RetentionSection() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-gold/5 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="container-xl max-w-[1000px] mx-auto px-4 sm:px-8 text-center relative z-10">
-        
-        <motion.h2 
+
+        <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -147,7 +147,7 @@ function RetentionSection() {
           {t('contact.retention.title')}
         </motion.h2>
 
-        <motion.p 
+        <motion.p
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -242,7 +242,7 @@ export default function Contact() {
           <div className="absolute inset-0 bg-linear-to-t from-black/30 via-transparent to-transparent" />
         </div>
         <div className="container-xl relative z-10 py-16 md:py-24 text-center">
-          
+
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -417,14 +417,18 @@ export default function Contact() {
 
               <RevealOnScroll delay={0.3} direction="right">
                 <div className="bg-gold/10 shadow-xl border border-gold rounded-[40px_14px_40px_14px] p-8">
-                  <div className="text-4xl font-black text-gold mb-3">30 min</div>
-                  <h3 className="font-bold text-deep mb-2">Diagnostic gratuit</h3>
-                  <p className="text-deep  text-sm leading-relaxed mb-6">
-                    Un premier échange sans engagement pour analyser votre situation et vous proposer des pistes concrètes.
+                  <div className="text-4xl font-black text-gold mb-3">
+                    {t('contact.diagnostic.duration')}
+                  </div>
+                  <h3 className="font-bold text-deep mb-2">
+                    {t('contact.diagnostic.title')}
+                  </h3>
+                  <p className="text-deep text-sm leading-relaxed mb-6">
+                    {t('contact.diagnostic.description')}
                   </p>
                   <div className="flex items-center gap-2 text-gold text-sm font-semibold">
                     <span className="w-2 h-2 rounded-md bg-gold animate-pulse" />
-                    Disponible dès aujourd'hui
+                    {t('contact.diagnostic.availability')}
                   </div>
                 </div>
               </RevealOnScroll>
@@ -462,12 +466,12 @@ export default function Contact() {
           </RevealOnScroll>
         </div>
       </section> */}
-      <IntakeSection/>
+      <IntakeSection />
       {/* ─── FAQ ─── */}
-      <FAQSection/>
-        <RetentionSection/>
+      <FAQSection />
+      <RetentionSection />
       {/* ─── CTA ─── */}
-    
+
     </div>
   );
 }

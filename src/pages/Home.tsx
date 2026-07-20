@@ -299,10 +299,10 @@ export default function Home() {
     },
   ];
   const stats = [
-    { value: '50', label: t('home.stats.s1_label') },
-    { value: '100', label: t('home.stats.s2_label') },
-    { value: '200', label: t('home.stats.s3_label') },
-    { value: '500', label: t('home.stats.s4_label') },
+    { value: '200', label: t('home.stats.s1_label') , pourcentage : false},
+    { value: '20', label: t('home.stats.s2_label'), pourcentage : false },
+    { value: '98', label: t('home.stats.s3_label') , pourcentage : true},
+    { value: '4', label: t('home.stats.s4_label'), pourcentage : false},
   ];
 
 

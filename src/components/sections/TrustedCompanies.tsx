@@ -8,11 +8,15 @@ interface Company {
 }
 
 const companies: Company[] = [
-  { name: "Oralise", logo: "images/logo.png" },
-  { name: "Oralise", logo: "images/logo.png" },
-  { name: "Oralise", logo: "images/logo.png" },
-  { name: "Oralise", logo: "images/logo.png" },
-  { name: "Oralise", logo: "images/logo.png" },
+  { name: "edconnect", logo: "images/compagnies_logo/edconnect.png" },
+  { name: "cybergie", logo: "images/compagnies_logo/cybergie.png" },
+  { name: "panval", logo: "images/compagnies_logo/panval.png" },
+  { name: "oralise", logo: "images/compagnies_logo/oralise.png" },
+  { name: "nby", logo: "images/compagnies_logo/nby.png" },
+  { name: "eureka", logo: "images/compagnies_logo/eureka.png" },
+  { name: "dore", logo: "images/compagnies_logo/dore.png" },
+  { name: "domus", logo: "images/compagnies_logo/domus.png" },
+
 ];
 
 const TrustedCompanies: React.FC = () => {
@@ -25,7 +29,7 @@ const TrustedCompanies: React.FC = () => {
     <section className="py-12 md:py-20 bg-white overflow-hidden">
       {/* Conteneur principal centré avec largeur max */}
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-        
+
         {/* Header i18n */}
         <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
           <h2 className="text-3xl md:text-5xl font-[800] tracking-tight text-gold sm:text-4xl">
@@ -38,7 +42,7 @@ const TrustedCompanies: React.FC = () => {
 
         {/* Zone du Ticker avec masques de fondu (Fade Edges) */}
         <div className="relative w-full overflow-hidden py-8">
-          
+
           {/* Gradients de fondu sur les côtés pour un rendu premium */}
           <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
           <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
@@ -53,20 +57,20 @@ const TrustedCompanies: React.FC = () => {
                 duration: 20, // Ajuste la vitesse ici (plus le chiffre est bas, plus ça va vite)
                 repeat: Infinity,
               }}
-            
-              whileHover={{ animationPlayState: "paused" }} 
+
+              whileHover={{ animationPlayState: "paused" }}
               style={{ display: "flex" }}
             >
               {tickerItems.map((company, index) => (
                 <div
                   key={index}
-                  className="flex w-32 sm:w-40 h-16 items-center justify-center flex-shrink-0 px-4"
+                  className="flex w-32 sm:w-56 h-18 items-center justify-center flex-shrink-0 px-4"
                 >
                   <img
                     src={company.logo}
                     alt={company.name}
                     loading="lazy"
-                    className="max-h-full max-w-full object-contain opacity-60 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0"
+                    className="max-h-full max-w-full object-contain opacity-60   transition-all duration-300 hover:opacity-100 hover:grayscale-0"
                   />
                 </div>
               ))}

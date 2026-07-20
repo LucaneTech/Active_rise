@@ -4,6 +4,7 @@ import RevealOnScroll from './RevealOnScroll';
 interface Stat {
   value: string;
   label: string;
+  pourcentage: boolean;
 }
 
 interface Props {
@@ -12,9 +13,10 @@ interface Props {
   titleGold?: string;
   stats: Stat[];
   dark?: boolean;
+
 }
 
-function AnimatedNumber({ value, isVisible }: { value: string; isVisible: boolean }) {
+function AnimatedNumber({ value, isVisible , pourcentage = false  }: { value: string; isVisible: boolean; pourcentage: boolean }) {
   const [display, setDisplay] = useState('0');
   if (!value.trim()) {
     return <span className="text-transparent">0</span>;
@@ -37,13 +39,15 @@ function AnimatedNumber({ value, isVisible }: { value: string; isVisible: boolea
     };
     requestAnimationFrame(step);
   }, [isVisible, num]);
-
-  return <span>+{display}</span>;
+  const result = pourcentage ? ( <span>{display} %</span>) : ( <span>+{display}</span>)
+  return result;
 }
 
 export default function StatsSection({ badge, title, titleGold, stats, dark = false }: Props) {
   const ref = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
+
+
 
   useEffect(() => {
     const observer = new IntersectionObserver(([e]) => { if (e.isIntersecting) setIsVisible(true); }, { threshold: 0.3 });
@@ -82,7 +86,7 @@ export default function StatsSection({ badge, title, titleGold, stats, dark = fa
             <RevealOnScroll key={i} delay={i * 0.1} direction="up">
               <div className="text-center">
                 <div className="text-3xl md:text-5xl lg:text-6xl font-black text-gold mb-2.5 tabular-nums">
-                  <AnimatedNumber value={s.value} isVisible={isVisible} />
+                  <AnimatedNumber value={s.value} isVisible={isVisible}  pourcentage = {s.pourcentage ?? false}/>
                 </div>
                 <p className="text-[12px] md:text-[15px] font-medium text-deep">{s.label}</p>
               </div>

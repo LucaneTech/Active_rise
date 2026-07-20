@@ -103,15 +103,15 @@
       "cta": "Start my diagnosis"
     },
     "stats": {
-      "badge": "By the numbers",
+      "badge": "In figures",
       "title": "Results",
-      "title2": "that speak",
+      "title2": "that speak for themselves",
       "s1_value": "",
-      "s1_label": "Companies supported",
+      "s1_label": "Clients supported",
       "s2_value": "",
-      "s2_label": "Client satisfaction rate",
+      "s2_label": "Businesses supported",
       "s3_value": "",
-      "s3_label": "Average growth generated",
+      "s3_label": "Client satisfaction rate",
       "s4_value": "",
       "s4_label": "Years of expertise"
     },
@@ -642,9 +642,9 @@
       }
     },
     "performance_commerciale": {
-      "eyebrow": "",
-      "title": "Sales Performance",
-      "title2": "Introduction",
+      "eyebrow": "Introduction",
+      "title": "Sales ",
+      "title2": "Performance",
       "intro": "Having a good product or service is not enough. You also need to know how to sell it, build an effective sales team, and manage your growth methodically. At ActiveRise, we intervene directly on your ability to sell and convert  sales force outsourcing, sales team development, growth consulting, and training. We don't just advise  we act with you until results are achieved.",
       "sections": [
         {
@@ -851,7 +851,8 @@
       "res2": "Active, highly corporate presence established across 4 major digital channels.",
       "res3": "Thousands of targeted, organic views generated on published assets.",
       "res4": "Overall conversion rates steadily progressing month-over-month.",
-      "note": "The Eureka & Co website is live online and serves as direct, verifiable proof of ActiveRise's execution quality."
+      "note": "Visite Eureka-Co's Web site",
+      "linkFolio": "https://eureka-co.net"
     },
     "case2": {
       "tag": "Digital Acquisition Strategy",
@@ -917,6 +918,12 @@
       "address_val": "Pointe-Noire, Congo-Brazzaville",
       "hours_label": "Hours",
       "hours_val": "Mon-Fri, 9am-6pm"
+    },
+    "diagnostic": {
+      "duration": "30 min",
+      "title": "Free diagnostic",
+      "description": "An initial commitment-free discussion to analyze your situation and offer practical solutions.",
+      "availability": "Available today"
     },
     "process": {
       "badge": "Our process",
