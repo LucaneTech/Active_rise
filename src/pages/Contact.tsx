@@ -7,7 +7,7 @@ import ProcessSection from '../components/ui/ProcessSection';
 import { Link } from 'react-router-dom';
 
 
-const WHATSAPP_NUMBER = "242069995815";
+const WHATSAPP_NUMBER = "212681537167";
 
 
 function IntakeSection() {
@@ -203,8 +203,8 @@ export default function Contact() {
     setSubmitting(true);
 
     // Construction du message WhatsApp bien structuré
-    const message = `*NOUVEAU MESSAGE DE CONTACT*\n\n` +
-      `*Nom / Prénom :* ${form.name}\n` +
+    const message = `*NOUVEAU MESSAGE DE CONTACT VIA LE SITE ACTIVE RISE*\n\n` +
+      `*Nom complet :* ${form.name}\n` +
       `*Email :* ${form.email}\n` +
       `*Entreprise :* ${form.company || 'Non renseigné'}\n` +
       `*Service souhaité :* ${form.service || 'Non spécifié'}\n\n` +
