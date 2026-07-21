@@ -203,7 +203,7 @@ export default function Contact() {
     setSubmitting(true);
 
     // Construction du message WhatsApp bien structuré
-    const message = `*NOUVEAU MESSAGE DE CONTACT VIA LE SITE ACTIVE RISE*\n\n` +
+    const message = `*-----NOUVEAU MESSAGE DEPUIS LE SITE ACTIVE RISE-----*\n\n` +
       `*Nom complet :* ${form.name}\n` +
       `*Email :* ${form.email}\n` +
       `*Entreprise :* ${form.company || 'Non renseigné'}\n` +
