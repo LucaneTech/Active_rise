@@ -16,7 +16,6 @@ const companies: Company[] = [
   { name: "eureka", logo: "images/compagnies_logo/eureka.png" },
   { name: "dore", logo: "images/compagnies_logo/dore.png" },
   { name: "domus", logo: "images/compagnies_logo/domus.png" },
-
 ];
 
 const TrustedCompanies: React.FC = () => {
@@ -28,7 +27,7 @@ const TrustedCompanies: React.FC = () => {
   return (
     <section className="py-12 md:py-20 bg-white overflow-hidden">
       {/* Conteneur principal centré avec largeur max */}
-      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
         {/* Header i18n */}
         <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
@@ -41,36 +40,34 @@ const TrustedCompanies: React.FC = () => {
         </div>
 
         {/* Zone du Ticker avec masques de fondu (Fade Edges) */}
-        <div className="relative w-full overflow-hidden py-8">
+        <div className="relative w-full overflow-hidden py-4">
 
           {/* Gradients de fondu sur les côtés pour un rendu premium */}
-          <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
+          <div className="absolute left-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
 
           {/* Conteneur animé Framer Motion */}
           <div className="flex w-max">
             <motion.div
-              className="flex gap-12 pr-12 items-center"
+              className="flex gap-8 sm:gap-12 md:gap-16 pr-8 sm:pr-12 md:pr-16 items-center"
               animate={{ x: ["0%", "-50%"] }}
               transition={{
                 ease: "linear",
-                duration: 20, // Ajuste la vitesse ici (plus le chiffre est bas, plus ça va vite)
+                duration: 25,
                 repeat: Infinity,
               }}
-
-              whileHover={{ animationPlayState: "paused" }}
-              style={{ display: "flex" }}
             >
               {tickerItems.map((company, index) => (
                 <div
                   key={index}
-                  className="flex w-32 sm:w-56 h-18 items-center justify-center flex-shrink-0 px-4"
+                  className="flex h-24 sm:h-24 md:h-28 w-40 sm:w-48 md:w-60 items-center justify-center flex-shrink-0 p-2"
                 >
                   <img
                     src={company.logo}
                     alt={company.name}
                     loading="lazy"
-                    className="max-h-full max-w-full object-contain opacity-60   transition-all duration-300 hover:opacity-100 hover:grayscale-0"
+                    decoding="async"
+                    className="max-h-full max-w-full object-cover  transition-all duration-300 transform hover:scale-105"
                   />
                 </div>
               ))}

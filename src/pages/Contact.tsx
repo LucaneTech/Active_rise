@@ -7,6 +7,9 @@ import ProcessSection from '../components/ui/ProcessSection';
 import { Link } from 'react-router-dom';
 
 
+const WHATSAPP_NUMBER = "242069995815";
+
+
 function IntakeSection() {
   const { t } = useTranslation();
 
@@ -183,13 +186,10 @@ export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
 
-
   const services = [
     t('contact.form.opt_marketing'), t('contact.form.opt_branding'), t('contact.form.opt_communication'),
     t('contact.form.opt_creation'), t('contact.form.opt_web'), t('contact.form.opt_consulting'), t('contact.form.opt_other'),
   ];
-
-
 
   const processSteps = [
     { number: '01', title: t('contact.process.p1'), description: t('contact.process.p1_desc') },
@@ -201,9 +201,27 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitting(true);
-    await new Promise((r) => setTimeout(r, 1500));
+
+    // Construction du message WhatsApp bien structuré
+    const message = `*NOUVEAU MESSAGE DE CONTACT*\n\n` +
+      `*Nom / Prénom :* ${form.name}\n` +
+      `*Email :* ${form.email}\n` +
+      `*Entreprise :* ${form.company || 'Non renseigné'}\n` +
+      `*Service souhaité :* ${form.service || 'Non spécifié'}\n\n` +
+      `*Message :*\n${form.message}`;
+
+    // Encodage de l'URL pour gérer correctement les espaces et sauts de ligne
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+
+    // Petit délai d'animation avant d'ouvrir WhatsApp
+    await new Promise((r) => setTimeout(r, 800));
+
     setSubmitting(false);
     setSubmitted(true);
+
+    // Ouvre WhatsApp dans un nouvel onglet
+    window.open(whatsappUrl, '_blank');
   };
 
   const inputClass = `w-full bg-transparent border border-gray-300 rounded-md px-5 py-4 text-deep text-sm placeholder:text-deep/30 focus:outline-none focus:border-gold transition-colors duration-300`;
@@ -216,7 +234,6 @@ export default function Contact() {
       <section className="relative min-h-[65vh] flex items-center bg-deep overflow-hidden pt-24">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_60%_40%,rgba(211,170,42,0.18),transparent)]" />
-          {/* Grille fine */}
           <div
             className="absolute inset-0"
             style={{
@@ -291,7 +308,7 @@ export default function Contact() {
                           <CheckCircle2 size={36} className="text-gold" strokeWidth={1.5} />
                         </motion.div>
                         <h3 className="text-2xl font-black text-deep mb-3">{t('contact.form.success')}</h3>
-                        <p className="text-deep/70">Nous vous répondrons dans les plus brefs délais.</p>
+                        <p className="text-deep/70">Redirection vers WhatsApp pour envoyer votre message...</p>
                       </motion.div>
                     ) : (
                       <motion.form key="form" onSubmit={handleSubmit} className="space-y-6">
@@ -365,12 +382,12 @@ export default function Contact() {
                           disabled={submitting}
                           whileHover={{ scale: 1.02 }}
                           whileTap={{ scale: 0.98 }}
-                          className="w-full bg-gold text-deep font-bold py-3 px-8 rounded-md flex items-center justify-center gap-3 hover:bg-gold/90 transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed"
+                          className="w-full bg-gold text-deep font-bold py-3 px-8 rounded-md flex items-center justify-center gap-3 hover:bg-gold/90 transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed cursor-pointer"
                         >
                           {submitting ? (
                             <>
                               <div className="w-4 h-4 border-2 border-deep/30 border-t-deep rounded-md animate-spin" />
-                              Envoi en cours...
+                              Redirection WhatsApp...
                             </>
                           ) : (
                             <>
@@ -393,7 +410,7 @@ export default function Contact() {
                   <div className="space-y-5">
                     {[
                       { icon: Mail, label: t('contact.info.email_label'), val: t('contact.info.email_val'), href: `mailto:${t('contact.info.email_val')}` },
-                      { icon: Phone, label: t('contact.info.phone_label'), val: t('contact.info.phone_val'), href: `tel:+33123456789` },
+                      { icon: Phone, label: t('contact.info.phone_label'), val: t('contact.info.phone_val'), href: `tel:+242069995815` },
                       { icon: MapPin, label: t('contact.info.address_label'), val: t('contact.info.address_val'), href: undefined },
                       { icon: Clock, label: t('contact.info.hours_label'), val: t('contact.info.hours_val'), href: undefined },
                     ].map((item, i) => (
@@ -446,31 +463,10 @@ export default function Contact() {
         dark={true}
       />
 
-      {/* ─── MAP PLACEHOLDER ───
-      <section className="bg-beige">
-        <div className="container-xl py-16">
-          <RevealOnScroll>
-            <div className="w-full h-64 bg-deep/5 rounded-md shadow-card flex items-center justify-center overflow-hidden relative">
-              <div
-                className="absolute inset-0 opacity-20"
-                style={{
-                  backgroundImage: `repeating-linear-gradient(0deg, transparent, transparent 30px, rgba(211,170,42,0.15) 30px, rgba(211,170,42,0.15) 31px), repeating-linear-gradient(90deg, transparent, transparent 30px, rgba(211,170,42,0.15) 30px, rgba(211,170,42,0.15) 31px)`,
-                }}
-              />
-              <div className="relative z-10 text-center">
-                <MapPin size={40} className="text-gold mx-auto mb-3" strokeWidth={1.5} />
-                <p className="font-bold text-deep">Pointe-Noire, Congo-Brazzaville</p>
-                <p className="text-deep/65 text-sm mt-1">Active Rise — Agence stratégique</p>
-              </div>
-            </div>
-          </RevealOnScroll>
-        </div>
-      </section> */}
       <IntakeSection />
       {/* ─── FAQ ─── */}
       <FAQSection />
       <RetentionSection />
-      {/* ─── CTA ─── */}
 
     </div>
   );
